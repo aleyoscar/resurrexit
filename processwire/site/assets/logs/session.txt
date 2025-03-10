@@ -1,0 +1,9 @@
+2025-02-10 16:39:41	oscarale	https://resurrexit.ddev.site/admin/login/	Successful login for 'oscarale'
+2025-02-11 14:33:36	oscarale	https://resurrexit.ddev.site/admin/login/	Successful login for 'oscarale'
+2025-02-13 16:14:51	?	?	User 'oscarale' - Error: Session fingerprint changed (IP address or useragent) (IP: 172.19.0.5)
+2025-02-13 16:15:03	guest	https://resurrexit.ddev.site/admin/login/	Error: Failed login for 'oscarale' - Invalid password
+2025-02-13 16:15:07	oscarale	https://resurrexit.ddev.site/admin/login/	Successful login for 'oscarale'
+2025-02-14 09:46:52	oscarale	https://resurrexit.ddev.site/admin/login/	Successful login for 'oscarale'
+2025-02-28 11:55:31	oscarale	https://resurrexit.ddev.site/admin/login/	Successful login for 'oscarale'
+2025-02-28 22:24:21	oscarale	https://resurrexit.ddev.site/admin/login/	Successful login for 'oscarale'
+2025-03-03 16:44:44	oscarale	https://resurrexit.ddev.site/admin/login/	Successful login for 'oscarale'
