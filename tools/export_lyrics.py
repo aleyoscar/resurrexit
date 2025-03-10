@@ -5,13 +5,11 @@
 
 import os
 import re
+import lib
 import json
 import frontmatter
 from unidecode import unidecode
 from pprint import pprint
-
-def urlify(text):
-	return '-'.join(simplify(text).split())
 
 def insert_chords(c, text):
 	c = c.rstrip()
@@ -20,13 +18,6 @@ def insert_chords(c, text):
 		text = text[:i] + "<span class='chord'>" + c[i:] + "</span>" + text[i:]
 		c = c[:i].rstrip()
 	return text
-
-def simplify(text):
-	new_text = unidecode(text).lower()
-	return ' '.join(re.sub(r"[^a-z0-9 ]+", '', new_text).strip().split())
-
-def dedup(text):
-	return ' '.join(list(set(simplify(text).split())))
 
 def arr_to_html(arr):
 	html= ""
@@ -80,7 +71,7 @@ for language in languages:
 				f"\"{psalm['step']}\"",
 				f"\"{'|'.join(psalm['tags']) if len(psalm['tags']) > 0 else ''}\"",
 				f"\"{psalm['capo']}\"",
-				f"\"https://aleyoscar.com/audio/{language}/{urlify(psalm['title'])}.mp3\""
+				f"\"https://aleyoscar.com/audio/{language}/{lib.hyphenize(psalm['title'])}.mp3\""
 			])
 		except KeyError:
 			print(f"<< ERROR >> Invalid keys for {language}: {lyric}")
@@ -121,7 +112,7 @@ for language in languages:
 							chord_line = chord_line[:i].rstrip()
 					# print(f"      Inserting {stripped}")
 					html["columns"][-1]["sections"][-1]["lines"].append(stripped)
-		csv_string.append(f"{csv_row},\"{arr_to_html(html)}\",\"{dedup(text)}\"")
+		csv_string.append(f"{csv_row},\"{arr_to_html(html)}\",\"{lib.dedup(text)}\"")
 		language_count += 1
 		count += 1
 	print(f"Parsed {language_count} lyric files for {language}")
