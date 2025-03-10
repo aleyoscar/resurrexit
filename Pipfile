@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 unidecode = "*"
 python-frontmatter = "*"
+pytesseract = "*"
+pandas = "*"
 
 [dev-packages]
 
