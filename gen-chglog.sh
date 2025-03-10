@@ -19,5 +19,5 @@ else
 	echo "Creating Tag $1"
 	git tag $1 -F $TAG_FILE
 
-	echo "Remember to use 'git push origin --tags'"
+	echo "Remember to use 'git push && git push origin --tags'"
 fi
