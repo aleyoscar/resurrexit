@@ -65,6 +65,7 @@ GNU GPLv3
 | Election			| ele	|
 | Liturgical		| lit	|
 | ---				| ---	|
+| Advent/Christmas	| nat	|
 | Bread				| pan	|
 | Children			| lib	|
 | Communion			| vin	|
