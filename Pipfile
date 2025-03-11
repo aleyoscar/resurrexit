@@ -8,6 +8,7 @@ unidecode = "*"
 python-frontmatter = "*"
 pytesseract = "*"
 pandas = "*"
+pypdf = "*"
 
 [dev-packages]
 
