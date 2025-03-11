@@ -51,3 +51,12 @@ def prompt(options, message=''):
 				print(f"Please select an option between 0 and {len(options) - 1}.")
 		except ValueError:
 			print(f"Please type an integer between 0 and {len(options) - 1}.")
+
+def end_file_with(path, end):
+	with open(path, 'r+') as f:
+		try:
+			f.seek(-len(end), 2)
+		except IOError:
+			f.seek(0, 2)
+		if f.read() != end:
+			f.write(end)
