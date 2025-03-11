@@ -36,7 +36,11 @@ else:
 			title = ' '.join(title.split()) # Remove duplicate spaces
 			match = re.search(r" (\d+$)", title)
 			if match:
-				id = match.group(1) # Set ID
+				try:
+					id = int(match.group(1)) # Set ID
+				except ValueError:
+					print(f"\n<<ERROR>> Cannot convert {match.group(1)} to int on line {line_count}\n")
+					continue
 				title = re.sub(r" (\d+$)", "", title).strip() # Remove page number
 			if title and id:
 				hyphenized = lib.hyphenize(title)
