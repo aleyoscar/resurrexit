@@ -2,7 +2,7 @@
 capo: 0
 id: 59
 lang: es-es
-step: ''
+step: pre
 subtitle: ''
 tags: []
 title: EL PUEBLO QUE CAMINABA EN LAS TINIEBLAS

@@ -2,7 +2,7 @@
 capo: 0
 id: 91
 lang: es-es
-step: ''
+step: pre
 subtitle: ''
 tags:
 - vin

@@ -2,7 +2,7 @@
 capo: 0
 id: 241
 lang: es-es
-step: ''
+step: ele
 subtitle: ''
 tags:
 - pas

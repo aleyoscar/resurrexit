@@ -2,7 +2,7 @@
 capo: 0
 id: 144
 lang: es-es
-step: ''
+step: pre
 subtitle: ''
 tags:
 - vir

@@ -2,7 +2,7 @@
 capo: 0
 id: 224
 lang: es-es
-step: ''
+step: cat
 subtitle: ''
 tags:
 - vin
