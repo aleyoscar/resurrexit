@@ -1,7 +1,8 @@
 ---
 capo: 0
-step: 'pre'
-id: 28
+id: '9'
+lang: es-es
+step: pre
 subtitle: Salmo 100 (99)
 tags: []
 title: ACLAMAD AL SEÑOR

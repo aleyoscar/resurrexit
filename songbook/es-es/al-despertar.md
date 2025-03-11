@@ -1,7 +1,8 @@
 ---
 capo: 0
-step: 'pre'
-id: 29
+id: '10'
+lang: es-es
+step: pre
 subtitle: Salmo 17 (16)
 tags: []
 title: AL DESPERTAR

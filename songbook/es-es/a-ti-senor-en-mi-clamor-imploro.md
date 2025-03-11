@@ -1,7 +1,8 @@
 ---
 capo: 2
-step: 'pre'
-id: 24
+id: '4'
+lang: es-es
+step: pre
 subtitle: Salmo 142 (141)
 tags: []
 title: A TI, SEÑOR, EN MI CLAMOR IMPLORO

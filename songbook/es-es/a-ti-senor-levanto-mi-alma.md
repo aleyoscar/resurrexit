@@ -1,7 +1,8 @@
 ---
 capo: 3
-step: 'pre'
-id: 5
+id: '5'
+lang: es-es
+step: pre
 subtitle: Salmo 25 (24)
 tags: []
 title: A TI, SEÑOR, LEVANTO MI ALMA

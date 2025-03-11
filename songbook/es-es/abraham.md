@@ -1,7 +1,8 @@
 ---
 capo: 0
-step: 'pre'
-id: 27
+id: '8'
+lang: es-es
+step: pre
 subtitle: Teofanía de Mambré - Génesis 18,1-5
 tags: []
 title: ABRAHAM

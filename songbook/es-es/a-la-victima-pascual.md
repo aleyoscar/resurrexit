@@ -1,7 +1,8 @@
 ---
 capo: 5
-step: 'pre'
-id: 21
+id: '1'
+lang: es-es
+step: pre
 subtitle: Secuencia de Pascua
 tags: []
 title: A LA VÍCTIMA PASCUAL

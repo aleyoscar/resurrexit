@@ -1,7 +1,8 @@
 ---
 capo: 0
-step: 'pre'
-id: 22
+id: '2'
+lang: es-es
+step: pre
 subtitle: 2o Corintios 6,3ss
 tags: []
 title: A NADIE DEMOS OCASIÓN DE TROPIEZO
