@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '72'
+id: 72
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: ESTE ES EL MANDAMIENTO MÍO
 ---

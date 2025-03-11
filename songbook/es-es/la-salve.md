@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '99'
+id: 99
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
+- vir
 title: LA SALVE
 ---

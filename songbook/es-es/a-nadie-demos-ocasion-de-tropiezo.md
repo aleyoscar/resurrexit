@@ -1,6 +1,6 @@
 ---
 capo: 0
-id: '2'
+id: 2
 lang: es-es
 step: pre
 subtitle: 2o Corintios 6,3ss

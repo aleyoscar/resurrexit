@@ -1,10 +1,11 @@
 ---
 capo: 0
-id: '8'
+id: 8
 lang: es-es
 step: pre
 subtitle: Teofanía de Mambré - Génesis 18,1-5
-tags: []
+tags:
+- int
 title: ABRAHAM
 ---
 

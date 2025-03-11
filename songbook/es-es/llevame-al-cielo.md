@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '107'
+id: 107
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- fin
+- pas
+- pen
 title: LLÉVAME AL CIELO
 ---

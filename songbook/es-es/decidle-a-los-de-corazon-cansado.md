@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '48'
+id: 48
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- int
 title: DECIDLE A LOS DE CORAZÓN CANSADO
 ---

@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '139'
+id: 139
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- com
 title: QUIÉN NOS SEPARARÁ
 ---

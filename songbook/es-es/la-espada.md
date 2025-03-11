@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '97'
+id: 97
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
+- vir
 title: LA ESPADA
 ---

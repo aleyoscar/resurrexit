@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '64'
+id: 64
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
 title: EN MEDIO DE AQUEL GENTÍO
 ---

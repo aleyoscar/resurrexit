@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '66'
+id: 66
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pan
+- pas
+- pen
 title: ERES DIGNO DE TOMAR EL LIBRO
 ---

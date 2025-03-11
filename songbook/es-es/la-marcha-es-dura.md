@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '98'
+id: 98
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: LA MARCHA ES DURA
 ---

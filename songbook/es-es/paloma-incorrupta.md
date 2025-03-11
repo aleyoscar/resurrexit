@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '130'
+id: 130
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
+- vir
 title: PALOMA INCORRUPTA
 ---

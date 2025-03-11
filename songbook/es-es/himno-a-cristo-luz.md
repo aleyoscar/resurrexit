@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '85'
+id: 85
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: HIMNO A CRISTO LUZ
 ---

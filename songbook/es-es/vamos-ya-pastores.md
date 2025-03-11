@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '165'
+id: 165
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- lib
 title: VAMOS YA, PASTORES
 ---

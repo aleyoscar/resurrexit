@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '35'
+id: 35
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: CARITAS CHRISTI URGET NOS
 ---

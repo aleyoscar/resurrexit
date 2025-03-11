@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '131'
+id: 131
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- pas
+- pen
 title: PENTECOSTÉS
 ---

@@ -1,9 +1,13 @@
 ---
 capo: 0
-id: '160'
+id: 160
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pan
+- pas
+- pen
+- vir
 title: TÚ HAS CUBIERTO DE VERGÜENZA LA MUERTE
 ---

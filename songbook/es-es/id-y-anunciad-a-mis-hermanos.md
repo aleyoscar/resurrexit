@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '92'
+id: 92
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- fin
+- pas
+- pen
 title: ID Y ANUNCIAD A MIS HERMANOS
 ---

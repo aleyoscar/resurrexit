@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '20'
+id: 20
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: ASÍ HABLA EL AMÉN
 ---

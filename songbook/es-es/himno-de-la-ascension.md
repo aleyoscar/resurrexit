@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '89'
+id: 89
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: HIMNO DE LA ASCENSIÓN
 ---

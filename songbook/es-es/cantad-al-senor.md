@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '32'
+id: 32
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- int
 title: CANTAD AL SEÑOR
 ---

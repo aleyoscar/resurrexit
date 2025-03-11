@@ -1,9 +1,13 @@
 ---
 capo: 0
-id: '163'
+id: 163
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- fin
+- pas
+- pen
+- vir
 title: UNA GRAN SEÑAL
 ---

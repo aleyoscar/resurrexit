@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '162'
+id: 162
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- pas
+- pen
 title: UN RETOÑO BROTA DEL TRONCO DE JESÉ
 ---

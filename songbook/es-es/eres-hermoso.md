@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '67'
+id: 67
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- fin
 title: ERES HERMOSO
 ---

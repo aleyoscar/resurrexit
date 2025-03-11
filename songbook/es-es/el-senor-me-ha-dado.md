@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '62'
+id: 62
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pan
 title: EL SEÑOR ME HA DADO
 ---

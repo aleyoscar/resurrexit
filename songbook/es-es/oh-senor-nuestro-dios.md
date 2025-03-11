@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '128'
+id: 128
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- int
 title: OH SEÑOR, NUESTRO DIOS
 ---

@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '241'
+id: 241
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: HERMOSA ERES, AMIGA MÍA
 ---

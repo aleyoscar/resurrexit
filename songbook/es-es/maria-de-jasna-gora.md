@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '110'
+id: 110
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vir
 title: MARÍA DE JASNA GÓRA
 ---

@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '86'
+id: 86
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- pas
+- pen
 title: HIMNO A LA CARIDAD
 ---

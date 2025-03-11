@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '45'
+id: 45
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
+- pax
 title: DAYENÚ
 ---

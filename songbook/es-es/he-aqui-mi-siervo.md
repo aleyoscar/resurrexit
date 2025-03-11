@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '81'
+id: 81
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
+- pan
 title: HE AQUÍ MI SIERVO
 ---

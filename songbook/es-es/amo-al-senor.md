@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '18'
+id: 18
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: AMO AL SEÑOR
 ---

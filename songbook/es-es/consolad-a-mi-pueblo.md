@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '41'
+id: 41
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- int
+- fin
+- pax
 title: CONSOLAD A MI PUEBLO
 ---

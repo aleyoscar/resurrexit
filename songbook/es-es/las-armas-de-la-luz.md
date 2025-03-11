@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '102'
+id: 102
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: LAS ARMAS DE LA LUZ
 ---

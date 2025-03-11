@@ -1,9 +1,13 @@
 ---
 capo: 0
-id: '68'
+id: 68
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- int
+- pas
+- pen
 title: ES PACIENTE
 ---

@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '100'
+id: 100
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- fin
 title: LA SIEGA DE LAS NACIONES
 ---

@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '24'
+id: 24
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- fin
+- pax
 title: BALAAM
 ---

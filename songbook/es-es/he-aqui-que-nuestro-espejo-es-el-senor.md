@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '226'
+id: 226
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: HE AQUÍ QUE NUESTRO ESPEJO ES EL SEÑOR
 ---

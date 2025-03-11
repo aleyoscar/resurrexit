@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '43'
+id: 43
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
+- int
 title: CUANDO EL SEÑOR
 ---

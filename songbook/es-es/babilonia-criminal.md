@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '23'
+id: 23
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: BABILONIA CRIMINAL
 ---

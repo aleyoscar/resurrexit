@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '143'
+id: 143
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: RESURREXIT
 ---

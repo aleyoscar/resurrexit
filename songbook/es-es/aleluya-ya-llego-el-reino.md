@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '15'
+id: 15
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: ALELUYA, YA LLEGÓ EL REINO
 ---

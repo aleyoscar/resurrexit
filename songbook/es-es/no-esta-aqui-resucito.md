@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '120'
+id: 120
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: NO ESTÁ AQUÍ, RESUCITÓ
 ---

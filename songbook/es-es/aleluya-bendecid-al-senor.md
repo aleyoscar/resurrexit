@@ -1,9 +1,13 @@
 ---
 capo: 0
-id: '14'
+id: 14
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- lib
+- pas
+- pen
+- pax
 title: ALELUYA, BENDECID AL SEÑOR
 ---

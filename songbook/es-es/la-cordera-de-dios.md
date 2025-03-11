@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '96'
+id: 96
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vir
 title: LA CORDERA DE DIOS
 ---

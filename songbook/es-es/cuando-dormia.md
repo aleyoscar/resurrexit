@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '222'
+id: 222
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
 title: CUANDO DORMÍA
 ---

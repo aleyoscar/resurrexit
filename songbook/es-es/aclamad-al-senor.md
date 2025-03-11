@@ -1,10 +1,11 @@
 ---
 capo: 0
-id: '9'
+id: 9
 lang: es-es
 step: pre
 subtitle: Salmo 100 (99)
-tags: []
+tags:
+- int
 title: ACLAMAD AL SEÑOR
 ---
 

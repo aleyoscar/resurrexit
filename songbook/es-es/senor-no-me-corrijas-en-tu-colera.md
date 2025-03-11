@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '147'
+id: 147
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: SEÑOR, NO ME CORRIJAS EN TU CÓLERA
 ---

@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '56'
+id: 56
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pan
 title: EL LAGARERO
 ---

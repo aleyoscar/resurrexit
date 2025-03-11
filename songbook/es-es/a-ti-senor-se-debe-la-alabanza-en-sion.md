@@ -1,10 +1,11 @@
 ---
 capo: 3
-id: '6'
+id: 6
 lang: es-es
 step: pre
 subtitle: Salmo 65 (64)
-tags: []
+tags:
+- com
 title: A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN
 ---
 

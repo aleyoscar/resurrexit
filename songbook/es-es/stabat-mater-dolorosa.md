@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '156'
+id: 156
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
+- pan
+- vir
 title: STABAT MATER DOLOROSA
 ---

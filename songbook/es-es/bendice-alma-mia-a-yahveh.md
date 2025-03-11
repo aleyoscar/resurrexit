@@ -1,10 +1,10 @@
 ---
 capo: 0
-id: 79
+id: 26
 lang: es-es
 step: ''
 subtitle: ''
 tags:
-- int
-title: HACIA TI, MORADA SANTA
+- com
+title: BENDICE, ALMA MÍA, A YAHVEH
 ---

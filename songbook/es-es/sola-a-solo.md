@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '155'
+id: 155
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
+- pan
+- vir
 title: SOLA A SOLO
 ---

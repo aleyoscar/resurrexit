@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '101'
+id: 101
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- pas
+- pen
 title: LA VOZ DE MI AMADO
 ---

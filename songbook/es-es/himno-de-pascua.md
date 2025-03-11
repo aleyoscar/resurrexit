@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '90'
+id: 90
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: HIMNO DE PASCUA
 ---

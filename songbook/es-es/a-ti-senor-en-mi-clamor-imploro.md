@@ -1,10 +1,11 @@
 ---
 capo: 2
-id: '4'
+id: 4
 lang: es-es
 step: pre
 subtitle: Salmo 142 (141)
-tags: []
+tags:
+- com
 title: A TI, SEÑOR, EN MI CLAMOR IMPLORO
 ---
 

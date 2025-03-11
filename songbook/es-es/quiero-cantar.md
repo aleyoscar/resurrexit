@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '141'
+id: 141
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: QUIERO CANTAR
 ---

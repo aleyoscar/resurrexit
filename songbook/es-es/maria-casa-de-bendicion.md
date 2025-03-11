@@ -1,9 +1,13 @@
 ---
 capo: 0
-id: '109'
+id: 109
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- pas
+- pen
+- vir
 title: MARÍA, CASA DE BENDICIÓN
 ---

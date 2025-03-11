@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '235'
+id: 235
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: SIÉNTATE SOLITARIO Y SILENCIOSO
 ---

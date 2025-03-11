@@ -1,10 +1,11 @@
 ---
 capo: 0
-id: '10'
+id: 10
 lang: es-es
 step: pre
 subtitle: Salmo 17 (16)
-tags: []
+tags:
+- com
 title: AL DESPERTAR
 ---
 

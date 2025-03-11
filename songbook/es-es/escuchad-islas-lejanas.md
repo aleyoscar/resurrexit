@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '70'
+id: 70
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vin
+- int
 title: ESCUCHAD, ISLAS LEJANAS
 ---

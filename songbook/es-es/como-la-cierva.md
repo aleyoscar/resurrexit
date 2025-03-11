@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '39'
+id: 39
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
 title: COMO LA CIERVA
 ---

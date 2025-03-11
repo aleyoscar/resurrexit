@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '161'
+id: 161
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
+- int
 title: TÚ QUE ERES FIEL
 ---

@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '94'
+id: 94
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
+- pax
 title: JERUSALÉN RECONSTRUIDA
 ---

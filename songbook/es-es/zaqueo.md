@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '178'
+id: 178
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- com
+- int
 title: ZAQUEO
 ---

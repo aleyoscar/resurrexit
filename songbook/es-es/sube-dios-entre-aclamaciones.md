@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '157'
+id: 157
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
+- pax
 title: SUBE DIOS ENTRE ACLAMACIONES
 ---

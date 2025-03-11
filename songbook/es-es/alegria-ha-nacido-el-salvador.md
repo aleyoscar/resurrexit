@@ -1,9 +1,10 @@
 ---
 capo: 0
-id: '12'
+id: 12
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- lib
 title: ALEGRÍA, HA NACIDO EL SALVADOR
 ---

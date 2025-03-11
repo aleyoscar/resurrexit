@@ -1,6 +1,6 @@
 ---
 capo: 0
-id: '11'
+id: 11
 lang: es-es
 step: pre
 subtitle: Salmo 148

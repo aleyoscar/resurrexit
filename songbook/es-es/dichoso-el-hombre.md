@@ -1,6 +1,6 @@
 ---
 capo: 0
-id: '52'
+id: 52
 lang: es-es
 step: ''
 subtitle: ''

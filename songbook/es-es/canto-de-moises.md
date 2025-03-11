@@ -1,9 +1,11 @@
 ---
 capo: 0
-id: '34'
+id: 34
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
+- pen
 title: CANTO DE MOISÉS
 ---

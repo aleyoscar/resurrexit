@@ -1,9 +1,12 @@
 ---
 capo: 0
-id: '140'
+id: 140
 lang: es-es
 step: ''
 subtitle: ''
-tags: []
+tags:
+- fin
+- pas
+- pen
 title: QUIERO ANDAR, MADRE, A JERUSALÉN
 ---
