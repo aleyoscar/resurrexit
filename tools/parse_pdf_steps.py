@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Resurrexit Image to Lyric parser for index
+# Resurrexit PDF extract step
 # -----------------------------------------------------------------------------
 
 import sys
