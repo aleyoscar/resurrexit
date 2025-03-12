@@ -58,12 +58,43 @@
 				<?php } ?>
 			</ul>
 			<hr>
-			<h4 class="color-grey-light"><?php echo $page->label_tags; ?></h4>
+			<h4 class="color-grey-light"><?php echo $page->label_book_tags; ?></h4>
 			<div class="flex">
 				<?php foreach($page->filter_tags as $tag) { ?>
+					<button class="btn-link flex align-center svg-active-sm tag-btn" type="button" data-filter="<?php echo $page->name . '-' . $tag->filter_data; ?>">
+						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-check-circle-fill"/></svg>
+						<?php
+						if ($page->name == 'en-us') echo $tag->filter_en_us;
+						else if ($page->name == 'es-es') echo $tag->filter_es_es;
+						?>
+					</button>
+				<?php } ?>
+			</div>
+			<hr>
+			<h4 class="color-grey-light"><?php echo $page->label_tags; ?></h4>
+			<div class="flex">
+				<?php
+				$tags = [];
+				foreach($page->parent->children as $child) {
+					foreach($child->filter_tags as $tag) {
+						$found = False;
+						foreach($tags as $t) {
+							if ($tag->filter_data == $t->filter_data) {
+								$found = True;
+								break;
+							}
+						}
+						if (!$found) $tags[] = $tag;
+					}
+				}
+				foreach($tags as $tag) { ?>
 					<button class="btn-link flex align-center svg-active-sm tag-btn" type="button" data-filter="<?php echo $tag->filter_data; ?>">
 						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-check-circle-fill"/></svg>
-						<?php echo $tag->title; ?></button>
+						<?php
+						if ($page->name == 'en-us') echo $tag->filter_en_us;
+						else if ($page->name == 'es-es') echo $tag->filter_es_es;
+						?>
+					</button>
 				<?php } ?>
 			</div>
 		</nav>
