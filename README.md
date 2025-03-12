@@ -58,22 +58,29 @@ GNU GPLv3
 
 ### Latin Abbreviations
 
-| Name				| Abb 	|
-| :--				| :---:	|
-| Precatechumenate	| pre	|
-| Catechumenate		| cat	|
-| Election			| ele	|
-| Liturgical		| lit	|
-| ---				| ---	|
-| Advent/Christmas	| nat	|
-| Bread				| pan	|
-| Children			| lib	|
-| Communion			| vin	|
-| Easter			| pas	|
-| Entrance			| int	|
-| Final				| fin	|
-| Laudes			| lau	|
-| Lent				| com	|
-| Peace				| pax	|
-| Pentecost			| pen	|
-| Virgin			| vir	|
+| Name				| Abb 	| English - US	| Spanish - ES	|
+| :--				| :---:	| :---:			| :---:			|
+| Precatechumenate	| pre	| *				| *				|
+| Catechumenate		| cat	| *				| *				|
+| Election			| ele	| *				| *				|
+| Liturgical		| lit	| *				| *				|
+| Other				| ali	| *				|				|
+| ---				| ---	| ---			| ---			|
+| Advent/Christmas	| nat	|				| *				|
+| Bread				| pan	| *				| *				|
+| Children			| lib	| *				| *				|
+| Communion			| vin	|				| *				|
+| Easter			| pas	| *				| *				|
+| Entrance			| int	|				| *				|
+| Final				| fin	|				| *				|
+| Hebrew			| heb	| *				|				|
+| Hymns				| hym	| *				|				|
+| Laudes			| lau	|				| *				|
+| Lent				| com	|				| *				|
+| Mary				| vir	| *				| *				|
+| Ordinary			| ord	| *				|				|
+| Peace				| pax	|				| *				|
+| Penitential		| poe	| *				|				|
+| Pentecost			| pen	|				| *				|
+| Solomon			| sal	| *				| 				|
+| Various			| var	| *				|				|
