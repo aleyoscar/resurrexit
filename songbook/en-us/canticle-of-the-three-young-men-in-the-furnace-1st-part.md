@@ -6,5 +6,5 @@ page: '40'
 step: ''
 subtitle: ''
 tags: []
-title: CANTICLE OF THE THREE YOUNG MEN IN THE FURNACE
+title: CANTICLE OF THE THREE YOUNG MEN IN THE FURNACE - 1ST PART
 ---

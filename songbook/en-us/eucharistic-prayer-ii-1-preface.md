@@ -2,10 +2,10 @@
 capo: 0
 id: 0
 lang: en-us
-page: 27-2
+page: '8'
 step: ''
 subtitle: ''
 tags:
-- var
-title: PRAYER OF THE FAITHFUL IN A SOLEMNITY
+- ord
+title: EUCHARISTIC PRAYER II - 1 PREFACE
 ---

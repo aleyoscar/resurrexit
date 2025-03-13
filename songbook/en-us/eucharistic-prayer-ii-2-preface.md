@@ -5,6 +5,7 @@ lang: en-us
 page: '21'
 step: ''
 subtitle: ''
-tags: []
-title: EUCHARISTIC PRAYER II
+tags:
+- ord
+title: EUCHARISTIC PRAYER II - 2 PREFACE
 ---

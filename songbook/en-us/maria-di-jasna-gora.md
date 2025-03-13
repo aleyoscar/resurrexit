@@ -2,9 +2,10 @@
 capo: 0
 id: 0
 lang: en-us
-page: '40'
+page: '118'
 step: ''
 subtitle: ''
-tags: []
-title: BLESSED ARE YOU, O LORD
+tags:
+- vir
+title: MARIA DI JASNA GORA
 ---
