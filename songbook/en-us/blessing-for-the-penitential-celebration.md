@@ -5,6 +5,7 @@ lang: en-us
 page: '3'
 step: lit
 subtitle: ''
-tags: []
+tags:
+- poe
 title: BLESSING FOR THE PENITENTIAL CELEBRATION
 ---
