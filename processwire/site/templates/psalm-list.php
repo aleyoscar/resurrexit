@@ -133,7 +133,7 @@
 				if ($child->template == 'psalm') { ?>
 			<a id="p<?php echo $child->psalm_id; ?>"
 				class="psalm-item flex flex-column p-md <?php echo $child->psalm_step->value; ?>
-				<?php foreach($child->psalm_tags as $tag) echo $tag->value . ' '; ?>"
+				<?php foreach($child->psalm_tags as $tag) echo $page->name . '-' . $tag->value . ' '; ?>"
 				href="<?php echo $child->url; ?>" data-search="">
 				<span class="font-bold color-primary"><?php echo $child->title; ?></span>
 				<span class="font-small color-secondary"><?php echo $child->psalm_subtitle; ?></span>
