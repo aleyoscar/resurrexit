@@ -2,6 +2,7 @@
 capo: 3
 id: 6
 lang: es-es
+page: '6'
 step: pre
 subtitle: Salmo 65 (64)
 tags:

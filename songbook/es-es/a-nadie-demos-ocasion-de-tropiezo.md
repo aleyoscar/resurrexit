@@ -2,6 +2,7 @@
 capo: 0
 id: 2
 lang: es-es
+page: '2'
 step: pre
 subtitle: 2o Corintios 6,3ss
 tags: []

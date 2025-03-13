@@ -2,6 +2,7 @@
 capo: 2
 id: 4
 lang: es-es
+page: '4'
 step: pre
 subtitle: Salmo 142 (141)
 tags:

@@ -2,6 +2,7 @@
 capo: 0
 id: 10
 lang: es-es
+page: '10'
 step: pre
 subtitle: Salmo 17 (16)
 tags:

@@ -2,6 +2,7 @@
 capo: 0
 id: 9
 lang: es-es
+page: '9'
 step: pre
 subtitle: Salmo 100 (99)
 tags:

@@ -2,6 +2,7 @@
 capo: 5
 id: 1
 lang: es-es
+page: '1'
 step: pre
 subtitle: Secuencia de Pascua
 tags:

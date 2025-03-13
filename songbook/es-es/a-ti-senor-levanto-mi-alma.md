@@ -2,6 +2,7 @@
 capo: 3
 id: 5
 lang: es-es
+page: '5'
 step: pre
 subtitle: Salmo 25 (24)
 tags:
