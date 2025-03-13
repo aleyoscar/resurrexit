@@ -5,6 +5,7 @@ lang: en-us
 page: '19'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: HYMN FOR LAUDS OF PENTECOST
 ---

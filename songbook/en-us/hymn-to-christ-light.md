@@ -5,6 +5,7 @@ lang: en-us
 page: '149'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- var
 title: HYMN TO CHRIST LIGHT
 ---

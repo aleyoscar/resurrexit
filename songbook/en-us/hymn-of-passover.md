@@ -5,6 +5,7 @@ lang: en-us
 page: 70-2
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: HYMN OF PASSOVER
 ---

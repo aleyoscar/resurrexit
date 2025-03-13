@@ -5,6 +5,7 @@ lang: en-us
 page: '208'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pan
 title: WHO IS THIS WHO COMES FROM EDOM - THE WINEPRESSER
 ---

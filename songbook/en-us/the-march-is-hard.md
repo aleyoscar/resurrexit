@@ -5,6 +5,7 @@ lang: en-us
 page: 32-2
 step: ''
 subtitle: ''
-tags: []
+tags:
+- var
 title: THE MARCH IS HARD
 ---

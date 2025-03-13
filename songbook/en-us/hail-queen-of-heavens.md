@@ -5,6 +5,8 @@ lang: en-us
 page: 106-2
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
+- vir
 title: HAIL QUEEN OF HEAVENS
 ---

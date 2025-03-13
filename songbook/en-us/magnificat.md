@@ -5,6 +5,7 @@ lang: en-us
 page: '47'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: MAGNIFICAT
 ---

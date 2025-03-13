@@ -5,6 +5,7 @@ lang: en-us
 page: 5-2
 step: ''
 subtitle: ''
-tags: []
+tags:
+- ord
 title: HOLY, HOLY, HOLY - ORDINARY TIME
 ---

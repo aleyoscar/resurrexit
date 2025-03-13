@@ -5,6 +5,7 @@ lang: en-us
 page: '4'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- ord
 title: GLORY TO GOD
 ---

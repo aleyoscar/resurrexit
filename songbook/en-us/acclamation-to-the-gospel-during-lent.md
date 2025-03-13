@@ -5,6 +5,7 @@ lang: en-us
 page: 26-2
 step: ''
 subtitle: ''
-tags: []
+tags:
+- ord
 title: ACCLAMATION TO THE GOSPEL DURING LENT
 ---

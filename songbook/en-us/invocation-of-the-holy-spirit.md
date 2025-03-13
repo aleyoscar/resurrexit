@@ -5,6 +5,7 @@ lang: en-us
 page: 26-4
 step: ''
 subtitle: ''
-tags: []
+tags:
+- var
 title: INVOCATION OF THE HOLY SPIRIT
 ---

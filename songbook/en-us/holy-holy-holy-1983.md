@@ -5,6 +5,7 @@ lang: en-us
 page: 7-2
 step: ''
 subtitle: ''
-tags: []
+tags:
+- ord
 title: HOLY, HOLY, HOLY - 1983
 ---

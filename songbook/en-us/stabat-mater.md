@@ -5,6 +5,8 @@ lang: en-us
 page: '103'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
+- vir
 title: STABAT MATER
 ---

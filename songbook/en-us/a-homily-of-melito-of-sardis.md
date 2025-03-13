@@ -5,6 +5,7 @@ lang: en-us
 page: '284'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pan
 title: A HOMILY OF MELITO OF SARDIS
 ---

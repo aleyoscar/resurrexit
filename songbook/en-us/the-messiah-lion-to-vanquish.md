@@ -5,6 +5,7 @@ lang: en-us
 page: '146'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pan
 title: THE MESSIAH, LION TO VANQUISH
 ---

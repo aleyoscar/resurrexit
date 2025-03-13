@@ -5,6 +5,7 @@ lang: en-us
 page: '272'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vir
 title: SHE-LAMB OF GOD
 ---

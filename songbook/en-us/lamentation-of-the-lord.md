@@ -5,6 +5,7 @@ lang: en-us
 page: '104'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- var
 title: LAMENTATION OF THE LORD
 ---

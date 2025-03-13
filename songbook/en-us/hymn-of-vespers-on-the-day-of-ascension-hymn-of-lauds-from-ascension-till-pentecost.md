@@ -5,7 +5,8 @@ lang: en-us
 page: '17'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: HYMN OF VESPERS ON THE DAY OF ASCENSION - HYMN OF LAUDS FROM ASCENSION TILL
   PENTECOST
 ---

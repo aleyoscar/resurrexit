@@ -5,6 +5,7 @@ lang: en-us
 page: '108'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vir
 title: MARY, HOUSE OF BENEDICTION
 ---

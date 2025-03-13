@@ -5,6 +5,7 @@ lang: en-us
 page: '23'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- ord
 title: DOXOLOGY
 ---

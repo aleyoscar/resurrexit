@@ -5,6 +5,7 @@ lang: en-us
 page: '91'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- var
 title: HERE COMES THE LORD WITH MAJESTY ENROBED
 ---

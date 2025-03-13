@@ -5,6 +5,7 @@ lang: en-us
 page: '99'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- lib
 title: BLESS THE LORD
 ---

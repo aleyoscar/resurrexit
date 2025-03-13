@@ -5,6 +5,7 @@ lang: en-us
 page: 16-2
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: HYMN FOR VESPERS FROM EASTER TO THE ASCENSION
 ---

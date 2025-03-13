@@ -5,6 +5,7 @@ lang: en-us
 page: '25'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- ord
 title: ALLELUIA IN LECTIONARY
 ---

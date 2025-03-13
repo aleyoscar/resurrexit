@@ -5,6 +5,7 @@ lang: en-us
 page: '49'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: CANTICLE OF ZECHARIAH
 ---

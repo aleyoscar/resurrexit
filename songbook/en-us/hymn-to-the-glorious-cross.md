@@ -5,6 +5,7 @@ lang: en-us
 page: '219'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- var
 title: HYMN TO THE GLORIOUS CROSS
 ---

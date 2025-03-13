@@ -5,6 +5,7 @@ lang: en-us
 page: 26-1
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pas
 title: EASTER ALLELUIA
 ---

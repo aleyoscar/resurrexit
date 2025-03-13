@@ -5,6 +5,7 @@ lang: en-us
 page: '207'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- pan
 title: THE LORD HAS GIVEN ME
 ---

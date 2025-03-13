@@ -5,6 +5,7 @@ lang: en-us
 page: '18'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: HYMN OF VESPERS FROM ASCENSION TO PENTECOST
 ---

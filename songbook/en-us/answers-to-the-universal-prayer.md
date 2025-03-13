@@ -5,6 +5,7 @@ lang: en-us
 page: 26-3
 step: ''
 subtitle: ''
-tags: []
+tags:
+- var
 title: ANSWERS TO THE UNIVERSAL PRAYER
 ---

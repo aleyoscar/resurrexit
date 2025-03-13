@@ -5,6 +5,7 @@ lang: en-us
 page: '20'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: SEQUENCE OF PENTECOST
 ---

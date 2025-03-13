@@ -5,6 +5,7 @@ lang: en-us
 page: 92-2
 step: ''
 subtitle: ''
-tags: []
+tags:
+- heb
 title: DAY OF REST
 ---

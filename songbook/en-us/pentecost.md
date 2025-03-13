@@ -5,6 +5,7 @@ lang: en-us
 page: '52'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- var
 title: PENTECOST
 ---

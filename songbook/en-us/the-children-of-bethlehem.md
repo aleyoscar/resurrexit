@@ -5,6 +5,7 @@ lang: en-us
 page: '117'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- lib
 title: THE CHILDREN OF BETHLEHEM
 ---

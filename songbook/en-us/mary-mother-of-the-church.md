@@ -5,6 +5,7 @@ lang: en-us
 page: '102'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- vir
 title: MARY, MOTHER OF THE CHURCH
 ---

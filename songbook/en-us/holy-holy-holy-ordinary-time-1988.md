@@ -5,6 +5,7 @@ lang: en-us
 page: 7-1
 step: ''
 subtitle: ''
-tags: []
+tags:
+- ord
 title: HOLY, HOLY, HOLY - ORDINARY TIME - 1988
 ---

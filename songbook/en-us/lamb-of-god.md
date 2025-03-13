@@ -5,6 +5,7 @@ lang: en-us
 page: '24'
 step: ''
 subtitle: ''
-tags: []
+tags:
+- ord
 title: LAMB OF GOD
 ---

@@ -5,6 +5,7 @@ lang: en-us
 page: 15-1
 step: ''
 subtitle: ''
-tags: []
+tags:
+- hym
 title: HYMN FOR LAUDS OF ADVENT UNTIL DECEMBER 16
 ---
