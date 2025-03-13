@@ -251,13 +251,13 @@ svg {
 .psalm-item.cat, .psalm.cat { background-color: var(--blue); }
 .psalm-item.ele, .psalm.ele { background-color: var(--green); }
 .psalm-item.lit, .psalm.lit { background-color: var(--yellow); }
-.psalm-item.ser, .psalm.ser { background-color: var(--background-grey); }
+.psalm-item.con, .psalm.con { background-color: var(--grey-light); }
 
 .psalm-item.pre:hover { background-color: var(--foreground-hv); }
 .psalm-item.cat:hover { background-color: var(--blue-hv); }
 .psalm-item.ele:hover { background-color: var(--green-hv); }
 .psalm-item.lit:hover { background-color: var(--yellow-hv); }
-.psalm-item.ser:hover { background-color: var(--background-grey-hv); }
+.psalm-item.con:hover { background-color: var(--grey-light-hv); }
 
 .psalm-item.hide,
 .clear-btn.hide,
