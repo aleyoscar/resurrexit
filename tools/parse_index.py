@@ -75,7 +75,7 @@ else:
 					if os.path.isfile(psalm_file):
 						with open(psalm_file) as p:
 							psalm = frontmatter.load(p)
-						if psalm['id'] == id:
+						if psalm['page'] == page:
 							if type == 1:
 								psalm['step'] = latin
 							elif type == 2:
