@@ -86,14 +86,14 @@ for language in languages:
 			stripped = line.strip()
 			if stripped:
 				# print(f"   Parsing: {stripped}")
-				if stripped in settings["sections"]: # START SECTION
+				if stripped in settings[language]["sections"]: # START SECTION
 					# print(f"      Starting section {stripped}")
 					html["columns"][-1]["sections"].append({
-						"class": settings["sections"][stripped],
+						"class": settings[language]["sections"][stripped],
 						"lang": language,
 						"lines": []
 					})
-				elif set(stripped.split()).issubset(set(settings["chords_raw"][language])):
+				elif set(stripped.split()).issubset(set(settings[language]["chords_raw"])):
 					# print(set(stripped.split()))
 					# print(set(settings["chords_raw"][language]))
 					# print(f"      Found chords: {stripped}")
