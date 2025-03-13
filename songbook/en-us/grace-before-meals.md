@@ -3,7 +3,7 @@ capo: 0
 id: 0
 lang: en-us
 page: 27-1
-step: ''
+step: lit
 subtitle: ''
 tags:
 - var

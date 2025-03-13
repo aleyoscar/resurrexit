@@ -3,7 +3,7 @@ capo: 0
 id: 0
 lang: en-us
 page: '220'
-step: ''
+step: cat
 subtitle: ''
 tags: []
 title: THE ARMOR OF GOD

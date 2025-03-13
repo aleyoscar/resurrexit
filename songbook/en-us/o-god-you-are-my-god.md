@@ -3,7 +3,7 @@ capo: 0
 id: 0
 lang: en-us
 page: 85-1
-step: ''
+step: pre
 subtitle: ''
 tags: []
 title: O GOD, YOU ARE MY GOD

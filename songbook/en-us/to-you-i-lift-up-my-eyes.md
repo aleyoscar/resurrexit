@@ -3,7 +3,7 @@ capo: 0
 id: 0
 lang: en-us
 page: '123'
-step: ''
+step: pre
 subtitle: ''
 tags: []
 title: TO YOU I LIFT UP MY EYES

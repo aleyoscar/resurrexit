@@ -3,7 +3,7 @@ capo: 0
 id: 0
 lang: en-us
 page: '295'
-step: ''
+step: ele
 subtitle: ''
 tags: []
 title: YOU STOLE MY HEART

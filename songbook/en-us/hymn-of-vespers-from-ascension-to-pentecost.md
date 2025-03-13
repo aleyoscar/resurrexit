@@ -3,7 +3,7 @@ capo: 0
 id: 0
 lang: en-us
 page: '18'
-step: ''
+step: lit
 subtitle: ''
 tags:
 - hym

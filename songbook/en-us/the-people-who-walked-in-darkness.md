@@ -3,7 +3,7 @@ capo: 0
 id: 0
 lang: en-us
 page: '86'
-step: ''
+step: pre
 subtitle: ''
 tags: []
 title: THE PEOPLE WHO WALKED IN DARKNESS
