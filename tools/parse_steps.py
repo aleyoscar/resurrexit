@@ -46,6 +46,7 @@ else:
 					print(f"Tagging {psalm['title']} as {latin}")
 					psalm['step'] = latin
 					frontmatter.dump(psalm, lyric)
+					lib.end_file_with(lyric, "\n")
 					count += 1
 			else:
 				print(f"Psalm missing page frontmatter: {lyric}")
