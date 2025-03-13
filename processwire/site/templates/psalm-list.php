@@ -106,6 +106,11 @@
 				<li><a class="flex align-center font-small" href="https://git.aleyoscar.com/emet/resurrexit" target="_blank">
 					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-git"/></svg>
 					<?php echo $page->label_source; ?></a></li>
+				<?php if($page->editable()): ?>
+				<li><a class="flex align-center font-small" href="<?php echo $page->editUrl(); ?>">
+					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-pencil"/></svg>
+					<?php echo $page->label_edit; ?></a></li>
+				<?php endif; ?>
 			</ul>
 		</footer>
 	</aside>
