@@ -64,7 +64,7 @@ GNU GPLv3
 | Catechumenate		| cat	| *				| *				|
 | Election			| ele	| *				| *				|
 | Liturgical		| lit	| *				| *				|
-| Other				| ali	| *				|				|
+| Bread				| con	| *				|				|
 | ---				| ---	| ---			| ---			|
 | Advent/Christmas	| nat	|				| *				|
 | Bread				| pan	| *				| *				|
