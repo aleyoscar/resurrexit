@@ -3,8 +3,8 @@ capo: 0
 id: 194
 lang: es-es
 page: '194'
-step: ''
+step: lit
 subtitle: ''
 tags: []
-title: PLEGARIA EUCARÍSTICA 11
+title: PLEGARIA EUCARÍSTICA II - MODELO I
 ---
