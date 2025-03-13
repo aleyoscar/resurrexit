@@ -119,5 +119,5 @@ for language in languages:
 		count += 1
 	print(f"Parsed {language_count} lyric files for {language}")
 	with open(csv_path, 'w') as f:
-		f.write("\n".join(csv_string))
+		f.write("\n".join(csv_string) + "\n")
 print(f"Parsed {count} lyric files total")
