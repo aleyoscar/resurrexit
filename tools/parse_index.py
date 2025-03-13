@@ -41,11 +41,12 @@ else:
 			if match:
 				try:
 					id = int(match.group(1)) # Set ID
-					page = f"{match.group(1)}{match.group(2)}"
+					if match.group(2): page = f"{match.group(1)}{match.group(2)}"
+					else: page = str(id)
 				except ValueError:
 					print(f"\n<<ERROR>> Cannot convert {match.group(1)} to int on line {line_count}\n")
 					continue
-				title = re.sub(r" (\d+$)", "", title).strip() # Remove page number
+				title = re.sub(r" (\d+)(-\d+)?$", "", title).strip() # Remove page number
 			if title and id:
 				hyphenized = lib.hyphenize(title)
 				psalm_file = os.path.join("songbook", lang, f"{hyphenized}.md")
