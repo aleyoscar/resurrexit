@@ -3,7 +3,7 @@ capo: 0
 id: 36
 lang: es-es
 page: '36'
-step: ''
+step: pre
 subtitle: ''
 tags:
 - vin
