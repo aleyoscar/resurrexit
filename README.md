@@ -1,6 +1,6 @@
 # [Resurrexit](https://resurrexit.app)
 
-> v0.1.0
+> v0.2.0
 
 A ProcessWire multi-lingual songbook and tool set web app for the Neocatechumenal Way.
 
@@ -47,6 +47,10 @@ The lyrics, chords, steps and tags are sourced from the 2021 version of the 'He 
 All Spanish psalm audio is sourced predominantly from the [Centro Neocatechumenal de Madrid Website](https://cantos.cnc.madrid) with some audio from the [Cantor del Camino YouTube](https://www.youtube.com/@CantorDelCamino) page.
 
 The lyrics, chords, steps and tags are sourced from the 2023 version of the 'Resucitó - Cantos Para Las Comunidades Neocatecumenales' book.
+
+#### Icons
+
+Icons from [Bootstrap](https://icons.getbootstrap.com/)
 
 ### Contribute
 
