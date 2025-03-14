@@ -139,10 +139,17 @@
 		</div>
 		<div class="psalm-list flex flex-column">
 			<?php foreach($page->children as $child) {
-				if ($child->template == 'psalm') { ?>
+				if ($child->template == 'psalm') {
+					$tags = '';
+					foreach($child->psalm_tags as $tag) $tags .= ' ' . $page->name . '-' . $tag->value . ' ' . $tag->value;
+					foreach($page->siblings as $sibling) {
+						foreach($sibling->children('psalm_id=' . $child->psalm_id) as $c) {
+							foreach($c->psalm_tags as $tag) $tags .= ' ' . $tag->value;
+						}
+					}
+					?>
 			<a id="p<?php echo $child->psalm_id; ?>"
-				class="psalm-item flex flex-column p-md <?php echo $child->psalm_step->value; ?>
-				<?php foreach($child->psalm_tags as $tag) echo $page->name . '-' . $tag->value . ' '; ?>"
+				class="psalm-item flex flex-column p-md <?php echo $child->psalm_step->value . $tags; ?>"
 				href="<?php echo $child->url; ?>" data-search="">
 				<span class="font-bold color-primary"><?php echo $child->title; ?></span>
 				<span class="font-small color-secondary"><?php echo $child->psalm_subtitle; ?></span>
