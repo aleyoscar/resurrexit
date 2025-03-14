@@ -87,6 +87,15 @@
 						if (!$found) $tags[] = $tag;
 					}
 				}
+				if ($page->name == 'en-us') {
+					usort($tags, function($a, $b) {
+						return strcmp($a->filter_en_us, $b->filter_en_us);
+					});
+				} else if ($page->name == 'es-es') {
+					usort($tags, function($a, $b) {
+						return strcmp($a->filter_es_es, $b->filter_es_es);
+					});
+				}
 				foreach($tags as $tag) { ?>
 					<button class="btn-link flex align-center svg-active-sm tag-btn" type="button" data-filter="<?php echo $tag->filter_data; ?>">
 						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-check-circle-fill"/></svg>
