@@ -8,6 +8,18 @@
 // See the Markup Regions documentation:
 // https://processwire.com/docs/front-end/output/markup-regions/
 
+$audio_sources = [];
+foreach($page->parent->audio_order as $ao) {
+	$ao->audio_url = $page->parent->audio_source . '/' . $page->name . '_' . $ao->audio_psalmist_short . '.mp3';
+	$check_headers = @get_headers($ao->audio_url);
+	if($check_headers && strpos($check_headers[0], '200')) $audio_sources[] = $ao;
+}
+
+$audio_langs = [];
+foreach($page->parent->parent->children as $child) {
+	foreach($child->children('psalm_id=' . $page->psalm_id) as $psalm) $audio_langs[] = $psalm;
+}
+
 ?>
 
 <div id="wrapper" class="wrapper">
@@ -15,14 +27,8 @@
 		<h1><a class="link-color-foreground flex align-center" href="<?php echo $page->parent->url; ?>">
 			<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-arrow-left"/></svg>
 		</a></h1>
-		<?php
-		$src = '';
-		if($page->psalm_audio) {
-			$check_headers = @get_headers($page->psalm_audio);
-			if($check_headers && strpos($check_headers[0], '200')) $src = $page->psalm_audio;
-		} ?>
-		<div class="eplayer" data-src="<?php echo $src; ?>" data-type="audio/mp3">
-			<?php if(!$src) echo "<p class='no-audio text-center color-foreground'>" . $page->parent->label_noaudio . "</p>"; ?>
+		<div class="eplayer" data-src="<?php if(count($audio_sources)) echo $audio_sources[0]->audio_url; ?>" data-type="audio/mp3">
+			<?php if(!count($audio_sources)) echo "<p class='no-audio text-center color-foreground'>" . $page->parent->label_noaudio . "</p>"; ?>
 		</div>
 		<button class="aside-btn btn-icon flex align-center link-color-foreground" type="button">
 			<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-three-dots"/></svg>
@@ -37,13 +43,25 @@
 					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-x-lg"/></svg>
 				</button>
 			</div>
+			<?php ?>
 			<hr class="mt-neg-md">
 			<h4 class="color-grey-light"><?php echo $page->parent->label_language; ?></h4>
 			<ul class="flex flex-column">
-				<?php foreach($page->parent->parent->children as $child) { ?>
-				<li><a class="flex align-center btn-link <?php if($page->parent->id == $child->id) echo 'active'; ?>" href="<?php echo $child->url; ?>"><?php echo $child->language_name; ?></a></li>
+				<?php foreach($audio_langs as $al) { ?>
+				<li><a class="flex align-center btn-link <?php if($al->parent->id == $page->parent->id) echo 'active'; ?>" href="<?php echo $al->url; ?>"><?php echo $al->parent->language_name; ?></a></li>
 				<?php } ?>
 			</ul>
+			<?php if (count($audio_sources) > 1) { ?>
+			<hr>
+			<h4 class="color-grey-light"><?php echo $page->parent->label_audio_source; ?></h4>
+			<ul class="flex flex-column">
+				<?php foreach($audio_sources as $as) { ?>
+				<li><a class="flex align-center btn-link audio-source-btn <?php if($as == $audio_sources[0]) echo 'active'; ?>"
+					data-source="<?php echo $as->audio_url; ?>">
+					<?php echo $as->audio_psalmist_long; ?></a></li>
+				<?php } ?>
+			</ul>
+			<?php } ?>
 		</nav>
 		<footer class="flex flex-column px-md gap-md pb-lg">
 			<ul class="flex justify-center align-center gap-md mt-md">

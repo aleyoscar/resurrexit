@@ -6,14 +6,18 @@ const sortBtns = document.querySelectorAll('.sort-btn');
 const eplayer = document.querySelector('.eplayer');
 const searchForm = document.querySelector('#search-form');
 const contactForm = document.querySelector('#contact-form');
+const sourceBtns = document.querySelectorAll('.audio-source-btn');
+
+let player = null;
 
 categoryBtns.forEach(item => item.addEventListener('click', filterCategory));
 tagBtns.forEach(item => item.addEventListener('click', filterTag));
 sortBtns.forEach(item => item.addEventListener('click', toggleSort));
 dropdownMenus.forEach(dropdown => dropdown.addEventListener('click', toggleDropdown));
 dropdownMenus.forEach(dropdown => dropdown.addEventListener('focusout', closeDropdown));
+sourceBtns.forEach(item => item.addEventListener('click', changeSource));
 if(eplayer && eplayer.dataset.src != '') {
-	const player = new EPlayer();
+	player = new EPlayer();
 }
 if(searchForm) searchForm.addEventListener('submit', filterSearch);
 // if(contactForm) contactForm.addEventListener('submit', sendEmail);
@@ -179,6 +183,17 @@ function toggleSort(e) {
 	sortBtns.forEach((b) => b.classList.toggle('hide'));
 }
 
+function changeSource(e) {
+	if (player) {
+		player.load(e.target.dataset.source, 'audio/mp3');
+		sourceBtns.forEach(btn => {
+			btn.classList.remove('active');
+			if (btn.dataset.source == e.target.dataset.source) btn.classList.add('active');
+		});
+		closeAside(null);
+	}
+}
+
 // function sendEmail(e) {
 // 	e.preventDefault();
 // 	let contactUrl = contactForm.getAttribute('action');
@@ -208,7 +223,7 @@ function toggleSort(e) {
 // 			console.error(error);
 // 		}
 // 	})();
-// 
+//
 // async function sendEmail(e) {
 // 	e.preventDefault();
 // 	let contactUrl = contactForm.getAttribute('action');
