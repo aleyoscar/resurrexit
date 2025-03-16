@@ -219,6 +219,7 @@ svg {
 	background-color: transparent;
 	border: none;
 	color: var(--secondary);
+	cursor: pointer;
 	padding: 0 var(--p-sm);
 }
 
