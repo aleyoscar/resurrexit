@@ -1,3 +1,4 @@
 .ddev
 songbook/*/images
+songbook/*/audio
 __pycache__
