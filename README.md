@@ -1,6 +1,6 @@
 # [Resurrexit](https://resurrexit.app)
 
-> v0.3.0
+> v1.0.0
 
 A ProcessWire multi-lingual songbook and tool set web app for the Neocatechumenal Way.
 

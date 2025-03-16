@@ -1,4 +1,4 @@
-const cacheName = 'ressurexit-v0.5.2';
+const cacheName = 'ressurexit-v1.0.0';
 
 self.addEventListener('install', (e) => {
 	console.log('[Service Worker] Install');
