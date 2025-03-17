@@ -1,4 +1,0 @@
-2025-02-28 16:42:03	oscarale	https://resurrexit.ddev.site/admin/module/installConfirm?name=LanguageTabs	Module is not currently installable (in /wire/modules/Process/ProcessModule/ProcessModule.module line 2163)
-2025-02-28 16:42:08	oscarale	https://resurrexit.ddev.site/admin/module/installConfirm?name=LanguageSupportPageNames	Module is not currently installable (in /wire/modules/Process/ProcessModule/ProcessModule.module line 2163)
-2025-02-28 16:42:11	oscarale	https://resurrexit.ddev.site/admin/module/installConfirm?name=LanguageSupportFields	Module is not currently installable (in /wire/modules/Process/ProcessModule/ProcessModule.module line 2163)
-2025-03-12 16:28:01	oscarale	https://resurrexit.ddev.site/admin/setup/field/save?id=102	FieldtypeRepeater does not currently support field cloning. (in /wire/modules/Fieldtype/FieldtypeRepeater/FieldtypeRepeater.module line 1821)
