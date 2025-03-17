@@ -5,7 +5,6 @@ const dropdownMenus = document.querySelectorAll('.dropdown');
 const sortBtns = document.querySelectorAll('.sort-btn');
 const eplayer = document.querySelector('.eplayer');
 const searchForm = document.querySelector('#search-form');
-const contactForm = document.querySelector('#contact-form');
 const sourceBtns = document.querySelectorAll('.audio-source-btn');
 
 let player = null;
@@ -20,7 +19,6 @@ if(eplayer && eplayer.dataset.src != '') {
 	player = new EPlayer();
 }
 if(searchForm) searchForm.addEventListener('submit', filterSearch);
-// if(contactForm) contactForm.addEventListener('submit', sendEmail);
 
 var categories = [];
 var tags = [];
@@ -193,61 +191,3 @@ function changeSource(e) {
 		closeAside(null);
 	}
 }
-
-// function sendEmail(e) {
-// 	e.preventDefault();
-// 	let contactUrl = contactForm.getAttribute('action');
-// 	const contactName = contactForm.querySelector('#name');
-// 	const contactEmail = contactForm.querySelector('#email');
-// 	const contactMessage = contactForm.querySelector('#message');
-// 	(async () => {
-// 		console.log("Sending email: " + contactUrl);
-// 		try {
-// 			contactUrl += "?contact_name=" + contactName.value;
-// 			contactUrl += "&contact_email=" + contactEmail.value;
-// 			contactUrl += "&contact_message=" + contactMessage.value;
-// 			const response = await fetch(contactUrl, {
-// 				headers: {
-// 					'X-Requested-With': 'XMLHttpRequest'
-// 				}
-// 			});
-// 			if (response.status === 200) {
-// 				const result = await response.json();
-// 				console.log("Email sent!");
-// 				console.log(result);
-// 			} else {
-// 				console.log(response.status);
-// 				console.log(response.statusText);
-// 			}
-// 		} catch (error) {
-// 			console.error(error);
-// 		}
-// 	})();
-//
-// async function sendEmail(e) {
-// 	e.preventDefault();
-// 	let contactUrl = contactForm.getAttribute('action');
-// 	try {
-// 		const formData = new FormData(contactForm);
-// 		const response = await fetch(contactUrl, {
-// 			method: "POST",
-// 			body: formData,
-// 		});
-// 		const result = await response.json();
-// 		console.log(result);
-// 		// if(result.success) {
-// 		// 	contactForm.classList.add('hide');
-// 		// 	document.querySelector('.message-sent').classList.remove('hide');
-// 		// } else {
-// 		// 	contactForm.classList.add('hide');
-// 		// 	if(result.error) {
-// 		// 		document.querySelector('.site-error-' + result.error).classList.remove('hide');
-// 		// 		if(result.error == 202) contactForm.classList.remove('hide');
-// 		// 	} else document.querySelector('.site-error-201').classList.remove('hide');
-// 		// }
-// 	} catch(error) {
-// 		console.error(error)
-// 		contactForm.classList.add('hide');
-// 		document.querySelector('.site-error-201').classList.remove('hide');
-// 	}
-// }
