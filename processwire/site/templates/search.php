@@ -13,7 +13,8 @@ if($config->ajax) {
 	$q = $sanitizer->selectorValue($input->get->q);
 	$results = $pages->find('search_cache%=' . $q); // Find all pages in query
 	header("Content-type: application/json");  // Output results as JSON
-	echo $results->toJSON();
+	$data = $results->explode(['title', 'psalm_id']);
+	echo wireEncodeJSON($data);
 	return $this->halt();
 }
 
