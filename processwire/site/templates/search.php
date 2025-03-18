@@ -10,11 +10,17 @@
 
 if($config->ajax) {
 	// Return search results in JSON format
-	$q = $sanitizer->selectorValue($input->get->q);
-	$results = $pages->find('search_cache%=' . $q); // Find all pages in query
+	$se = $modules->get('SearchEngine');
+	$query = $se->find($input->get->q);
+	$json = $se->renderResultsJSON([
+		'results_json_fields' => [
+			'title' => 'title',
+			'psalm_id' => 'psalm_id'
+		],
+		'results_json_options' => JSON_PRETTY_PRINT,
+	], $query);
 	header("Content-type: application/json");  // Output results as JSON
-	$data = $results->explode(['title', 'psalm_id']);
-	echo wireEncodeJSON($data);
+	echo $json;
 	return $this->halt();
 }
 

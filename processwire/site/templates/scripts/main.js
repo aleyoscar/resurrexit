@@ -74,8 +74,8 @@ function filterSearch(e) {
 					if (response.status === 200) {
 						const found = await response.json();
 						console.log(found);
-						if (found.length > 0) {
-							found.forEach((p) => searched.push("p" + p.psalm_id));
+						if (found.count > 0) {
+							found.results.forEach((p) => searched.push("p" + p.psalm_id));
 							search.placeholder = search.dataset.search;
 							filter();
 							results = true;
