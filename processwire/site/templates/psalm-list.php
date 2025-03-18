@@ -158,4 +158,6 @@
 		</div>
 		<p class="no-psalms color-secondary hide"><?php echo $page->label_nomatch; ?></p>
 	</main>
+	
+	<div class="overlay fullscreen hide close-aside bg-secondary"></div>
 </div>
