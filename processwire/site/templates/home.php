@@ -20,7 +20,7 @@
 	<div class="flex flex-column gap-md nowrap">
 		<?php if($page->hasChildren): ?>
 		<ul class="flex flex-column align-center">
-			<?php echo $page->children->each("<li><a class='btn btn-foreground w-xs text-center' href='{url}'>{language_name}</a></li>"); ?>
+			<?php echo $page->children("template=psalm-list")->each("<li><a class='btn btn-foreground w-xs text-center' href='{url}'>{language_name}</a></li>"); ?>
 		</ul>
 		<?php endif; ?>
 	</div>

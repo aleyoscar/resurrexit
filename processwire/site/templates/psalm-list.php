@@ -75,7 +75,7 @@
 			<div class="flex">
 				<?php
 				$tags = [];
-				foreach($page->parent->children as $child) {
+				foreach($page->parent->children("template=psalm-list") as $child) {
 					foreach($child->filter_tags as $tag) {
 						$found = False;
 						foreach($tags as $t) {
@@ -158,6 +158,6 @@
 		</div>
 		<p class="no-psalms color-secondary hide"><?php echo $page->label_nomatch; ?></p>
 	</main>
-	
+
 	<div class="overlay fullscreen hide close-aside bg-secondary"></div>
 </div>
