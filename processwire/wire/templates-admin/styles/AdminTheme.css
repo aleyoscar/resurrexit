@@ -37,3 +37,12 @@ img.pw-align-center, img.align_center, img.align-center, figure.pw-align-center,
   display: none;
 }
 
+/****************************************************************************************
+ * User defined overrides
+ *
+ */
+
+textarea[name^="psalm_lyrics"] {
+	font-family: monospace !important;
+	height: 100vh !important;
+}
