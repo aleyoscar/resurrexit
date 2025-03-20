@@ -4,7 +4,7 @@ id: 1
 lang: es-es
 page: '1'
 step: pre
-subtitle: Secuencia de Pascua
+subtitle: Secuencia de Pascua - Himno lat. «Victimae paschali laudes»
 tags:
 - pas
 - pen
@@ -13,10 +13,10 @@ title: A LA VÍCTIMA PASCUAL
 
 [S]
 
-La-               La7
+Lam               La7
 A la víctima pascual
 ofrecemos hoy
-                   Re-9
+                   Rem9
 el sacrificio de alabanza.
 Fa7aum                       Mi
 El cordero ha redimido el rebaño,
@@ -26,7 +26,7 @@ el inocente ha reconciliado
 los pecadores al Padre.
 La7
 Muerte y vida se han enfrentado
-                 Re-9
+                 Rem9
 en un prodigioso duelo
 Fa7                          Mi
 el autor de la Vida estaba muerto,
@@ -54,11 +54,11 @@ Fa                    Mi
 Y NOS PRECEDE EN GALILEA,
 Fa                    Mi
 Y NOS PRECEDE EN GALILEA.
-Re-        Mi
+Rem        Mi
 SÍ QUE ES CIERTO,
 Fa               Mi
 CRISTO HA RESUCITADO.
-Re-        Mi
+Rem        Mi
 SÍ QUE ES CIERTO,
 Fa               Mi
 CRISTO HA RESUCITADO.
