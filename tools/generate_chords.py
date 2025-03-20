@@ -11,7 +11,7 @@ with open("settings.json") as f:
 notes = {
 	"es-es": {
 		"base": ["La", "Si", "Do", "Re", "Mi", "Fa", "Sol"],
-		"exts": ['', '-', '7', '-7', '-9', '7aum', 'b', 'b7', '#', '#7', '#-']
+		"exts": ['', 'm', '7', 'm7', 'm9', '7aum', 'b', 'b7', '#', '#7', '#m']
 	},
 	"en-us": {
 		"base": ["A", "B", "C", "D", "E", "F", "G"],

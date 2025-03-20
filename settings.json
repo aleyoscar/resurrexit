@@ -204,9 +204,12 @@
             "[CANTOR CONDENSED]": "psalmista concretus",
             "[PC]": "psalmista concretus",
             "[CC]": "psalmista concretus",
+			"[ASSEMBLY]": "comitium",
             "[A]": "comitium",
-            "[ASSEMBLY]": "comitium",
-            "[REPEAT ASSEMBLY]": "repetere-comitium"
+			"[REPEAT ASSEMBLY]": "repetere-comitium",
+			"[RA]": "repetere-comitium",
+			"[BISA]": "repetere-comitium",
+			"[BIS]": "repetere-comitium"
         },
         "chords": [
             [
