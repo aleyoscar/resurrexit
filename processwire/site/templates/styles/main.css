@@ -493,6 +493,8 @@ p.hide,
 .mb-sm { margin-bottom: var(--p-sm); }
 .mb-md { margin-bottom: var(--p-md); }
 
+.bl-md { border-left: var(--p-sm) solid var(--grey-light); }
+
 .w-xs { width: var(--g-xs); }
 .w-100 {
 	width: 100%;
