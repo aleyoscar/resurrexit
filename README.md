@@ -1,6 +1,6 @@
 # [Resurrexit](https://resurrexit.app)
 
-> v1.2.0
+> v1.3.0
 
 A ProcessWire multi-lingual songbook and tool set web app for the Neocatechumenal Way.
 
@@ -38,13 +38,13 @@ I have created this repository and opened it to the public for two reasons: Firs
 
 #### English - US
 
-All English psalm audio is sourced from the [East of the Rhine Website](http://east-of-rhine.kaniol.org/neocat/neo-out.htm) by Konrad Anton Aniol. While I am currently unsure who the recordings are from, these audio files were the ones directed to me by my catechists and as such should be used to learn the English psalms only with permission from your own catechist, until the time comes when there is a central verified source for the English US psalms.
+All English psalm audio is sourced from my catechists, which includes recordings from Francesco, Giuseppe, Emanuele, Osvaldo, and some unknown cantors. These audio files were the ones directed to me and as such should be used to learn the English psalms only with permission from your own catechists, until the time comes when there is a central verified source for the English US psalms.
 
-The lyrics, chords, steps and tags are sourced from the 2021 version of the 'He Rose From Death - Songs for the Neocatechumenal Communities' book.
+The lyrics, chords, steps and tags are sourced from the 2019 version of the 'He Rose From Death - Songs for the Neocatechumenal Communities' book.
 
 #### Spanish - ES
 
-All Spanish psalm audio is sourced predominantly from the [Centro Neocatechumenal de Madrid Website](https://cantos.cnc.madrid) with some audio from the [Cantor del Camino YouTube](https://www.youtube.com/@CantorDelCamino) page.
+All Spanish psalm audio is sourced predominantly from the [Centro Neocatechumenal de Madrid Website](https://cantos.cnc.madrid) with some audio from the [Cantor del Camino YouTube](https://www.youtube.com/@CantorDelCamino) page to fill in some gaps.
 
 The lyrics, chords, steps and tags are sourced from the 2023 version of the 'Resucitó - Cantos Para Las Comunidades Neocatecumenales' book.
 
