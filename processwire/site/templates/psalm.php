@@ -20,6 +20,63 @@ foreach($page->parent->parent->children as $child) {
 	foreach($child->children('psalm_id=' . $page->psalm_id) as $psalm) $audio_langs[] = $psalm;
 }
 
+$chords = [];
+
+foreach(explode("|", $page->parent->chord_base) as $base) {
+	$chords[] = $base;
+	foreach(explode("|", $page->parent->chord_suffix) as $suffix) {
+		$chords[] = $base . $suffix;
+	}
+}
+
+$sections = [];
+
+foreach($page->parent->sections as $section) {
+	$sections[$section->section_code] = $section->section_class;
+}
+
+$started_chords = false;
+$chord_line = "";
+$lyric = [[]];
+$column = 0;
+$section = -1;
+foreach (explode("\n", $page->psalm_lyrics) as $line) {
+	$stripped = preg_replace('/\s+/', ' ', trim($line));
+	if ($stripped) {
+		if (array_key_exists($stripped, $sections)) { // START SECTION
+			$section++;
+			$lyric[$column][] = [
+				"class" => $sections[$stripped],
+				"lines" => []
+			];
+		} elseif (empty(array_diff(explode(" ", $stripped), $chords)) && !$started_chords) {
+			$started_chords = true;
+			$chord_line = $line;
+		} elseif ($stripped === "---") {
+			$lyric[] = [];
+			$column++;
+			$section = -1;
+		} else {
+			if ($started_chords) {
+				$started_chords = false;
+				$chord_line = rtrim($chord_line);
+				$limit = 0;
+				while ($chord_line && $limit < 10) {
+					$i = strrpos($chord_line, " ") ? strrpos($chord_line, " ") + 1 : 0;
+					$stripped = mb_substr($stripped, 0, $i, 'UTF-8') .
+						"<span class='chord'>" . mb_substr($chord_line, $i, null, 'UTF-8') . "</span>" .
+						mb_substr($stripped, $i, null, 'UTF-8');
+					$chord_line = rtrim(mb_substr($chord_line, 0, $i, 'UTF-8'));
+					$limit++;
+				}
+			}
+			$lyric[$column][$section]["lines"][] = $stripped;
+		}
+	}
+}
+
+
+
 ?>
 
 <div id="wrapper" class="wrapper">
@@ -85,7 +142,17 @@ foreach($page->parent->parent->children as $child) {
 		<h3 class="color-secondary text-center"><?php echo $page->psalm_subtitle; ?></h3>
 		<?php if($page->psalm_capo) echo "<p class='capo'>Capo " . $page->psalm_capo . "</p>"; ?>
 		<div class="lyrics mt-md">
-			<?php echo $page->psalm_html; ?>
+			<?php foreach($lyric as $c) {
+				echo "<div class='column'>";
+				foreach($c as $s) {
+					echo "<div class='section " . $s['class'] . "'>";
+					foreach($s["lines"] as $l) {
+						echo "<p class='line'>$l</p>";
+					}
+					echo "</div>";
+				}
+				echo "</div>";
+			} ?>
 		</div>
 	</main>
 
