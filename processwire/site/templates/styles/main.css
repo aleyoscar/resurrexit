@@ -301,7 +301,7 @@ p.hide,
 	top: var(--p-lg);*/
 }
 
-.lyrics {
+.leaf {
 	display: flex;
 	gap: var(--p-sm);
 }
@@ -470,6 +470,8 @@ p.hide,
 	top: 0;
 }
 
+.float-right { float: right; }
+
 .p-md { padding: var(--p-md); }
 .p-lg { padding: var(--p-lg); }
 .px-sm { padding-left: var(--p-sm); padding-right: var(--p-sm); }
@@ -494,6 +496,7 @@ p.hide,
 .mb-md { margin-bottom: var(--p-md); }
 
 .bl-md { border-left: var(--p-sm) solid var(--grey-light); }
+.bt-xs { border-top: 1px solid var(--grey-light); }
 
 .w-xs { width: var(--g-xs); }
 .w-100 {
@@ -553,8 +556,12 @@ p.hide,
 		margin-left: 0;
 	}
 
-	.lyrics {
+	.leaf {
 		flex-direction: column;
+	}
+
+	.lyric > div:nth-child(even) {
+		border-top: 1px solid var(--grey-light);
 	}
 
 	textarea {

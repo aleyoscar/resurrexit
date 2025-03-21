@@ -8,6 +8,8 @@
 // See the Markup Regions documentation:
 // https://processwire.com/docs/front-end/output/markup-regions/
 
+// Check what audio sources are available
+
 $audio_sources = [];
 foreach($page->parent->audio_order as $ao) {
 	$ao->audio_url = $page->parent->audio_source . '/' . $page->name . '_' . $ao->audio_psalmist_short . '.mp3';
@@ -15,13 +17,16 @@ foreach($page->parent->audio_order as $ao) {
 	if($check_headers && strpos($check_headers[0], '200')) $audio_sources[] = $ao;
 }
 
+// Find this psalm in other languages
+
 $audio_langs = [];
 foreach($page->parent->parent->children as $child) {
 	foreach($child->children('psalm_id=' . $page->psalm_id) as $psalm) $audio_langs[] = $psalm;
 }
 
-$chords = [];
+// Setup chord array by combining each chord base with each chord suffix (La + #m)
 
+$chords = [];
 foreach(explode("|", $page->parent->chord_base) as $base) {
 	$chords[] = $base;
 	foreach(explode("|", $page->parent->chord_suffix) as $suffix) {
@@ -29,34 +34,47 @@ foreach(explode("|", $page->parent->chord_base) as $base) {
 	}
 }
 
-$sections = [];
+// Setup sections array
 
+$sections = [];
 foreach($page->parent->sections as $section) {
 	$sections[$section->section_code] = $section->section_class;
 }
 
+// Generate lyrics
+
 $started_chords = false;
 $chord_line = "";
-$lyric = [[]];
+$lyric = [[[]]];
+$leaf = 0;
 $column = 0;
 $section = -1;
+// echo "<pre>";
+// var_dump($sections);
 foreach (explode("\n", $page->psalm_lyrics) as $line) {
 	$stripped = preg_replace('/\s+/', ' ', trim($line));
 	if ($stripped) {
+		// echo "\n" . $stripped;
 		if (array_key_exists($stripped, $sections)) { // START SECTION
+			// echo " | Found section: " . $sections[$stripped];
 			$section++;
-			$lyric[$column][] = [
+			$lyric[$leaf][$column][] = [
 				"class" => $sections[$stripped],
 				"lines" => []
 			];
-		} elseif (empty(array_diff(explode(" ", $stripped), $chords)) && !$started_chords) {
+		} elseif (empty(array_diff(explode(" ", $stripped), $chords)) && !$started_chords) { // START CHORDS
 			$started_chords = true;
 			$chord_line = $line;
-		} elseif ($stripped === "---") {
-			$lyric[] = [];
+		} elseif ($stripped === "---") { // START COLUMN
+			$lyric[$leaf][] = [];
 			$column++;
 			$section = -1;
-		} else {
+		} elseif ($stripped === "------") { // START LEAF
+			$lyric[] = [[]];
+			$leaf++;
+			$column = 0;
+			$section = -1;
+		} else { // PARSE LINE
 			if ($started_chords) {
 				$started_chords = false;
 				$chord_line = rtrim($chord_line);
@@ -70,11 +88,15 @@ foreach (explode("\n", $page->psalm_lyrics) as $line) {
 					$limit++;
 				}
 			}
-			$lyric[$column][$section]["lines"][] = $stripped;
+			foreach ($sections as $key => $s) {
+				$i = strrpos($stripped, $key);
+				if ($i) $stripped = str_replace($key, "<span class='float-right " . $s . "'>", $stripped) . "</span>";
+			}
+			$lyric[$leaf][$column][$section]["lines"][] = $stripped;
 		}
 	}
 }
-
+// echo "</pre>";
 
 
 ?>
@@ -141,13 +163,18 @@ foreach (explode("\n", $page->psalm_lyrics) as $line) {
 		<h2 class="color-primary text-center"><?php echo $page->title; ?></h2>
 		<h3 class="color-secondary text-center"><?php echo $page->psalm_subtitle; ?></h3>
 		<?php if($page->psalm_capo) echo "<p class='capo'>Capo " . $page->psalm_capo . "</p>"; ?>
-		<div class="lyrics mt-md">
-			<?php foreach($lyric as $c) {
-				echo "<div class='column'>";
-				foreach($c as $s) {
-					echo "<div class='section " . $s['class'] . "'>";
-					foreach($s["lines"] as $l) {
-						echo "<p class='line'>$l</p>";
+		<div class="lyrics">
+			<?php foreach ($lyric as $key => $l) {
+				if ($key > 0) echo "<div class='leaf mt-md py-lg bt-xs'>";
+				else echo "<div class='leaf mt-md pb-lg'>";
+				foreach ($l as $c) {
+					echo "<div class='column'>";
+					foreach ($c as $s) {
+						echo "<div class='section " . $s['class'] . "'>";
+						foreach ($s["lines"] as $line) {
+							echo "<p class='line'>$line</p>";
+						}
+						echo "</div>";
 					}
 					echo "</div>";
 				}
