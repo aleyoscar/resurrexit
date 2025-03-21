@@ -4,20 +4,20 @@ id: 2
 lang: es-es
 page: '2'
 step: pre
-subtitle: 2o Corintios 6,3ss
+subtitle: 2o Co 6,3ss
 tags: []
 title: A NADIE DEMOS OCASIÓN DE TROPIEZO
 ---
 
 [S]
 
-La-                                   Re-
+Lam                                   Rem
 Hermanos, a nadie demos ocasión de tropiezo,
-    Mi                                     La-
+    Mi                                     Lam
 hermanos, vivamos aceptando las tribulaciones,
-Re-                        Mi
+Rem                        Mi
 necesidades, angustias y fatigas;
-Re-                                Mi
+Rem                                Mi
 viviendo en pureza, paciencia y bondad;
                Fa                       Mi
 en el Espíritu Santo, y en el poder de Dios;
@@ -28,22 +28,22 @@ las de la derecha y las de la izquierda.
 
 [A]
 
-La-
+Lam
 HERMANOS, A NADIE DEMOS
-               Re-
+               Rem
 OCASIÓN DE TROPIEZO,
     Mi
 HERMANOS, VIVAMOS ACEPTANDO
-            La-
+            Lam
 LAS TRIBULACIONES,
-Re-                        Mi
+Rem                        Mi
 NECESIDADES, ANGUSTIAS Y FATIGAS.
 
 [S]
 
-Re-                     Mi
+Rem                     Mi
 En calumnias y en buena fama,
-Re-              Mi           Re-
+Rem              Mi           Rem
 en gloria e ignominia; como pobres,
                         Mi
 aunque enriqueciendo a muchos;
@@ -54,42 +54,42 @@ aunque lo poseemos todo.
 
 [A]
 
-La-
+Lam
 HERMANOS, A NADIE DEMOS ...
 
 ---
 
 [S]
 
-La7                                  Re-
+La7                                  Rem
 ¡Hermanos!, os hemos hablado con franqueza;
                            Mi
 os hemos hablado con la verdad.
-Re-                                    Mi
+Rem                                    Mi
 ¡No unciros al yugo desigual con los paganos!
-Re-                                         Mi
+Rem                                         Mi
 ¿Qué participación hay entre el fiel y el infiel?
                                   Fa
 ¿Qué unión entre el santuario de Dios
                       Mi
 y el santuario de los ídolos?
-Re-                           Mi
+Rem                           Mi
 Porque somos el santuario de Dios.
 
 [A]
 
-La-
+Lam
 HERMANOS, A NADIE DEMOS ...
 
 [S]
 
-La7                            Re-
+La7                            Rem
 Tengo plena confianza en el hablaros;
                             Mi
 porque estoy orgulloso de vosotros.
-Re-                                    Mi
+Rem                                    Mi
 ¡No unciros al yugo desigual con los paganos!
-Re-                                         Mi
+Rem                                         Mi
 ¿Qué participación hay entre el fiel y el infiel?
                                   Fa
 ¿Qué unión entre el santuario de Dios
@@ -98,12 +98,12 @@ y el santuario de los ídolos?
 
 [A]
 
-La-
+Lam
 HERMANOS, A NADIE DEMOS ...
 
 [S]
 
-Re-                        Mi
+Rem                        Mi
 En pureza, paciencia y bondad;
                Fa                       Mi
 en el Espíritu Santo, y en el poder de Dios.

@@ -12,13 +12,13 @@ title: A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN
 
 [S]
 
-Re-                                   La7
+Rem                                   La7
 A ti, Señor, se debe la alabanza, en Sión.
-                                    Re-
+                                    Rem
 A ti se te cumple el voto, en Jerusalén.
-Sol-                    Re-
+Solm                    Rem
 A ti que escuchas la oración
-              La7                Re-
+              La7                Rem
 viene todo mortal, viene todo mortal.
 
 [A]
@@ -32,17 +32,17 @@ VIENE TODO MORTAL.
 
 [A]
 
-Re-                             La7
+Rem                             La7
 Pesan sobre nosotros nuestros pecados,
-                           Re-
+                           Rem
 mas tú perdonas nuestras culpas.
                                     La7
 Dichoso el que tú eliges, el que tú llamas,
-              Re-
+              Rem
 vivirá en tus atrios.
-Sol-                    Re-
+Solm                    Rem
 A ti que escuchas la oración
-              La7                Re-
+              La7                Rem
 viene todo mortal, viene todo mortal.
 
 [A]
@@ -54,9 +54,9 @@ A TI QUE ESCUCHAS LA ORACIÓN ...
 
 [S]
 
-Re-                                 La7
+Rem                                 La7
 ¡Nos saciaremos de los bienes de tu casa,
-                     Re-
+                     Rem
 de la santidad de tu templo!
 
 Con los prodigios de tu amor
@@ -64,11 +64,11 @@ Con los prodigios de tu amor
 tú nos hablas,
 
 con los portentos de tu justicia
-      Re-
+      Rem
 nos respondes.
-Sol-                    Re-
+Solm                    Rem
 A ti que escuchas la oración
-              La7                Re-
+              La7                Rem
 viene todo mortal, viene todo mortal.
 
 [A]

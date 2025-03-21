@@ -4,7 +4,7 @@ id: 5
 lang: es-es
 page: '5'
 step: pre
-subtitle: Salmo 25 (24)
+subtitle: Sal 25 (24)
 tags:
 - com
 title: A TI, SEÑOR, LEVANTO MI ALMA
@@ -12,36 +12,36 @@ title: A TI, SEÑOR, LEVANTO MI ALMA
 
 [A]
 
-La-                     Mi
+Lam                     Mi
 A TI, SEÑOR, LEVANTO MI ALMA,
-      Re- Fa   Mi
+      Rem Fa   Mi
 A TI, OH DIOS MÍO.
 
 [S]
 
-La-             Mi
+Lam             Mi
 En ti confío, Señor,
-                    Re- Fa    Mi
+                    Rem Fa    Mi
 ¡no triunfen sobre mí mis enemigos!
-La-                     Mi
+Lam                     Mi
 Muéstrame, Señor, tu camino,
-               Re- Fa   Mi
+               Rem Fa   Mi
 enséñame, Señor, tu sendero.
 
 [A]
 
-La-                     Mi
+Lam                     Mi
 A TI, SEÑOR, LEVANTO MI ALMA ...
 
 [S]
 
-La-                        Mi
+Lam                        Mi
 Acuérdate, Señor, de tu ternura,
-                         Re- Fa      Mi
+                         Rem Fa      Mi
 de tu inmensa compasión, que son de siempre.
-La-                            Mi
+Lam                            Mi
 De mis pecados, Señor, no te acuerdes,
-                  Re- Fa          Mi
+                  Rem Fa          Mi
 acuérdate, Señor, que eres misericordia.
 Fa                           Mi
 Rocíame, Señor, de tu misericordia
@@ -50,5 +50,5 @@ Sumérgeme, Señor, en tu misericordia.
 
 [A]
 
-La-                     Mi
+Lam                     Mi
 A TI, SEÑOR, LEVANTO MI ALMA ...

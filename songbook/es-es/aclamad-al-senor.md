@@ -4,7 +4,7 @@ id: 9
 lang: es-es
 page: '9'
 step: pre
-subtitle: Salmo 100 (99)
+subtitle: Sal 100 (99)
 tags:
 - int
 title: ACLAMAD AL SEÑOR
@@ -12,18 +12,18 @@ title: ACLAMAD AL SEÑOR
 
 [A]
 
-Re-
+Rem
 ¡ACLAMAD AL SEÑOR,
-Sol-     Re-
+Solm     Rem
 TODA LA TIERRA,
     Fa       Sol         La
 SERVID AL SEÑOR CON ALEGRÍA!
 
 [S]
 
-      Re-   La7
+      Rem   La7
 ¡Acercaos a él
-                 Re-
+                 Rem
 con gritos de júbilo!
 
 [A]
@@ -32,9 +32,9 @@ con gritos de júbilo!
 
 [S]
 
-            Re-             La7
+            Rem             La7
 Porque el Señor es nuestro Dios,
-                 Re-
+                 Rem
 y nosotros su pueblo.
 
 [A]
@@ -43,9 +43,9 @@ y nosotros su pueblo.
 
 [S]
 
-   Re-              La7
+   Rem              La7
 ¡Entrad por sus puertas
-                  Re-
+                  Rem
 con himnos de alegría!
 
 [A]
@@ -54,9 +54,9 @@ con himnos de alegría!
 
 [S]
 
-     Re-        La7
+     Rem        La7
 ¡Bendecid su nombre,
-            Re-
+            Rem
 dándole gracias!
 
 [A]
@@ -65,9 +65,9 @@ dándole gracias!
 
 [S]
 
-            Re-      La7
+            Rem      La7
 Porque es bueno el Señor,
-                           Re-
+                           Rem
 es eterno su amor con nosotros.
 
 [A]

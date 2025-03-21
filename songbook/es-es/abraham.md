@@ -4,7 +4,7 @@ id: 8
 lang: es-es
 page: '8'
 step: pre
-subtitle: Teofanía de Mambré - Génesis 18,1-5
+subtitle: Gn 18,1-5
 tags:
 - int
 title: ABRAHAM
@@ -12,26 +12,26 @@ title: ABRAHAM
 
 [S]
 
-La-
+Lam
 Hacía calor aquel día
-Re-        Mi
+Rem        Mi
 cuando Abraham estaba sentado
-               La-
+               Lam
 delante de su tienda.
 Hacía calor aquel día
-Re-       Mi
+Rem       Mi
 cuando Abraham estaba sentado
-                         La-
+                         Lam
 cerca del encinar de Mambré.
            Sol      Fa
 Alzando los ojos, miró,
                   Mi
 y tres hombres de pie
-          La-
+          Lam
 estaban delante.
               Mi
 En cuanto los vio
-                            La-
+                            Lam
 se inclinó hasta el suelo y dijo:
           Sol
 «Oh Señor mío,
@@ -40,7 +40,7 @@ no pases te ruego sin detenerte.»
 
 [A]
 
-         La-                Sol
+         Lam                Sol
 SIN DETENERTE, NO PASES TE RUEGO
          Fa             Mi
 SIN DETENERTE, SIN DETENERTE.
@@ -49,14 +49,14 @@ SIN DETENERTE, SIN DETENERTE.
 
 [S]
 
-La-                   Mi
+Lam                   Mi
 «Os traeré un poco de agua,
 os lavaré los pies
-                  La-
+                  Lam
 y reposaréis a la sombra,
                Mi
 0s traeré un bocado, os reconfortaréis
-                     La-
+                     Lam
 y luego seguiréis adelante.
              Sol
 No por casualidad
@@ -65,11 +65,11 @@ habéis pasado hoy delante de mí.»
 
 [A]
 
-           La-              Sol
+           Lam              Sol
 «OH SEÑOR MÍO, NO PASES TE RUEGO
          Fa             Mi
 SIN DETENERTE, SIN DETENERTE
-         La-                Sol
+         Lam                Sol
 SIN DETENERTE, NO PASES TE RUEGO
          Fa             Mi
 SIN DETENERTE, SIN DETENERTE.
