@@ -1,0 +1,4 @@
+textarea[name^="psalm_lyrics"] {
+	font-family: monospace;
+	height: 100vh;
+}
