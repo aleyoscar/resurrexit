@@ -4,3 +4,4 @@ songbook/*/audio
 __pycache__
 processwire/site/assets
 email.php
+db
