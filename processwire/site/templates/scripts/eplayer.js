@@ -150,10 +150,16 @@ class EPlayer {
 		this.#eplayerPlay.addEventListener("click", this.playPause.bind(this));
 		this.#eplayerRewind.addEventListener("mousedown", this.#skim.bind(this));
 		this.#eplayerForward.addEventListener("mousedown", this.#skim.bind(this));
+		this.#eplayerRewind.addEventListener("touchstart", this.#skim.bind(this));
+		this.#eplayerForward.addEventListener("touchstart", this.#skim.bind(this));
 		this.#eplayerRewind.addEventListener("mouseup", this.#stopSkim.bind(this));
 		this.#eplayerForward.addEventListener("mouseup", this.#stopSkim.bind(this));
 		this.#eplayerRewind.addEventListener("mouseleave", this.#stopSkim.bind(this));
 		this.#eplayerForward.addEventListener("mouseleave", this.#stopSkim.bind(this));
+		this.#eplayerRewind.addEventListener("touchend", this.#stopSkim.bind(this));
+		this.#eplayerForward.addEventListener("touchend", this.#stopSkim.bind(this));
+		this.#eplayerRewind.addEventListener("touchcancel", this.#stopSkim.bind(this));
+		this.#eplayerForward.addEventListener("touchcancel", this.#stopSkim.bind(this));
 		this.#eplayerAhead.addEventListener("click", this.seek.bind(this));
 		this.#eplayerBack.addEventListener("click", this.seek.bind(this));
 
