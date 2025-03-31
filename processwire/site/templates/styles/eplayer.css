@@ -66,6 +66,7 @@
 	height: calc(var(--eplayer-button-height) + var(--eplayer-button-padding) * 2);
 	justify-content: center;
 	padding: var(--eplayer-button-padding);
+	position: relative;
 	width: calc(var(--eplayer-button-height) + var(--eplayer-button-padding) * 2);
 }
 
@@ -80,7 +81,28 @@
 
 .eplayer-icon {
 	height: 100%;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
 	width: 100%;
+}
+
+.eplayer-seek-btn-num {
+	align-items: center;
+	color: var(--eplayer-primary-fill-color);
+	display: flex;
+	font-family: var(--eplayer-font);
+	font-size: 1vh;
+	height: 100%;
+	justify-content: center;
+	position: absolute;
+	text-align: center;
+	top: 0; right: 0; bottom: 0; left: 0;
+	user-select: none;
+	width: 100%;
+}
+
+.eplayer-seek-btn-num:hover {
+	color: var(--eplayer-primary-fill-color-hover);
 }
 
 .eplayer-icon-btn svg {
@@ -119,7 +141,8 @@
 	outline: none;
 }
 
-/* WEBKIT PROGRESS BAR */
+/* WEBKIT ------------------------------------------------------------------ */
+
 .eplayer-progress::-webkit-slider-runnable-track {
 	background: linear-gradient(var(--eplayer-progress-color), var(--eplayer-progress-color)) 0/var(--sx) 100% no-repeat, var(--eplayer-progress-background-color);
 	border: none;
@@ -145,7 +168,12 @@
 	background: var(--eplayer-progress-button-color-hover);
 }
 
-/* MOZILLA PROGRESS BAR */
+.eplayer-seek-btn-num {
+	-webkit-user-select: none;
+}
+
+/* MOZILLA ----------------------------------------------------------------- */
+
 .eplayer-progress::-moz-range-thumb {
 	width: max(calc(var(--eplayer-progress-button-height) - var(--eplayer-progress-button-border) - var(--eplayer-progress-button-border)), 0px);
 	height: max(calc(var(--eplayer-progress-button-height) - var(--eplayer-progress-button-border) - var(--eplayer-progress-button-border)), 0px);
@@ -169,7 +197,7 @@
 	background: var(--eplayer-progress-button-color-hover);
 }
 
-/* MS */
+/* MS ---------------------------------------------------------------------- */
 .eplayer-progress::-ms-fill-upper {
 	background: transparent;
 	border-color: transparent;
@@ -221,4 +249,8 @@
 	font-family: var(--eplayer-font);
 	font-size: var(--eplayer-font-size);
 	padding: 2px 8px;
+}
+
+.eplayer-seek-btn-num {
+	-ms-user-select: none;
 }
