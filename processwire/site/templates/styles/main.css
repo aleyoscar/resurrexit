@@ -27,7 +27,9 @@
 	--f-md: 1.0rem;
 	--f-lg: 1.3rem;
 	--f-xl: 1.6rem;
-	--f-xx: 4.2rem;
+	--f-xx: 2.6rem;
+	--f-x3: 4.2rem;
+	--f-x4: 6.8rem;
 
 	--radius: var(--p-sm);
 
@@ -58,7 +60,7 @@ body {
 
 header {
 	display: flex;
-	height: var(--f-xx);
+	height: var(--f-x3);
 	left: 0;
 	padding: 0 var(--p-md);
 	position: fixed;
@@ -97,7 +99,7 @@ aside.aside-always.show {
 
 main {
 	margin-left: var(--g-sm);
-	margin-top: var(--f-xx);
+	margin-top: var(--f-x3);
 }
 
 ul {
@@ -240,7 +242,7 @@ svg {
 }
 
 .menu-header {
-	height: var(--f-xx);
+	height: var(--f-x3);
 }
 
 .menu-header h1 {
@@ -431,7 +433,7 @@ p.hide,
 
 .font-bold { font-weight: bold; }
 .font-sm { font-size: var(--f-sm); }
-.font-xx { font-size: var(--f-xx); }
+.font-xx { font-size: var(--f-x3); }
 .text-center { text-align: center; }
 .bg-primary { background-color: var(--primary); }
 .bg-primary-hv { background-color: var(--primary-hv); }
@@ -528,18 +530,13 @@ p.hide,
 
 	.screen-sm-p-md { padding: var(--p-md); }
 	.screen-sm-px-0 { padding-left: 0; padding-right: 0; }
-	.screen-sm-px-md { padding-left: var(--p-md); padding-right: var(--p-md); }
 	.screen-sm-py-sm { padding-top: var(--p-sm); padding-bottom: var(--p-sm); }
+	.screen-sm-px-md { padding-left: var(--p-md); padding-right: var(--p-md); }
+	.screen-sm-pb-x4 { padding-bottom: var(--f-x4); }
 	.screen-sm-m-0 { margin: 0; }
 	.screen-sm-hide { display: none; }
 	.screen-sm-show { display: inline-block; }
 	.screen-sm-show-flex { display: flex; }
-
-	header {
-		height: var(--f-xx);
-		padding-bottom: 0;
-		padding-top: 0;
-	}
 
 	aside {
 		left: auto;
@@ -569,22 +566,35 @@ p.hide,
 		width: 100%;
 	}
 
-	.eplayer {
-		flex-direction: column;
-		gap: 0;
-		padding: 0;
+	.eplayer.screen-sm-player {
+		background-color: var(--primary);
+		border-radius: 0;
+		bottom: 0;
+		flex-direction: column-reverse;
+		height: var(--f-x4);
+		left: 0;
+		padding: var(--p-md) 0;
+		position: fixed;
+		right: 0;
 	}
 
-	.eplayer-controls {
-		gap: var(--p-md);
+	.screen-sm-player .eplayer-controls {
+		flex: 1;
+		justify-content: space-between;
+		max-width: var(--g-sm);
+		padding-left: var(--p-sm);
+		padding-right: var(--p-sm);
+		width: 100%;
 	}
 
-	.eplayer-time {
-		display: none;
+	.screen-sm-player .eplayer-play-btn {
+		height: var(--f-xx);
+		width: var(--f-xx);
 	}
 
-	.eplayer-progress {
-		padding: 0;
+	.screen-sm-player .eplayer-forward-btn, .screen-sm-player .eplayer-rewind-btn {
+		height: var(--f-xl);
+		width: var(--f-xl);
 	}
 }
 

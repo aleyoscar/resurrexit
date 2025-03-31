@@ -106,9 +106,13 @@ foreach (explode("\n", $page->psalm_lyrics) as $line) {
 		<h1><a class="link-color-foreground flex align-center" href="<?php echo $page->parent->url; ?>">
 			<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-arrow-left"/></svg>
 		</a></h1>
-		<div class="eplayer" data-src="<?php if(count($audio_sources)) echo $audio_sources[0]->audio_url; ?>" data-type="audio/mp3">
-			<?php if(!count($audio_sources)) echo "<p class='no-audio text-center color-foreground'>" . $page->parent->label_noaudio . "</p>"; ?>
+		<?php if(count($audio_sources)) { ?>
+		<div class="eplayer screen-sm-player" data-src="<?php echo $audio_sources[0]->audio_url; ?>" data-type="audio/mp3"></div>
+		<?php } else { ?>
+		<div class="eplayer" data-src="" data-type="">
+			<p class='no-audio text-center color-foreground'><?php echo $page->parent->label_noaudio; ?></p>
 		</div>
+		<?php } ?>
 		<button class="aside-btn btn-icon flex align-center link-color-foreground" type="button">
 			<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-three-dots"/></svg>
 		</button>
@@ -159,7 +163,8 @@ foreach (explode("\n", $page->psalm_lyrics) as $line) {
 		</footer>
 	</aside>
 
-	<main class="psalm p-lg flex flex-column gap-md shadow screen-sm-p-md <?php echo $page->psalm_step->value; ?>">
+	<main class="psalm p-lg flex flex-column gap-md shadow screen-sm-p-md
+		<?php if(count($audio_sources)) echo 'screen-sm-pb-x4 '; echo $page->psalm_step->value; ?>">
 		<h2 class="color-primary text-center"><?php echo $page->title; ?></h2>
 		<h3 class="color-secondary text-center"><?php echo $page->psalm_subtitle; ?></h3>
 		<?php if($page->psalm_capo) echo "<p class='capo'>Capo " . $page->psalm_capo . "</p>"; ?>
