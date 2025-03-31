@@ -31,8 +31,8 @@ AQUEDAH, AQUEDAH».
 
 [S]
 
-Lam                            Rem9
-C «Átame, átame fuerte, padre mío,
+Lam                          Rem9
+«Átame, átame fuerte, padre mío,
                               Lam
 no sea que por el miedo me resista
                          Rem9
