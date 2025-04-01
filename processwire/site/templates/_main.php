@@ -36,8 +36,8 @@ $home = $pages->get('/'); /** @var HomePage $home */
 		<link rel="mask-icon" href="<?php echo $config->urls->templates; ?>images/safari-pinned-tab.svg" color="#8e110b">
 		<link rel="shortcut icon" href="/favicon.ico">
 
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/eplayer.css">
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/main.css">
+		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/eplayer.css?v=143">
+		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/main.css?v=143">
 		<?php
 			$custom_css = '';
 			if ($page->custom_css) $custom_css = $page->custom_css;
@@ -45,8 +45,8 @@ $home = $pages->get('/'); /** @var HomePage $home */
 			if ($custom_css) echo '<link rel="stylesheet" href="' . $custom_css . '">';
 		?>
 
-		<script src="<?php echo $config->urls->templates; ?>scripts/eplayer.js" defer></script>
-		<script src="<?php echo $config->urls->templates; ?>scripts/main.js" defer></script>
+		<script src="<?php echo $config->urls->templates; ?>scripts/eplayer.js?v=143" defer></script>
+		<script src="<?php echo $config->urls->templates; ?>scripts/main.js?v=143" defer></script>
 
 	</head>
 	<body id="html-body">
