@@ -1,4 +1,16 @@
 
+<a name="v1.4.3"></a>
+## [v1.4.3](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.4.2...v1.4.3) (2025-04-01)
+
+### Feat
+
+* **wire:** Versioning for scripts and stylesheets
+
+### Fix
+
+* **wire:** Remove old script
+
+
 <a name="v1.4.2"></a>
 ## [v1.4.2](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.4.1...v1.4.2) (2025-03-31)
 
