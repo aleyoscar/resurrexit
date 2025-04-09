@@ -1,4 +1,24 @@
 
+<a name="v1.5.0"></a>
+## [v1.5.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.4.3...v1.5.0) (2025-04-09)
+
+### Feat
+
+* **book:** Gritad jubilosos & shema
+* **docs:** Added link to app in README
+* **wire:** Added script to reset password after migration
+* **wire:** Added spanish translation for FrontendForms
+* **wire:** Added FrontendForms module
+
+### Refactor
+
+* **wire:** Styling changes
+* **wire:** Changed contact form to FrontendForms
+* **wire:** Remove Pages2JSON module
+* **wire:** Remove ProcessExportProfile module
+* **wire:** Moved WireMailSmtp to site/modules
+
+
 <a name="v1.4.3"></a>
 ## [v1.4.3](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.4.2...v1.4.3) (2025-04-01)
 
