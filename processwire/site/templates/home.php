@@ -8,6 +8,8 @@
 // See the Markup Regions documentation:
 // https://processwire.com/docs/front-end/output/markup-regions/
 
+// $files->include('reset.php');
+
 ?>
 
 <div id="wrapper" class="flex flex-column gap-lg justify-center nowrap align-center fullscreen bg-primary">
