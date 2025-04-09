@@ -8,27 +8,55 @@
 // See the Markup Regions documentation:
 // https://processwire.com/docs/front-end/output/markup-regions/
 
+$form = new \FrontendForms\Form('contact-form');
+
+$name = new \FrontendForms\InputText('name');
+$name->setLabel($page->ml_name);
+$name->setRule('required');
+$form->add($name);
+
+$email = new \FrontendForms\InputEmail('email');
+$email->setLabel($page->ml_email);
+$email->setRule('required');
+$email->setSanitizer('email');
+$form->add($email);
+
+$message = new \FrontendForms\Textarea('message');
+$message->setLabel($page->ml_message);
+$message->setRule('required');
+$form->add($message);
+
+$button = new \FrontendForms\Button('submit');
+$button->setAttribute('value', $page->ml_send);
+$form->add($button);
+
+if ($form->isValid()) {
+	$body = "<h1>Resurrexit Contact Form</h1>";
+	$body .= '<p>Sender: ' . $form->getValue('name') . '</p>';
+	$body .= '<p>E-Mail: ' . $form->getValue('email') . '</p>';
+	$body .= '<p>' . $form->getValue('message') . '</p>';
+
+	$m = wireMail();
+	$sent = $m->to('admin@resurrexit.app')
+		->from($form->getValue('email'))
+		->subject('Resurrexit Contact Form - ' . $form->getValue('name'))
+		->bodyHTML($body)
+		->send();
+
+	if (!$sent) {
+		$form->generateEmailSentErrorAlert();
+	}
+}
+
 ?>
 <div id="wrapper">
 	<div class="flex flex-column gap-lg justify-center align-center fullscreen bg-primary nowrap py-lg screen-xs-p-0">
-		<div class="flex flex-column justify-between gap-md card bg-foreground p-lg screen-xs-px-md nowrap">
-			<?php if (isset($_POST['name'])) {
-				$files->include("email", array('func' => 'require'));
-			} else { ?>
-			<form id="contact-form" class="flex flex-column gap-md" method="POST">
-				<h2>Contact</h2>
-				<input id="lang" type="hidden" name="lang" value="<?php echo $page->parent->url; ?>">
-				<input id="name" type="text" name="name" placeholder="<?php echo $page->parent->label_name ?>" />
-				<input id="email" type="email" name="email" placeholder="<?php echo $page->parent->label_email; ?>" />
-				<textarea id="message" name="message" placeholder="<?php echo $page->parent->label_message; ?>"></textarea>
-				<div class="g-recaptcha" data-sitekey="6LdlUPcqAAAAABGxX2JNBkSIpr9t-CKe101Z_18C"></div>
-				<button type="submit"><?php echo $page->parent->label_send; ?></button>
-			</form>
-			<?php } ?>
-			<ul class="flex justify-center gap-md">
-				<li><a href="<?php echo $page->parent->url; ?>"><?php echo $page->parent->label_home; ?></a></li>
-			</ul>
+		<div class="flex flex-column justify-between gap-md card bg-foreground p-lg screen-xs-px-md nowrap pico" data-theme="light">
+			<?php
+			if ($form->getShowForm()) echo '<h2>'.$page->ml_title.'</h2>';
+			echo $form->render();
+			echo '<a class="secondary" href="'.$page->parent->url.'" role="button">'.$page->ml_home.'</a>';
+			?>
 		</div>
 	</div>
-	<script src="https://www.google.com/recaptcha/api.js"></script>
 </div>
