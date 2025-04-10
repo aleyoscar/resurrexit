@@ -12,18 +12,12 @@
 
 ?>
 
-<div id="wrapper" class="flex flex-column gap-lg justify-center nowrap align-center fullscreen bg-primary">
-	<div class="flex flex-column align-center nowrap">
-		<h1 class="flex align-center color-foreground font-xx">
-			<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-logo"/></svg>
-		</h1>
-		<h1 class="color-foreground">Resurrexit</h1>
-	</div>
-	<div class="flex flex-column gap-md nowrap">
-		<?php if($page->hasChildren): ?>
-		<ul class="flex flex-column align-center">
-			<?php echo $page->children("template=psalm-list")->each("<li><a class='btn btn-foreground w-xs text-center' href='{url}'>{language_name}</a></li>"); ?>
-		</ul>
-		<?php endif; ?>
-	</div>
-</div>
+<main id="main" class="container center card">
+	<h1><svg><use xlink:href="#icon-logo"/></svg></h1>
+	<h1>Resurrexit</h1>
+	<?php if($page->hasChildren) { ?>
+		<div class="grid">
+			<?php echo $page->children("template=psalm-list")->each("<a href='{url}' role='button'>{language_name}</a>"); ?>
+		</div>
+	<?php } ?>
+</main>

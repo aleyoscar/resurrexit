@@ -1,0 +1,40 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+footer {
+	margin-top: auto;
+}
+
+a {
+	cursor: pointer;
+}
+
+.center {
+	text-align: center;
+}
+
+nav.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.theme-toggle {
+	display: none;
+}
+
+.theme-toggle.show {
+	display: inline;
+}
+
+.card {
+	max-width: 520px;
+}
+
+
+/* [data-theme="light"] .light-color-primary {
+	color: var(--pico-primary);
+} */
