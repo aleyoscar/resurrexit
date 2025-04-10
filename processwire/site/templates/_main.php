@@ -36,8 +36,9 @@ $home = $pages->get('/'); /** @var HomePage $home */
 		<link rel="mask-icon" href="<?php echo $config->urls->templates; ?>images/safari-pinned-tab.svg" color="#8e110b">
 		<link rel="shortcut icon" href="/favicon.ico">
 
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/eplayer.css?v=150">
-		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/main.css?v=150">
+		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/pico.red.min.css?v=211">
+		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/eplayer.css?v=52">
+		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/main-2.css?v=151">
 		<?php
 			$custom_css = '';
 			if ($page->custom_css) $custom_css = $page->custom_css;
@@ -45,6 +46,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 			if ($custom_css) echo '<link rel="stylesheet" href="' . $custom_css . '">';
 		?>
 
+		<script src="<?php echo $config->urls->templates; ?>scripts/js.cookie.min.js?v=305" defer></script>
 		<script src="<?php echo $config->urls->templates; ?>scripts/eplayer.js?v=150" defer></script>
 		<script src="<?php echo $config->urls->templates; ?>scripts/main.js?v=150" defer></script>
 
@@ -101,9 +103,35 @@ $home = $pages->get('/'); /** @var HomePage $home */
 			<symbol id="icon-pencil" viewBox="0 0 16 16">
 				<path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
 			</symbol>
+			<symbol id="icon-moon" viewBox="0 0 16 16">
+  				<path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+			</symbol>
+			<symbol id="icon-sun" viewBox="0 0 16 16">
+  				<path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+			</symbol>
 		</svg>
-		<div id="wrapper" class="wrapper">
-
-		</div>
+		<header id="header"></header>
+		<main id="main"></main>
+		<footer id="footer">
+			<nav class="center">
+				<ul>
+					<li><a class="secondary" href="<?php echo $page->findOne('template=contact')->url; ?>">
+						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-envelope-fill"/></svg>
+					</a></li>
+					<li><a class="secondary" href="https://git.aleyoscar.com/emet/resurrexit" target="_blank">
+						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-git"/></svg>
+					</a></li>
+					<li><a id="theme-btn" class="secondary">
+						<svg class="icon theme-toggle theme-dark" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-moon"/></svg>
+						<svg class="icon theme-toggle theme-light" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-sun"/></svg>
+					</a></li>
+					<?php if ($page->editable()) { ?>
+					<li><a class="secondary" href="<?php echo $page->editUrl(); ?>">
+						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-pencil"/></svg>
+					</a></li>
+					<?php } ?>
+				</ul>
+			</nav>
+		</footer>
 	</body>
 </html>
