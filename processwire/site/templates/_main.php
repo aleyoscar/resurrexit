@@ -36,6 +36,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 		<link rel="mask-icon" href="<?php echo $config->urls->templates; ?>images/safari-pinned-tab.svg" color="#8e110b">
 		<link rel="shortcut icon" href="/favicon.ico">
 
+		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/pico.colors.css?v=211">
 		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/pico.red.min.css?v=211">
 		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/eplayer.css?v=52">
 		<link rel="stylesheet" href="<?php echo $config->urls->templates; ?>styles/main-2.css?v=151">
