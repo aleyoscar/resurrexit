@@ -7,7 +7,7 @@ const sortBtns = document.querySelectorAll('.sort-btn');
 const eplayer = document.querySelector('.eplayer');
 const searchForm = document.querySelector('#search-form');
 const sourceBtns = document.querySelectorAll('.audio-source-btn');
-const themeBtn = document.querySelector("#theme-btn");
+const themeBtns = document.querySelectorAll(".theme-btn");
 
 let player = null;
 
@@ -21,7 +21,7 @@ if(eplayer && eplayer.dataset.src != '') {
 	player = new EPlayer();
 }
 if(searchForm) searchForm.addEventListener('submit', filterSearch);
-if (themeBtn) themeBtn.addEventListener('click', switchTheme);
+if (themeBtns) themeBtns.forEach(item => item.addEventListener('click', switchTheme));
 
 var categories = [];
 var tags = [];
@@ -207,10 +207,12 @@ function setTheme(theme) {
 	let themeName = theme ? 'light' : 'dark';
 	document.querySelector('html').dataset.theme = themeName;
 	Cookies.set('theme', themeName);
-	if (themeBtn) {
-		themeBtn.querySelectorAll('.theme-toggle').forEach((btn) => {
-			btn.classList.remove('show');
-		});
-		themeBtn.querySelector('.theme-' + themeName).classList.add('show')
+	if (themeBtns) {
+		themeBtns.forEach((themeBtn) => {
+			themeBtn.querySelectorAll('.theme-toggle').forEach((btn) => {
+				btn.classList.remove('show');
+			});
+			themeBtn.querySelector('.theme-' + themeName).classList.add('show')
+		})
 	}
 }
