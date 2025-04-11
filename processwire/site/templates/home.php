@@ -12,6 +12,8 @@
 
 ?>
 
+<header id="header" style="height: 20vh;"></header>
+
 <main id="main" class="container center card">
 	<h1><svg><use xlink:href="#icon-logo"/></svg></h1>
 	<h1>Resurrexit</h1>
