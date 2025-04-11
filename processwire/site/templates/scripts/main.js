@@ -8,6 +8,11 @@ const eplayer = document.querySelector('.eplayer');
 const searchForm = document.querySelector('#search-form');
 const sourceBtns = document.querySelectorAll('.audio-source-btn');
 const themeBtns = document.querySelectorAll(".theme-btn");
+const header = document.querySelector("#header");
+const stickyObserver = new IntersectionObserver(
+	([e]) => e.target.classList.toggle("stuck", e.intersectionRatio < 1),
+	{ threshold: [1] }
+);
 
 let player = null;
 
@@ -22,6 +27,10 @@ if(eplayer && eplayer.dataset.src != '') {
 }
 if(searchForm) searchForm.addEventListener('submit', filterSearch);
 if (themeBtns) themeBtns.forEach(item => item.addEventListener('click', switchTheme));
+if (header) {
+	console.log("Observing header", header);
+	stickyObserver.observe(header);
+}
 
 var categories = [];
 var tags = [];
