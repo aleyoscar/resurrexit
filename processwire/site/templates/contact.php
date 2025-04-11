@@ -49,14 +49,25 @@ if ($form->isValid()) {
 }
 
 ?>
-<div id="wrapper">
-	<div class="flex flex-column gap-lg justify-center align-center fullscreen bg-primary nowrap py-lg screen-xs-p-0">
-		<div class="flex flex-column justify-between gap-md card bg-foreground p-lg screen-xs-px-md nowrap pico" data-theme="light">
-			<?php
-			if ($form->getShowForm()) echo '<h2>'.$page->ml_title.'</h2>';
-			echo $form->render();
-			echo '<a class="secondary" href="'.$page->parent->url.'" role="button">'.$page->ml_home.'</a>';
-			?>
-		</div>
-	</div>
-</div>
+
+<li id="lang-btn"><details class="dropdown">
+	<summary>
+		<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-translate"/></svg>
+	</summary>
+	<ul>
+		<?php foreach($languages as $language) {
+			if (!$page->viewable($language)) continue;
+			$url = $page->localUrl($language);
+			echo "<li><a href='$url'>$language->title</a></li>";
+		} ?>
+	</ul>
+</details></li>
+
+<main id="main" class="container">
+	<article>
+		<?php
+		if ($form->getShowForm()) echo '<h2>'.$page->ml_title.'</h2>';
+		echo $form->render();
+		?>
+	</article>
+</main>
