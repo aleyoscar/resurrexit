@@ -192,7 +192,9 @@ function closeAside(e) {
 }
 
 function toggleSort(e) {
-	document.querySelector('.psalm-list').classList.toggle('flex-column-reverse');
+	const tbody = document.querySelector('.psalm-list tbody');
+	const trows = Array.from(tbody.querySelectorAll('tr'));
+	trows.reverse().forEach(row => tbody.appendChild(row));
 	sortBtns.forEach((b) => b.classList.toggle('hide'));
 }
 
