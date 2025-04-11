@@ -114,8 +114,42 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
 			</symbol>
 		</svg>
-		<header id="header"></header>
+
+		<header id="header">
+			<div class="container flex space-between">
+				<a class="contrast flex center no-decoration" aria-label="Resurrexit homepage" href="<?php echo $home->url; ?>">
+					<svg class="icon hide-lg" width="2em" height="2em" fill="currentColor"><use xlink:href="#icon-logo"/></svg>
+					<h1 class="hide-sm"><?php echo $page->title; ?></h1>
+				</a>
+				<nav>
+					<ul>
+						<li id="lang-btn"><details class="dropdown">
+							<summary>
+								<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-translate"/></svg>
+							</summary>
+							<ul>
+								<?php foreach($page->parent->children('template=psalm-list') as $child) { ?>
+								<li><a href="<?php echo $child->url; ?>"><?php echo $child->language_name; ?></a></li>
+								<?php } ?>
+							</ul>
+						</details></li>
+						<li><a class="secondary" href="<?php echo $home->findOne('template=contact')->url; ?>">
+							<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-envelope-fill"/></svg>
+						</a></li>
+						<li><a class="secondary" href="https://git.aleyoscar.com/emet/resurrexit" target="_blank">
+							<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-git"/></svg>
+						</a></li>
+						<li><a class="secondary theme-btn">
+							<svg class="icon theme-toggle theme-dark" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-moon"/></svg>
+							<svg class="icon theme-toggle theme-light" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-sun"/></svg>
+						</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
 		<main id="main"></main>
+
 		<footer id="footer">
 			<nav class="center">
 				<ul>
