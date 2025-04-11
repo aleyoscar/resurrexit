@@ -151,15 +151,18 @@ $home = $pages->get('/'); /** @var HomePage $home */
 		<main id="main"></main>
 
 		<footer id="footer">
-			<nav class="center">
+			<nav class="flex center">
 				<ul>
+					<li><a class="secondary" href="<?php echo $home->url; ?>">
+						<?php echo $home->ml_home; ?>
+					</a></li>
 					<li><a class="secondary" href="<?php echo $page->findOne('template=contact')->url; ?>">
-						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-envelope-fill"/></svg>
+						<?php echo $home->ml_contact; ?>
 					</a></li>
 					<li><a class="secondary" href="https://git.aleyoscar.com/emet/resurrexit" target="_blank">
-						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-git"/></svg>
+						<?php echo $home->ml_source; ?>
 					</a></li>
-					<li><a id="theme-btn" class="secondary">
+					<li><a class="secondary theme-btn">
 						<svg class="icon theme-toggle theme-dark" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-moon"/></svg>
 						<svg class="icon theme-toggle theme-light" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-sun"/></svg>
 					</a></li>
