@@ -67,7 +67,7 @@ aside nav.borders details ul li.active a {
 	color: var(--pico-primary);
 }
 
-aside nav.menu {
+aside.menu nav {
 	--header-height: calc(4.5rem + var(--pico-border-width) + var(--pico-spacing));
 	position: sticky;
 	top: var(--header-height);
@@ -213,13 +213,49 @@ label span.asterisk {
 	.grid-aside .content {
 		grid-column: unset;
 	}
-}
 
-@media only screen and (max-width: 576px) {
 	.hide-lg {
 		display: unset;
 	}
+
 	.hide-sm {
 		display: none;
+	}
+
+	aside.menu {
+		background-color: var(--pico-background-color);
+		height: 100%;
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		overflow-x: hidden;
+		transition: right var(--pico-transition);
+		transition-delay: 50ms;
+	}
+
+	aside.menu.hide {
+		right: 100%;
+	}
+
+	aside.menu nav {
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	aside.menu nav {
+		max-width: 510px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	aside.menu nav {
+		max-width: unset;
+		padding-left: var(--pico-spacing);
+		padding-right: var(--pico-spacing);
 	}
 }

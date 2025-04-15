@@ -35,9 +35,47 @@ if ($page->name == 'en-us') {
 
 ?>
 
+<header id="header">
+	<div class="container flex space-between">
+		<a class="contrast flex center no-decoration" aria-label="Resurrexit homepage" href="<?php echo $home->url; ?>">
+			<svg class="icon hide-lg" width="2em" height="2em" fill="currentColor"><use xlink:href="#icon-logo"/></svg>
+			<h1 class="hide-sm"><?php echo $page->title; ?></h1>
+		</a>
+		<nav>
+			<ul>
+				<li id="lang-btn"><details class="dropdown">
+					<summary>
+						<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-translate"/></svg>
+					</summary>
+					<ul>
+						<?php foreach($page->parent->children('template=psalm-list') as $child) { ?>
+						<li><a href="<?php echo $child->url; ?>"><?php echo $child->language_name; ?></a></li>
+						<?php } ?>
+					</ul>
+				</details></li>
+				<li><a class="secondary" href="<?php echo $home->findOne('template=contact')->url; ?>">
+					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-envelope-fill"/></svg>
+				</a></li>
+				<li><a class="secondary" href="https://git.aleyoscar.com/emet/resurrexit" target="_blank">
+					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-git"/></svg>
+				</a></li>
+				<li><a class="secondary theme-btn">
+					<svg class="icon theme-toggle theme-dark" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-moon"/></svg>
+					<svg class="icon theme-toggle theme-light" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-sun"/></svg>
+				</a></li>
+				<li class="secondary hide-lg">|</li>
+				<li class="hide-lg"><a class="secondary menu-btn">
+					<svg class="icon icon-menu" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-list"/></svg>
+					<svg class="icon icon-x hide" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-x-lg"/></svg>
+				</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
 <main id="main" class="container grid grid-aside">
-	<aside>
-		<nav class="borders menu">
+	<aside class="hide menu">
+		<nav class="borders">
 			<form role="search" id="search-form" method="get" action="<?php echo $pages->get('template=search')->url ?>">
 				<input id="search" type="search" name="search"
 					placeholder="<?php echo $page->label_search; ?>"

@@ -10,6 +10,7 @@ const stickyObserver = new IntersectionObserver(
 	([e]) => e.target.classList.toggle("stuck", e.intersectionRatio < 1),
 	{ threshold: [1] }
 );
+const menuBtn = document.querySelector(".menu-btn");
 
 let player = null;
 
@@ -25,6 +26,7 @@ if (themeBtns) themeBtns.forEach(item => item.addEventListener('click', switchTh
 if (header) {
 	stickyObserver.observe(header);
 }
+if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
 
 var categories = [];
 var tags = [];
@@ -199,4 +201,10 @@ function setTheme(theme) {
 			themeBtn.querySelector('.theme-' + themeName).classList.add('show')
 		})
 	}
+}
+
+function toggleMenu(e) {
+	document.querySelector('.menu-btn .icon-menu').classList.toggle('hide');
+	document.querySelector('.menu-btn .icon-x').classList.toggle('hide');
+	document.querySelector('aside.menu').classList.toggle('hide');
 }
