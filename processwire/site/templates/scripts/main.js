@@ -1,8 +1,5 @@
-// const Cookies = require('js-cookie');
-
 const tagBtns = document.querySelectorAll('.tag-btn');
 const categoryBtns = document.querySelectorAll('.category-btn');
-const dropdownMenus = document.querySelectorAll('.dropdown');
 const sortBtns = document.querySelectorAll('.sort-btn');
 const eplayer = document.querySelector('.eplayer');
 const searchForm = document.querySelector('#search-form');
@@ -19,16 +16,13 @@ let player = null;
 categoryBtns.forEach(item => item.addEventListener('click', filterCategory));
 tagBtns.forEach(item => item.addEventListener('click', filterTag));
 sortBtns.forEach(item => item.addEventListener('click', toggleSort));
-dropdownMenus.forEach(dropdown => dropdown.addEventListener('click', toggleDropdown));
-dropdownMenus.forEach(dropdown => dropdown.addEventListener('focusout', closeDropdown));
 sourceBtns.forEach(item => item.addEventListener('click', changeSource));
-if(eplayer && eplayer.dataset.src != '') {
+if (eplayer && eplayer.dataset.src != '') {
 	player = new EPlayer();
 }
-if(searchForm) searchForm.addEventListener('submit', filterSearch);
+if (searchForm) searchForm.addEventListener('submit', filterSearch);
 if (themeBtns) themeBtns.forEach(item => item.addEventListener('click', switchTheme));
 if (header) {
-	console.log("Observing header", header);
 	stickyObserver.observe(header);
 }
 
@@ -158,27 +152,6 @@ function countPsalms() {
 	// document.querySelector('.psalm-count').textContent = count;
 	if(count <= 0) document.querySelector('.no-psalms').classList.remove('hide');
 	else document.querySelector('.no-psalms').classList.add('hide');
-}
-
-function toggleDropdown(e) {
-	this.querySelector(".dropdown-menu").classList.toggle("show");
-}
-
-function closeDropdown(e) {
-	let related = e.relatedTarget;
-	let clickedInside = false;
-	if(related) {
-		while(related) {
-			if(related.nodeName == "BODY") break;
-			else if(related.classList.contains('dropdown-item')) {
-				clickedInside = true;
-				e.stopPropagation();
-				break;
-			}
-			related = related.parentNode;
-		}
-	}
-	if(!clickedInside) this.querySelector(".dropdown-menu").classList.remove("show");
 }
 
 function toggleAside(e) {
