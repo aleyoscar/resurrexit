@@ -56,7 +56,7 @@ if ($page->name == 'en-us') {
 				<li><a class="secondary" href="<?php echo $home->findOne('template=contact')->url; ?>">
 					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-envelope-fill"/></svg>
 				</a></li>
-				<li><a class="secondary" href="https://git.aleyoscar.com/emet/resurrexit" target="_blank">
+				<li><a class="secondary" href="https://git.aleyoscar.com/oscarale/resurrexit" target="_blank">
 					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-git"/></svg>
 				</a></li>
 				<li><a class="secondary theme-btn">
