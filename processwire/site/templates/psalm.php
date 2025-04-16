@@ -8,6 +8,8 @@
 // See the Markup Regions documentation:
 // https://processwire.com/docs/front-end/output/markup-regions/
 
+$home = $pages->get('/'); /** @var HomePage $home */
+
 // Check what audio sources are available
 
 $audio_sources = [];
@@ -49,8 +51,6 @@ $lyric = [[[]]];
 $leaf = 0;
 $column = 0;
 $section = -1;
-// echo "<pre>";
-// var_dump($sections);
 foreach (explode("\n", $page->psalm_lyrics) as $line) {
 	$stripped = preg_replace('/\s+/', ' ', trim($line));
 	if ($stripped) {
@@ -96,97 +96,68 @@ foreach (explode("\n", $page->psalm_lyrics) as $line) {
 		}
 	}
 }
-// echo "</pre>";
-
-
 ?>
 
-<div id="wrapper" class="wrapper">
-	<header class="bg-primary flex justify-between align-center nowrap">
-		<h1><a class="link-color-foreground flex align-center" href="<?php echo $page->parent->url; ?>">
-			<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-arrow-left"/></svg>
-		</a></h1>
-		<?php if(count($audio_sources)) { ?>
-		<div class="eplayer screen-sm-player" data-src="<?php echo $audio_sources[0]->audio_url; ?>" data-type="audio/mp3"></div>
-		<?php } else { ?>
-		<div class="eplayer" data-src="" data-type="">
-			<p class='no-audio text-center color-foreground'><?php echo $page->parent->label_noaudio; ?></p>
-		</div>
-		<?php } ?>
-		<button class="aside-btn btn-icon flex align-center link-color-foreground" type="button">
-			<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-three-dots"/></svg>
-		</button>
-	</header>
+<a id="header-logo" class="contrast flex center no-decoration" aria-label="Resurrexit homepage" href="<?php echo $page->parent->url; ?>">
+	<svg class="icon hide-lg" width="2em" height="2em" fill="currentColor"><use xlink:href="#icon-logo"/></svg>
+	<h1 class="hide-sm"><?php echo $page->parent->title; ?></h1>
+</a>
 
-	<aside class="flex flex-column nowrap justify-between gap-md shadow aside-always">
-		<nav class="flex flex-column px-md gap-md">
-			<div class="menu-header flex justify-between align-center">
-				<h1><a class="link-color-primary"><?php echo $page->parent->title; ?></a></h1>
-				<button class="btn-icon close-aside flex align-center" type="button">
-					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-x-lg"/></svg>
-				</button>
-			</div>
-			<?php ?>
-			<hr class="mt-neg-md">
-			<h4 class="color-grey-light"><?php echo $page->parent->label_language; ?></h4>
-			<ul class="flex flex-column">
-				<?php foreach($audio_langs as $al) { ?>
-				<li><a class="flex align-center btn-link <?php if($al->parent->id == $page->parent->id) echo 'active'; ?>" href="<?php echo $al->url; ?>"><?php echo $al->parent->language_name; ?></a></li>
-				<?php } ?>
-			</ul>
-			<?php if (count($audio_sources) > 1) { ?>
-			<hr>
-			<h4 class="color-grey-light"><?php echo $page->parent->label_audio_source; ?></h4>
-			<ul class="flex flex-column">
-				<?php foreach($audio_sources as $as) { ?>
-				<li><a class="flex align-center btn-link audio-source-btn <?php if($as == $audio_sources[0]) echo 'active'; ?>"
-					data-source="<?php echo $as->audio_url; ?>">
-					<?php echo $as->audio_psalmist_long; ?></a></li>
-				<?php } ?>
-			</ul>
-			<?php } ?>
-		</nav>
-		<footer class="flex flex-column px-md gap-md pb-lg">
-			<ul class="flex justify-center align-center gap-md mt-md">
-				<li><a class="flex align-center font-small" href="/en-US/contactus/">
-					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-envelope-fill"/></svg>
-					<?php echo $page->parent->label_contact; ?></a></li>
-				<li><a class="flex align-center font-small" href="https://git.aleyoscar.com/emet/resurrexit" target="_blank">
-					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-git"/></svg>
-					<?php echo $page->parent->label_source; ?></a></li>
-				<?php if($page->editable()): ?>
-				<li><a class="flex align-center font-small" href="<?php echo $page->editUrl(); ?>">
-					<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-pencil"/></svg>
-					<?php echo $page->parent->label_edit; ?></a></li>
-				<?php endif; ?>
-			</ul>
-		</footer>
-	</aside>
+<ul id="lang-dropdown-list">
+	<?php foreach($audio_langs as $al) { ?>
+	<li><a href="<?php echo $al->url; ?>"><?php echo $al->parent->language_name; ?></a></li>
+	<?php } ?>
+</ul>
 
-	<main class="psalm p-lg flex flex-column gap-md shadow screen-sm-p-md
-		<?php if(count($audio_sources)) echo 'screen-sm-pb-x4 '; echo $page->psalm_step->value; ?>">
-		<h2 class="color-primary text-center"><?php echo $page->title; ?></h2>
-		<h3 class="color-secondary text-center"><?php echo $page->psalm_subtitle; ?></h3>
+<main id="main" class="container eplayer-padding">
+	<article id="content" class="content psalm <?php echo $page->psalm_step->value; ?>" role="document">
+		<hgroup>
+			<h4 class="center primary"><?php echo $page->title; ?></h2>
+			<p class="center"><?php echo $page->psalm_subtitle; ?></p>
+		</hgroup>
 		<?php if($page->psalm_capo) echo "<p class='capo'>Capo " . $page->psalm_capo . "</p>"; ?>
 		<div class="lyrics">
-			<?php foreach ($lyric as $key => $l) {
-				if ($key > 0) echo "<div class='leaf mt-md py-lg bt-xs'>";
-				else echo "<div class='leaf mt-md pb-lg'>";
-				foreach ($l as $c) {
+			<?php foreach ($lyric as $key => $leaf) {
+				echo "<div class='leaf grid'>";
+				foreach ($leaf as $column) {
 					echo "<div class='column'>";
-					foreach ($c as $s) {
-						echo "<div class='section " . $s['class'] . "'>";
-						foreach ($s["lines"] as $line) {
+					foreach ($column as $section) {
+						echo "<section class='" . $section['class'] . "'>";
+						foreach ($section["lines"] as $line) {
 							echo "<p class='line'>$line</p>";
 						}
-						echo "</div>";
+						echo "</section>";
 					}
 					echo "</div>";
 				}
 				echo "</div>";
+				if (count($lyric) > 1 && $key < count($lyric) - 1) echo "<hr>";
 			} ?>
 		</div>
-	</main>
+	</article>
+</main>
 
-	<div class="overlay fullscreen hide close-aside bg-secondary"></div>
-</div>
+<footer id="footer" class="eplayer-wrapper flex center">
+	<?php if(count($audio_sources)) { ?>
+		<div class="eplayer" data-src="<?php echo $audio_sources[0]->audio_url; ?>" data-type="audio/mp3"></div>
+		<details class="dropdown">
+			<summary><svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-info"/></svg></summary>
+			<ul dir="rtl" class="up">
+				<li><strong><?php echo $page->parent->label_audio_source; ?></strong></li>
+				<?php foreach($audio_sources as $as) { ?>
+				<li>
+					<a class="audio-source-btn <?php if($as == $audio_sources[0]) echo 'active'; ?>"
+						data-source="<?php echo $as->audio_url; ?>"
+						data-name="<?php echo $as->audio_psalmist_long; ?>">
+						<?php echo $as->audio_psalmist_long; ?>
+					</a>
+				</li>
+				<?php } ?>
+			</ul>
+		</details>
+	<?php } else { ?>
+	<div class="eplayer-wrapper">
+		<p class='center'><?php echo $page->parent->label_noaudio; ?></p>
+	</div>
+	<?php } ?>
+</footer>

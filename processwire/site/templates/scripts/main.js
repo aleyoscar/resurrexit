@@ -11,6 +11,7 @@ const stickyObserver = new IntersectionObserver(
 	{ threshold: [1] }
 );
 const menuBtn = document.querySelector(".menu-btn");
+const infoBtn = document.querySelector(".eplayer-wrapper details.dropdown");
 
 let player = null;
 
@@ -46,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	let theme = window.matchMedia('(prefers-color-scheme:light)').matches;
 	if (Cookies.get('theme')) theme = Cookies.get('theme') == 'light' ? true : false;
 	setTheme(theme);
+	let mediumBreak = window.matchMedia('(max-width: 768px)');
+	mediumBreakpoint(mediumBreak);
+	mediumBreak.addEventListener('change', () => mediumBreakpoint(mediumBreak));
 });
 
 function filterCategory(e) {
@@ -174,13 +178,13 @@ function toggleSort(e) {
 }
 
 function changeSource(e) {
+	console.log("Changing source", e.target);
 	if (player) {
 		player.load(e.target.dataset.source, 'audio/mp3');
 		sourceBtns.forEach(btn => {
 			btn.classList.remove('active');
 			if (btn.dataset.source == e.target.dataset.source) btn.classList.add('active');
 		});
-		closeAside(null);
 	}
 }
 
@@ -207,4 +211,12 @@ function toggleMenu(e) {
 	document.querySelector('.menu-btn .icon-menu').classList.toggle('hide');
 	document.querySelector('.menu-btn .icon-x').classList.toggle('hide');
 	document.querySelector('aside.menu').classList.toggle('hide');
+}
+
+function mediumBreakpoint(bp) {
+	if (bp.matches) {
+		if (infoBtn) {
+
+		}
+	}
 }
