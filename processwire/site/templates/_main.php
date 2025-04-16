@@ -120,7 +120,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 
 		<header id="header">
 			<div class="container flex space-between">
-				<a class="contrast flex center no-decoration" aria-label="Resurrexit homepage" href="<?php echo $home->url; ?>">
+				<a id="header-logo" class="contrast flex center no-decoration" aria-label="Resurrexit homepage" href="<?php echo $home->url; ?>">
 					<svg class="icon hide-lg" width="2em" height="2em" fill="currentColor"><use xlink:href="#icon-logo"/></svg>
 					<h1 class="hide-sm"><?php echo $page->title; ?></h1>
 				</a>
@@ -130,7 +130,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 							<summary>
 								<svg class="icon" width="1em" height="1em" fill="currentColor"><use xlink:href="#icon-translate"/></svg>
 							</summary>
-							<ul>
+							<ul id="lang-dropdown-list">
 								<?php foreach($page->parent->children('template=psalm-list') as $child) { ?>
 								<li><a href="<?php echo $child->url; ?>"><?php echo $child->language_name; ?></a></li>
 								<?php } ?>
