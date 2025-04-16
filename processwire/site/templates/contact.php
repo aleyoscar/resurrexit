@@ -8,6 +8,8 @@
 // See the Markup Regions documentation:
 // https://processwire.com/docs/front-end/output/markup-regions/
 
+$home = $pages->get('/'); /** @var HomePage $home */
+
 $form = new \FrontendForms\Form('contact-form');
 
 $name = new \FrontendForms\InputText('name');
@@ -49,6 +51,11 @@ if ($form->isValid()) {
 }
 
 ?>
+
+<a id="header-logo" class="contrast flex center no-decoration" aria-label="Resurrexit homepage" href="<?php echo $home->url; ?>">
+	<svg class="icon hide-lg" width="2em" height="2em" fill="currentColor"><use xlink:href="#icon-logo"/></svg>
+	<h1 class="hide-sm">Resurrexit</h1>
+</a>
 
 <li id="lang-btn"><details class="dropdown">
 	<summary>
