@@ -1,4 +1,12 @@
 
+<a name="v2.0.1"></a>
+## [v2.0.1](https://git.aleyoscar.com/oscarale/resurrexit/compare/v2.0.0...v2.0.1) (2025-05-20)
+
+### Feat
+
+* **web:** Added favicon
+
+
 <a name="v2.0.0"></a>
 ## [v2.0.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.5.0...v2.0.0) (2025-05-20)
 
