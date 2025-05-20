@@ -2,9 +2,9 @@
 
 [https://resurrexit.app](https://resurrexit.app)
 
-> v1.5.0
+> v2.0.0
 
-A ProcessWire multi-lingual songbook and tool set web app for the Neocatechumenal Way.
+A multi-lingual songbook and tool set web app for the Neocatechumenal Way.
 
 This site is NOT AN OFFICIAL SITE OF THE NEOCATECHUMENAL WAY, it only tries to create a compilation of most of the psalms and songs of 'The Way' in various languages/countries (See [languages](#languages) for which ones are currently implemented). All audio sources and text try to be as faithful as possible to Kiko Argüello's intentions for the psalms of 'The Way', but we are all called to be first faithful to Christ, our catechists, our formators and our responsibles who have transmitted these psalms to us. Please see [sources](#sources) for information on where the audio/text is coming from for each language. As always when in doubt, consult your catechist!
 

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}{{ psalm.title }}{% endblock %}
+{% block header_title %}{{ settings.languages[lang].songbook }}{% endblock %}
+{% block header_url %}{{ url_for('psalm_list', lang=lang) }}{% endblock %}
+
+{% block content %}
+<div class="container">
+	<article class="psalm {{ psalm.step }}">
+		<hgroup class="text-center">
+			<h3>{{ psalm.title }}</h3>
+			<p>{{ psalm.subtitle }}</p>
+		</hgroup>
+		<div class="grid">{{ psalm.lyrics|safe }}</div>
+	</article>
+</div>
+{% endblock %}
+
+{% block eplayer %}
+<div id="eplayer-wrapper" class="eplayer-wrapper flex space-between align-center">
+	{% if psalm.audio | length %}
+	<div class="ghost hide-sm"><svg width="1em" height="1em"><use xlink:href=""/></svg></div>
+	<div id="eplayer" class="eplayer flex-1"
+		data-src="{{ psalm.audio[0].src }}"
+		data-type="audio/mp3">
+	</div>
+	<details class="dropdown mb-0 align-self-end-sm">
+		<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+			<use xlink:href="#icon-menu-dot"/>
+		</svg></summary>
+		<ul dir="rtl" class="up">
+			<li><strong>Sources</strong></li>
+			{% for audio in psalm.audio %}
+			<li>
+				<a class="pointer" onclick="switchSource(event)"
+					data-source="{{ audio.src }}">
+					{{ audio.name }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</details>
+	{% else %}
+	<p class='text-center width-100 secondary'>No Audio</p>
+	{% endif %}
+</div>
+{% endblock %}

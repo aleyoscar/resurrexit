@@ -1,0 +1,115 @@
+{
+	"audio_sources": {
+		"KI": "Kiko",
+		"FR": "Francesco",
+		"GI": "Giuseppe",
+		"EM": "Emanuele",
+		"OS": "Osvaldo",
+		"AN": "Angelo",
+		"UN1": "Unknown (1)",
+		"UN": "Unknown",
+		"FE": "Fernando",
+		"BI": "Bibi",
+		"CA": "Caetano",
+		"UK": "United Kingdom"
+	},
+	"languages": {
+		"en-us": {
+			"name": "en-us",
+			"code": "en-US",
+			"country": "US",
+			"title": "English",
+			"songbook": "He Rose From Death",
+			"steps": {
+				"pre": "Precatechumenate",
+				"cat": "Catechumenate",
+				"lit": "Liturgical",
+				"ele": "Election",
+				"con": "Bread"
+			},
+			"tags": {
+				"nat": "Advent/Christmas",
+				"pan": "Bread",
+				"lib": "Children",
+				"vin": "Communion",
+				"pas": "Easter",
+				"int": "Entrance",
+				"fin": "Final",
+				"heb": "Hebrew",
+				"hym": "Hymns",
+				"lau": "Laudes",
+				"com": "Lent",
+				"vir": "Mary",
+				"ord": "Ordinary",
+				"pax": "Peace",
+				"poe": "Penitential",
+				"pen": "Pentecost",
+				"sal": "Solomon",
+				"var": "Various"
+			},
+			"sections": {
+	            "[PSALMIST]": "psalmista",
+	            "[CANTOR]": "psalmista",
+	            "[P]": "psalmista",
+	            "[C]": "psalmista",
+	            "[PSALMIST CONDENSED]": "psalmista concretus",
+	            "[CANTOR CONDENSED]": "psalmista concretus",
+	            "[PC]": "psalmista concretus",
+	            "[CC]": "psalmista concretus",
+				"[ASSEMBLY]": "comitium",
+	            "[A]": "comitium",
+				"[REPEAT ASSEMBLY]": "repetere-comitium",
+				"[RA]": "repetere-comitium",
+				"[BISA]": "repetere-comitium",
+				"[BIS]": "repetere-comitium"
+			}
+		},
+		"es-es": {
+			"name": "es-es",
+			"code": "es-ES",
+			"country": "ES",
+			"title": "Español",
+			"songbook": "Resucitó",
+			"steps": {
+				"pre": "Precatecumenado",
+				"cat": "Catecumenado",
+				"lit": "Liturgia",
+				"ele": "Elección"
+			},
+			"tags": {
+				"nat": "Adviento/Navidad",
+				"vin": "Comunión",
+				"com": "Cuaresma",
+				"int": "Entrada",
+				"fin": "Final",
+				"heb": "Hebreo",
+				"hym": "Himnos",
+				"lau": "Laudes",
+				"vir": "María",
+				"lib": "Niños",
+				"ord": "Ordinario",
+				"pan": "Pan",
+				"pas": "Pascua",
+				"pax": "Paz",
+				"poe": "Penitencial",
+				"pen": "Pentecostes",
+				"sal": "Salomón",
+				"var": "Varios"
+			},
+			"sections": {
+	            "[SALMISTA]": "psalmista",
+	            "[S]": "psalmista",
+				"[C]": "psalmista",
+	            "[SALMISTA CONDENSADO]": "psalmista concretus",
+	            "[SC]": "psalmista concretus",
+	            "[ASAMBLEA]": "comitium",
+	            "[A]": "comitium",
+	            "[BIS]": "repetere-comitium",
+				"[BISA]": "repetere-comitium",
+	            "[BIS ASAMBLEA]": "repetere-comitium",
+	            "[BA]": "repetere-comitium",
+	            "[RA]": "repetere-comitium"
+	        }
+		}
+	}
+}

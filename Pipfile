@@ -4,13 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-unidecode = "*"
+flask = "*"
+frozen-flask = "*"
 python-frontmatter = "*"
-pytesseract = "*"
-pandas = "*"
-pypdf = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.13"
+python_version = "3.10"
