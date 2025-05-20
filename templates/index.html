@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block header_title %}Resurrexit{% endblock %}
+
+{% block content %}
+	<article class="max-width-sm container-center">
+		<header><h3 class="text-center">Songbooks</h3></header>
+		<ul>
+		{% for lang in settings.languages.values() %}
+		<li>
+			<a href="{{ url_for('psalm_list', lang=lang.name) }}"
+				class="width-100"
+				role="button">
+				{{ lang.songbook }} - {{ lang.country }}
+			</a>
+		</li>
+		{% endfor %}
+		<ul>
+	</article>
+{% endblock %}

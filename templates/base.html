@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="{% block html_lang %}en{% endblock %}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="color-scheme" content="light dark">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/pico.red.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/eplayer.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+		<script src="{{ url_for('static', filename='scripts/eplayer.js') }}" defer></script>
+		<script src="{{ url_for('static', filename='scripts/modal.js') }}" defer></script>
+		<script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+		<title>Resurrexit|{% block title %}{% endblock %}</title>
+	</head>
+	<body class="flex flex-column">
+		{% include 'icons.html' %}
+		{% block header %}
+		<header id="header">
+			<nav class="container">
+				<ul>
+					<li>
+						<a class="pointer contrast hide-lg" onclick="toggleMenu()">
+							<h3 class="mb-0">
+								<svg width="1.0em" height="1.0em">
+									<use xlink:href="#icon-menu"/>
+								</svg>
+							</h3>
+						</a>
+						<a class="contrast transparent-btn"
+							role="button"
+							href="{% block header_url %}{{ url_for('index') }}{% endblock %}">
+							<h3 class="mb-0">
+								{% block header_title %}Resurrexit{% endblock %}
+							</h3>
+						</a>
+					</li>
+				</ul>
+				<ul class="hide-md">
+					<li>
+						<details class="dropdown mb-0">
+							<summary class="transparent-btn">Songbooks</summary>
+							<ul dir="rtl">
+								{% for key, value in settings.languages.items() %}
+								<li>
+									<a href="{{ url_for('psalm_list', lang=key) }}">
+										{{ value.songbook }} - {{ value.country }}
+									</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</details>
+					</li>
+					{% include 'nav.html' %}
+				</ul>
+			</nav>
+		</header>
+		{% endblock %}
+		{% block aside %}
+		<aside id="menu">
+			<article><nav><ul>
+				<li><a class="secondary pointer text-right" onclick="toggleMenu()">
+					<svg width="1em" height="1em"><use xlink:href="#icon-x"/></svg>
+				</a></li>
+				{% for key, value in settings.languages.items() %}
+				<li><a class="secondary" href="{{ url_for('psalm_list', lang=key) }}">
+					{{ value.songbook }} - {{ value.country }}
+				</a></li>
+				{% endfor %}
+				<li><hr></li>
+				<li><a class="pointer secondary" onclick="toggleModal(event)"
+					data-target="contact-modal">
+					Contact
+				</a></li>
+				<li><a target="_blank" class="secondary"
+					href="https://git.aleyoscar.com/oscarale/resurrexit">
+					Source
+				</a></li>
+				<li><a class="flex align-center gap-xxs theme-btn pointer secondary"
+					onclick="switchTheme(event)">
+					Theme
+					<svg class="icon theme-toggle theme-dark mr-xxs"
+						width="1em" height="1em">
+						<use xlink:href="#icon-moon"/>
+					</svg>
+					<svg class="icon theme-toggle theme-light mr-xxs"
+						width="1em" height="1em">
+						<use xlink:href="#icon-sun"/>
+					</svg>
+				</a></li>
+			</ul></nav></article>
+		</aside>
+		{% endblock %}
+		<main>{% block content %}{% endblock %}</main>
+		{% block footer %}
+		<footer id="footer" class="mt-auto">
+			<nav class="container justify-center">
+				<ul>
+					{% include 'nav.html' %}
+				</ul>
+			</nav>
+		</footer>
+		{% endblock %}
+		{% block eplayer %}{% endblock %}
+		{% block modals %}{% endblock %}
+		{% include 'contact.html' %}
+	</body>
+</html>

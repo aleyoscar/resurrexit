@@ -90,7 +90,7 @@ ESCUCHA ISRAEL...
 [C]
 
 Lam
-Shemá Israel, [melisma]
+Shemá Israel, (melisma)
 
 [A]
 

@@ -20,7 +20,7 @@ La
 
 [S]
 
-                      Fa#-
+                      Fa#m
 alabad al Señor en lo alto,
 
 [A]
@@ -38,7 +38,7 @@ alabadio, todos sus ángeles,
 
 [S]
 
-                    Fa#-
+                    Fa#m
 alabadlo, todos sus ejércitos!
 
 [A]
@@ -56,7 +56,7 @@ Alabadio, sol y luna,
 
 [S]
 
-                     Fa#-
+                     Fa#m
 alabadio, estrellas lucientes.
 
 [A]

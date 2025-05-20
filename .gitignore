@@ -1,7 +1,3 @@
 .ddev
-songbook/*/images
-songbook/*/audio
 __pycache__
-processwire/site/assets
-reset.php
-db
+audio

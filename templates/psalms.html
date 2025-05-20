@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% block html_lang %}{{ settings.languages[lang].code }}{% endblock %}
+{% block title %}{{ settings.languages[lang].songbook }}{% endblock %}
+{% block header_title %}{{ settings.languages[lang].songbook }}{% endblock %}
+{% block header_url %}
+	{{ url_for('psalm_list', lang=lang) }}
+{% endblock %}
+
+{% block content %}
+<section id="tools" class="sticky">
+	<div class="container flex align-center gap-xs">
+		<input id="search-input"
+			class="flex-1"
+			type="search"
+			name="search"
+			placeholder="Search"
+			aria-label="Search"
+		/>
+		<button id="sort-btn" class="outline flex-inline align-center gap-xxs hide-md"
+			onclick="sortList(event)">
+			Sort
+			<svg id="sort-btn-asc" width="1em" height="1em">
+				<use xlink:href="#icon-sort-asc"/>
+			</svg>
+			<svg id="sort-btn-desc" class="hide" width="1em" height="1em">
+				<use xlink:href="#icon-sort-desc"/>
+			</svg>
+		</button>
+		<button id="steps-btn"
+			class="flex-inline align-center outline gap-xxs hide-md"
+			onclick="toggleModal(event)" data-target="steps-modal">
+			<span class="hide"></span>Steps
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-steps"/>
+			</svg>
+		</button>
+		<button id="tags-btn"
+			class="flex-inline align-center outline gap-xxs hide-md"
+			onclick="toggleModal(event)" data-target="tags-modal">
+			<span class="hide"></span>Book Tags
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-book"/>
+			</svg>
+		</button>
+		<button id="gtags-btn"
+			class="flex-inline align-center outline gap-xxs hide-md"
+			onclick="toggleModal(event)" data-target="gtags-modal">
+			<span class="hide"></span>Global Tags
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-globe"/>
+			</svg>
+		</button>
+		<details class="dropdown hide-lg mb-0">
+			<summary class="transparent-btn no-caret">
+				<svg width="1.6em" height="1.6em">
+					<use xlink:href="#icon-filter"/>
+				</svg>
+			</summary>
+			<ul dir="rtl">
+				<li><a id="sort-btn-md" class="pointer"
+					onclick="sortList(event)">
+					Sort
+				</a></li>
+				<li><a id="steps-btn-md"
+					class="pointer"
+					onclick="toggleModal(event)" data-target="steps-modal">
+					<span class="hide"></span>Steps
+				</a></li>
+				<li><a id="tags-btn-md"
+					class="pointer"
+					onclick="toggleModal(event)" data-target="tags-modal">
+					<span class="hide"></span>Book Tags
+				</a></li>
+				<li><a id="gtags-btn-md"
+					class="pointer"
+					onclick="toggleModal(event)" data-target="gtags-modal">
+					<span class="hide"></span>Global Tags
+				</a></li>
+			</ul>
+		</details>
+		<!-- <button id="contexts-btn"
+			class="flex-inline align-center outline"
+			onclick="toggleModal(event)" data-target="contexts-modal">
+			Contexts
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-at"/>
+			</svg>
+		</button> -->
+	</div>
+	<a id="clear-btn" class="secondary flex justify-center align-center gap-xxs pointer pt-xs"
+		onclick="clearFilters()"><small>
+		Clear Filters
+		<svg width="1em" height="1em">
+			<use xlink:href="#icon-stars"/>
+		</svg></small>
+	</a>
+</section>
+<section class="container">
+	<ul id="psalm-list" class="flex flex-column">
+	{% for psalm in psalms %}
+		<li id="p-{{ psalm.id }}"
+			class="psalm pointer
+				{{ psalm.step }}
+				{% for tag in psalm.tags %} {{ tag }}{% endfor %}
+				{% for gtag in psalm.gtags %} {{ gtag }}{% endfor %}">
+			<a href="{{ url_for('psalm', lang=psalm.lang, slug=psalm.slug) }}">
+				<hgroup>
+					<h5>{{ psalm.title }}</h5>
+					<p>{{ psalm.subtitle }}</p>
+				</hgroup>
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+</section>
+{% endblock %}
+
+{% block modals %}{% include 'modals.html' %}{% endblock %}

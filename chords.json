@@ -1,0 +1,38 @@
+{
+	"english": {
+		"languages": ["en-us"],
+		"chords": [
+			["A"],
+			["A#", "Bb"],
+			["B"],
+			["C"],
+			["C#", "Db"],
+			["D"],
+			["D#", "Eb"],
+			["E"],
+			["F"],
+			["F#", "Gb"],
+			["G"],
+			["G#", "Ab"]
+		],
+		"qualities": ["m", "7", "9", "m7", "m9"]
+	},
+	"southern": {
+		"languages": ["es-es"],
+		"chords": [
+			["La"],
+			["La#", "Sib"],
+			["Si"],
+			["Do"],
+			["Do#", "Reb"],
+			["Re"],
+			["Re#", "Mib"],
+			["Mi"],
+			["Fa"],
+			["Fa#", "Solb"],
+			["Sol"],
+			["Sol#", "Lab"]
+		],
+		"qualities": ["m", "7", "9", "m7", "m9"]
+	}
+}

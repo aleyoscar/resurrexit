@@ -1,0 +1,5798 @@
+[
+    {
+        "id": 163,
+        "lang": "en-us",
+        "title": "A GRANDIOSE SIGN",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-fin",
+            "g-pas",
+            "g-pen",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 160,
+        "lang": "en-us",
+        "title": "A HOMILY OF MELITO OF SARDIS",
+        "subtitle": "",
+        "step": "con",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan",
+            "g-pas",
+            "g-pen",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 237,
+        "lang": "es-es",
+        "title": "A LA CENA DEL CORDERO",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 1,
+        "lang": "es-es",
+        "title": "A LA VÍCTIMA PASCUAL",
+        "subtitle": "Secuencia de Pascua - Himno lat. «Victimae paschali laudes»",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 2,
+        "lang": "es-es",
+        "title": "A NADIE DEMOS OCASIÓN DE TROPIEZO",
+        "subtitle": "2o Co 6,3ss",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 162,
+        "lang": "en-us",
+        "title": "A SHOOT SPRINGS UP FROM THE STOCK OF JESSE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 3,
+        "lang": "es-es",
+        "title": "A TI LEVANTO MIS OJOS",
+        "subtitle": "Sal 123 (122)",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 4,
+        "lang": "es-es",
+        "title": "A TI, SEÑOR, EN MI CLAMOR IMPLORO",
+        "subtitle": "Sal 142 (141)",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 5,
+        "lang": "es-es",
+        "title": "A TI, SEÑOR, LEVANTO MI ALMA",
+        "subtitle": "Sal 25 (24)",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 6,
+        "lang": "es-es",
+        "title": "A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN",
+        "subtitle": "Salmo 65 (64)",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 7,
+        "lang": "en-us",
+        "title": "ABBA FATHER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 193,
+        "lang": "en-us",
+        "title": "ABBA, ABBA, FATHER",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 7,
+        "lang": "es-es",
+        "title": "ABBÁ, PADRE",
+        "subtitle": "Rm 8,15-17",
+        "step": "pre",
+        "tags": [
+            "int",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 8,
+        "lang": "en-us",
+        "title": "ABRAHAM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 8,
+        "lang": "es-es",
+        "title": "ABRAHAM",
+        "subtitle": "Gn 18,1-5",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 9,
+        "lang": "en-us",
+        "title": "ACCLAIM THE LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 182,
+        "lang": "en-us",
+        "title": "ACCLAMATION TO THE GOSPEL DURING LENT",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 179,
+        "lang": "es-es",
+        "title": "ACLAMACIONES A LA ORACIÓN DE LOS FIELES",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 9,
+        "lang": "es-es",
+        "title": "ACLAMAD AL SEÑOR",
+        "subtitle": "Sal 100 (99)",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 238,
+        "lang": "es-es",
+        "title": "ADÓNDE TE ESCONDISTE, AMADO",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 19,
+        "lang": "en-us",
+        "title": "AKEDA",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 10,
+        "lang": "es-es",
+        "title": "AL DESPERTAR",
+        "subtitle": "Sal 17 (16)",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 11,
+        "lang": "es-es",
+        "title": "ALABAD AL SEÑOR EN EL CIELO",
+        "subtitle": "Sal 148",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 12,
+        "lang": "es-es",
+        "title": "ALEGRÍA, HA NACIDO EL SALVADOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib"
+        ]
+    },
+    {
+        "id": 180,
+        "lang": "es-es",
+        "title": "ALELUYA INTERLECCIONAL",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 181,
+        "lang": "es-es",
+        "title": "ALELUYA PASCUAL",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-pas"
+        ]
+    },
+    {
+        "id": 13,
+        "lang": "es-es",
+        "title": "ALELUYA, ALABAD AL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 14,
+        "lang": "es-es",
+        "title": "ALELUYA, BENDECID AL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib",
+            "pas",
+            "pen",
+            "pax"
+        ],
+        "gtags": [
+            "g-lib",
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 15,
+        "lang": "es-es",
+        "title": "ALELUYA, YA LLEGÓ EL REINO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 180,
+        "lang": "en-us",
+        "title": "ALLELUIA IN LECTIONARY",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 15,
+        "lang": "en-us",
+        "title": "ALLELUIA, HERE COMES THE KINGDOM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 13,
+        "lang": "en-us",
+        "title": "ALLELUIA, PRAISE GOD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 16,
+        "lang": "es-es",
+        "title": "ALZAOS, PUERTAS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 17,
+        "lang": "en-us",
+        "title": "AMEN, AMEN, AMEN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 18,
+        "lang": "es-es",
+        "title": "AMO AL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 17,
+        "lang": "es-es",
+        "title": "AMÉN, AMÉN, AMÉN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 179,
+        "lang": "en-us",
+        "title": "ANSWERS TO THE UNIVERSAL PRAYER",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 182,
+        "lang": "es-es",
+        "title": "ANTÍFONA PARA EL EVANGELIO",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 19,
+        "lang": "es-es",
+        "title": "AQUEDAH",
+        "subtitle": "Gn 22,9-10 - Targum Neofiti",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-var"
+        ]
+    },
+    {
+        "id": 239,
+        "lang": "en-us",
+        "title": "AS HONEY DRIPS",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "sal"
+        ],
+        "gtags": [
+            "g-sal"
+        ]
+    },
+    {
+        "id": 37,
+        "lang": "en-us",
+        "title": "AS MEN CONDEMNED TO DEATH",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 20,
+        "lang": "es-es",
+        "title": "ASÍ HABLA EL AMÉN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 21,
+        "lang": "es-es",
+        "title": "AVE MARÍA I",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 22,
+        "lang": "es-es",
+        "title": "AVE MARÍA II",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 23,
+        "lang": "es-es",
+        "title": "BABILONIA CRIMINAL",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 24,
+        "lang": "es-es",
+        "title": "BALAAM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "fin",
+            "pax"
+        ],
+        "gtags": [
+            "g-fin",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 132,
+        "lang": "en-us",
+        "title": "BECAUSE OF MY BROTHERS AND FRIENDS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pax"
+        ]
+    },
+    {
+        "id": 49,
+        "lang": "en-us",
+        "title": "BEFORE THE ANGELS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 82,
+        "lang": "en-us",
+        "title": "BEHOLD I'M COMING SOON",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 226,
+        "lang": "en-us",
+        "title": "BEHOLD OUR MIRROR",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "sal"
+        ],
+        "gtags": [
+            "g-sal",
+            "g-com"
+        ]
+    },
+    {
+        "id": 25,
+        "lang": "es-es",
+        "title": "BENDECIRÉ AL SEÑOR EN TODO TIEMPO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "com"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-com"
+        ]
+    },
+    {
+        "id": 26,
+        "lang": "es-es",
+        "title": "BENDICE, ALMA MÍA, A YAHVEH",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 183,
+        "lang": "es-es",
+        "title": "BENDICIÓN DEL AGUA",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-pas"
+        ]
+    },
+    {
+        "id": 27,
+        "lang": "es-es",
+        "title": "BENDITA ERES TÚ, MARÍA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int",
+            "vir"
+        ],
+        "gtags": [
+            "g-int",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 28,
+        "lang": "es-es",
+        "title": "BENDITO ERES, SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 29,
+        "lang": "es-es",
+        "title": "BENDITO SEA DIOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 30,
+        "lang": "es-es",
+        "title": "BENEDICTUS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 23,
+        "lang": "en-us",
+        "title": "BESIDE THE RIVERS OF BABYLON",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 14,
+        "lang": "en-us",
+        "title": "BLESS THE LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib",
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 26,
+        "lang": "en-us",
+        "title": "BLESS THE LORD MY SOUL",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 29,
+        "lang": "en-us",
+        "title": "BLESSED BE GOD",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 27,
+        "lang": "en-us",
+        "title": "BLESSED MARY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-int"
+        ]
+    },
+    {
+        "id": 185,
+        "lang": "en-us",
+        "title": "BLESSING FOR THE PENITENTIAL CELEBRATION",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "poe"
+        ],
+        "gtags": [
+            "g-poe"
+        ]
+    },
+    {
+        "id": 183,
+        "lang": "en-us",
+        "title": "BLESSING OF THE WATER OF THE BAPTISMAL FONT",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "pas"
+        ],
+        "gtags": [
+            "g-pas"
+        ]
+    },
+    {
+        "id": 2,
+        "lang": "en-us",
+        "title": "BROTHERS",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 31,
+        "lang": "es-es",
+        "title": "CANTAD A DIOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 32,
+        "lang": "es-es",
+        "title": "CANTAD AL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 28,
+        "lang": "en-us",
+        "title": "CANTICLE OF THE THREE YOUNG MEN IN THE FURNACE - 1ST PART",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 33,
+        "lang": "en-us",
+        "title": "CANTICLE OF THE THREE YOUNG MEN IN THE FURNACE - 2ND PART",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 94,
+        "lang": "en-us",
+        "title": "CANTICLE OF TOBIT: BLESS MY SOUL THE LORD",
+        "subtitle": "Tob. 13",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 30,
+        "lang": "en-us",
+        "title": "CANTICLE OF ZECHARIAH",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 34,
+        "lang": "es-es",
+        "title": "CANTO DE MOISÉS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 35,
+        "lang": "en-us",
+        "title": "CARITAS CHRISTI",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 35,
+        "lang": "es-es",
+        "title": "CARITAS CHRISTI URGET NOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 36,
+        "lang": "en-us",
+        "title": "CARMEN '63",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-vin",
+            "g-fin"
+        ]
+    },
+    {
+        "id": 36,
+        "lang": "es-es",
+        "title": "CARMEN 63",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "fin"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-var"
+        ]
+    },
+    {
+        "id": 185,
+        "lang": "es-es",
+        "title": "CELEBRACIÓN PENITENCIAL",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-poe"
+        ]
+    },
+    {
+        "id": 87,
+        "lang": "en-us",
+        "title": "CHRIST JESUS IS THE LORD - HYMN TO THE KENOSIS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pan",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 166,
+        "lang": "en-us",
+        "title": "COME FROM LEBANON",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 135,
+        "lang": "en-us",
+        "title": "COME TO ME ALL OF YOU",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 168,
+        "lang": "en-us",
+        "title": "COME, SON OF MAN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 37,
+        "lang": "es-es",
+        "title": "COMO CONDENADOS A MUERTE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 239,
+        "lang": "es-es",
+        "title": "COMO DESTILA LA MIEL",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-sal"
+        ]
+    },
+    {
+        "id": 221,
+        "lang": "es-es",
+        "title": "COMO EL IMPULSO QUE SIENTE LA IRA",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-sal"
+        ]
+    },
+    {
+        "id": 39,
+        "lang": "es-es",
+        "title": "COMO LA CIERVA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 240,
+        "lang": "es-es",
+        "title": "COMO LIRIO ENTRE LOS CARDOS",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 40,
+        "lang": "es-es",
+        "title": "COMO OVEJA QUE VE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "pan",
+            "pas",
+            "pen",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-pan",
+            "g-pas",
+            "g-pen",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 41,
+        "lang": "es-es",
+        "title": "CONSOLAD A MI PUEBLO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int",
+            "fin",
+            "pax"
+        ],
+        "gtags": [
+            "g-int",
+            "g-fin",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 41,
+        "lang": "en-us",
+        "title": "CONSOLE MY PEOPLE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int",
+            "g-fin",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 186,
+        "lang": "es-es",
+        "title": "CORDERO DE DIOS",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 187,
+        "lang": "es-es",
+        "title": "CREDO",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 187,
+        "lang": "en-us",
+        "title": "CREED",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 42,
+        "lang": "es-es",
+        "title": "CRISTO ES LA LUZ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 222,
+        "lang": "es-es",
+        "title": "CUANDO DORMÍA",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "vin"
+        ],
+        "gtags": [
+            "g-vin"
+        ]
+    },
+    {
+        "id": 43,
+        "lang": "es-es",
+        "title": "CUANDO EL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "int"
+        ],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 44,
+        "lang": "es-es",
+        "title": "CUANDO ISRAEL SALIÓ DE EGIPTO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 33,
+        "lang": "es-es",
+        "title": "CÁNTICO DE LOS TRES JÓVENES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 38,
+        "lang": "es-es",
+        "title": "CÓMO ES MARAVILLOSO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pax"
+        ],
+        "gtags": [
+            "g-pax"
+        ]
+    },
+    {
+        "id": 84,
+        "lang": "en-us",
+        "title": "DAUGHTERS OF JERUSALEM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 50,
+        "lang": "en-us",
+        "title": "DAY OF REST",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "heb"
+        ],
+        "gtags": [
+            "g-heb",
+            "g-fin"
+        ]
+    },
+    {
+        "id": 45,
+        "lang": "en-us",
+        "title": "DAYENU",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "heb"
+        ],
+        "gtags": [
+            "g-heb",
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 45,
+        "lang": "es-es",
+        "title": "DAYENÚ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen",
+            "pax"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-pax",
+            "g-heb"
+        ]
+    },
+    {
+        "id": 47,
+        "lang": "en-us",
+        "title": "DE PROFUNDIS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 47,
+        "lang": "es-es",
+        "title": "DE PROFUNDIS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 127,
+        "lang": "en-us",
+        "title": "DEATH IS SWALLOWED UP IN VICTORY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 48,
+        "lang": "es-es",
+        "title": "DECIDLE A LOS DE CORAZÓN CANSADO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 49,
+        "lang": "es-es",
+        "title": "DELANTE DE LOS ÁNGELES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 51,
+        "lang": "es-es",
+        "title": "DICE EL SEÑOR A MI SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 52,
+        "lang": "es-es",
+        "title": "DICHOSO EL HOMBRE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 231,
+        "lang": "en-us",
+        "title": "DO NOT GET ANGRY BECAUSE OF THE WICKED",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 230,
+        "lang": "en-us",
+        "title": "DO NOT RESIST EVIL",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 251,
+        "lang": "en-us",
+        "title": "DOXOLOGY",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 223,
+        "lang": "es-es",
+        "title": "DÉBORA",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 50,
+        "lang": "es-es",
+        "title": "DÍA DE REPOSO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "fin"
+        ],
+        "gtags": [
+            "g-fin",
+            "g-heb"
+        ]
+    },
+    {
+        "id": 181,
+        "lang": "en-us",
+        "title": "EASTER ALLELUIA",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "pas"
+        ],
+        "gtags": [
+            "g-pas"
+        ]
+    },
+    {
+        "id": 53,
+        "lang": "es-es",
+        "title": "EL COMBATE ESCATOLÓGICO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 54,
+        "lang": "es-es",
+        "title": "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "int",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 55,
+        "lang": "es-es",
+        "title": "EL JACAL DE LOS PASTORES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 56,
+        "lang": "es-es",
+        "title": "EL LAGARERO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan"
+        ]
+    },
+    {
+        "id": 57,
+        "lang": "es-es",
+        "title": "EL MESÍAS LEÓN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pan",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 224,
+        "lang": "es-es",
+        "title": "EL MISMO DIOS",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "vin"
+        ],
+        "gtags": [
+            "g-vin"
+        ]
+    },
+    {
+        "id": 58,
+        "lang": "es-es",
+        "title": "EL NECIO PIENSA QUE DI0S NO EXISTE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 59,
+        "lang": "es-es",
+        "title": "EL PUEBLO QUE CAMINABA EN LAS TINIEBLAS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 225,
+        "lang": "es-es",
+        "title": "EL SEMBRADOR",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 60,
+        "lang": "es-es",
+        "title": "EL SEÑOR ANUNCIA UNA NOTICIA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 61,
+        "lang": "es-es",
+        "title": "EL SEÑOR ES MI PASTOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 62,
+        "lang": "es-es",
+        "title": "EL SEÑOR ME HA DADO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan"
+        ]
+    },
+    {
+        "id": 63,
+        "lang": "en-us",
+        "title": "ELI, ELI, LAMA SABACTANI?",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 63,
+        "lang": "es-es",
+        "title": "ELÍ, ELÍ, LAMÁ SABACTANÍ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 64,
+        "lang": "es-es",
+        "title": "EN MEDIO DE AQUEL GENTÍO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin"
+        ],
+        "gtags": [
+            "g-vin"
+        ]
+    },
+    {
+        "id": 65,
+        "lang": "es-es",
+        "title": "EN UNA NOCHE OSCURA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 66,
+        "lang": "es-es",
+        "title": "ERES DIGNO DE TOMAR EL LIBRO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pan",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 67,
+        "lang": "es-es",
+        "title": "ERES HERMOSO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "fin"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-fin"
+        ]
+    },
+    {
+        "id": 68,
+        "lang": "es-es",
+        "title": "ES PACIENTE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "int",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-int",
+            "g-pas",
+            "g-pen",
+            "g-var"
+        ]
+    },
+    {
+        "id": 70,
+        "lang": "es-es",
+        "title": "ESCUCHAD, ISLAS LEJANAS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "int"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-int"
+        ]
+    },
+    {
+        "id": 69,
+        "lang": "es-es",
+        "title": "ESCÓNDEME EN LO OCULTO DE TU TIENDA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 71,
+        "lang": "es-es",
+        "title": "ESTE ES EL DÍA EN QUE ACTUÓ EL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 72,
+        "lang": "es-es",
+        "title": "ESTE ES EL MANDAMIENTO MÍO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 194,
+        "lang": "en-us",
+        "title": "EUCHARISTIC PRAYER II - 1 PREFACE",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 252,
+        "lang": "en-us",
+        "title": "EUCHARISTIC PRAYER II - 2 CONSECRATION AND ACCLAMATION",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 197,
+        "lang": "en-us",
+        "title": "EUCHARISTIC PRAYER II - 2 PREFACE",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 73,
+        "lang": "en-us",
+        "title": "EVENU SHALOM ALEHEM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "heb"
+        ],
+        "gtags": [
+            "g-heb",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 73,
+        "lang": "es-es",
+        "title": "EVENU SHALOM ALEJEM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pax"
+        ],
+        "gtags": [
+            "g-pax",
+            "g-heb"
+        ]
+    },
+    {
+        "id": 74,
+        "lang": "es-es",
+        "title": "EXTIENDO MIS MANOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan"
+        ]
+    },
+    {
+        "id": 75,
+        "lang": "en-us",
+        "title": "EXULT, YOU JUST IN THE LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 75,
+        "lang": "es-es",
+        "title": "EXULTAD, JUSTOS, EN EL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "int",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 206,
+        "lang": "en-us",
+        "title": "EXULTET",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "pas"
+        ],
+        "gtags": [
+            "g-pas"
+        ]
+    },
+    {
+        "id": 76,
+        "lang": "es-es",
+        "title": "FELICIDAD PARA EL HOMBRE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 81,
+        "lang": "en-us",
+        "title": "FIRST SONG OF THE SERVANT OF YAHWEH",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 16,
+        "lang": "en-us",
+        "title": "GATES LIFT UP YOUR HEADS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 77,
+        "lang": "en-us",
+        "title": "GIVE THANKS TO THE LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 188,
+        "lang": "es-es",
+        "title": "GLORIA A DIOS EN LO ALTO DEL CIELO",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 188,
+        "lang": "en-us",
+        "title": "GLORY TO GOD",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 177,
+        "lang": "en-us",
+        "title": "GLORY, GLORY, GLORY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int",
+            "g-fin"
+        ]
+    },
+    {
+        "id": 92,
+        "lang": "en-us",
+        "title": "GO AND ANNOUNCE TO MY BROTHERS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 157,
+        "lang": "en-us",
+        "title": "GOD GOES UP WITH ACCLAMATIONS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 250,
+        "lang": "en-us",
+        "title": "GRACE BEFORE MEALS",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 77,
+        "lang": "es-es",
+        "title": "GRACIAS A YAHVEH",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "fin",
+            "pas",
+            "pen",
+            "pax"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 78,
+        "lang": "es-es",
+        "title": "GRITAD JUBILOSOS",
+        "subtitle": "Is 12,1ss",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "fin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 79,
+        "lang": "es-es",
+        "title": "HACIA TI, MORADA SANTA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int",
+            "g-var"
+        ]
+    },
+    {
+        "id": 21,
+        "lang": "en-us",
+        "title": "HAIL MARY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym",
+            "vir"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 22,
+        "lang": "en-us",
+        "title": "HAIL MARY - 1984",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym",
+            "vir"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 144,
+        "lang": "en-us",
+        "title": "HAIL QUEEN OF HEAVENS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym",
+            "vir"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 130,
+        "lang": "en-us",
+        "title": "HAIL, O MARY, UNCORRUPT DOVE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 76,
+        "lang": "en-us",
+        "title": "HAPPINESS FOR THE MAN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 52,
+        "lang": "en-us",
+        "title": "HAPPY THE MAN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 80,
+        "lang": "es-es",
+        "title": "HASTA CUÁNDO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 117,
+        "lang": "en-us",
+        "title": "HAVE MERCY ON ME, GOD, IN YOUR KINDNESS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 81,
+        "lang": "es-es",
+        "title": "HE AQUÍ MI SIERVO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "pan"
+        ],
+        "gtags": [
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 226,
+        "lang": "es-es",
+        "title": "HE AQUÍ QUE NUESTRO ESPEJO ES EL SEÑOR",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com",
+            "g-sal"
+        ]
+    },
+    {
+        "id": 82,
+        "lang": "es-es",
+        "title": "HE AQUÍ QUE VENGO PRESTO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 83,
+        "lang": "es-es",
+        "title": "HE ESPERADO EN EL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 120,
+        "lang": "en-us",
+        "title": "HE IS NOT HERE, HE IS RISEN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 142,
+        "lang": "en-us",
+        "title": "HE ROSE FROM DEATH",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 174,
+        "lang": "en-us",
+        "title": "HE'S COMING MY GOD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib"
+        ]
+    },
+    {
+        "id": 170,
+        "lang": "en-us",
+        "title": "HERE COMES THE LORD WITH MAJESTY ENROBED",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 241,
+        "lang": "es-es",
+        "title": "HERMOSA ERES, AMIGA MÍA",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 84,
+        "lang": "es-es",
+        "title": "HIJAS DE JERUSALÉN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "pan"
+        ],
+        "gtags": [
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 85,
+        "lang": "es-es",
+        "title": "HIMNO A CRISTO LUZ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-var"
+        ]
+    },
+    {
+        "id": 86,
+        "lang": "es-es",
+        "title": "HIMNO A LA CARIDAD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 227,
+        "lang": "es-es",
+        "title": "HIMNO A LA CRUZ GLORIOSA",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 87,
+        "lang": "es-es",
+        "title": "HIMNO A LA KENOSIS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pan",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 88,
+        "lang": "es-es",
+        "title": "HIMNO DE ADVIENTO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 89,
+        "lang": "es-es",
+        "title": "HIMNO DE LA ASCENSIÓN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 90,
+        "lang": "es-es",
+        "title": "HIMNO DE PASCUA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 215,
+        "lang": "en-us",
+        "title": "HOLY, HE'S HOLY - LENTEN SEASON",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "heb",
+            "ord"
+        ],
+        "gtags": [
+            "g-heb",
+            "g-ord"
+        ]
+    },
+    {
+        "id": 218,
+        "lang": "en-us",
+        "title": "HOLY, HOLY, HOLY - 1983",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 214,
+        "lang": "en-us",
+        "title": "HOLY, HOLY, HOLY - ADVENT: HOLY OF THE SHANTY TOWN",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 216,
+        "lang": "en-us",
+        "title": "HOLY, HOLY, HOLY - EASTER: HOSANNA OF THE PALMS",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "pas",
+            "ord"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-ord"
+        ]
+    },
+    {
+        "id": 217,
+        "lang": "en-us",
+        "title": "HOLY, HOLY, HOLY - ORDINARY TIME",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 219,
+        "lang": "en-us",
+        "title": "HOLY, HOLY, HOLY - ORDINARY TIME - 1988",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 38,
+        "lang": "en-us",
+        "title": "HOW GOOD IT IS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pax"
+        ]
+    },
+    {
+        "id": 136,
+        "lang": "en-us",
+        "title": "HOW LOVELY ARE YOUR DWELLING PLACES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 80,
+        "lang": "en-us",
+        "title": "HOW MUCH LONGER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 91,
+        "lang": "es-es",
+        "title": "HUYE, AMADO MÍO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "fin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 253,
+        "lang": "en-us",
+        "title": "HYMN FOR LAUDS OF ADVENT AFTER DECEMBER 16",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 254,
+        "lang": "en-us",
+        "title": "HYMN FOR LAUDS OF ADVENT UNTIL DECEMBER 16",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 255,
+        "lang": "en-us",
+        "title": "HYMN FOR LAUDS OF PENTECOST",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 237,
+        "lang": "en-us",
+        "title": "HYMN FOR VESPERS FROM EASTER TO THE ASCENSION",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 88,
+        "lang": "en-us",
+        "title": "HYMN OF ADVENT",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 256,
+        "lang": "en-us",
+        "title": "HYMN OF LAUDS FROM EASTER TO THE ASCENSION",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 90,
+        "lang": "en-us",
+        "title": "HYMN OF PASSOVER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 169,
+        "lang": "en-us",
+        "title": "HYMN OF VESPERS FROM ASCENSION TO PENTECOST",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 89,
+        "lang": "en-us",
+        "title": "HYMN OF VESPERS ON THE DAY OF ASCENSION - HYMN OF LAUDS FROM ASCENSION TILL PENTECOST",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 86,
+        "lang": "en-us",
+        "title": "HYMN TO CHARITY",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 85,
+        "lang": "en-us",
+        "title": "HYMN TO CHRIST LIGHT",
+        "subtitle": "(1967)",
+        "step": "pre",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 227,
+        "lang": "en-us",
+        "title": "HYMN TO THE GLORIOUS CROSS",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 68,
+        "lang": "en-us",
+        "title": "HYMN TO THE HOLY SPIRIT",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-vin",
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 158,
+        "lang": "en-us",
+        "title": "I CALL UPON YOU",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 83,
+        "lang": "en-us",
+        "title": "I HOPED, I HOPED IN THE LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 105,
+        "lang": "en-us",
+        "title": "I LIFT UP MY EYES TO THE MOUNTAINS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 18,
+        "lang": "en-us",
+        "title": "I LOVE THE LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 176,
+        "lang": "en-us",
+        "title": "I LOVE YOU, LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 159,
+        "lang": "en-us",
+        "title": "I MANIFESTED TO YOU MY SIN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 71,
+        "lang": "en-us",
+        "title": "I SHALL NOT DIE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 74,
+        "lang": "en-us",
+        "title": "I STRETCHED OUT MY HANDS",
+        "subtitle": "",
+        "step": "con",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan"
+        ]
+    },
+    {
+        "id": 140,
+        "lang": "en-us",
+        "title": "I WANT TO GO TO JERUSALEM",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "heb"
+        ],
+        "gtags": [
+            "g-heb",
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 141,
+        "lang": "en-us",
+        "title": "I WANT TO SING",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 25,
+        "lang": "en-us",
+        "title": "I WILL BLESS THE LORD AT ALL TIMES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-com"
+        ]
+    },
+    {
+        "id": 129,
+        "lang": "en-us",
+        "title": "I WILL TAKE YOU FROM THE PEOPLES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 92,
+        "lang": "es-es",
+        "title": "ID Y ANUNCIAD A MIS HERMANOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "fin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 153,
+        "lang": "en-us",
+        "title": "IF IN THE LORD I HAVE TAKEN REFUGE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 150,
+        "lang": "en-us",
+        "title": "IF THE LORD DOES NOT BUILD THE HOUSE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 152,
+        "lang": "en-us",
+        "title": "IF TODAY YOU LISTEN TO HIS VOICE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 151,
+        "lang": "en-us",
+        "title": "IF YOU ARE RISEN WITH CHRIST",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 93,
+        "lang": "es-es",
+        "title": "IMPROPERIOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "pan"
+        ],
+        "gtags": [
+            "g-com",
+            "g-pan",
+            "g-var"
+        ]
+    },
+    {
+        "id": 121,
+        "lang": "en-us",
+        "title": "IN HIM THERE IS NO BEAUTY",
+        "subtitle": "",
+        "step": "con",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan"
+        ]
+    },
+    {
+        "id": 64,
+        "lang": "en-us",
+        "title": "IN THE MIDST OF A GREAT CROWD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin"
+        ]
+    },
+    {
+        "id": 257,
+        "lang": "en-us",
+        "title": "INVOCATION OF THE HOLY SPIRIT",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 228,
+        "lang": "en-us",
+        "title": "JACOB",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 228,
+        "lang": "es-es",
+        "title": "JACOB",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 94,
+        "lang": "es-es",
+        "title": "JERUSALÉN RECONSTRUIDA",
+        "subtitle": "Tb 13,11-17",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen",
+            "pax"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 95,
+        "lang": "en-us",
+        "title": "JESUS WENT THROUGH ALL THE TOWNS",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 95,
+        "lang": "es-es",
+        "title": "JESÚS RECORRÍA TODAS LAS CIUDADES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 96,
+        "lang": "es-es",
+        "title": "LA CORDERA DE DIOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 97,
+        "lang": "es-es",
+        "title": "LA ESPADA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 98,
+        "lang": "es-es",
+        "title": "LA MARCHA ES DURA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com",
+            "g-var"
+        ]
+    },
+    {
+        "id": 242,
+        "lang": "es-es",
+        "title": "LA PALOMA VOLÓ",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-sal"
+        ]
+    },
+    {
+        "id": 99,
+        "lang": "es-es",
+        "title": "LA SALVE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 100,
+        "lang": "es-es",
+        "title": "LA SIEGA DE LAS NACIONES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "fin"
+        ],
+        "gtags": [
+            "g-fin"
+        ]
+    },
+    {
+        "id": 101,
+        "lang": "es-es",
+        "title": "LA VOZ DE MI AMADO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 186,
+        "lang": "en-us",
+        "title": "LAMB OF GOD",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "ord"
+        ],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 93,
+        "lang": "en-us",
+        "title": "LAMENTATION OF THE LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 102,
+        "lang": "es-es",
+        "title": "LAS ARMAS DE LA LUZ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 103,
+        "lang": "es-es",
+        "title": "LAUDA SION",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 31,
+        "lang": "en-us",
+        "title": "LET GOD ARISE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 55,
+        "lang": "en-us",
+        "title": "LET HIM KISS ME",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 189,
+        "lang": "es-es",
+        "title": "LETANÍAS DE LOS SANTOS",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 191,
+        "lang": "es-es",
+        "title": "LETANÍAS PENITENCIALES 1",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-heb",
+            "g-poe"
+        ]
+    },
+    {
+        "id": 192,
+        "lang": "es-es",
+        "title": "LETANÍAS PENITENCIALES 11",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 105,
+        "lang": "es-es",
+        "title": "LEVANTO MIS OJOS A LOS MONTES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "int"
+        ],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 39,
+        "lang": "en-us",
+        "title": "LIKE A DOE YEARNS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 40,
+        "lang": "en-us",
+        "title": "LIKE A MOTHER EWE",
+        "subtitle": "From a Hymn by Roman The Melodist - Kontakion of Good Friday",
+        "step": "pre",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan",
+            "g-com",
+            "g-pas",
+            "g-pen",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 106,
+        "lang": "es-es",
+        "title": "LLEGUE HASTA TU PRESENCIA MI CLAMOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "int"
+        ],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 107,
+        "lang": "es-es",
+        "title": "LLÉVAME AL CIELO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "fin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-fin",
+            "g-pas",
+            "g-pen",
+            "g-var"
+        ]
+    },
+    {
+        "id": 155,
+        "lang": "en-us",
+        "title": "LONE TO ALONE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 116,
+        "lang": "en-us",
+        "title": "LOOK HOW IT IS GOOD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "heb"
+        ],
+        "gtags": [
+            "g-heb",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 233,
+        "lang": "en-us",
+        "title": "LORD YOU SEARCH ME",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 161,
+        "lang": "en-us",
+        "title": "LORD, LISTEN TO MY PRAYER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 106,
+        "lang": "en-us",
+        "title": "LORD, LORD JESUS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 108,
+        "lang": "en-us",
+        "title": "MAGNIFICAT",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 108,
+        "lang": "es-es",
+        "title": "MAGNÍFICAT",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 110,
+        "lang": "en-us",
+        "title": "MARIA DI JASNA GORA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 109,
+        "lang": "en-us",
+        "title": "MARY, HOUSE OF BENEDICTION",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 113,
+        "lang": "en-us",
+        "title": "MARY, LITTLE MARY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-com"
+        ]
+    },
+    {
+        "id": 112,
+        "lang": "en-us",
+        "title": "MARY, MOTHER OF THE BURNING WAY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 111,
+        "lang": "en-us",
+        "title": "MARY, MOTHER OF THE CHURCH",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 110,
+        "lang": "es-es",
+        "title": "MARÍA DE JASNA GÓRA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 109,
+        "lang": "es-es",
+        "title": "MARÍA, CASA DE BENDICIÓN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen",
+            "vir"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 111,
+        "lang": "es-es",
+        "title": "MARÍA, MADRE DE LA IGLESIA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "pan",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-pan",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 112,
+        "lang": "es-es",
+        "title": "MARÍA, MADRE DEL CAMINO ARDIENTE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 113,
+        "lang": "es-es",
+        "title": "MARÍA, PEQUEÑA MARÍA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 114,
+        "lang": "es-es",
+        "title": "ME ENSEÑARÁS EL CAMINO DE LA VIDA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 115,
+        "lang": "es-es",
+        "title": "ME HAS SEDUCIDO, SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 243,
+        "lang": "es-es",
+        "title": "ME ROBASTE EL CORAZÓN",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 116,
+        "lang": "es-es",
+        "title": "MIRAD QUÉ ESTUPENDO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pax"
+        ],
+        "gtags": [
+            "g-pax",
+            "g-heb"
+        ]
+    },
+    {
+        "id": 118,
+        "lang": "en-us",
+        "title": "MISERERE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 118,
+        "lang": "es-es",
+        "title": "MISERICORDIA MÍA, MISERICORDIA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 117,
+        "lang": "es-es",
+        "title": "MISERICORDIA, DIOS MÍO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 154,
+        "lang": "en-us",
+        "title": "MOTHER, MOTHER CITY OF GOD",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-fin",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 119,
+        "lang": "en-us",
+        "title": "MUCH HAVE THEY PERSECUTED ME",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 119,
+        "lang": "es-es",
+        "title": "MUCHO ME HAN PERSEGUIDO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 240,
+        "lang": "en-us",
+        "title": "MY BELOVED IS TO ME",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 229,
+        "lang": "es-es",
+        "title": "NINGUNO PUEDE SERVIR A DOS SEÑORES",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 120,
+        "lang": "es-es",
+        "title": "NO ESTÁ AQUÍ, RESUCITÓ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 121,
+        "lang": "es-es",
+        "title": "NO HAY EN ÉL PARECER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan"
+        ]
+    },
+    {
+        "id": 229,
+        "lang": "en-us",
+        "title": "NO ONE CAN SERVE TWO MASTERS",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 230,
+        "lang": "es-es",
+        "title": "NO RESISTÁIS AL MAL",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 231,
+        "lang": "es-es",
+        "title": "NO SUFRAS POR LOS MALVADOS",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 122,
+        "lang": "en-us",
+        "title": "NOLI ME TANGERE",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 122,
+        "lang": "es-es",
+        "title": "NOLI ME TANGERE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 124,
+        "lang": "en-us",
+        "title": "O GOD, BY YOUR NAME SAVE ME",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 125,
+        "lang": "en-us",
+        "title": "O GOD, YOU ARE MY GOD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 123,
+        "lang": "en-us",
+        "title": "O HEAVENS, RAIN FROM ABOVE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 126,
+        "lang": "en-us",
+        "title": "O JESUS, MY LOVE",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 147,
+        "lang": "en-us",
+        "title": "O LORD, DO NOT PUNISH ME IN YOUR ANGER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 146,
+        "lang": "en-us",
+        "title": "O LORD, HELP ME, LORD",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-com"
+        ]
+    },
+    {
+        "id": 232,
+        "lang": "en-us",
+        "title": "O LORD, MY HEART HAS NO MORE PRETENSIONS",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 128,
+        "lang": "en-us",
+        "title": "O LORD, OUR GOD",
+        "subtitle": "Psalm 8",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 123,
+        "lang": "es-es",
+        "title": "OH CIELOS, LLOVED DE LO ALTO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 124,
+        "lang": "es-es",
+        "title": "OH DIOS, POR TU NOMBRE SÁLVAME",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 125,
+        "lang": "es-es",
+        "title": "OH DIOS, TÚ ERES MI DIOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 126,
+        "lang": "es-es",
+        "title": "OH JESÚS, AMOR MÍO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "pan"
+        ],
+        "gtags": [
+            "g-com",
+            "g-pan",
+            "g-var"
+        ]
+    },
+    {
+        "id": 175,
+        "lang": "en-us",
+        "title": "OH LORD, YOU ARE MY GOD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 127,
+        "lang": "es-es",
+        "title": "OH MUERTE, ¿DÓNDE ESTÁ TU VICTORIA?",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 232,
+        "lang": "es-es",
+        "title": "OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 128,
+        "lang": "es-es",
+        "title": "OH SEÑOR, NUESTRO DIOS",
+        "subtitle": "Sal 8",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 129,
+        "lang": "es-es",
+        "title": "OS TOMARÉ DE ENTRE LAS NACIONES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 193,
+        "lang": "es-es",
+        "title": "PADRE NUESTRO",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 130,
+        "lang": "es-es",
+        "title": "PALOMA INCORRUPTA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen",
+            "vir"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 191,
+        "lang": "en-us",
+        "title": "PENITENTIAL LITANIES",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "heb",
+            "poe"
+        ],
+        "gtags": [
+            "g-heb",
+            "g-poe"
+        ]
+    },
+    {
+        "id": 131,
+        "lang": "en-us",
+        "title": "PENTECOST",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 131,
+        "lang": "es-es",
+        "title": "PENTECOSTÉS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen",
+            "g-var"
+        ]
+    },
+    {
+        "id": 194,
+        "lang": "es-es",
+        "title": "PLEGARIA EUCARÍSTICA II - MODELO I",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 197,
+        "lang": "es-es",
+        "title": "PLEGARIA EUCARÍSTICA II - MODELO II",
+        "subtitle": "(1987)",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 200,
+        "lang": "es-es",
+        "title": "PLEGARIA EUCARÍSTICA IV",
+        "subtitle": "(1988)",
+        "step": "lit",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 132,
+        "lang": "es-es",
+        "title": "POR EL AMOR DE MIS AMIGOS -",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pax"
+        ],
+        "gtags": [
+            "g-pax"
+        ]
+    },
+    {
+        "id": 133,
+        "lang": "es-es",
+        "title": "POR QUÉ ESTA NOCHE ES DIFERENTE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-lib",
+            "g-pas",
+            "g-pen",
+            "g-heb"
+        ]
+    },
+    {
+        "id": 134,
+        "lang": "es-es",
+        "title": "POR QUÉ LAS GENTES CONJURAN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 135,
+        "lang": "es-es",
+        "title": "PORQUE MI YUGO ES SUAVE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 32,
+        "lang": "en-us",
+        "title": "PRAISE THE LORD ALL PEOPLES OF THE EARTH",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 11,
+        "lang": "en-us",
+        "title": "PRAISE THE LORD FROM THE HEAVENS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 211,
+        "lang": "en-us",
+        "title": "PRAYER OF THE FAITHFUL IN A SOLEMNITY",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 205,
+        "lang": "en-us",
+        "title": "PREFACE",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "pas"
+        ],
+        "gtags": [
+            "g-pas"
+        ]
+    },
+    {
+        "id": 204,
+        "lang": "es-es",
+        "title": "PREFACIO PARA ADVIENTO Y NAVIDAD",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 205,
+        "lang": "es-es",
+        "title": "PREFACIO PARA EL TIEMPO PASCUAL",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-pas"
+        ]
+    },
+    {
+        "id": 206,
+        "lang": "es-es",
+        "title": "PREGÓN PASCUAL",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-pas"
+        ]
+    },
+    {
+        "id": 140,
+        "lang": "es-es",
+        "title": "QUIERO ANDAR, MADRE, A JERUSALÉN",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "fin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-fin",
+            "g-pas",
+            "g-pen",
+            "g-heb"
+        ]
+    },
+    {
+        "id": 141,
+        "lang": "es-es",
+        "title": "QUIERO CANTAR",
+        "subtitle": "Sal 57 (56)",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 138,
+        "lang": "es-es",
+        "title": "QUIÉN ES ESTA QUE SUBE DEL DESIERTO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "fin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 139,
+        "lang": "es-es",
+        "title": "QUIÉN NOS SEPARARÁ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "com"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-com"
+        ]
+    },
+    {
+        "id": 136,
+        "lang": "es-es",
+        "title": "QUÉ AMABLES SON TUS MORADAS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "int"
+        ],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 137,
+        "lang": "es-es",
+        "title": "QUÉ ESTUPENDO, QUÉ ALEGRÍA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pax"
+        ],
+        "gtags": [
+            "g-pax"
+        ]
+    },
+    {
+        "id": 142,
+        "lang": "es-es",
+        "title": "RESUCITÓ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 143,
+        "lang": "en-us",
+        "title": "RESURREXIT",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 143,
+        "lang": "es-es",
+        "title": "RESURREXIT",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 208,
+        "lang": "es-es",
+        "title": "SALMODIA PARA EL EVANGELIO",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 209,
+        "lang": "es-es",
+        "title": "SALMODIA PARA EL ROSARIO",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 210,
+        "lang": "es-es",
+        "title": "SALMODIA PARA EL SALMO RESPONSORIAL",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 211,
+        "lang": "es-es",
+        "title": "SALMODIAS PARA LA ORACIÓN DE LOS FIELES",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 212,
+        "lang": "es-es",
+        "title": "SALMODIAS PARA LAUDES",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 144,
+        "lang": "es-es",
+        "title": "SALVE, REINA DE LOS CIELOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 218,
+        "lang": "es-es",
+        "title": "SANTO 1982",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 219,
+        "lang": "es-es",
+        "title": "SANTO 1988",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 215,
+        "lang": "es-es",
+        "title": "SANTO HEBREO",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-heb",
+            "g-ord"
+        ]
+    },
+    {
+        "id": 216,
+        "lang": "es-es",
+        "title": "SANTO PALESTINA 74",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-ord"
+        ]
+    },
+    {
+        "id": 214,
+        "lang": "es-es",
+        "title": "SANTO PALOMERAS 65",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 217,
+        "lang": "es-es",
+        "title": "SANTO ROMA 77",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ]
+    },
+    {
+        "id": 51,
+        "lang": "en-us",
+        "title": "SAYS THE LORD TO MY LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 145,
+        "lang": "es-es",
+        "title": "SE ENCONTRARON DOS ÁNGELES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib",
+            "pax"
+        ],
+        "gtags": [
+            "g-lib",
+            "g-pax",
+            "g-heb"
+        ]
+    },
+    {
+        "id": 167,
+        "lang": "en-us",
+        "title": "SEQUENCE OF PENTECOST",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 148,
+        "lang": "es-es",
+        "title": "SERMÓN DE LA MONTAÑA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 146,
+        "lang": "es-es",
+        "title": "SEÑOR, AYÚDAME A NO DUDAR DE TI",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com",
+            "g-var"
+        ]
+    },
+    {
+        "id": 147,
+        "lang": "es-es",
+        "title": "SEÑOR, NO ME CORRIJAS EN TU CÓLERA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 233,
+        "lang": "es-es",
+        "title": "SEÑOR, TÚ ME ESCRUTAS Y CONOCES",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 96,
+        "lang": "en-us",
+        "title": "SHE-LAMB OF GOD",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 234,
+        "lang": "en-us",
+        "title": "SHEMA ISRAEL",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 234,
+        "lang": "es-es",
+        "title": "SHEMÁ LSRAEL",
+        "subtitle": "Dt 6,4-9",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 165,
+        "lang": "en-us",
+        "title": "SHEPHERDS, LET US GO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib"
+        ]
+    },
+    {
+        "id": 149,
+        "lang": "es-es",
+        "title": "SHLOM LEJ MARIAM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 149,
+        "lang": "en-us",
+        "title": "SHLOM LEKH MARIAM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 78,
+        "lang": "en-us",
+        "title": "SHOUT FOR JOY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 150,
+        "lang": "es-es",
+        "title": "SI EL SEÑOR NO CONSTRUYE LA CASA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 151,
+        "lang": "es-es",
+        "title": "SI HABÉIS RESUCITADO CON CRISTO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 152,
+        "lang": "es-es",
+        "title": "SI HOY ESCUCHÁIS SU VOZ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 153,
+        "lang": "es-es",
+        "title": "SI ME HE REFUGIADO EN EL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 235,
+        "lang": "en-us",
+        "title": "SIT DOWN ALONE AND IN SILENCE",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 235,
+        "lang": "es-es",
+        "title": "SIÉNTATE SOLITARIO Y SILENCIOSO",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 154,
+        "lang": "es-es",
+        "title": "SIÓN, MADRE DE TODOS LOS PUEBLOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "fin",
+            "vir"
+        ],
+        "gtags": [
+            "g-fin",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 155,
+        "lang": "es-es",
+        "title": "SOLA A SOLO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "pan",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-pan",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 24,
+        "lang": "en-us",
+        "title": "SONG OF BALAAM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-fin",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 223,
+        "lang": "en-us",
+        "title": "SONG OF DEBORAH",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 34,
+        "lang": "en-us",
+        "title": "SONG OF MOSES",
+        "subtitle": "Ex. 15, 1-18",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 133,
+        "lang": "en-us",
+        "title": "SONG OF THE CHILDREN IN THE EASTER VIGIL",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib",
+            "heb"
+        ],
+        "gtags": [
+            "g-lib",
+            "g-heb",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 100,
+        "lang": "en-us",
+        "title": "SONG OF THE HARVESTERS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-fin"
+        ]
+    },
+    {
+        "id": 156,
+        "lang": "en-us",
+        "title": "STABAT MATER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym",
+            "vir"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-vir",
+            "g-com",
+            "g-pan"
+        ]
+    },
+    {
+        "id": 156,
+        "lang": "es-es",
+        "title": "STABAT MATER DOLOROSA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "pan",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-pan",
+            "g-vir",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 244,
+        "lang": "es-es",
+        "title": "SUBA EL ESPOSO AL LEÑO DE SU TÁLAMO",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 157,
+        "lang": "es-es",
+        "title": "SUBE DIOS ENTRE ACLAMACIONES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen",
+            "pax"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 107,
+        "lang": "en-us",
+        "title": "TAKE ME TO HEAVEN",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 260,
+        "lang": "en-us",
+        "title": "TASTE AND SEE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 220,
+        "lang": "en-us",
+        "title": "TE DEUM",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 220,
+        "lang": "es-es",
+        "title": "TE DEUM",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-hym"
+        ]
+    },
+    {
+        "id": 158,
+        "lang": "es-es",
+        "title": "TE ESTOY LLAMANDO, SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 159,
+        "lang": "es-es",
+        "title": "TE HE MANIFESTADO MI PECADO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 48,
+        "lang": "en-us",
+        "title": "TELL ALL THE FAINT-HEARTED",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 102,
+        "lang": "en-us",
+        "title": "THE ARMOR OF GOD",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 258,
+        "lang": "en-us",
+        "title": "THE CHILDREN OF BETHLEHEM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib"
+        ]
+    },
+    {
+        "id": 65,
+        "lang": "en-us",
+        "title": "THE DARK NIGHT",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 242,
+        "lang": "en-us",
+        "title": "THE DOVE HOVERED OVER",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "sal"
+        ],
+        "gtags": [
+            "g-sal"
+        ]
+    },
+    {
+        "id": 58,
+        "lang": "en-us",
+        "title": "THE FOOLISH ONE THINKS THERE IS NO GOD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 70,
+        "lang": "en-us",
+        "title": "THE KINGS SHALL SEE YOU",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-int"
+        ]
+    },
+    {
+        "id": 60,
+        "lang": "en-us",
+        "title": "THE LORD ANNOUNCES A GOOD NEWS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 62,
+        "lang": "en-us",
+        "title": "THE LORD HAS GIVEN ME",
+        "subtitle": "",
+        "step": "con",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan"
+        ]
+    },
+    {
+        "id": 259,
+        "lang": "en-us",
+        "title": "THE LORD IS MY LIGHT AND MY SALVATION",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 61,
+        "lang": "en-us",
+        "title": "THE LORD IS MY SHEPHERD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 98,
+        "lang": "en-us",
+        "title": "THE MARCH IS HARD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-com"
+        ]
+    },
+    {
+        "id": 57,
+        "lang": "en-us",
+        "title": "THE MESSIAH, LION TO VANQUISH",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 59,
+        "lang": "en-us",
+        "title": "THE PEOPLE WHO WALKED IN DARKNESS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 224,
+        "lang": "en-us",
+        "title": "THE SAME GOD",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-vin"
+        ]
+    },
+    {
+        "id": 148,
+        "lang": "en-us",
+        "title": "THE SERMON ON THE MOUNTAIN",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 66,
+        "lang": "en-us",
+        "title": "THE SONG OF THE LAMB",
+        "subtitle": "",
+        "step": "con",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 225,
+        "lang": "en-us",
+        "title": "THE SOWER",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 54,
+        "lang": "en-us",
+        "title": "THE SPIRIT OF THE LORD IS UPON ME",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 101,
+        "lang": "en-us",
+        "title": "THE VOICE OF MY BELOVED",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 53,
+        "lang": "en-us",
+        "title": "THE WHITE HORSE",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 145,
+        "lang": "en-us",
+        "title": "THERE WERE TWO ANGELS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib",
+            "heb"
+        ],
+        "gtags": [
+            "g-lib",
+            "g-heb",
+            "g-pax"
+        ]
+    },
+    {
+        "id": 72,
+        "lang": "en-us",
+        "title": "THIS IS MY COMMANDMENT",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 20,
+        "lang": "en-us",
+        "title": "THUS SPEAKS THE AMEN",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 1,
+        "lang": "en-us",
+        "title": "TO THE PASCHAL VICTIM",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "hym"
+        ],
+        "gtags": [
+            "g-hym",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 3,
+        "lang": "en-us",
+        "title": "TO YOU I LIFT UP MY EYES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 6,
+        "lang": "en-us",
+        "title": "TO YOU O LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 5,
+        "lang": "en-us",
+        "title": "TO YOU, O LORD, I LIFT UP MY SOUL",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 4,
+        "lang": "en-us",
+        "title": "TO YOU, O LORD, WITH MY VOICE I CRY FOR HELP",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 79,
+        "lang": "en-us",
+        "title": "TOWARDS YOU HOLY CITY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "var"
+        ],
+        "gtags": [
+            "g-var",
+            "g-int"
+        ]
+    },
+    {
+        "id": 236,
+        "lang": "es-es",
+        "title": "TÚ ERES MI ESPERANZA, SEÑOR",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [],
+        "gtags": [
+            "g-sal"
+        ]
+    },
+    {
+        "id": 160,
+        "lang": "es-es",
+        "title": "TÚ HAS CUBIERTO DE VERGÜENZA LA MUERTE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pan",
+            "pas",
+            "pen",
+            "vir"
+        ],
+        "gtags": [
+            "g-pan",
+            "g-pas",
+            "g-pen",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 161,
+        "lang": "es-es",
+        "title": "TÚ QUE ERES FIEL",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "int"
+        ],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 162,
+        "lang": "es-es",
+        "title": "UN RETOÑO BROTA DEL TRONCO DE JESÉ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 163,
+        "lang": "es-es",
+        "title": "UNA GRAN SEÑAL",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "fin",
+            "pas",
+            "pen",
+            "vir"
+        ],
+        "gtags": [
+            "g-fin",
+            "g-pas",
+            "g-pen",
+            "g-vir"
+        ]
+    },
+    {
+        "id": 164,
+        "lang": "en-us",
+        "title": "URÍ URÍ URÁ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib"
+        ]
+    },
+    {
+        "id": 164,
+        "lang": "es-es",
+        "title": "URÍ, URÍ, URÁ",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib"
+        ]
+    },
+    {
+        "id": 165,
+        "lang": "es-es",
+        "title": "VAMOS YA, PASTORES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib"
+        ]
+    },
+    {
+        "id": 166,
+        "lang": "es-es",
+        "title": "VEN DEL LÍBANO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vin",
+            "int",
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-vin",
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 167,
+        "lang": "es-es",
+        "title": "VEN, ESPÍRITU SANTO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 168,
+        "lang": "es-es",
+        "title": "VEN, HIJO DEL HOMBRE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 169,
+        "lang": "es-es",
+        "title": "VENI CREATOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "pas",
+            "pen"
+        ],
+        "gtags": [
+            "g-pas",
+            "g-pen",
+            "g-hym"
+        ]
+    },
+    {
+        "id": 170,
+        "lang": "es-es",
+        "title": "VIENE EL SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-var"
+        ]
+    },
+    {
+        "id": 171,
+        "lang": "es-es",
+        "title": "VIRGEN DE LA MARAVILLA",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 171,
+        "lang": "en-us",
+        "title": "VIRGIN OF WONDER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "vir"
+        ],
+        "gtags": [
+            "g-vir"
+        ]
+    },
+    {
+        "id": 172,
+        "lang": "es-es",
+        "title": "VIVID ALEGRES",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 173,
+        "lang": "es-es",
+        "title": "VOSOTROS SOIS LA LUZ DEL MUNDO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 10,
+        "lang": "en-us",
+        "title": "WHEN I AWAKE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 44,
+        "lang": "en-us",
+        "title": "WHEN ISRAEL CAME OUT OF EGYPT",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 43,
+        "lang": "en-us",
+        "title": "WHEN THE LORD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 222,
+        "lang": "en-us",
+        "title": "WHILE I WAS SLEEPING",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-vin"
+        ]
+    },
+    {
+        "id": 138,
+        "lang": "en-us",
+        "title": "WHO IS SHE",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 56,
+        "lang": "en-us",
+        "title": "WHO IS THIS WHO COMES FROM EDOM - THE WINEPRESSER",
+        "subtitle": "",
+        "step": "con",
+        "tags": [
+            "pan"
+        ],
+        "gtags": [
+            "g-pan"
+        ]
+    },
+    {
+        "id": 139,
+        "lang": "en-us",
+        "title": "WHO WILL SEPARATE US",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-com"
+        ]
+    },
+    {
+        "id": 134,
+        "lang": "en-us",
+        "title": "WHY DO THE NATIONS CONSPIRE?",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 174,
+        "lang": "es-es",
+        "title": "YA VIENE MI DIOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "lib"
+        ],
+        "gtags": [
+            "g-lib"
+        ]
+    },
+    {
+        "id": 175,
+        "lang": "es-es",
+        "title": "YAHVEH, TÚ ERES MI DIOS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com"
+        ],
+        "gtags": [
+            "g-com"
+        ]
+    },
+    {
+        "id": 176,
+        "lang": "es-es",
+        "title": "YO TE AMO, SEÑOR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int"
+        ],
+        "gtags": [
+            "g-int"
+        ]
+    },
+    {
+        "id": 177,
+        "lang": "es-es",
+        "title": "YO VENGO A REUNIR",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "int",
+            "fin"
+        ],
+        "gtags": [
+            "g-int",
+            "g-fin"
+        ]
+    },
+    {
+        "id": 67,
+        "lang": "en-us",
+        "title": "YOU ARE BEAUTIFUL",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-fin"
+        ]
+    },
+    {
+        "id": 241,
+        "lang": "en-us",
+        "title": "YOU ARE BEAUTIFUL, MY BELOVED, AS TIRZAH",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 236,
+        "lang": "en-us",
+        "title": "YOU ARE MY HOPE, O LORD",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [
+            "sal"
+        ],
+        "gtags": [
+            "g-sal"
+        ]
+    },
+    {
+        "id": 221,
+        "lang": "en-us",
+        "title": "YOU ARE THE WAY",
+        "subtitle": "",
+        "step": "cat",
+        "tags": [
+            "sal"
+        ],
+        "gtags": [
+            "g-sal"
+        ]
+    },
+    {
+        "id": 115,
+        "lang": "en-us",
+        "title": "YOU HAVE SEDUCED ME, O LORD",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 243,
+        "lang": "en-us",
+        "title": "YOU STOLE MY HEART",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": []
+    },
+    {
+        "id": 91,
+        "lang": "en-us",
+        "title": "YOU WHO DWELL IN THE GARDENS",
+        "subtitle": "",
+        "step": "ele",
+        "tags": [],
+        "gtags": [
+            "g-vin",
+            "g-fin",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 114,
+        "lang": "en-us",
+        "title": "YOU WILL SHOW ME THE PATH OF LIFE",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-int",
+            "g-pas",
+            "g-pen"
+        ]
+    },
+    {
+        "id": 178,
+        "lang": "en-us",
+        "title": "ZACCHEUS",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    },
+    {
+        "id": 178,
+        "lang": "es-es",
+        "title": "ZAQUEO",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "int"
+        ],
+        "gtags": [
+            "g-com",
+            "g-int"
+        ]
+    }
+]

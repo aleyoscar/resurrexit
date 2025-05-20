@@ -1,0 +1,111 @@
+<dialog id="steps-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="steps-modal"
+				data-attribute="steps"
+				onclick="filterPsalms()">
+			</button>
+			<h3>Steps</h3>
+		</header>
+		<fieldset>
+			{% for key, value in settings.languages[lang].steps.items() %}
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="steps"
+					name="{{ key }}" />
+				{{ value }}
+			</label>
+			{% endfor %}
+		</fieldset>
+		<footer>
+			<button class="secondary"
+				data-target="steps-modal"
+				data-attribute="steps"
+				onclick="clearTags(event)">
+				Clear
+			</button>
+			<button data-target="steps-modal"
+				onclick="filterPsalms()">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
+<dialog id="tags-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="tags-modal"
+				data-attribute="tags"
+				onclick="filterPsalms()">
+			</button>
+			<h3>Book Tags</h3>
+		</header>
+		<fieldset>
+			{% for key, value in btags.items() %}
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="{{ key }}" />
+				{{ value }}
+			</label>
+			{% endfor %}
+		</fieldset>
+		<footer>
+			<button class="secondary"
+				data-target="tags-modal"
+				data-attribute="tags"
+				onclick="clearTags(event)">
+				Clear
+			</button>
+			<button data-target="tags-modal"
+				onclick="filterPsalms()">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
+<dialog id="gtags-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="gtags-modal"
+				data-attribute="gtags"
+				onclick="filterPsalms()">
+			</button>
+			<h3>Global Tags</h3>
+		</header>
+		<fieldset>
+			{% for key, value in settings.languages[lang].tags.items() %}
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-{{ key }}" />
+				{{ value }}
+			</label>
+			{% endfor %}
+		</fieldset>
+		<footer>
+			<button class="secondary"
+				data-target="gtags-modal"
+				data-attribute="gtags"
+				onclick="clearTags(event)">
+				Clear
+			</button>
+			<button data-target="gtags-modal"
+				onclick="filterPsalms()">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
