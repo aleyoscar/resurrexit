@@ -1,5 +1,15 @@
 from pathlib import Path
+from unidecode import unidecode
 import json, frontmatter, re
+
+def normalize(text):
+	return re.sub(r'[^a-zA-Z\s]', '', unidecode(text.lower()))
+
+def dedup(text):
+	words = []
+	for word in list(set(text.strip().split())):
+		if len(word) > 2: words.append(word)
+	return " ".join(sorted(words))
 
 def load_settings(filename):
 	with open(filename, 'r', encoding='utf-8') as f:
@@ -37,7 +47,8 @@ def load_psalms(settings):
 				if psalm_data['lang'] != language:
 					print(f"Warning: Language field does not match folder in {md_file}")
 					continue
-				psalm_data['lyrics'] = parse_lyrics(post.content.strip(), settings['languages'][language], chords)
+				psalm_data['lyrics'], psalm_data['text'] = parse_lyrics(post.content.strip(), settings['languages'][language], chords)
+				psalm_data['text'] = dedup(normalize(f"{psalm_data['title']} {psalm_data['subtitle']} {psalm_data['text']}"))
 				psalm_data['slug'] = md_file.stem
 				psalm_data['audio'] = []
 				for source in Path(f"audio/{language}/").glob('*.mp3'):
@@ -66,7 +77,8 @@ def load_index(psalms, filename):
 			'subtitle': psalm['subtitle'],
 			'step': psalm['step'],
 			'tags': psalm['tags'],
-			'gtags': psalm['gtags']
+			'gtags': psalm['gtags'],
+			'text': psalm['text']
 		} for psalm in psalms
 	]
 	with open(filename, 'w', encoding='utf-8') as f:
@@ -91,7 +103,7 @@ def parse_lyrics(lyric, language, chords):
 	started_chords = False
 	chord_line = ""
 	html = {"columns": [{"sections": []}]}
-	# text = f"{psalm['title']} {psalm['subtitle']}"
+	text = ""
 	for line in lyric.splitlines():
 		stripped = line.strip()
 		if stripped:
@@ -107,7 +119,6 @@ def parse_lyrics(lyric, language, chords):
 			elif stripped == "---":
 				html["columns"].append({"sections": []})
 			else:
-				# text += f" {stripped}"
 				if started_chords:
 					started_chords = False
 					chord_line = chord_line.rstrip()
@@ -115,6 +126,7 @@ def parse_lyrics(lyric, language, chords):
 						i = chord_line.rfind(' ') + 1
 						stripped = f"{stripped[:i]}[{chord_line[i:]}]{stripped[i:]}"
 						chord_line = chord_line[:i].rstrip()
+				text += f"{stripped} "
 				html["columns"][-1]["sections"][-1]["lines"].append(stripped)
-	return arr_to_html(html)
+	return arr_to_html(html), re.sub(r'\[.*?\]', '', text)
 	# csv_string.append(f"{csv_row},\"{arr_to_html(html)}\",\"{lib.dedup(text)}\"")
