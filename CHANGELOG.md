@@ -1,6 +1,27 @@
 
+<a name="v2.2.0"></a>
+## [v2.2.0](https://github.com/aleyoscar/resurrexit/compare/v2.1.0...v2.2.0) (2025-05-21)
+
+### Feat
+
+* **core:** Create release zip
+* **core:** Github workflow to create releases
+
+### Fix
+
+* **core:** Escape multiline tag for github js
+* **core:** Escape multiline tag message
+* **core:** Use contents of current-tag.md for release
+* **core:** Updated url used for repo in tags
+* **core:** Updated permissions for create release workflow
+
+### Refactor
+
+* **web:** Changed git repo url
+
+
 <a name="v2.1.0"></a>
-## [v2.1.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v2.0.1...v2.1.0) (2025-05-21)
+## [v2.1.0](https://github.com/aleyoscar/resurrexit/compare/v2.0.1...v2.1.0) (2025-05-21)
 
 ### Feat
 
@@ -10,7 +31,7 @@
 
 
 <a name="v2.0.1"></a>
-## [v2.0.1](https://git.aleyoscar.com/oscarale/resurrexit/compare/v2.0.0...v2.0.1) (2025-05-20)
+## [v2.0.1](https://github.com/aleyoscar/resurrexit/compare/v2.0.0...v2.0.1) (2025-05-20)
 
 ### Feat
 
@@ -18,7 +39,7 @@
 
 
 <a name="v2.0.0"></a>
-## [v2.0.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.5.0...v2.0.0) (2025-05-20)
+## [v2.0.0](https://github.com/aleyoscar/resurrexit/compare/v1.5.0...v2.0.0) (2025-05-20)
 
 ### Feat
 
@@ -52,7 +73,7 @@
 
 
 <a name="v1.5.0"></a>
-## [v1.5.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.4.3...v1.5.0) (2025-04-09)
+## [v1.5.0](https://github.com/aleyoscar/resurrexit/compare/v1.4.3...v1.5.0) (2025-04-09)
 
 ### Feat
 
@@ -72,7 +93,7 @@
 
 
 <a name="v1.4.3"></a>
-## [v1.4.3](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.4.2...v1.4.3) (2025-04-01)
+## [v1.4.3](https://github.com/aleyoscar/resurrexit/compare/v1.4.2...v1.4.3) (2025-04-01)
 
 ### Feat
 
@@ -84,7 +105,7 @@
 
 
 <a name="v1.4.2"></a>
-## [v1.4.2](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.4.1...v1.4.2) (2025-03-31)
+## [v1.4.2](https://github.com/aleyoscar/resurrexit/compare/v1.4.1...v1.4.2) (2025-03-31)
 
 ### Fix
 
@@ -92,7 +113,7 @@
 
 
 <a name="v1.4.1"></a>
-## [v1.4.1](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.4.0...v1.4.1) (2025-03-31)
+## [v1.4.1](https://github.com/aleyoscar/resurrexit/compare/v1.4.0...v1.4.1) (2025-03-31)
 
 ### Feat
 
@@ -105,7 +126,7 @@
 
 
 <a name="v1.4.0"></a>
-## [v1.4.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.3.0...v1.4.0) (2025-03-21)
+## [v1.4.0](https://github.com/aleyoscar/resurrexit/compare/v1.3.0...v1.4.0) (2025-03-21)
 
 ### Feat
 
@@ -123,7 +144,7 @@
 
 
 <a name="v1.3.0"></a>
-## [v1.3.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.2.0...v1.3.0) (2025-03-20)
+## [v1.3.0](https://github.com/aleyoscar/resurrexit/compare/v1.2.0...v1.3.0) (2025-03-20)
 
 ### Feat
 
@@ -132,7 +153,7 @@
 
 
 <a name="v1.2.0"></a>
-## [v1.2.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.1.1...v1.2.0) (2025-03-18)
+## [v1.2.0](https://github.com/aleyoscar/resurrexit/compare/v1.1.1...v1.2.0) (2025-03-18)
 
 ### Feat
 
@@ -140,7 +161,7 @@
 
 
 <a name="v1.1.1"></a>
-## [v1.1.1](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.1.0...v1.1.1) (2025-03-17)
+## [v1.1.1](https://github.com/aleyoscar/resurrexit/compare/v1.1.0...v1.1.1) (2025-03-17)
 
 ### Fix
 
@@ -149,7 +170,7 @@
 
 
 <a name="v1.1.0"></a>
-## [v1.1.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v1.0.0...v1.1.0) (2025-03-17)
+## [v1.1.0](https://github.com/aleyoscar/resurrexit/compare/v1.0.0...v1.1.0) (2025-03-17)
 
 ### Feat
 
@@ -157,7 +178,7 @@
 
 
 <a name="v1.0.0"></a>
-## [v1.0.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v0.3.0...v1.0.0) (2025-03-15)
+## [v1.0.0](https://github.com/aleyoscar/resurrexit/compare/v0.3.0...v1.0.0) (2025-03-15)
 
 ### Feat
 
@@ -169,7 +190,7 @@
 
 
 <a name="v0.3.0"></a>
-## [v0.3.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v0.2.0...v0.3.0) (2025-03-15)
+## [v0.3.0](https://github.com/aleyoscar/resurrexit/compare/v0.2.0...v0.3.0) (2025-03-15)
 
 ### Feat
 
@@ -186,7 +207,7 @@
 
 
 <a name="v0.2.0"></a>
-## [v0.2.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v0.1.0...v0.2.0) (2025-03-14)
+## [v0.2.0](https://github.com/aleyoscar/resurrexit/compare/v0.1.0...v0.2.0) (2025-03-14)
 
 ### Feat
 

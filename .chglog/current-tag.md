@@ -1,10 +1,21 @@
 
-v2.1.0
-## [v2.1.0](https://git.aleyoscar.com/oscarale/resurrexit/compare/v2.0.1...v2.1.0) (2025-05-21)
+v2.2.0
+## [v2.2.0](https://github.com/aleyoscar/resurrexit/compare/v2.1.0...v2.2.0) (2025-05-21)
 
 ### Feat
 
-* **web:** Link to psalm in other languages
-* **web:** Added chord quality
-* **web:** Search lyrics
+* **core:** Create release zip
+* **core:** Github workflow to create releases
+
+### Fix
+
+* **core:** Escape multiline tag for github js
+* **core:** Escape multiline tag message
+* **core:** Use contents of current-tag.md for release
+* **core:** Updated url used for repo in tags
+* **core:** Updated permissions for create release workflow
+
+### Refactor
+
+* **web:** Changed git repo url
 
