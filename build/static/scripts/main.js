@@ -91,6 +91,17 @@ contactForm.addEventListener('submit', async (e) => {
 
 // FILTER ---------------------------------------------------------------------
 
+function findAny(needle, haystack) {
+	let found = false;
+	for (let i = 0; i < needle.split(' ').length; i++) {
+		if (haystack.includes(needle.split(' ')[i])) {
+			found = true;
+			break;
+		}
+	}
+	return found;
+}
+
 function clearFilters() {
 	document.querySelectorAll('.filter').forEach(input => {
 		input.checked = false;
@@ -150,10 +161,9 @@ function filterPsalms() {
 
 	const results = psalms.filter(psalm => {
 		const matchesSearch = filterSearch ?
-			psalm.title.toLowerCase().includes(filterSearch) ||
-			psalm.subtitle.toLowerCase().includes(filterSearch) : true;
+			findAny(filterSearch, psalm.text) : true;
 		const matchesSteps = filterSteps.length > 0 ?
-			filterSteps.includes(psalm['step']) : true;
+			filterSteps.includes(psalm.step) : true;
 		const matchesTags = filterTags.length > 0 ?
 			filterTags.some(t => psalm.tags.includes(t)) : true;
 		const matchesGTags = filterGTags.length > 0 ?
@@ -191,7 +201,8 @@ if (searchInput) {
 
 	// Handle search input
 	searchInput.addEventListener('input', () => {
-		const query = searchInput.value.trim().toLowerCase();
+		const query = searchInput.value.trim().toLowerCase().normalize("NFD")
+			.replace(/\p{Diacritic}/gu, '');
 		if (query.length < 2) filterSearch = '';
 		else filterSearch = query;
 		filterPsalms();
