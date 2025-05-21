@@ -2,7 +2,7 @@ style: github
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: https://git.aleyoscar.com/oscarale/resurrexit
+  repository_url: https://github.com/aleyoscar/resurrexit
 options:
   commits:
     # filters:
