@@ -15,7 +15,7 @@
 			["G"],
 			["G#", "Ab"]
 		],
-		"qualities": ["m", "7", "9", "m7", "m9"]
+		"qualities": ["m", "7", "9", "m7", "m9", "7aum"]
 	},
 	"southern": {
 		"languages": ["es-es"],
@@ -33,6 +33,6 @@
 			["Sol"],
 			["Sol#", "Lab"]
 		],
-		"qualities": ["m", "7", "9", "m7", "m9"]
+		"qualities": ["m", "7", "9", "m7", "m9", "7aum"]
 	}
 }
