@@ -35,7 +35,8 @@ def psalm(lang, slug):
 	psalm = next((p for p in psalms if p['slug'] == slug and p['lang'] == lang), None)
 	if not psalm:
 		return "Psalm not found", 404
-	return render_template('psalm.html', psalm=psalm, settings=settings, lang=lang)
+	alts = [p for p in psalms if p['id'] == psalm['id'] and p['lang'] != psalm['lang']]
+	return render_template('psalm.html', psalm=psalm, settings=settings, lang=lang, alts=alts)
 
 if __name__ == '__main__':
     app.run(debug=True)

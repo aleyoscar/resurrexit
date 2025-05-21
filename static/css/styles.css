@@ -129,6 +129,7 @@ ul li { list-style-type: none; }
 .max-width-xl { max-width: var(--gr-xl); }
 .max-width-xs { max-width: var(--gr-xs); }
 .mb-0 { margin-bottom: 0; }
+.mb-lg { margin-bottom: 2.6rem; }
 .mr-xs { margin-right: 1rem; }
 .mr-xxs { margin-right: 0.6rem; }
 .mt-auto { margin-top: auto; }
@@ -139,6 +140,7 @@ ul li { list-style-type: none; }
 	-ms-overflow-style: none;
 }
 .pointer { cursor: pointer; }
+.primary { color: var(--pico-primary); }
 .pt-xs { padding-top: 1rem; }
 .pt-xxs { padding-top: 0.6rem; }
 .section { padding-bottom: 1.6rem; }

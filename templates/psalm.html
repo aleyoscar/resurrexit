@@ -6,10 +6,25 @@
 {% block content %}
 <div class="container">
 	<article class="psalm {{ psalm.step }}">
-		<hgroup class="text-center">
-			<h3>{{ psalm.title }}</h3>
-			<p>{{ psalm.subtitle }}</p>
+		<hgroup class="flex space-between align-center gap-xxs mb-0">
+			<p class="ghost"></p>
+			<h5 class="text-center">{{ psalm.title }}</h5>
+			<details class="dropdown mb-0">
+				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+					<use xlink:href="#icon-lang"/>
+				</svg></summary>
+				<ul dir="rtl">
+					{% for alt in alts %}
+					<li>
+						<a href="{{ url_for('psalm', lang=alt.lang, slug=alt.slug) }}">
+							{{ alt.title }}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</details>
 		</hgroup>
+		<p class="text-center secondary mb-lg">{{ psalm.subtitle }}</p>
 		<div class="grid">{{ psalm.lyrics|safe }}</div>
 	</article>
 </div>
