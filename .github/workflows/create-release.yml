@@ -26,7 +26,15 @@ jobs:
             TAG_MESSAGE="Release $TAG_NAME"
           fi
           echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
-          echo "tag_message=$TAG_MESSAGE" >> $GITHUB_OUTPUT
+          # Use EOF delimiter for multiline tag message
+          echo "tag_message<<EOF" >> $GITHUB_OUTPUT
+          echo "$TAG_MESSAGE" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Debug Outputs
+        run: |
+          echo "Tag Name: ${{ steps.tag.outputs.tag_name }}"
+          echo "Tag Message: ${{ steps.tag.outputs.tag_message }}"
 
       - name: Create GitHub Release
         uses: actions/github-script@v7
