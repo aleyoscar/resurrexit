@@ -18,6 +18,8 @@ const contactModal = document.getElementById('contact-modal');
 const contactForm = document.getElementById('contact-form');
 const contactError = document.getElementById('contact-error');
 const contactSuccess = document.getElementById('contact-success');
+const contactSubmit = document.getElementById('contact-submit');
+const contactClose = document.getElementById('contact-close');
 const menu = document.getElementById('menu');
 const eplayer = document.getElementById('eplayer');
 const eplayerWrapper = document.querySelector('.eplayer-wrapper');
@@ -60,6 +62,14 @@ function toggleMenu() {
 
 // CONTACT --------------------------------------------------------------------
 
+function closeContact() {
+	contactSubmit.setAttribute('aria-busy', 'false');
+	contactForm.classList.add('hide');
+	contactSubmit.classList.add('hide');
+	contactClose.textContent = "Close";
+	contactForm.reset();
+}
+
 contactForm.addEventListener('submit', async (e) => {
 	e.preventDefault();
 
@@ -70,6 +80,7 @@ contactForm.addEventListener('submit', async (e) => {
 	contactSuccess.classList.add('hide');
 
 	const formData = new FormData(contactForm);
+	contactSubmit.setAttribute('aria-busy', 'true');
 	try {
 		const response = await fetch(contactForm.action, {
 			method: 'POST',
@@ -78,13 +89,16 @@ contactForm.addEventListener('submit', async (e) => {
 		});
 		const result = await response.json();
 		if (result.status === 'success') {
+			closeContact();
 			contactSuccess.classList.remove('hide');
-			contactForm.reset();
 		} else {
+			closeContact();
 			contactError.classList.remove('hide');
 			contactError.textContent = result.message;
 		}
 	} catch (error) {
+		closeContact();
+		contactError.textContent = error.message;
 		contactError.classList.remove('hide');
 	}
 });
