@@ -9,7 +9,7 @@ require 'static/PHPMailer/src/SMTP.php';
 header('Content-Type: application/json');
 $response = ['status' => 'error', 'message' => 'Invalid request'];
 
-require '../../res-config.php';
+require '../../config/res-config.php';
 
 // Configuration
 $smtp_host = defined('SMTP_HOST') ? SMTP_HOST : null;

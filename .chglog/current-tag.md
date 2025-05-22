@@ -1,21 +1,12 @@
 
-v2.2.0
-## [v2.2.0](https://github.com/aleyoscar/resurrexit/compare/v2.1.0...v2.2.0) (2025-05-21)
+v2.2.1
+## [v2.2.1](https://github.com/aleyoscar/resurrexit/compare/v2.2.0...v2.2.1) (2025-05-21)
 
 ### Feat
 
-* **core:** Create release zip
-* **core:** Github workflow to create releases
-
-### Fix
-
-* **core:** Escape multiline tag for github js
-* **core:** Escape multiline tag message
-* **core:** Use contents of current-tag.md for release
-* **core:** Updated url used for repo in tags
-* **core:** Updated permissions for create release workflow
+* **web:** Update contact form styles/function. Closes [#1](https://github.com/aleyoscar/resurrexit/issues/1). Closes [#2](https://github.com/aleyoscar/resurrexit/issues/2).
 
 ### Refactor
 
-* **web:** Changed git repo url
+* **web:** Moved config to volume
 

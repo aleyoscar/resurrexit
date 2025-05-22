@@ -400,8 +400,8 @@
 			</button>
 			<h3>Contact</h3>
 		</header>
-		<p id="contact-error" class="error hide">There was an error sending your message. Please try again later.</p>
-		<p id="contact-success" class="success hide">Thank you for your message! We will get back to you soon.</p>
+		<p id="contact-error" class="error message hide">There was an error sending your message. Please try again later.</p>
+		<p id="contact-success" class="success message hide">Thank you for your message! We will get back to you soon.</p>
 		<form id="contact-form" action="/send-mail.php" method="POST" role="form" data-reset="reset">
 			<fieldset>
 				<input type="hidden" name="contact-token" value="random-token">
@@ -425,12 +425,12 @@
 			</fieldset>
 		</form>
 		<footer>
-			<button class="secondary"
+			<button id="contact-close" class="secondary"
 				data-target="contact-modal"
 				onclick="toggleModal(event)">
 				Cancel
 			</button>
-			<button form="contact-form">Submit</button>
+			<button id="contact-submit" form="contact-form">Submit</button>
 		</footer>
 	</article>
 </dialog>
