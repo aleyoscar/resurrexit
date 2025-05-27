@@ -1,6 +1,10 @@
 {
   "name": "Resurrexit",
   "short_name": "Resurrexit",
+  "description": "A multi-lingual songbook and tool set web app for the Neocatechumenal Way.",
+  "start_url": "/index.html",
+  "dir": "ltr",
+  "lang": "en-US",
   "icons": [
     {
       "src": "/static/images/web-app-manifest-192x192.png",
