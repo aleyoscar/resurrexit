@@ -2,20 +2,24 @@ from pathlib import Path
 from unidecode import unidecode
 import json, frontmatter, re
 
+# Remove all diacritics and non-alpha characters and convert to lowercase
 def normalize(text):
 	return re.sub(r'[^a-zA-Z\s]', '', unidecode(text.lower()))
 
+# Remove duplicates from a string
 def dedup(text):
 	words = []
 	for word in list(set(text.strip().split())):
 		if len(word) > 2: words.append(word)
 	return " ".join(sorted(words))
 
+# load settings.json file
 def load_settings(filename):
 	with open(filename, 'r', encoding='utf-8') as f:
 		settings = json.load(f)
 	return settings
 
+# return an array with all different variations of chords
 def load_chords(lang):
 	with open('chords.json', 'r', encoding='utf-8') as f:
 		chord_data = json.load(f)
@@ -30,6 +34,7 @@ def load_chords(lang):
 			return chords
 	return None
 
+# Load psalm markdown files and parse into html
 def load_psalms(settings):
 	base_dir = Path('songbook')
 	psalms = []
@@ -51,6 +56,8 @@ def load_psalms(settings):
 				psalm_data['text'] = dedup(normalize(f"{psalm_data['title']} {psalm_data['subtitle']} {psalm_data['text']}"))
 				psalm_data['slug'] = md_file.stem
 				psalm_data['audio'] = []
+
+				# Add audio sources if audio files exist
 				for source in Path(f"audio/{language}/").glob('*.mp3'):
 					if psalm_data['slug'] in source.stem:
 						key = source.stem.split('_')[-1]
@@ -60,6 +67,8 @@ def load_psalms(settings):
 						})
 				psalm_data['gtags'] = [f"g-{tag}" for tag in psalm_data['tags']]
 				psalms.append(psalm_data)
+
+	# Add global tags
 	for i in range(len(psalms)):
 		for p in psalms:
 			if psalms[i]['id'] == p['id']:
@@ -68,6 +77,7 @@ def load_psalms(settings):
 						psalms[i]['gtags'].append(f"g-{t}")
 	return sorted(psalms, key=lambda p: p['title'])
 
+# Create index.json for search
 def load_index(psalms, filename):
 	search_index = [
 		{
@@ -84,6 +94,7 @@ def load_index(psalms, filename):
 	with open(filename, 'w', encoding='utf-8') as f:
 		json.dump(search_index, f, ensure_ascii=False, indent=4)
 
+# Convert array of lyrics into html
 def arr_to_html(arr):
 	html= ""
 	for column in arr["columns"]:
@@ -99,6 +110,7 @@ def arr_to_html(arr):
 		html += "</div>"
 	return html
 
+# Parse markdown lyric file and create an array of columns, sections and lines
 def parse_lyrics(lyric, language, chords):
 	started_chords = False
 	chord_line = ""
@@ -129,4 +141,3 @@ def parse_lyrics(lyric, language, chords):
 				text += f"{stripped} "
 				html["columns"][-1]["sections"][-1]["lines"].append(stripped)
 	return arr_to_html(html), re.sub(r'\[.*?\]', '', text)
-	# csv_string.append(f"{csv_row},\"{arr_to_html(html)}\",\"{lib.dedup(text)}\"")
