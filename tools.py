@@ -67,7 +67,8 @@ def load_psalms(settings):
 						})
 				psalm_data['gtags'] = [f"g-{tag}" for tag in psalm_data['tags']]
 				psalms.append(psalm_data)
-
+			check_audio(psalms, language)
+			
 	# Add global tags
 	for i in range(len(psalms)):
 		for p in psalms:
@@ -75,7 +76,18 @@ def load_psalms(settings):
 				for t in p['tags']:
 					if f"g-{t}" not in psalms[i]['gtags']:
 						psalms[i]['gtags'].append(f"g-{t}")
+
 	return sorted(psalms, key=lambda p: p['title'])
+
+# Check audio files and warn of files without a psalm
+def check_audio(psalms, language):
+	for source in Path(f"audio/{language}/").glob('*.mp3'):
+		psalm_found = False
+		for p in psalms:
+			if p["slug"] == source.stem.split('_')[0]:
+				psalm_found = True
+		if not psalm_found:
+			print(f"<<WARNING>> No psalm found for {source}")
 
 # Create index.json for search
 def load_index(psalms, filename):
