@@ -9,13 +9,15 @@
 {% block content %}
 <section id="tools" class="sticky">
 	<div class="container flex align-center gap-xs">
-		<input id="search-input"
-			class="flex-1"
-			type="search"
-			name="search"
-			placeholder="Search"
-			aria-label="Search"
-		/>
+		<form id="search-form" role="search" class="flex-1 mb-0">
+			<input id="search-input"
+				class="flex-1"
+				type="search"
+				name="search"
+				placeholder="Search"
+				aria-label="Search"
+			/>
+		</form>
 		<button id="sort-btn" class="outline flex-inline align-center gap-xxs hide-md"
 			onclick="sortList(event)">
 			Sort

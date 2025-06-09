@@ -204,13 +204,17 @@ if (searchInput) {
 		.catch(error => console.error('Error loading search index:', error));
 
 	// Handle search input
-	searchInput.addEventListener('input', () => {
-		const query = searchInput.value.trim().toLowerCase().normalize("NFD")
-			.replace(/\p{Diacritic}/gu, '');
-		if (query.length < 2) filterSearch = '';
-		else filterSearch = query;
-		filterPsalms();
-	});
+	searchInput.addEventListener('input', search);
+	searchForm.addEventListener('submit', search);
+}
+
+function search(event) {
+	event.preventDefault();
+	const query = searchInput.value.trim().toLowerCase().normalize("NFD")
+		.replace(/\p{Diacritic}/gu, '');
+	if (query.length < 2) filterSearch = '';
+	else filterSearch = query;
+	filterPsalms();
 }
 
 // SORT -----------------------------------------------------------------------
