@@ -6,6 +6,7 @@ const sortBtn = document.getElementById("sort-btn");
 const sortBtnAsc = document.getElementById("sort-btn-asc");
 const sortBtnDesc = document.getElementById("sort-btn-desc");
 const searchInput = document.getElementById('search-input');
+const searchForm = document.getElementById('search-form');
 const stepsModal = document.getElementById('steps-modal');
 const tagsModal = document.getElementById('tags-modal');
 const gtagsModal = document.getElementById('gtags-modal');
@@ -105,17 +106,6 @@ contactForm.addEventListener('submit', async (e) => {
 
 // FILTER ---------------------------------------------------------------------
 
-function findAny(needle, haystack) {
-	let found = false;
-	for (let i = 0; i < needle.split(' ').length; i++) {
-		if (haystack.includes(needle.split(' ')[i])) {
-			found = true;
-			break;
-		}
-	}
-	return found;
-}
-
 function clearFilters() {
 	document.querySelectorAll('.filter').forEach(input => {
 		input.checked = false;
@@ -175,7 +165,7 @@ function filterPsalms() {
 
 	const results = psalms.filter(psalm => {
 		const matchesSearch = filterSearch ?
-			findAny(filterSearch, psalm.text) : true;
+			filterSearch.split(' ').every(e => psalm.text.includes(e)) : true;
 		const matchesSteps = filterSteps.length > 0 ?
 			filterSteps.includes(psalm.step) : true;
 		const matchesTags = filterTags.length > 0 ?

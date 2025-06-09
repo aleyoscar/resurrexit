@@ -10,7 +10,7 @@ def normalize(text):
 def dedup(text):
 	words = []
 	for word in list(set(text.strip().split())):
-		if len(word) > 2: words.append(word)
+		words.append(word)
 	return " ".join(sorted(words))
 
 # load settings.json file
