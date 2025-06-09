@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base.jinja' %}
 {% block html_lang %}{{ settings.languages[lang].code }}{% endblock %}
 {% block title %}{{ settings.languages[lang].songbook }}{% endblock %}
 {% block header_title %}{{ settings.languages[lang].songbook }}{% endblock %}
@@ -115,4 +115,4 @@
 </section>
 {% endblock %}
 
-{% block modals %}{% include 'modals.html' %}{% endblock %}
+{% block modals %}{% include 'modals.jinja' %}{% endblock %}

@@ -20,7 +20,7 @@
 		<title>Resurrexit|{% block title %}{% endblock %}</title>
 	</head>
 	<body class="flex flex-column">
-		{% include 'icons.html' %}
+		{% include 'icons.jinja' %}
 		{% block header %}
 		<header id="header">
 			<nav class="container">
@@ -57,7 +57,7 @@
 							</ul>
 						</details>
 					</li>
-					{% include 'nav.html' %}
+					{% include 'nav.jinja' %}
 				</ul>
 			</nav>
 		</header>
@@ -102,13 +102,13 @@
 		<footer id="footer" class="mt-auto">
 			<nav class="container justify-center">
 				<ul>
-					{% include 'nav.html' %}
+					{% include 'nav.jinja' %}
 				</ul>
 			</nav>
 		</footer>
 		{% endblock %}
 		{% block eplayer %}{% endblock %}
 		{% block modals %}{% endblock %}
-		{% include 'contact.html' %}
+		{% include 'contact.jinja' %}
 	</body>
 </html>

@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base.jinja' %}
 {% block title %}{{ psalm.title }}{% endblock %}
 {% block header_title %}{{ settings.languages[lang].songbook }}{% endblock %}
 {% block header_url %}{{ url_for('psalm_list', lang=lang) }}{% endblock %}

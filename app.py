@@ -9,7 +9,7 @@ load_index(psalms, 'static/index.json')
 
 @app.route('/')
 def index():
-	return render_template('index.html', settings=settings)
+	return render_template('index.jinja', settings=settings)
 
 @app.route('/<lang>/')
 def psalm_list(lang):
@@ -21,7 +21,7 @@ def psalm_list(lang):
 		for t in p['tags']:
 			btags[t] = settings["languages"][lang]["tags"][t]
 	return render_template(
-		'psalms.html',
+		'psalms.jinja',
 		psalms=psalms_lang,
 		lang=lang,
 		settings=settings,
@@ -36,7 +36,7 @@ def psalm(lang, slug):
 	if not psalm:
 		return "Psalm not found", 404
 	alts = [p for p in psalms if p['id'] == psalm['id'] and p['lang'] != psalm['lang']]
-	return render_template('psalm.html', psalm=psalm, settings=settings, lang=lang, alts=alts)
+	return render_template('psalm.jinja', psalm=psalm, settings=settings, lang=lang, alts=alts)
 
 if __name__ == '__main__':
     app.run(debug=True)
