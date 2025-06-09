@@ -33,9 +33,13 @@
 {% block eplayer %}
 <div id="eplayer-wrapper" class="eplayer-wrapper flex space-between align-center">
 	{% if psalm.audio | length %}
+	{% set ns = namespace(sorted_audio=[]) %}
+	{% for audio in psalm.audio | sort(attribute='order') %}
+		{% set ns.sorted_audio = ns.sorted_audio + [audio] %}
+	{% endfor %}
 	<div class="ghost hide-sm"><svg width="1em" height="1em"><use xlink:href=""/></svg></div>
 	<div id="eplayer" class="eplayer flex-1"
-		data-src="{{ psalm.audio[0].src }}"
+		data-src="{{ ns.sorted_audio[0].src }}"
 		data-type="audio/mp3">
 	</div>
 	<details class="dropdown mb-0 align-self-end-sm">
@@ -44,7 +48,7 @@
 		</svg></summary>
 		<ul dir="rtl" class="up">
 			<li><strong>Sources</strong></li>
-			{% for audio in psalm.audio %}
+			{% for audio in ns.sorted_audio %}
 			<li>
 				<a class="pointer" onclick="switchSource(event)"
 					data-source="{{ audio.src }}">

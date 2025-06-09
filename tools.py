@@ -63,12 +63,13 @@ def load_psalms(settings):
 						key = source.stem.split('_')[-1]
 						psalm_data['audio'].append({
 							"src": f"https://aleyoscar.com/{source}",
-							"name": settings['audio_sources'][key]
+							"name": settings['audio_sources'][key]["name"],
+							"order": settings['audio_sources'][key]["order"]
 						})
 				psalm_data['gtags'] = [f"g-{tag}" for tag in psalm_data['tags']]
 				psalms.append(psalm_data)
 			check_audio(psalms, language)
-			
+
 	# Add global tags
 	for i in range(len(psalms)):
 		for p in psalms:
