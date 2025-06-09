@@ -242,7 +242,7 @@ function switchTheme(event) {
 function setTheme(theme) {
 	let themeName = theme ? 'light' : 'dark';
 	document.querySelector('html').dataset.theme = themeName;
-	// Cookies.set('theme', themeName);
+	Cookies.set('theme', themeName);
 	if (themeBtns) {
 		themeBtns.forEach((themeBtn) => {
 			themeBtn.querySelectorAll('.theme-toggle').forEach((btn) => {
@@ -263,7 +263,7 @@ window.addEventListener('scroll', (e) => {
 });
 
 let theme = window.matchMedia('(prefers-color-scheme:light)').matches;
-// if (Cookies.get('theme')) theme = Cookies.get('theme') == 'light' ? true : false;
+if (Cookies.get('theme')) theme = Cookies.get('theme') == 'light' ? true : false;
 setTheme(theme);
 if (psalmList) filterPsalms();
 if (tools) toolsOffset = tools.offsetTop;
