@@ -1,17 +1,17 @@
 {
 	"audio_sources": {
-		"KI": "Kiko",
-		"FR": "Francesco",
-		"GI": "Giuseppe",
-		"EM": "Emanuele",
-		"OS": "Osvaldo",
-		"AN": "Angelo",
-		"UN1": "Unknown (1)",
-		"UN": "Unknown",
-		"FE": "Fernando",
-		"BI": "Bibi",
-		"CA": "Caetano",
-		"UK": "United Kingdom"
+		"KI": {"order": 1, "name": "Kiko" },
+		"FR": {"order": 2, "name": "Francesco" },
+		"GI": {"order": 3, "name": "Giuseppe" },
+		"EM": {"order": 4, "name": "Emanuele" },
+		"OS": {"order": 5, "name": "Osvaldo" },
+		"AN": {"order": 6, "name": "Angelo" },
+		"U1": {"order": 7, "name": "Unknown (1)" },
+		"UN": {"order": 8, "name": "Unknown" },
+		"FE": {"order": 9, "name": "Fernando" },
+		"BI": {"order": 10, "name": "Bibi" },
+		"CA": {"order": 11, "name": "Caetano" },
+		"UK": {"order": 12, "name": "United Kingdom" }
 	},
 	"languages": {
 		"en-us": {

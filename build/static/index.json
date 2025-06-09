@@ -146,6 +146,16 @@
         "text": "alabanza amor atrios bienes casa con culpas cumple debe dichoso eliges escuchas hablas jerusalen justicia llamas los mas mortal nos nosotros nuestras nuestros oracion pecados perdonas pesan portentos prodigios que respondes saciaremos salmo santidad senor sion sobre templo todo tus viene vivira voto"
     },
     {
+        "id": 0,
+        "lang": "es-es",
+        "title": "A TU LUZ, SEÑOR, VEMOS LA LUZ",
+        "subtitle": "Salmo 36",
+        "step": "pre",
+        "tags": [],
+        "gtags": [],
+        "text": "luz salmo senor vemos"
+    },
+    {
         "id": 7,
         "lang": "en-us",
         "title": "ABBA FATHER",
@@ -1656,12 +1666,12 @@
     {
         "id": 58,
         "lang": "es-es",
-        "title": "EL NECIO PIENSA QUE DI0S NO EXISTE",
+        "title": "EL NECIO PIENSA QUE DIOS NO EXISTE",
         "subtitle": "",
         "step": "pre",
         "tags": [],
         "gtags": [],
-        "text": "dis existe necio piensa que"
+        "text": "dios existe necio piensa que"
     },
     {
         "id": 59,
@@ -1972,7 +1982,7 @@
         "id": 75,
         "lang": "en-us",
         "title": "EXULT, YOU JUST IN THE LORD",
-        "subtitle": "",
+        "subtitle": "Psalm 32 (33)",
         "step": "pre",
         "tags": [],
         "gtags": [
@@ -1981,7 +1991,7 @@
             "g-pas",
             "g-pen"
         ],
-        "text": "exult just lord the you"
+        "text": "acclaim all and are art breath brings but defeats designs earth exult fitting for forever from full harp heavens him his hosts just justice lord love made mouth nations new nothing peoples plan plans play praise psalm right saints sing song stands tenstringed the truth with word works you zither"
     },
     {
         "id": 75,
@@ -2205,6 +2215,22 @@
             "g-var"
         ],
         "text": "hacia morada santa"
+    },
+    {
+        "id": 99,
+        "lang": "en-us",
+        "title": "HAIL HER",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-vir"
+        ],
+        "text": "hail her"
     },
     {
         "id": 21,
@@ -2839,8 +2865,8 @@
     {
         "id": 89,
         "lang": "en-us",
-        "title": "HYMN OF VESPERS ON THE DAY OF ASCENSION - HYMN OF LAUDS FROM ASCENSION TILL PENTECOST",
-        "subtitle": "",
+        "title": "HYMN OF VESPERS ON THE DAY OF ASCENSION",
+        "subtitle": "Hymn of Lauds from Ascension till Pentecost",
         "step": "lit",
         "tags": [
             "hym"
@@ -2850,7 +2876,7 @@
             "g-pas",
             "g-pen"
         ],
-        "text": "ascension day from hymn lauds pentecost the till vespers"
+        "text": "amen and apostles ascended ascension cenacle chrism come comes consecrates day divine down eternal father flock from gifts glory god good great hand hearts heralds holy hymn keeps lauds light little love make mary mystery news our pentecost prophetic reveal right same shepherd son spirit splendor temple the till united vespers vigil which wisdom with your"
     },
     {
         "id": 86,
@@ -3446,7 +3472,7 @@
     {
         "id": 191,
         "lang": "es-es",
-        "title": "LETANÍAS PENITENCIALES 1",
+        "title": "LETANÍAS PENITENCIALES I",
         "subtitle": "",
         "step": "lit",
         "tags": [],
@@ -3459,7 +3485,7 @@
     {
         "id": 192,
         "lang": "es-es",
-        "title": "LETANÍAS PENITENCIALES 11",
+        "title": "LETANÍAS PENITENCIALES II",
         "subtitle": "",
         "step": "lit",
         "tags": [],
@@ -3511,6 +3537,26 @@
             "g-vir"
         ],
         "text": "ewe friday from good hymn kontakion like melodist mother roman the"
+    },
+    {
+        "id": 189,
+        "lang": "en-us",
+        "title": "LITANIES OF THE SAINTS",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [],
+        "text": "litanies saints the"
+    },
+    {
+        "id": 172,
+        "lang": "en-us",
+        "title": "LIVE JOYFULLY",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [],
+        "text": "joyfully live"
     },
     {
         "id": 106,
@@ -4362,6 +4408,18 @@
         "text": "eucaristica modelo plegaria"
     },
     {
+        "id": 197,
+        "lang": "es-es",
+        "title": "PLEGARIA EUCARÍSTICA II - MODELO II",
+        "subtitle": "(1987)",
+        "step": "lit",
+        "tags": [],
+        "gtags": [
+            "g-ord"
+        ],
+        "text": "eucaristica modelo plegaria"
+    },
+    {
         "id": 200,
         "lang": "es-es",
         "title": "PLEGARIA EUCARÍSTICA IV",
@@ -4515,6 +4573,16 @@
             "g-pas"
         ],
         "text": "pascual pregon"
+    },
+    {
+        "id": 210,
+        "lang": "en-us",
+        "title": "PSALMODY FOR THE RESPONSORIAL PSALM",
+        "subtitle": "",
+        "step": "lit",
+        "tags": [],
+        "gtags": [],
+        "text": "for psalm psalmody responsorial the"
     },
     {
         "id": 140,
@@ -4916,11 +4984,11 @@
         "id": 234,
         "lang": "en-us",
         "title": "SHEMA ISRAEL",
-        "subtitle": "",
+        "subtitle": "Deut. 6, 4-9",
         "step": "cat",
         "tags": [],
         "gtags": [],
-        "text": "israel shema"
+        "text": "abroad adonai all and band bed children commandment deut door ehad elohenu fasten first forehead forever gates god heart house instill into israel life like listen live lord love mind neighbor one our resting rise round second shall shema sign strength the them these this walking when will with words wrist you your yourself"
     },
     {
         "id": 234,
@@ -5229,6 +5297,22 @@
             "g-pax"
         ],
         "text": "aclamaciones dios entre sube"
+    },
+    {
+        "id": 97,
+        "lang": "en-us",
+        "title": "SWORD, BURNISHED TO KILL",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [
+            "com",
+            "vir"
+        ],
+        "gtags": [
+            "g-com",
+            "g-vir"
+        ],
+        "text": "burnished kill sword"
     },
     {
         "id": 107,
@@ -5979,6 +6063,16 @@
             "g-pen"
         ],
         "text": "came egypt israel out when"
+    },
+    {
+        "id": 0,
+        "lang": "en-us",
+        "title": "WHEN ISRAEL WAS A CHILD",
+        "subtitle": "",
+        "step": "pre",
+        "tags": [],
+        "gtags": [],
+        "text": "child israel was when"
     },
     {
         "id": 43,

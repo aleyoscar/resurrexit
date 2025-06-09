@@ -4,19 +4,20 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="color-scheme" content="light dark">
+		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
+		<meta name="theme-color" content="#c52f21" />
 		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png" sizes="96x96" />
 		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg" />
 		<link rel="shortcut icon" href="/static/images/favicon.ico" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png" />
-		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
-		<link rel="manifest" href="/static/images/site.webmanifest" />
+		<link rel="manifest" href="/static/site.webmanifest" />
 		<link rel="stylesheet" href="/static/css/pico.red.min.css">
 		<link rel="stylesheet" href="/static/css/eplayer.css">
 		<link rel="stylesheet" href="/static/css/styles.css">
 		<script src="/static/scripts/eplayer.js" defer></script>
 		<script src="/static/scripts/modal.js" defer></script>
 		<script src="/static/scripts/main.js" defer></script>
-		<title>Resurrexit|LETANÍAS PENITENCIALES 1</title>
+		<title>Resurrexit | LIVE JOYFULLY</title>
 	</head>
 	<body class="flex flex-column">
 		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -149,9 +150,9 @@
 						</a>
 						<a class="contrast transparent-btn"
 							role="button"
-							href="/es-es/">
+							href="/en-us/">
 							<h3 class="mb-0">
-								Resucitó
+								He Rose From Death
 							</h3>
 						</a>
 					</li>
@@ -181,12 +182,6 @@
 	<a role="button" class="secondary pointer transparent-btn" onclick="toggleModal(event)"
 		data-target="contact-modal">
 		Contact
-	</a>
-</li>
-<li>
-	<a role="button" class="secondary pointer transparent-btn" target="_blank"
-		href="https://github.com/aleyoscar/resurrexit">
-		Source
 	</a>
 </li>
 <li>
@@ -227,10 +222,6 @@
 					data-target="contact-modal">
 					Contact
 				</a></li>
-				<li><a target="_blank" class="secondary"
-					href="https://github.com/aleyoscar/resurrexit">
-					Source
-				</a></li>
 				<li><a class="flex align-center gap-xxs theme-btn pointer secondary"
 					onclick="switchTheme(event)">
 					Theme
@@ -248,10 +239,10 @@
 		
 		<main>
 <div class="container">
-	<article class="psalm lit">
+	<article class="psalm pre">
 		<hgroup class="flex space-between align-center gap-xxs mb-0">
 			<p class="ghost"></p>
-			<h5 class="text-center">LETANÍAS PENITENCIALES 1</h5>
+			<h5 class="text-center">LIVE JOYFULLY</h5>
 			<details class="dropdown mb-0">
 				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
 					<use xlink:href="#icon-lang"/>
@@ -259,8 +250,8 @@
 				<ul dir="rtl">
 					
 					<li>
-						<a href="/en-us/penitential-litanies/">
-							PENITENTIAL LITANIES
+						<a href="/es-es/vivid-alegres/">
+							VIVID ALEGRES
 						</a>
 					</li>
 					
@@ -280,12 +271,6 @@
 	<a role="button" class="secondary pointer transparent-btn" onclick="toggleModal(event)"
 		data-target="contact-modal">
 		Contact
-	</a>
-</li>
-<li>
-	<a role="button" class="secondary pointer transparent-btn" target="_blank"
-		href="https://github.com/aleyoscar/resurrexit">
-		Source
 	</a>
 </li>
 <li>
@@ -309,7 +294,31 @@
 		
 <div id="eplayer-wrapper" class="eplayer-wrapper flex space-between align-center">
 	
-	<p class='text-center width-100 secondary'>No Audio</p>
+	
+	
+		
+	
+	<div class="ghost hide-sm"><svg width="1em" height="1em"><use xlink:href=""/></svg></div>
+	<div id="eplayer" class="eplayer flex-1"
+		data-src="https://aleyoscar.com/audio/en-us/live-joyfully_CA.mp3"
+		data-type="audio/mp3">
+	</div>
+	<details class="dropdown mb-0 align-self-end-sm">
+		<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+			<use xlink:href="#icon-menu-dot"/>
+		</svg></summary>
+		<ul dir="rtl" class="up">
+			<li><strong>Sources</strong></li>
+			
+			<li>
+				<a class="pointer" onclick="switchSource(event)"
+					data-source="https://aleyoscar.com/audio/en-us/live-joyfully_CA.mp3">
+					Caetano
+				</a>
+			</li>
+			
+		</ul>
+	</details>
 	
 </div>
 
