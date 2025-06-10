@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="/static/css/pico.red.min.css">
 		<link rel="stylesheet" href="/static/css/eplayer.css">
 		<link rel="stylesheet" href="/static/css/styles.css">
+		<script src="/static/scripts/js.cookie.min.js" defer></script>
 		<script src="/static/scripts/eplayer.js" defer></script>
 		<script src="/static/scripts/modal.js" defer></script>
 		<script src="/static/scripts/main.js" defer></script>
@@ -242,13 +243,15 @@
 		<main>
 <section id="tools" class="sticky">
 	<div class="container flex align-center gap-xs">
-		<input id="search-input"
-			class="flex-1"
-			type="search"
-			name="search"
-			placeholder="Search"
-			aria-label="Search"
-		/>
+		<form id="search-form" role="search" class="flex-1 mb-0">
+			<input id="search-input"
+				class="flex-1"
+				type="search"
+				name="search"
+				placeholder="Search"
+				aria-label="Search"
+			/>
+		</form>
 		<button id="sort-btn" class="outline flex-inline align-center gap-xxs hide-md"
 			onclick="sortList(event)">
 			Sort

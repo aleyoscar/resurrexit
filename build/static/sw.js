@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resurrexit-v2.4.0';
+const CACHE_NAME = 'resurrexit-v2.4.1';
 const urlsToCache = [
 	'/index.html',
 	'/static/css/eplayer.css',

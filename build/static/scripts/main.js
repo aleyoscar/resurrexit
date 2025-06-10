@@ -6,6 +6,7 @@ const sortBtn = document.getElementById("sort-btn");
 const sortBtnAsc = document.getElementById("sort-btn-asc");
 const sortBtnDesc = document.getElementById("sort-btn-desc");
 const searchInput = document.getElementById('search-input');
+const searchForm = document.getElementById('search-form');
 const stepsModal = document.getElementById('steps-modal');
 const tagsModal = document.getElementById('tags-modal');
 const gtagsModal = document.getElementById('gtags-modal');
@@ -105,17 +106,6 @@ contactForm.addEventListener('submit', async (e) => {
 
 // FILTER ---------------------------------------------------------------------
 
-function findAny(needle, haystack) {
-	let found = false;
-	for (let i = 0; i < needle.split(' ').length; i++) {
-		if (haystack.includes(needle.split(' ')[i])) {
-			found = true;
-			break;
-		}
-	}
-	return found;
-}
-
 function clearFilters() {
 	document.querySelectorAll('.filter').forEach(input => {
 		input.checked = false;
@@ -175,7 +165,7 @@ function filterPsalms() {
 
 	const results = psalms.filter(psalm => {
 		const matchesSearch = filterSearch ?
-			findAny(filterSearch, psalm.text) : true;
+			filterSearch.split(' ').every(e => psalm.text.includes(e)) : true;
 		const matchesSteps = filterSteps.length > 0 ?
 			filterSteps.includes(psalm.step) : true;
 		const matchesTags = filterTags.length > 0 ?
@@ -214,13 +204,17 @@ if (searchInput) {
 		.catch(error => console.error('Error loading search index:', error));
 
 	// Handle search input
-	searchInput.addEventListener('input', () => {
-		const query = searchInput.value.trim().toLowerCase().normalize("NFD")
-			.replace(/\p{Diacritic}/gu, '');
-		if (query.length < 2) filterSearch = '';
-		else filterSearch = query;
-		filterPsalms();
-	});
+	searchInput.addEventListener('input', search);
+	searchForm.addEventListener('submit', search);
+}
+
+function search(event) {
+	event.preventDefault();
+	const query = searchInput.value.trim().toLowerCase().normalize("NFD")
+		.replace(/\p{Diacritic}/gu, '');
+	if (query.length < 2) filterSearch = '';
+	else filterSearch = query;
+	filterPsalms();
 }
 
 // SORT -----------------------------------------------------------------------
@@ -242,7 +236,7 @@ function switchTheme(event) {
 function setTheme(theme) {
 	let themeName = theme ? 'light' : 'dark';
 	document.querySelector('html').dataset.theme = themeName;
-	// Cookies.set('theme', themeName);
+	Cookies.set('theme', themeName);
 	if (themeBtns) {
 		themeBtns.forEach((themeBtn) => {
 			themeBtn.querySelectorAll('.theme-toggle').forEach((btn) => {
@@ -263,7 +257,7 @@ window.addEventListener('scroll', (e) => {
 });
 
 let theme = window.matchMedia('(prefers-color-scheme:light)').matches;
-// if (Cookies.get('theme')) theme = Cookies.get('theme') == 'light' ? true : false;
+if (Cookies.get('theme')) theme = Cookies.get('theme') == 'light' ? true : false;
 setTheme(theme);
 if (psalmList) filterPsalms();
 if (tools) toolsOffset = tools.offsetTop;

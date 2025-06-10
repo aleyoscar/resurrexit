@@ -1,4 +1,17 @@
 
+<a name="v2.4.1"></a>
+## [v2.4.1](https://github.com/aleyoscar/resurrexit/compare/v2.4.0...v2.4.1) (2025-06-09)
+
+### Feat
+
+* **web:** Search on submit
+* **web:** Remember theme choice using cookies. Closes [#6](https://github.com/aleyoscar/resurrexit/issues/6)
+
+### Fix
+
+* **web:** Every word in search must be in psalm text. Closes [#4](https://github.com/aleyoscar/resurrexit/issues/4)
+
+
 <a name="v2.4.0"></a>
 ## [v2.4.0](https://github.com/aleyoscar/resurrexit/compare/v2.3.0...v2.4.0) (2025-06-09)
 
