@@ -4,6 +4,8 @@ const urlsToCache = [
 	'/static/css/eplayer.css',
 	'/static/css/pico.red.min.css',
 	'/static/css/styles.css',
+	'/static/scripts/js.cookie.min.js',
+	'/static/scripts/pocketbase.umd.js',
 	'/static/scripts/eplayer.js',
 	'/static/scripts/main.js',
 	'/static/scripts/modal.js',
@@ -43,12 +45,12 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
 	const url = new URL(event.request.url);
 
-	// Network-only for send-mail.php
-	if (url.pathname === '/static/send-mail.php') {
+	// Network-only for APIs
+	if (url.pathname.startsWith('/api/') || url.pathname === '/_') {
 		event.respondWith(
 			fetch(event.request).catch(() => {
 				return new Response(
-					JSON.stringify({ status: 'error', message: 'Contact form requires internet connection' }),
+					JSON.stringify({ status: 'error', message: 'This action requires internet connection' }),
 					{ headers: { 'Content-Type': 'application/json' } }
 				);
 			})

@@ -1,10 +1,6 @@
-.ddev
 __pycache__
 audio
-vendor
-composer.json
-composer.lock
 releases
-config
 extracted
 extra
+main.pb.js

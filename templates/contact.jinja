@@ -10,9 +10,8 @@
 		</header>
 		<p id="contact-error" class="error message hide">There was an error sending your message. Please try again later.</p>
 		<p id="contact-success" class="success message hide">Thank you for your message! We will get back to you soon.</p>
-		<form id="contact-form" action="/send-mail.php" method="POST" role="form" data-reset="reset">
+		<form id="contact-form" role="form" data-reset="reset">
 			<fieldset>
-				<input type="hidden" name="contact-token" value="random-token">
 				<label for="contact-name">Name
 					<input type="text" id="contact-name" name="contact-name"
 						required aria-required="true" placeholder="Your name">

@@ -25,6 +25,7 @@ const menu = document.getElementById('menu');
 const eplayer = document.getElementById('eplayer');
 const eplayerWrapper = document.querySelector('.eplayer-wrapper');
 const footer = document.getElementById('footer');
+const pb = new PocketBase("https://pb.aleyoscar.com")
 // const eplayerWrapper = document.getElementById('eplayer-wrapper')
 
 // GLOBALS --------------------------------------------------------------------
@@ -83,20 +84,17 @@ contactForm.addEventListener('submit', async (e) => {
 	const formData = new FormData(contactForm);
 	contactSubmit.setAttribute('aria-busy', 'true');
 	try {
-		const response = await fetch(contactForm.action, {
-			method: 'POST',
-			body: formData,
-			headers: { 'Accept': 'application/json' }
+		if (formData.get('contact-subject')) throw new Error('Bot detected');
+		await pb.collection('res_contact').create({
+			name: formData.get('contact-name'),
+			email: formData.get('contact-email'),
+			subject: formData.get('contact-subject'),
+			message: formData.get('contact-message')
 		});
-		const result = await response.json();
-		if (result.status === 'success') {
+		setTimeout(() => {
 			closeContact();
 			contactSuccess.classList.remove('hide');
-		} else {
-			closeContact();
-			contactError.classList.remove('hide');
-			contactError.textContent = result.message;
-		}
+		}, 2000);
 	} catch (error) {
 		closeContact();
 		contactError.textContent = error.message;
