@@ -25,6 +25,9 @@ const openModal = (modal) => {
 		html.style.setProperty(scrollbarWidthCssVar, `${scrollbarWidth}px`);
 	}
 	html.classList.add(isOpenClass, openingClass);
+	modalForm = modal.querySelector('form');
+	if (modalForm && modalForm.dataset.reset)
+		modalForm.reset();
 	setTimeout(() => {
 		visibleModal = modal;
 		html.classList.remove(openingClass);
@@ -42,9 +45,6 @@ const closeModal = (modal) => {
 	setTimeout(() => {
 		html.classList.remove(closingClass, isOpenClass);
 		html.style.removeProperty(scrollbarWidthCssVar);
-		modalForm = modal.querySelector('form');
-		if (modalForm && modalForm.dataset.reset)
-			modalForm.reset();
 		modal.close();
 	}, animationDuration);
 };
