@@ -4,6 +4,31 @@
 		Contact
 	</a>
 </li>
+<li class="login-button">
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="changeAuthModal('login'); toggleModal(event);"
+		data-target="auth-modal">
+		Login
+	</a>
+</li>
+<li class="logout-button hide">
+	<details class="dropdown mb-0">
+		<summary class="transparent-btn">Account</summary>
+		<ul dir="rtl">
+			<li><a class="pointer"
+				data-target="logout-modal"
+				onclick="toggleModal(event); logout();">
+				Logout
+			</a></li>
+			<li><a class="pointer"
+				data-target="auth-modal"
+				onclick="changeAuthModal('resetLogged'); toggleModal(event);">
+				Reset Password
+			</a></li>
+		</ul>
+	</details>
+</li>
 <li>
 	<a role="button" class="flex align-center secondary theme-btn pointer transparent-btn gap-xxs"
 		onclick="switchTheme(event)">

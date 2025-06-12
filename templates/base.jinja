@@ -80,6 +80,27 @@
 					data-target="contact-modal">
 					Contact
 				</a></li>
+				<li class="login-button">
+					<a class="secondary pointer"
+						onclick="changeAuthModal('login'); toggleModal(event);"
+						data-target="auth-modal">
+						Login
+					</a>
+				</li>
+				<li class="logout-button hide">
+					<a class="secondary pointer"
+						onclick="toggleModal(event); logout();"
+						data-target="logout-modal">
+						Logout
+					</a>
+				</li>
+				<li class="logout-button hide">
+					<a class="secondary pointer"
+						onclick="changeAuthModal('resetLogged'); toggleModal(event);"
+						data-target="auth-modal">
+						Reset Password
+					</a>
+				</li>
 				<li><a class="flex align-center gap-xxs theme-btn pointer secondary"
 					onclick="switchTheme(event)">
 					Theme
@@ -108,5 +129,6 @@
 		{% block eplayer %}{% endblock %}
 		{% block modals %}{% endblock %}
 		{% include 'contact.jinja' %}
+		{% include 'auth.jinja' %}
 	</body>
 </html>

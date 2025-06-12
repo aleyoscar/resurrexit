@@ -21,12 +21,61 @@ const contactError = document.getElementById('contact-error');
 const contactSuccess = document.getElementById('contact-success');
 const contactSubmit = document.getElementById('contact-submit');
 const contactClose = document.getElementById('contact-close');
+const authModal = document.getElementById('auth-modal');
+const authForm = document.getElementById('auth-form');
+const resetModal = document.getElementById('reset-modal');
+const loginButtons = document.querySelectorAll('.login-button');
+const logoutButtons = document.querySelectorAll('.logout-button');
+const logoutModal = document.getElementById('logout-modal');
 const menu = document.getElementById('menu');
 const eplayer = document.getElementById('eplayer');
 const eplayerWrapper = document.querySelector('.eplayer-wrapper');
 const footer = document.getElementById('footer');
-const pb = new PocketBase("https://pb.aleyoscar.com")
+const pb = new PocketBase("https://pb.aleyoscar.com");
 // const eplayerWrapper = document.getElementById('eplayer-wrapper')
+
+const authOptions = {
+	login: {
+		title: "Login",
+		error: "There was an error logging in.",
+		success: "Logged in successfully!",
+		fields: ["email", "password"],
+		links: ["register", "reset"],
+		submit: "Login"
+	},
+	register: {
+		title: "Register",
+		error: "There was an error registering your account.",
+		success: "Registered successfully! You will get a confirmation email shortly to verify your account.",
+		fields: ["email", "password", "confirm"],
+		links: ["login", "reset"],
+		submit: "Register"
+	},
+	resend: {
+		title: "Resend Verification Link",
+		error: "There was an error resending your verification email.",
+		success: "Verification email sent. Please verify your email address before logging in.",
+		fields: ["email"],
+		links: ["login", "register"],
+		submit: "Submit"
+	},
+	reset: {
+		title: "Reset Password",
+		error: "There was an error resetting your password.",
+		success: "A reset password link has been sent to your email address.",
+		fields: ["email"],
+		links: ["login", "register"],
+		submit: "Submit"
+	},
+	resetLogged: {
+		title: "Reset Password",
+		error: "There was an error resetting your password.",
+		success: "Password changed successfully.",
+		fields: ["old", "password", "confirm"],
+		links: [],
+		submit: "Submit"
+	}
+}
 
 // GLOBALS --------------------------------------------------------------------
 
@@ -34,8 +83,27 @@ let psalms = [];
 let filterSearch = '';
 let toolsOffset = null;
 let player = null;
+let state = { authenticated: false };
 
 const lang = document.documentElement.lang.toLowerCase();
+
+// STATE ----------------------------------------------------------------------
+
+const stateChangeEvent = new CustomEvent('stateChange', {
+	detail: { newState: null }
+});
+
+function changeState(key, value) {
+	state[key] = value;
+    // Update the event detail with the new state
+    stateChangeEvent.detail.newState = state;
+    // Dispatch the event
+    document.dispatchEvent(stateChangeEvent);
+}
+
+document.addEventListener('stateChange', (event) => {
+    // console.log('State changed to:', event.detail.newState);
+});
 
 // EPLAYER --------------------------------------------------------------------
 
@@ -245,6 +313,132 @@ function setTheme(theme) {
 	}
 }
 
+// AUTHENTICATION -------------------------------------------------------------
+
+// Change auth modal form
+function changeAuthModal(option) {
+	// Reset/hide values
+	authForm.classList.remove('hide');
+	authModal.querySelectorAll("p.message").forEach((m) => m.classList.add('hide'));
+	authModal.querySelectorAll("label").forEach((l) => l.classList.add('hide'));
+	authModal.querySelectorAll("input").forEach((i) => {
+		i.required = false;
+		i.setAttribute('aria-required', 'false');
+	});
+	authModal.querySelectorAll("#auth-links a").forEach((a) => a.classList.add('hide'));
+	authModal.querySelector("#auth-close").textContent = "Cancel";
+	authModal.querySelector("#auth-submit").classList.remove('hide');
+
+	// Show option
+	const authOption = authOptions[option];
+	authModal.querySelector("#auth-title").textContent = authOption.title;
+	authModal.querySelector("#auth-error").textContent = authOption.error;
+	authModal.querySelector("#auth-success").textContent = authOption.success;
+	authOption.fields.forEach((f) => {
+		const label = authModal.querySelector(`#auth-label-${f}`);
+		label.classList.remove('hide');
+		label.querySelector('input').required = true;
+		label.querySelector('input').setAttribute('aria-required', 'true');
+	});
+	authModal.querySelector("#auth-option").value = option;
+	authOption.links.forEach((l) => {
+		authModal.querySelector(`#auth-link-${l}`).classList.remove('hide');
+	});
+	authModal.querySelector("#auth-submit").textContent = authOption.submit;
+	authModal.querySelector("#auth-submit").setAttribute('aria-busy', 'false');
+}
+
+function showAuthSuccess(option) {
+	authForm.classList.add('hide');
+	authForm.reset();
+	authModal.querySelector("#auth-submit").setAttribute('aria-busy', 'false');
+	authModal.querySelector("#auth-submit").classList.add('hide');
+	authModal.querySelector("#auth-success").classList.remove('hide');
+	authModal.querySelector("#auth-close").textContent = "Close";
+}
+
+function showAuthError(option, error) {
+	authModal.querySelector("#auth-submit").setAttribute('aria-busy', 'false');
+	let details = '';
+	if (error.data.data)
+		for (const key in error.data.data)
+			if (error.data.data[key].message)
+				details += ' ' + error.data.data[key].message;
+	authModal.querySelector("#auth-error").textContent = error.message + details;
+	authModal.querySelector("#auth-error").classList.remove('hide');
+}
+
+// Auth form
+authForm.addEventListener('submit', async (e) => {
+	e.preventDefault();
+
+	if (!authModal.open) return;
+
+	authModal.querySelector("#auth-error").classList.add('hide');
+	authModal.querySelector("#auth-success").classList.add('hide');
+
+	const formData = new FormData(authForm);
+	authModal.querySelector("#auth-submit").setAttribute('aria-busy', 'true');
+	try {
+		switch(formData.get('auth-option')) {
+			case 'login':
+				const result = await pb.collection('res_users').authWithPassword(
+					formData.get('auth-email'),
+					formData.get('auth-password')
+				);
+				if (!result.record.verified) {
+					logout();
+					throw new Error('Account not verified. Please check your email.');
+				}
+				login();
+				break;
+			case 'register':
+				await pb.collection('res_users').create({
+					email: formData.get('auth-email'),
+					password: formData.get('auth-password'),
+					passwordConfirm: formData.get('auth-confirm'),
+				});
+				await pb.collection('res_users').requestVerification(formData.get('auth-email'));
+				break;
+			case 'resend':
+				await pb.collection('res_users').requestVerification(formData.get('auth-email'));
+				break;
+			case 'reset':
+				await pb.collection('res_users').requestPasswordReset(formData.get('auth-email'));
+				break;
+			case 'resetLogged':
+				await pb.collection('res_users').update(pb.authStore.record.id, {
+					oldPassword: formData.get('auth-old'),
+					password: formData.get('auth-password'),
+					passwordConfirm: formData.get('auth-confirm')
+				});
+				break;
+			default:
+				throw new Error(`Invalid authentication option ${formData.get('auth-option')}`);
+		}
+		setTimeout(() => {
+			showAuthSuccess(formData.get('auth-option'));
+		}, 1000);
+	} catch (error) {
+		showAuthError(formData.get('auth-option'), error);
+	}
+});
+
+// Logout
+function logout() {
+	changeState('authenticated', false);
+	pb.authStore.clear();
+	logoutButtons.forEach((b) => b.classList.add('hide'));
+	loginButtons.forEach((b) => b.classList.remove('hide'));
+}
+
+// Login
+function login() {
+	changeState('authenticated', true);
+	logoutButtons.forEach((b) => b.classList.remove('hide'));
+	loginButtons.forEach((b) => b.classList.add('hide'));
+}
+
 // MAIN -----------------------------------------------------------------------
 
 window.addEventListener('scroll', (e) => {
@@ -267,4 +461,11 @@ if ('serviceWorker' in navigator) {
 			.then(reg => console.log('Service Worker registered'))
 			.catch(err => console.error('Service Worker registration failed:', err));
 	});
+}
+
+// Check if logged in
+if (pb.authStore.isValid) {
+	login();
+} else {
+	logout();
 }

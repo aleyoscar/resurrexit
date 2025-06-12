@@ -145,11 +145,13 @@ ul li { list-style-type: none; }
 .primary { color: var(--pico-primary); }
 .pt-xs { padding-top: 1rem; }
 .pt-xxs { padding-top: 0.6rem; }
+.px-xxs { padding-left: 0.6rem; padding-right: 0.6rem; }
 .section { padding-bottom: 1.6rem; }
 .space-between { justify-content: space-between; }
 .success { color: var(--pico-ins-color); border: 1px solid var(--pico-ins-color); }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+.underline { text-decoration: underline; }
 .width-100 { width: 100%; }
 
 .psalm.lit { background-color: var(--res-yellow); }
@@ -182,7 +184,7 @@ li.psalm {
 }
 li.psalm a, li.psalm hgroup { margin: 0; }
 details.dropdown > summary + ul li a.flex { display: inline-flex; width: 100%; }
-details.dropdown ul.up { top: auto; bottom: 100%; }
+details.dropdown ul.up, footer details.dropdown ul { top: auto; bottom: 100%; }
 p.secondary { color: var(--pico-secondary); }
 
 #tools {
