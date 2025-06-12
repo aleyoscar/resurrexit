@@ -9,6 +9,9 @@ let visibleModal = null;
 // Toggle modal
 const toggleModal = (event) => {
 	event.preventDefault();
+	document.querySelectorAll('dialog').forEach((m) => {
+		if (m.open) closeModal(m);
+	});
 	const modal = document.getElementById(event.currentTarget.dataset.target);
 	if (!modal) return;
 	modal && (modal.open ? closeModal(modal) : openModal(modal));
