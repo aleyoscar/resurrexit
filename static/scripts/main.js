@@ -47,7 +47,7 @@ const authOptions = {
 		title: "Register",
 		error: "There was an error registering your account.",
 		success: "Registered successfully! You will get a confirmation email shortly to verify your account.",
-		fields: ["email", "password", "confirm"],
+		fields: ["email", "new", "confirm"],
 		links: ["login", "reset"],
 		submit: "Register"
 	},
@@ -71,7 +71,7 @@ const authOptions = {
 		title: "Reset Password",
 		error: "There was an error resetting your password.",
 		success: "Password changed successfully.",
-		fields: ["old", "password", "confirm"],
+		fields: ["old", "new", "confirm"],
 		links: [],
 		submit: "Submit"
 	}
@@ -395,7 +395,7 @@ authForm.addEventListener('submit', async (e) => {
 			case 'register':
 				await pb.collection('res_users').create({
 					email: formData.get('auth-email'),
-					password: formData.get('auth-password'),
+					password: formData.get('auth-new'),
 					passwordConfirm: formData.get('auth-confirm'),
 				});
 				await pb.collection('res_users').requestVerification(formData.get('auth-email'));
@@ -409,7 +409,7 @@ authForm.addEventListener('submit', async (e) => {
 			case 'resetLogged':
 				await pb.collection('res_users').update(pb.authStore.record.id, {
 					oldPassword: formData.get('auth-old'),
-					password: formData.get('auth-password'),
+					password: formData.get('auth-new'),
 					passwordConfirm: formData.get('auth-confirm')
 				});
 				break;
