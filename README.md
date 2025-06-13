@@ -56,7 +56,7 @@ Icons from [Bootstrap](https://icons.getbootstrap.com/)
 
 ### Contribute
 
-If you would like to contribute, please [send me a message through the app](https://resurrexit.app/en-us/contact).
+If you would like to contribute, please [send me a message through the app](https://resurrexit.app/).
 
 ### License
 
