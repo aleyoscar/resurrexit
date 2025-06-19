@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="color-scheme" content="light dark">
+		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
+		<meta name="theme-color" content="#c52f21" />
+		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png" />
+		<link rel="manifest" href="/static/site.webmanifest" />
+		<link rel="stylesheet" href="/static/css/pico.red.min.css">
+		<link rel="stylesheet" href="/static/css/eplayer.css">
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<script src="/static/scripts/js.cookie.min.js" defer></script>
+		<script src="/static/scripts/pocketbase.umd.js" defer></script>
+		<script src="/static/scripts/eplayer.js" defer></script>
+		<script src="/static/scripts/modal.js" defer></script>
+		<script src="/static/scripts/main.js" defer></script>
+		
+		<title>Resurrexit | I WANT TO SING</title>
+	</head>
+	<body class="flex flex-column">
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="icon-moon" viewBox="0 0 16 16">
+		<path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+	</symbol>
+	<symbol id="icon-sun" viewBox="0 0 16 16">
+		<path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+	</symbol>
+	<symbol id="icon-sort-asc" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+		<path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+	</symbol>
+	<symbol id="icon-sort-desc" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+		<path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zm-8.46-.5a.5.5 0 0 1-1 0V3.707L2.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.5.5 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L4.5 3.707z"/>
+	</symbol>
+	<symbol id="icon-steps" viewBox="0 0 16 16">
+		<path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+	</symbol>
+	<symbol id="icon-book" viewBox="0 0 16 16">
+		<path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"/>
+		<path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"/>
+	</symbol>
+	<symbol id="icon-globe" viewBox="0 0 16 16">
+		<path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+	</symbol>
+	<symbol id="icon-stars" viewBox="0 0 16 16">
+		<path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+	</symbol>
+	<symbol id="icon-mail" viewBox="0 0 16 16">
+		<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+	</symbol>
+	<symbol id="icon-filter" viewBox="0 0 16 16">
+		<path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+	</symbol>
+	<symbol id="icon-lang" viewBox="0 0 16 16">
+		<path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+		<path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+	</symbol>
+	<symbol id="icon-x" viewBox="0 0 16 16">
+		<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+	</symbol>
+	<symbol id="icon-menu" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+	</symbol>
+	<symbol id="icon-menu-dot" viewBox="0 0 16 16">
+		<path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+	</symbol>
+	<symbol id="icon-move" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10"/>
+	</symbol>
+	<symbol id="icon-trash" viewBox="0 0 16 16">
+		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+	</symbol>
+</svg>
+		
+		<header id="header">
+			<nav class="container">
+				<ul>
+					<li>
+						<a class="pointer contrast hide-lg" onclick="toggleMenu()">
+							<h3 class="mb-0">
+								<svg width="1.0em" height="1.0em">
+									<use xlink:href="#icon-menu"/>
+								</svg>
+							</h3>
+						</a>
+						<a class="contrast transparent-btn"
+							role="button"
+							href="/en-us/">
+							<h3 class="mb-0">
+								He Rose From Death
+							</h3>
+						</a>
+					</li>
+				</ul>
+				<ul class="hide-md">
+					<li>
+						<details class="dropdown mb-0">
+							<summary class="transparent-btn">Songbooks</summary>
+							<ul dir="rtl">
+								
+								<li>
+									<a href="/en-us/">
+										He Rose From Death - US
+									</a>
+								</li>
+								
+								<li>
+									<a href="/es-es/">
+										Resucitó - ES
+									</a>
+								</li>
+								
+							</ul>
+						</details>
+					</li>
+					<li>
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="toggleModal(event)"
+		data-target="contact-modal">
+		Contact
+	</a>
+</li>
+<li class="logged-out">
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="changeAuthModal('login'); toggleModal(event);"
+		data-target="auth-modal">
+		Login
+	</a>
+</li>
+<li class="logged-in hide">
+	<details class="dropdown mb-0">
+		<summary class="transparent-btn">Account</summary>
+		<ul dir="rtl">
+			<li><a class="pointer" href="/account/">
+				Settings
+			</a></li>
+			<li><a class="pointer"
+				data-target="logout-modal"
+				onclick="toggleModal(event); logout();">
+				Logout
+			</a></li>
+		</ul>
+	</details>
+</li>
+<li>
+	<a role="button"
+		class="flex align-center secondary theme-btn pointer transparent-btn gap-xxs"
+		onclick="switchTheme(event)">
+		<svg class="icon theme-toggle theme-dark"
+			width="1em" height="1em">
+			<use xlink:href="#icon-moon"/>
+		</svg>
+		<svg class="icon theme-toggle theme-light"
+			width="1em" height="1em">
+			<use xlink:href="#icon-sun"/>
+		</svg>
+	</a>
+</li>
+				</ul>
+			</nav>
+		</header>
+		
+		
+		<aside id="menu">
+			<article><nav><ul>
+				<li><a class="secondary pointer text-right" onclick="toggleMenu()">
+					<svg width="1em" height="1em"><use xlink:href="#icon-x"/></svg>
+				</a></li>
+				
+				<li><a class="secondary" href="/en-us/">
+					He Rose From Death - US
+				</a></li>
+				
+				<li><a class="secondary" href="/es-es/">
+					Resucitó - ES
+				</a></li>
+				
+				<li><hr></li>
+				<li><a class="pointer secondary" onclick="toggleModal(event)"
+					data-target="contact-modal">
+					Contact
+				</a></li>
+				<li><a class="flex align-center gap-xxs theme-btn pointer secondary"
+					onclick="switchTheme(event)">
+					Theme
+					<svg class="icon theme-toggle theme-dark mr-xxs"
+						width="1em" height="1em">
+						<use xlink:href="#icon-moon"/>
+					</svg>
+					<svg class="icon theme-toggle theme-light mr-xxs"
+						width="1em" height="1em">
+						<use xlink:href="#icon-sun"/>
+					</svg>
+				</a></li>
+				<li><hr></li>
+				<li class="logged-out">
+					<a class="secondary pointer"
+						onclick="changeAuthModal('login'); toggleModal(event);"
+						data-target="auth-modal">
+						Login
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer" href="/account/">
+						Settings
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer"
+						onclick="toggleModal(event); logout();"
+						data-target="logout-modal">
+						Logout
+					</a>
+				</li>
+			</ul></nav></article>
+		</aside>
+		
+		<main>
+<div class="container">
+	<article class="psalm pre">
+		<hgroup class="flex space-between align-center gap-xxs mb-0">
+			<p class="ghost"></p>
+			<h5 class="text-center">I WANT TO SING</h5>
+			<details class="dropdown mb-0">
+				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+					<use xlink:href="#icon-lang"/>
+				</svg></summary>
+				<ul dir="rtl">
+					
+					<li>
+						<a href="/es-es/quiero-cantar/">
+							QUIERO CANTAR
+						</a>
+					</li>
+					
+				</ul>
+			</details>
+		</hgroup>
+		<p class="text-center secondary mb-lg"></p>
+		<div class="grid"><div class='column'></div></div>
+	</article>
+</div>
+</main>
+		
+		<footer id="footer" class="mt-auto">
+			<nav class="container justify-center">
+				<ul>
+					<li>
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="toggleModal(event)"
+		data-target="contact-modal">
+		Contact
+	</a>
+</li>
+<li class="logged-out">
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="changeAuthModal('login'); toggleModal(event);"
+		data-target="auth-modal">
+		Login
+	</a>
+</li>
+<li class="logged-in hide">
+	<details class="dropdown mb-0">
+		<summary class="transparent-btn">Account</summary>
+		<ul dir="rtl">
+			<li><a class="pointer" href="/account/">
+				Settings
+			</a></li>
+			<li><a class="pointer"
+				data-target="logout-modal"
+				onclick="toggleModal(event); logout();">
+				Logout
+			</a></li>
+		</ul>
+	</details>
+</li>
+<li>
+	<a role="button"
+		class="flex align-center secondary theme-btn pointer transparent-btn gap-xxs"
+		onclick="switchTheme(event)">
+		<svg class="icon theme-toggle theme-dark"
+			width="1em" height="1em">
+			<use xlink:href="#icon-moon"/>
+		</svg>
+		<svg class="icon theme-toggle theme-light"
+			width="1em" height="1em">
+			<use xlink:href="#icon-sun"/>
+		</svg>
+	</a>
+</li>
+				</ul>
+			</nav>
+		</footer>
+		
+		
+<div id="eplayer-wrapper" class="eplayer-wrapper flex space-between align-center">
+	
+	
+	
+		
+	
+	<div class="ghost hide-sm"><svg width="1em" height="1em"><use xlink:href=""/></svg></div>
+	<div id="eplayer" class="eplayer flex-1"
+		data-src="https://aleyoscar.com/audio/en-us/i-want-to-sing_EM.mp3"
+		data-type="audio/mp3">
+	</div>
+	<details class="dropdown mb-0 align-self-end-sm">
+		<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+			<use xlink:href="#icon-menu-dot"/>
+		</svg></summary>
+		<ul dir="rtl" class="up">
+			<li><strong>Sources</strong></li>
+			
+			<li>
+				<a class="pointer" onclick="switchSource(event)"
+					data-source="https://aleyoscar.com/audio/en-us/i-want-to-sing_EM.mp3">
+					Emanuele
+				</a>
+			</li>
+			
+		</ul>
+	</details>
+	
+</div>
+
+		
+		<dialog id="contact-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="contact-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3>Contact</h3>
+		</header>
+		<p id="contact-error" class="error message hide">There was an error sending your message. Please try again later.</p>
+		<p id="contact-success" class="success message hide">Thank you for your message! We will get back to you soon.</p>
+		<form id="contact-form" role="form" data-reset="reset">
+			<fieldset>
+				<label for="contact-name">Name <span class="primary">*</span>
+					<input type="text" id="contact-name" name="contact-name"
+						required aria-required="true" placeholder="Your name">
+				</label>
+				<label for="contact-email">Email <span class="primary">*</span>
+					<input type="email" id="contact-email" name="contact-email"
+						required aria-required="true" placeholder="Your email">
+				</label>
+				<label hidden for="contact-subject">Subject
+					<input type="text" id="contact-subject" name="contact-subject"
+						placeholder="Subject">
+				</label>
+				<label for="contact-message">Message <span class="primary">*</span>
+					<textarea id="contact-message" name="contact-message"
+						required aria-required="true" placeholder="Your message"
+					></textarea>
+				</label>
+			</fieldset>
+		</form>
+		<footer>
+			<button id="contact-close" class="secondary"
+				data-target="contact-modal"
+				onclick="toggleModal(event)">
+				Cancel
+			</button>
+			<button id="contact-submit" form="contact-form">Submit</button>
+		</footer>
+	</article>
+</dialog>
+		<dialog id="auth-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="auth-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3 id="auth-title">Login</h3>
+		</header>
+		<p id="auth-error" class="error message hide">There was an error.</p>
+		<p id="auth-success" class="success message hide">Success!</p>
+		<form id="auth-form" role="form" data-reset="reset">
+			<fieldset>
+				<input id="auth-option" type="hidden" name="auth-option" value="" />
+				<label id="auth-label-email" for="auth-email">Email <span class="primary">*</span>
+					<input type="email" id="auth-email" name="auth-email"
+						required aria-required="true" placeholder="Email">
+				</label>
+				<label id="auth-label-old" for="auth-old">Old Password <span class="primary">*</span>
+					<input type="password" id="auth-old" name="auth-old"
+						required aria-required="true" placeholder="Password">
+				</label>
+				<label id="auth-label-password" for="auth-password">Password <span class="primary">*</span>
+					<input type="password" id="auth-password" name="auth-password"
+						required aria-required="true" placeholder="Password">
+				</label>
+				<label id="auth-label-new" for="auth-new">New Password <span class="primary">*</span>
+					<input type="password" id="auth-new" name="auth-new"
+						required aria-required="true" placeholder="New Password">
+					<small>Minimum 8 characters: 1 lowercase, 1 uppercase and 1 number.</small>
+				</label>
+				<label id="auth-label-confirm" for="auth-confirm">Re-Type Password <span class="primary">*</span>
+					<input type="password" id="auth-confirm" name="auth-confirm"
+						required aria-required="true" placeholder="Re-Type Password">
+				</label>
+			</fieldset>
+			<p id="auth-links" class="text-center">
+				<a id="auth-link-login" class="pointer underline px-xxs" onclick="changeAuthModal('login')">Login</a>
+				<a id="auth-link-register" class="pointer underline px-xxs" onclick="changeAuthModal('register')">Register</a>
+				<a id="auth-link-resend" class="pointer underline px-xxs" onclick="changeAuthModal('resend')">Resend Verification Email</a>
+				<a id="auth-link-reset" class="pointer underline px-xxs" onclick="changeAuthModal('reset')">Reset Password</a>
+			</p>
+		</form>
+		<footer>
+			<button id="auth-close" class="secondary"
+				data-target="auth-modal"
+				onclick="toggleModal(event)">
+				Cancel
+			</button>
+			<button id="auth-submit" form="auth-form">Submit</button>
+		</footer>
+	</article>
+</dialog>
+<dialog id="logout-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="logout-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3>Logout</h3>
+		</header>
+		<p class="success message">Logged out successfully.</p>
+		<p class="text-center">
+			<a class="pointer underline px-xxs" data-target="auth-modal" onclick="changeAuthModal('login'); toggleModal(event);">Login</a>
+			<a class="pointer underline px-xxs" data-target="auth-modal" onclick="changeAuthModal('register'); toggleModal(event);">Register</a>
+		</p>
+		<footer>
+			<button class="secondary"
+				data-target="logout-modal"
+				onclick="toggleModal(event)">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<dialog id="auth-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="auth-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3 id="auth-title">Login</h3>
+		</header>
+		<p id="auth-error" class="error message hide">There was an error.</p>
+		<p id="auth-success" class="success message hide">Success!</p>
+		<form id="auth-form" role="form" data-reset="reset">
+			<fieldset>
+				<input id="auth-option" type="hidden" name="auth-option" value="" />
+				<label id="auth-label-email" for="auth-email">Email <span class="primary">*</span>
+					<input type="email" id="auth-email" name="auth-email"
+						required aria-required="true" placeholder="Email">
+				</label>
+				<label id="auth-label-old" for="auth-old">Old Password <span class="primary">*</span>
+					<input type="password" id="auth-old" name="auth-old"
+						required aria-required="true" placeholder="Password">
+				</label>
+				<label id="auth-label-password" for="auth-password">Password <span class="primary">*</span>
+					<input type="password" id="auth-password" name="auth-password"
+						required aria-required="true" placeholder="Password">
+				</label>
+				<label id="auth-label-new" for="auth-new">New Password <span class="primary">*</span>
+					<input type="password" id="auth-new" name="auth-new"
+						required aria-required="true" placeholder="New Password">
+					<small>Minimum 8 characters: 1 lowercase, 1 uppercase and 1 number.</small>
+				</label>
+				<label id="auth-label-confirm" for="auth-confirm">Re-Type Password <span class="primary">*</span>
+					<input type="password" id="auth-confirm" name="auth-confirm"
+						required aria-required="true" placeholder="Re-Type Password">
+				</label>
+			</fieldset>
+			<p id="auth-links" class="text-center">
+				<a id="auth-link-login" class="pointer underline px-xxs" onclick="changeAuthModal('login')">Login</a>
+				<a id="auth-link-register" class="pointer underline px-xxs" onclick="changeAuthModal('register')">Register</a>
+				<a id="auth-link-resend" class="pointer underline px-xxs" onclick="changeAuthModal('resend')">Resend Verification Email</a>
+				<a id="auth-link-reset" class="pointer underline px-xxs" onclick="changeAuthModal('reset')">Reset Password</a>
+			</p>
+		</form>
+		<footer>
+			<button id="auth-close" class="secondary"
+				data-target="auth-modal"
+				onclick="toggleModal(event)">
+				Cancel
+			</button>
+			<button id="auth-submit" form="auth-form">Submit</button>
+		</footer>
+	</article>
+</dialog>
+<dialog id="logout-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="logout-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3>Logout</h3>
+		</header>
+		<p class="success message">Logged out successfully.</p>
+		<p class="text-center">
+			<a class="pointer underline px-xxs" data-target="auth-modal" onclick="changeAuthModal('login'); toggleModal(event);">Login</a>
+			<a class="pointer underline px-xxs" data-target="auth-modal" onclick="changeAuthModal('register'); toggleModal(event);">Register</a>
+		</p>
+		<footer>
+			<button class="secondary"
+				data-target="logout-modal"
+				onclick="toggleModal(event)">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>

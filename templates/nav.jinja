@@ -1,13 +1,38 @@
 <li>
-	<a role="button" class="secondary pointer transparent-btn" onclick="toggleModal(event)"
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="toggleModal(event)"
 		data-target="contact-modal">
 		Contact
 	</a>
 </li>
+<li class="logged-out">
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="changeAuthModal('login'); toggleModal(event);"
+		data-target="auth-modal">
+		Login
+	</a>
+</li>
+<li class="logged-in hide">
+	<details class="dropdown mb-0">
+		<summary class="transparent-btn">Account</summary>
+		<ul dir="rtl">
+			<li><a class="pointer" href="{{ url_for('account') }}">
+				Settings
+			</a></li>
+			<li><a class="pointer"
+				data-target="logout-modal"
+				onclick="toggleModal(event); logout();">
+				Logout
+			</a></li>
+		</ul>
+	</details>
+</li>
 <li>
-	<a role="button" class="flex align-center secondary theme-btn pointer transparent-btn gap-xxs"
+	<a role="button"
+		class="flex align-center secondary theme-btn pointer transparent-btn gap-xxs"
 		onclick="switchTheme(event)">
-		Theme
 		<svg class="icon theme-toggle theme-dark"
 			width="1em" height="1em">
 			<use xlink:href="#icon-moon"/>

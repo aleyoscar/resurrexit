@@ -1,0 +1,93 @@
+{% extends 'base.jinja' %}
+{% block title %}Custom List{% endblock %}
+{% block scripts %}
+	<script src="{{ url_for('static', filename='scripts/Sortable.min.js') }}" defer></script>
+	<script src="{{ url_for('static', filename='scripts/list.js') }}" defer></script>
+{% endblock %}
+{% block content %}
+<div class="container">
+	<p id="list-error" class="error message hide">You are not authorized to view this list.</p>
+	<div id="list">
+		<article>
+			<header class="list-view"><h3 id="list-view-name"></h3></header>
+			<div id="list-view-elements" class="list-view"></div>
+			<form id="list-form" class="hide" role="form">
+				<fieldset>
+					<input id="list-form-name" name="list-form-name" class="mb-0" type="text" placeholder="List Title..." required />
+					<label class="mt-pico" for="list-form-public">
+						<input id="list-form-public" name="list-form-public" type="checkbox" role="switch" />
+						Public
+					</label>
+				</fieldset>
+				<div id="list-form-elements" class="mb-pico"></div>
+				<fieldset id="list-form-add" role="group">
+					<select id="list-form-add-options" name="list-form-add-options" aria-label="Element to add...">
+						<option selected disabled value="">Element to add...</option>
+						<option value="psalm">Psalm</option>
+						<option value="section">Section</option>
+					</select>
+					<button id="list-form-add-button" onclick="addListElement(event)">Add</button>
+				</fieldset>
+			</form>
+			<footer id="list-buttons" class="text-center">
+				<button id="list-cancel" class="secondary hide" onclick="closeListEdit()">Cancel</button>
+				<button id="list-edit" onclick="openListEdit()">Edit</button>
+				<button id="list-submit" form="list-form" class="hide">Save</button>
+				<button id="list-delete"
+					class="float-right hide contrast outline"
+					data-target="delete-modal"
+					onclick="toggleModal(event)">
+					<svg width="1.0em" height="1.0em">
+						<use xlink:href="#icon-trash"/>
+					</svg>
+				</button>
+			</footer>
+		</article>
+	</div>
+</div>
+{% endblock %}
+{% block modals %}
+<dialog id="save-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="save-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3>Save List</h3>
+		</header>
+		<p class="success message">Saved list successfully.</p>
+		<footer>
+			<button class="secondary"
+				data-target="save-modal"
+				onclick="toggleModal(event)">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
+<dialog id="delete-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="delete-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3>Delete List?</h3>
+		</header>
+		<p id="list-delete-error" class="error message hide">There was an error deleting this list.</p>
+		<p>Are you sure you want to delete this list?</p>
+		<footer>
+			<button class="secondary"
+				data-target="delete-modal"
+				onclick="toggleModal(event)">
+				Cancel
+			</button>
+			<button id="list-delete" onclick="deleteList()">Delete</button>
+		</footer>
+	</article>
+</dialog>
+<datalist id="list-psalms"></datalist>
+{% endblock %}

@@ -15,9 +15,11 @@
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/eplayer.css') }}">
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 		<script src="{{ url_for('static', filename='scripts/js.cookie.min.js') }}" defer></script>
+		<script src="{{ url_for('static', filename='scripts/pocketbase.umd.js') }}" defer></script>
 		<script src="{{ url_for('static', filename='scripts/eplayer.js') }}" defer></script>
 		<script src="{{ url_for('static', filename='scripts/modal.js') }}" defer></script>
 		<script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+		{% block scripts %}{% endblock %}
 		<title>Resurrexit | {% block title %}{% endblock %}</title>
 	</head>
 	<body class="flex flex-column">
@@ -91,6 +93,26 @@
 						<use xlink:href="#icon-sun"/>
 					</svg>
 				</a></li>
+				<li><hr></li>
+				<li class="logged-out">
+					<a class="secondary pointer"
+						onclick="changeAuthModal('login'); toggleModal(event);"
+						data-target="auth-modal">
+						Login
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer" href="{{ url_for('account') }}">
+						Settings
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer"
+						onclick="toggleModal(event); logout();"
+						data-target="logout-modal">
+						Logout
+					</a>
+				</li>
 			</ul></nav></article>
 		</aside>
 		{% endblock %}
@@ -107,5 +129,6 @@
 		{% block eplayer %}{% endblock %}
 		{% block modals %}{% endblock %}
 		{% include 'contact.jinja' %}
+		{% include 'auth.jinja' %}
 	</body>
 </html>
