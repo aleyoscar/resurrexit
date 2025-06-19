@@ -31,7 +31,7 @@ const menu = document.getElementById('menu');
 const eplayer = document.getElementById('eplayer');
 const eplayerWrapper = document.querySelector('.eplayer-wrapper');
 const footer = document.getElementById('footer');
-const pb = new PocketBase("https://pb.aleyoscar.com");
+const pb = new PocketBase();
 // const eplayerWrapper = document.getElementById('eplayer-wrapper')
 
 const authOptions = {

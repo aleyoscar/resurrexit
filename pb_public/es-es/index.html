@@ -1,0 +1,3902 @@
+<!doctype html>
+<html lang="es-ES">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="color-scheme" content="light dark">
+		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
+		<meta name="theme-color" content="#c52f21" />
+		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png" />
+		<link rel="manifest" href="/static/site.webmanifest" />
+		<link rel="stylesheet" href="/static/css/pico.red.min.css">
+		<link rel="stylesheet" href="/static/css/eplayer.css">
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<script src="/static/scripts/js.cookie.min.js" defer></script>
+		<script src="/static/scripts/pocketbase.umd.js" defer></script>
+		<script src="/static/scripts/eplayer.js" defer></script>
+		<script src="/static/scripts/modal.js" defer></script>
+		<script src="/static/scripts/main.js" defer></script>
+		
+		<title>Resurrexit | Resucitó</title>
+	</head>
+	<body class="flex flex-column">
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="icon-moon" viewBox="0 0 16 16">
+		<path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+	</symbol>
+	<symbol id="icon-sun" viewBox="0 0 16 16">
+		<path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+	</symbol>
+	<symbol id="icon-sort-asc" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+		<path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+	</symbol>
+	<symbol id="icon-sort-desc" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+		<path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zm-8.46-.5a.5.5 0 0 1-1 0V3.707L2.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.5.5 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L4.5 3.707z"/>
+	</symbol>
+	<symbol id="icon-steps" viewBox="0 0 16 16">
+		<path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+	</symbol>
+	<symbol id="icon-book" viewBox="0 0 16 16">
+		<path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"/>
+		<path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"/>
+	</symbol>
+	<symbol id="icon-globe" viewBox="0 0 16 16">
+		<path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+	</symbol>
+	<symbol id="icon-stars" viewBox="0 0 16 16">
+		<path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+	</symbol>
+	<symbol id="icon-mail" viewBox="0 0 16 16">
+		<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+	</symbol>
+	<symbol id="icon-filter" viewBox="0 0 16 16">
+		<path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+	</symbol>
+	<symbol id="icon-lang" viewBox="0 0 16 16">
+		<path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+		<path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+	</symbol>
+	<symbol id="icon-x" viewBox="0 0 16 16">
+		<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+	</symbol>
+	<symbol id="icon-menu" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+	</symbol>
+	<symbol id="icon-menu-dot" viewBox="0 0 16 16">
+		<path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+	</symbol>
+	<symbol id="icon-move" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10"/>
+	</symbol>
+	<symbol id="icon-trash" viewBox="0 0 16 16">
+		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+	</symbol>
+</svg>
+		
+		<header id="header">
+			<nav class="container">
+				<ul>
+					<li>
+						<a class="pointer contrast hide-lg" onclick="toggleMenu()">
+							<h3 class="mb-0">
+								<svg width="1.0em" height="1.0em">
+									<use xlink:href="#icon-menu"/>
+								</svg>
+							</h3>
+						</a>
+						<a class="contrast transparent-btn"
+							role="button"
+							href="
+	/es-es/
+">
+							<h3 class="mb-0">
+								Resucitó
+							</h3>
+						</a>
+					</li>
+				</ul>
+				<ul class="hide-md">
+					<li>
+						<details class="dropdown mb-0">
+							<summary class="transparent-btn">Songbooks</summary>
+							<ul dir="rtl">
+								
+								<li>
+									<a href="/en-us/">
+										He Rose From Death - US
+									</a>
+								</li>
+								
+								<li>
+									<a href="/es-es/">
+										Resucitó - ES
+									</a>
+								</li>
+								
+							</ul>
+						</details>
+					</li>
+					<li>
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="toggleModal(event)"
+		data-target="contact-modal">
+		Contact
+	</a>
+</li>
+<li class="logged-out">
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="changeAuthModal('login'); toggleModal(event);"
+		data-target="auth-modal">
+		Login
+	</a>
+</li>
+<li class="logged-in hide">
+	<details class="dropdown mb-0">
+		<summary class="transparent-btn">Account</summary>
+		<ul dir="rtl">
+			<li><a class="pointer" href="/account/">
+				Settings
+			</a></li>
+			<li><a class="pointer"
+				data-target="logout-modal"
+				onclick="toggleModal(event); logout();">
+				Logout
+			</a></li>
+		</ul>
+	</details>
+</li>
+<li>
+	<a role="button"
+		class="flex align-center secondary theme-btn pointer transparent-btn gap-xxs"
+		onclick="switchTheme(event)">
+		<svg class="icon theme-toggle theme-dark"
+			width="1em" height="1em">
+			<use xlink:href="#icon-moon"/>
+		</svg>
+		<svg class="icon theme-toggle theme-light"
+			width="1em" height="1em">
+			<use xlink:href="#icon-sun"/>
+		</svg>
+	</a>
+</li>
+				</ul>
+			</nav>
+		</header>
+		
+		
+		<aside id="menu">
+			<article><nav><ul>
+				<li><a class="secondary pointer text-right" onclick="toggleMenu()">
+					<svg width="1em" height="1em"><use xlink:href="#icon-x"/></svg>
+				</a></li>
+				
+				<li><a class="secondary" href="/en-us/">
+					He Rose From Death - US
+				</a></li>
+				
+				<li><a class="secondary" href="/es-es/">
+					Resucitó - ES
+				</a></li>
+				
+				<li><hr></li>
+				<li><a class="pointer secondary" onclick="toggleModal(event)"
+					data-target="contact-modal">
+					Contact
+				</a></li>
+				<li><a class="flex align-center gap-xxs theme-btn pointer secondary"
+					onclick="switchTheme(event)">
+					Theme
+					<svg class="icon theme-toggle theme-dark mr-xxs"
+						width="1em" height="1em">
+						<use xlink:href="#icon-moon"/>
+					</svg>
+					<svg class="icon theme-toggle theme-light mr-xxs"
+						width="1em" height="1em">
+						<use xlink:href="#icon-sun"/>
+					</svg>
+				</a></li>
+				<li><hr></li>
+				<li class="logged-out">
+					<a class="secondary pointer"
+						onclick="changeAuthModal('login'); toggleModal(event);"
+						data-target="auth-modal">
+						Login
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer" href="/account/">
+						Settings
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer"
+						onclick="toggleModal(event); logout();"
+						data-target="logout-modal">
+						Logout
+					</a>
+				</li>
+			</ul></nav></article>
+		</aside>
+		
+		<main>
+<section id="tools" class="sticky">
+	<div class="container flex align-center gap-xs">
+		<form id="search-form" role="search" class="flex-1 mb-0">
+			<input id="search-input"
+				class="flex-1"
+				type="search"
+				name="search"
+				placeholder="Search"
+				aria-label="Search"
+			/>
+		</form>
+		<button id="sort-btn" class="outline flex-inline align-center gap-xxs hide-md"
+			onclick="sortList(event)">
+			Sort
+			<svg id="sort-btn-asc" width="1em" height="1em">
+				<use xlink:href="#icon-sort-asc"/>
+			</svg>
+			<svg id="sort-btn-desc" class="hide" width="1em" height="1em">
+				<use xlink:href="#icon-sort-desc"/>
+			</svg>
+		</button>
+		<button id="steps-btn"
+			class="flex-inline align-center outline gap-xxs hide-md"
+			onclick="toggleModal(event)" data-target="steps-modal">
+			<span class="hide"></span>Steps
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-steps"/>
+			</svg>
+		</button>
+		<button id="tags-btn"
+			class="flex-inline align-center outline gap-xxs hide-md"
+			onclick="toggleModal(event)" data-target="tags-modal">
+			<span class="hide"></span>Book Tags
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-book"/>
+			</svg>
+		</button>
+		<button id="gtags-btn"
+			class="flex-inline align-center outline gap-xxs hide-md"
+			onclick="toggleModal(event)" data-target="gtags-modal">
+			<span class="hide"></span>Global Tags
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-globe"/>
+			</svg>
+		</button>
+		<details class="dropdown hide-lg mb-0">
+			<summary class="transparent-btn no-caret">
+				<svg width="1.6em" height="1.6em">
+					<use xlink:href="#icon-filter"/>
+				</svg>
+			</summary>
+			<ul dir="rtl">
+				<li><a id="sort-btn-md" class="pointer"
+					onclick="sortList(event)">
+					Sort
+				</a></li>
+				<li><a id="steps-btn-md"
+					class="pointer"
+					onclick="toggleModal(event)" data-target="steps-modal">
+					<span class="hide"></span>Steps
+				</a></li>
+				<li><a id="tags-btn-md"
+					class="pointer"
+					onclick="toggleModal(event)" data-target="tags-modal">
+					<span class="hide"></span>Book Tags
+				</a></li>
+				<li><a id="gtags-btn-md"
+					class="pointer"
+					onclick="toggleModal(event)" data-target="gtags-modal">
+					<span class="hide"></span>Global Tags
+				</a></li>
+			</ul>
+		</details>
+		<!-- <button id="contexts-btn"
+			class="flex-inline align-center outline"
+			onclick="toggleModal(event)" data-target="contexts-modal">
+			Contexts
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-at"/>
+			</svg>
+		</button> -->
+	</div>
+	<a id="clear-btn" class="secondary flex justify-center align-center gap-xxs pointer pt-xs"
+		onclick="clearFilters()"><small>
+		Clear Filters
+		<svg width="1em" height="1em">
+			<use xlink:href="#icon-stars"/>
+		</svg></small>
+	</a>
+</section>
+<section class="container">
+	<ul id="psalm-list" class="flex flex-column">
+	
+		<li id="p-237"
+			class="psalm pointer
+				ele
+				 pas pen
+				 g-pas g-pen g-hym">
+			<a href="/es-es/a-la-cena-del-cordero/">
+				<hgroup>
+					<h5>A LA CENA DEL CORDERO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-1"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen g-hym">
+			<a href="/es-es/a-la-victima-pascual/">
+				<hgroup>
+					<h5>A LA VÍCTIMA PASCUAL</h5>
+					<p>Secuencia de Pascua - Himno lat. «Victimae paschali laudes»</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-2"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/a-nadie-demos-ocasion-de-tropiezo/">
+				<hgroup>
+					<h5>A NADIE DEMOS OCASIÓN DE TROPIEZO</h5>
+					<p>2o Co 6,3ss</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-3"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/a-ti-levanto-mis-ojos/">
+				<hgroup>
+					<h5>A TI LEVANTO MIS OJOS</h5>
+					<p>Sal 123 (122)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-4"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/a-ti-senor-en-mi-clamor-imploro/">
+				<hgroup>
+					<h5>A TI, SEÑOR, EN MI CLAMOR IMPLORO</h5>
+					<p>Sal 142 (141)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-5"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/a-ti-senor-levanto-mi-alma/">
+				<hgroup>
+					<h5>A TI, SEÑOR, LEVANTO MI ALMA</h5>
+					<p>Sal 25 (24)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-6"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/a-ti-senor-se-debe-la-alabanza-en-sion/">
+				<hgroup>
+					<h5>A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN</h5>
+					<p>Salmo 65 (64)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-0"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/a-tu-luz-senor-vemos-la-luz/">
+				<hgroup>
+					<h5>A TU LUZ, SEÑOR, VEMOS LA LUZ</h5>
+					<p>Salmo 36</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-7"
+			class="psalm pointer
+				pre
+				 int pas pen
+				 g-int g-pas g-pen">
+			<a href="/es-es/abba-padre/">
+				<hgroup>
+					<h5>ABBÁ, PADRE</h5>
+					<p>Rm 8,15-17</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-8"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/abraham/">
+				<hgroup>
+					<h5>ABRAHAM</h5>
+					<p>Gn 18,1-5</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-179"
+			class="psalm pointer
+				lit
+				
+				 g-var">
+			<a href="/es-es/aclamaciones-a-la-oracion-de-los-fieles/">
+				<hgroup>
+					<h5>ACLAMACIONES A LA ORACIÓN DE LOS FIELES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-9"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/aclamad-al-senor/">
+				<hgroup>
+					<h5>ACLAMAD AL SEÑOR</h5>
+					<p>Sal 100 (99)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-238"
+			class="psalm pointer
+				ele
+				
+				">
+			<a href="/es-es/adonde-te-escondiste-amado/">
+				<hgroup>
+					<h5>ADÓNDE TE ESCONDISTE, AMADO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-10"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/al-despertar/">
+				<hgroup>
+					<h5>AL DESPERTAR</h5>
+					<p>Sal 17 (16)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-11"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/alabad-al-senor-en-el-cielo/">
+				<hgroup>
+					<h5>ALABAD AL SEÑOR EN EL CIELO</h5>
+					<p>Sal 148</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-12"
+			class="psalm pointer
+				pre
+				 lib
+				 g-lib">
+			<a href="/es-es/alegria-ha-nacido-el-salvador/">
+				<hgroup>
+					<h5>ALEGRÍA, HA NACIDO EL SALVADOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-180"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/aleluya-interleccional/">
+				<hgroup>
+					<h5>ALELUYA INTERLECCIONAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-181"
+			class="psalm pointer
+				lit
+				
+				 g-pas">
+			<a href="/es-es/aleluya-pascual/">
+				<hgroup>
+					<h5>ALELUYA PASCUAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-13"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/aleluya-alabad-al-senor/">
+				<hgroup>
+					<h5>ALELUYA, ALABAD AL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-14"
+			class="psalm pointer
+				pre
+				 lib pas pen pax
+				 g-lib g-pas g-pen g-pax">
+			<a href="/es-es/aleluya-bendecid-al-senor/">
+				<hgroup>
+					<h5>ALELUYA, BENDECID AL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-15"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/aleluya-ya-llego-el-reino/">
+				<hgroup>
+					<h5>ALELUYA, YA LLEGÓ EL REINO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-16"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/alzaos-puertas/">
+				<hgroup>
+					<h5>ALZAOS, PUERTAS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-18"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/amo-al-senor/">
+				<hgroup>
+					<h5>AMO AL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-17"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/amen-amen-amen/">
+				<hgroup>
+					<h5>AMÉN, AMÉN, AMÉN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-182"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/antifona-para-el-evangelio/">
+				<hgroup>
+					<h5>ANTÍFONA PARA EL EVANGELIO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-19"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen g-var">
+			<a href="/es-es/aquedah/">
+				<hgroup>
+					<h5>AQUEDAH</h5>
+					<p>Gn 22,9-10 - Targum Neofiti</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-20"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/asi-habla-el-amen/">
+				<hgroup>
+					<h5>ASÍ HABLA EL AMÉN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-21"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir g-hym">
+			<a href="/es-es/ave-maria-i/">
+				<hgroup>
+					<h5>AVE MARÍA I</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-22"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir g-hym">
+			<a href="/es-es/ave-maria-ii/">
+				<hgroup>
+					<h5>AVE MARÍA II</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-23"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/babilonia-criminal/">
+				<hgroup>
+					<h5>BABILONIA CRIMINAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-24"
+			class="psalm pointer
+				pre
+				 fin pax
+				 g-fin g-pax">
+			<a href="/es-es/balaam/">
+				<hgroup>
+					<h5>BALAAM</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-25"
+			class="psalm pointer
+				pre
+				 vin com
+				 g-vin g-com">
+			<a href="/es-es/bendecire-al-senor-en-todo-tiempo/">
+				<hgroup>
+					<h5>BENDECIRÉ AL SEÑOR EN TODO TIEMPO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-26"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/bendice-alma-mia-a-yahveh/">
+				<hgroup>
+					<h5>BENDICE, ALMA MÍA, A YAHVEH</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-183"
+			class="psalm pointer
+				lit
+				
+				 g-pas">
+			<a href="/es-es/bendicion-del-agua/">
+				<hgroup>
+					<h5>BENDICIÓN DEL AGUA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-27"
+			class="psalm pointer
+				pre
+				 int vir
+				 g-int g-vir">
+			<a href="/es-es/bendita-eres-tu-maria/">
+				<hgroup>
+					<h5>BENDITA ERES TÚ, MARÍA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-28"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/bendito-eres-senor/">
+				<hgroup>
+					<h5>BENDITO ERES, SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-29"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/bendito-sea-dios/">
+				<hgroup>
+					<h5>BENDITO SEA DIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-30"
+			class="psalm pointer
+				pre
+				
+				 g-hym">
+			<a href="/es-es/benedictus/">
+				<hgroup>
+					<h5>BENEDICTUS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-31"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/cantad-a-dios/">
+				<hgroup>
+					<h5>CANTAD A DIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-32"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/cantad-al-senor/">
+				<hgroup>
+					<h5>CANTAD AL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-34"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/canto-de-moises/">
+				<hgroup>
+					<h5>CANTO DE MOISÉS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-35"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/caritas-christi-urget-nos/">
+				<hgroup>
+					<h5>CARITAS CHRISTI URGET NOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-36"
+			class="psalm pointer
+				pre
+				 vin fin
+				 g-vin g-fin g-var">
+			<a href="/es-es/carmen-63/">
+				<hgroup>
+					<h5>CARMEN 63</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-185"
+			class="psalm pointer
+				lit
+				
+				 g-poe">
+			<a href="/es-es/celebracion-penitencial/">
+				<hgroup>
+					<h5>CELEBRACIÓN PENITENCIAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-37"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/como-condenados-a-muerte/">
+				<hgroup>
+					<h5>COMO CONDENADOS A MUERTE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-239"
+			class="psalm pointer
+				ele
+				
+				 g-sal">
+			<a href="/es-es/como-destila-la-miel/">
+				<hgroup>
+					<h5>COMO DESTILA LA MIEL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-221"
+			class="psalm pointer
+				cat
+				
+				 g-sal">
+			<a href="/es-es/como-el-impulso-que-siente-la-ira/">
+				<hgroup>
+					<h5>COMO EL IMPULSO QUE SIENTE LA IRA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-39"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/como-la-cierva/">
+				<hgroup>
+					<h5>COMO LA CIERVA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-240"
+			class="psalm pointer
+				ele
+				
+				">
+			<a href="/es-es/como-lirio-entre-los-cardos/">
+				<hgroup>
+					<h5>COMO LIRIO ENTRE LOS CARDOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-40"
+			class="psalm pointer
+				pre
+				 com pan pas pen vir
+				 g-com g-pan g-pas g-pen g-vir">
+			<a href="/es-es/como-oveja-que-ve/">
+				<hgroup>
+					<h5>COMO OVEJA QUE VE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-41"
+			class="psalm pointer
+				pre
+				 int fin pax
+				 g-int g-fin g-pax">
+			<a href="/es-es/consolad-a-mi-pueblo/">
+				<hgroup>
+					<h5>CONSOLAD A MI PUEBLO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-186"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/cordero-de-dios/">
+				<hgroup>
+					<h5>CORDERO DE DIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-187"
+			class="psalm pointer
+				lit
+				
+				 g-hym">
+			<a href="/es-es/credo/">
+				<hgroup>
+					<h5>CREDO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-42"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/cristo-es-la-luz/">
+				<hgroup>
+					<h5>CRISTO ES LA LUZ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-222"
+			class="psalm pointer
+				cat
+				 vin
+				 g-vin">
+			<a href="/es-es/cuando-dormia/">
+				<hgroup>
+					<h5>CUANDO DORMÍA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-43"
+			class="psalm pointer
+				pre
+				 com int
+				 g-com g-int">
+			<a href="/es-es/cuando-el-senor/">
+				<hgroup>
+					<h5>CUANDO EL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-44"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/cuando-israel-salio-de-egipto/">
+				<hgroup>
+					<h5>CUANDO ISRAEL SALIÓ DE EGIPTO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-33"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/cantico-de-los-tres-jovenes/">
+				<hgroup>
+					<h5>CÁNTICO DE LOS TRES JÓVENES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-38"
+			class="psalm pointer
+				pre
+				 pax
+				 g-pax">
+			<a href="/es-es/como-es-maravilloso/">
+				<hgroup>
+					<h5>CÓMO ES MARAVILLOSO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-45"
+			class="psalm pointer
+				pre
+				 pas pen pax
+				 g-pas g-pen g-pax g-heb">
+			<a href="/es-es/dayenu/">
+				<hgroup>
+					<h5>DAYENÚ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-47"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/de-profundis/">
+				<hgroup>
+					<h5>DE PROFUNDIS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-48"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/decidle-a-los-de-corazon-cansado/">
+				<hgroup>
+					<h5>DECIDLE A LOS DE CORAZÓN CANSADO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-49"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/delante-de-los-angeles/">
+				<hgroup>
+					<h5>DELANTE DE LOS ÁNGELES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-51"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/dice-el-senor-a-mi-senor/">
+				<hgroup>
+					<h5>DICE EL SEÑOR A MI SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-52"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/dichoso-el-hombre/">
+				<hgroup>
+					<h5>DICHOSO EL HOMBRE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-223"
+			class="psalm pointer
+				cat
+				 vir
+				 g-vir">
+			<a href="/es-es/debora/">
+				<hgroup>
+					<h5>DÉBORA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-50"
+			class="psalm pointer
+				pre
+				 fin
+				 g-fin g-heb">
+			<a href="/es-es/dia-de-reposo/">
+				<hgroup>
+					<h5>DÍA DE REPOSO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-53"
+			class="psalm pointer
+				pre
+				 int pas pen
+				 g-int g-pas g-pen">
+			<a href="/es-es/el-combate-escatologico/">
+				<hgroup>
+					<h5>EL COMBATE ESCATOLÓGICO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-54"
+			class="psalm pointer
+				pre
+				 vin int pas pen
+				 g-vin g-int g-pas g-pen">
+			<a href="/es-es/el-espiritu-del-senor-esta-sobre-mi/">
+				<hgroup>
+					<h5>EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-55"
+			class="psalm pointer
+				pre
+				 vin pas pen
+				 g-vin g-pas g-pen">
+			<a href="/es-es/el-jacal-de-los-pastores/">
+				<hgroup>
+					<h5>EL JACAL DE LOS PASTORES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-56"
+			class="psalm pointer
+				pre
+				 pan
+				 g-pan">
+			<a href="/es-es/el-lagarero/">
+				<hgroup>
+					<h5>EL LAGARERO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-57"
+			class="psalm pointer
+				pre
+				 pan pas pen
+				 g-pan g-pas g-pen">
+			<a href="/es-es/el-mesias-leon/">
+				<hgroup>
+					<h5>EL MESÍAS LEÓN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-224"
+			class="psalm pointer
+				cat
+				 vin
+				 g-vin">
+			<a href="/es-es/el-mismo-dios/">
+				<hgroup>
+					<h5>EL MISMO DIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-58"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/el-necio-piensa-que-dios-no-existe/">
+				<hgroup>
+					<h5>EL NECIO PIENSA QUE DIOS NO EXISTE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-59"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/el-pueblo-que-caminaba-en-las-tinieblas/">
+				<hgroup>
+					<h5>EL PUEBLO QUE CAMINABA EN LAS TINIEBLAS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-225"
+			class="psalm pointer
+				cat
+				
+				">
+			<a href="/es-es/el-sembrador/">
+				<hgroup>
+					<h5>EL SEMBRADOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-60"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/el-senor-anuncia-una-noticia/">
+				<hgroup>
+					<h5>EL SEÑOR ANUNCIA UNA NOTICIA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-61"
+			class="psalm pointer
+				pre
+				 vin pas pen
+				 g-vin g-pas g-pen">
+			<a href="/es-es/el-senor-es-mi-pastor/">
+				<hgroup>
+					<h5>EL SEÑOR ES MI PASTOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-62"
+			class="psalm pointer
+				pre
+				 pan
+				 g-pan">
+			<a href="/es-es/el-senor-me-ha-dado/">
+				<hgroup>
+					<h5>EL SEÑOR ME HA DADO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-63"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/eli-eli-lama-sabactani/">
+				<hgroup>
+					<h5>ELÍ, ELÍ, LAMÁ SABACTANÍ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-64"
+			class="psalm pointer
+				pre
+				 vin
+				 g-vin">
+			<a href="/es-es/en-medio-de-aquel-gentio/">
+				<hgroup>
+					<h5>EN MEDIO DE AQUEL GENTÍO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-65"
+			class="psalm pointer
+				pre
+				
+				 g-var">
+			<a href="/es-es/en-una-noche-oscura/">
+				<hgroup>
+					<h5>EN UNA NOCHE OSCURA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-66"
+			class="psalm pointer
+				pre
+				 pan pas pen
+				 g-pan g-pas g-pen">
+			<a href="/es-es/eres-digno-de-tomar-el-libro/">
+				<hgroup>
+					<h5>ERES DIGNO DE TOMAR EL LIBRO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-67"
+			class="psalm pointer
+				pre
+				 vin fin
+				 g-vin g-fin">
+			<a href="/es-es/eres-hermoso/">
+				<hgroup>
+					<h5>ERES HERMOSO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-68"
+			class="psalm pointer
+				pre
+				 vin int pas pen
+				 g-vin g-int g-pas g-pen g-var">
+			<a href="/es-es/es-paciente/">
+				<hgroup>
+					<h5>ES PACIENTE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-70"
+			class="psalm pointer
+				pre
+				 vin int
+				 g-vin g-int">
+			<a href="/es-es/escuchad-islas-lejanas/">
+				<hgroup>
+					<h5>ESCUCHAD, ISLAS LEJANAS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-69"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/escondeme-en-lo-oculto-de-tu-tienda/">
+				<hgroup>
+					<h5>ESCÓNDEME EN LO OCULTO DE TU TIENDA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-71"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/este-es-el-dia-en-que-actuo-el-senor/">
+				<hgroup>
+					<h5>ESTE ES EL DÍA EN QUE ACTUÓ EL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-72"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/este-es-el-mandamiento-mio/">
+				<hgroup>
+					<h5>ESTE ES EL MANDAMIENTO MÍO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-73"
+			class="psalm pointer
+				pre
+				 pax
+				 g-pax g-heb">
+			<a href="/es-es/evenu-shalom-alejem/">
+				<hgroup>
+					<h5>EVENU SHALOM ALEJEM</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-74"
+			class="psalm pointer
+				pre
+				 pan
+				 g-pan">
+			<a href="/es-es/extiendo-mis-manos/">
+				<hgroup>
+					<h5>EXTIENDO MIS MANOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-75"
+			class="psalm pointer
+				pre
+				 vin int pas pen
+				 g-vin g-int g-pas g-pen">
+			<a href="/es-es/exultad-justos-en-el-senor/">
+				<hgroup>
+					<h5>EXULTAD, JUSTOS, EN EL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-76"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/felicidad-para-el-hombre/">
+				<hgroup>
+					<h5>FELICIDAD PARA EL HOMBRE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-188"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/gloria-a-dios-en-lo-alto-del-cielo/">
+				<hgroup>
+					<h5>GLORIA A DIOS EN LO ALTO DEL CIELO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-77"
+			class="psalm pointer
+				pre
+				 vin fin pas pen pax
+				 g-vin g-fin g-pas g-pen g-pax">
+			<a href="/es-es/gracias-a-yahveh/">
+				<hgroup>
+					<h5>GRACIAS A YAHVEH</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-78"
+			class="psalm pointer
+				pre
+				 vin fin pas pen
+				 g-vin g-fin g-pas g-pen">
+			<a href="/es-es/gritad-jubilosos/">
+				<hgroup>
+					<h5>GRITAD JUBILOSOS</h5>
+					<p>Is 12,1ss</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-79"
+			class="psalm pointer
+				pre
+				 int
+				 g-int g-var">
+			<a href="/es-es/hacia-ti-morada-santa/">
+				<hgroup>
+					<h5>HACIA TI, MORADA SANTA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-80"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/hasta-cuando/">
+				<hgroup>
+					<h5>HASTA CUÁNDO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-81"
+			class="psalm pointer
+				pre
+				 com pan
+				 g-com g-pan">
+			<a href="/es-es/he-aqui-mi-siervo/">
+				<hgroup>
+					<h5>HE AQUÍ MI SIERVO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-226"
+			class="psalm pointer
+				cat
+				 com
+				 g-com g-sal">
+			<a href="/es-es/he-aqui-que-nuestro-espejo-es-el-senor/">
+				<hgroup>
+					<h5>HE AQUÍ QUE NUESTRO ESPEJO ES EL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-82"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/he-aqui-que-vengo-presto/">
+				<hgroup>
+					<h5>HE AQUÍ QUE VENGO PRESTO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-83"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/he-esperado-en-el-senor/">
+				<hgroup>
+					<h5>HE ESPERADO EN EL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-241"
+			class="psalm pointer
+				ele
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/hermosa-eres-amiga-mia/">
+				<hgroup>
+					<h5>HERMOSA ERES, AMIGA MÍA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-84"
+			class="psalm pointer
+				pre
+				 com pan
+				 g-com g-pan">
+			<a href="/es-es/hijas-de-jerusalen/">
+				<hgroup>
+					<h5>HIJAS DE JERUSALÉN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-85"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen g-var">
+			<a href="/es-es/himno-a-cristo-luz/">
+				<hgroup>
+					<h5>HIMNO A CRISTO LUZ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-86"
+			class="psalm pointer
+				pre
+				 vin pas pen
+				 g-vin g-pas g-pen">
+			<a href="/es-es/himno-a-la-caridad/">
+				<hgroup>
+					<h5>HIMNO A LA CARIDAD</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-227"
+			class="psalm pointer
+				cat
+				
+				 g-var">
+			<a href="/es-es/himno-a-la-cruz-gloriosa/">
+				<hgroup>
+					<h5>HIMNO A LA CRUZ GLORIOSA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-87"
+			class="psalm pointer
+				pre
+				 pan pas pen
+				 g-pan g-pas g-pen">
+			<a href="/es-es/himno-a-la-kenosis/">
+				<hgroup>
+					<h5>HIMNO A LA KENOSIS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-88"
+			class="psalm pointer
+				pre
+				
+				 g-hym">
+			<a href="/es-es/himno-de-adviento/">
+				<hgroup>
+					<h5>HIMNO DE ADVIENTO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-89"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen g-hym">
+			<a href="/es-es/himno-de-la-ascension/">
+				<hgroup>
+					<h5>HIMNO DE LA ASCENSIÓN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-90"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen g-hym">
+			<a href="/es-es/himno-de-pascua/">
+				<hgroup>
+					<h5>HIMNO DE PASCUA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-91"
+			class="psalm pointer
+				pre
+				 vin fin pas pen
+				 g-vin g-fin g-pas g-pen">
+			<a href="/es-es/huye-amado-mio/">
+				<hgroup>
+					<h5>HUYE, AMADO MÍO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-92"
+			class="psalm pointer
+				pre
+				 fin pas pen
+				 g-fin g-pas g-pen">
+			<a href="/es-es/id-y-anunciad-a-mis-hermanos/">
+				<hgroup>
+					<h5>ID Y ANUNCIAD A MIS HERMANOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-93"
+			class="psalm pointer
+				pre
+				 com pan
+				 g-com g-pan g-var">
+			<a href="/es-es/improperios/">
+				<hgroup>
+					<h5>IMPROPERIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-228"
+			class="psalm pointer
+				cat
+				
+				">
+			<a href="/es-es/jacob/">
+				<hgroup>
+					<h5>JACOB</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-94"
+			class="psalm pointer
+				pre
+				 pas pen pax
+				 g-pas g-pen g-pax">
+			<a href="/es-es/jerusalen-reconstruida/">
+				<hgroup>
+					<h5>JERUSALÉN RECONSTRUIDA</h5>
+					<p>Tb 13,11-17</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-95"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/jesus-recorria-todas-las-ciudades/">
+				<hgroup>
+					<h5>JESÚS RECORRÍA TODAS LAS CIUDADES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-96"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir">
+			<a href="/es-es/la-cordera-de-dios/">
+				<hgroup>
+					<h5>LA CORDERA DE DIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-97"
+			class="psalm pointer
+				pre
+				 com vir
+				 g-com g-vir">
+			<a href="/es-es/la-espada/">
+				<hgroup>
+					<h5>LA ESPADA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-98"
+			class="psalm pointer
+				pre
+				 com
+				 g-com g-var">
+			<a href="/es-es/la-marcha-es-dura/">
+				<hgroup>
+					<h5>LA MARCHA ES DURA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-242"
+			class="psalm pointer
+				ele
+				
+				 g-sal">
+			<a href="/es-es/la-paloma-volo/">
+				<hgroup>
+					<h5>LA PALOMA VOLÓ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-99"
+			class="psalm pointer
+				pre
+				 com vir
+				 g-com g-vir">
+			<a href="/es-es/la-salve/">
+				<hgroup>
+					<h5>LA SALVE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-100"
+			class="psalm pointer
+				pre
+				 fin
+				 g-fin">
+			<a href="/es-es/la-siega-de-las-naciones/">
+				<hgroup>
+					<h5>LA SIEGA DE LAS NACIONES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-101"
+			class="psalm pointer
+				pre
+				 vin pas pen
+				 g-vin g-pas g-pen">
+			<a href="/es-es/la-voz-de-mi-amado/">
+				<hgroup>
+					<h5>LA VOZ DE MI AMADO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-102"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/las-armas-de-la-luz/">
+				<hgroup>
+					<h5>LAS ARMAS DE LA LUZ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-103"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/lauda-sion/">
+				<hgroup>
+					<h5>LAUDA SION</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-189"
+			class="psalm pointer
+				lit
+				
+				">
+			<a href="/es-es/letanias-de-los-santos/">
+				<hgroup>
+					<h5>LETANÍAS DE LOS SANTOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-191"
+			class="psalm pointer
+				lit
+				
+				 g-heb g-poe">
+			<a href="/es-es/letanias-penitenciales-i/">
+				<hgroup>
+					<h5>LETANÍAS PENITENCIALES I</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-192"
+			class="psalm pointer
+				lit
+				
+				">
+			<a href="/es-es/letanias-penitenciales-ii/">
+				<hgroup>
+					<h5>LETANÍAS PENITENCIALES II</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-105"
+			class="psalm pointer
+				pre
+				 com int
+				 g-com g-int">
+			<a href="/es-es/levanto-mis-ojos-a-los-montes/">
+				<hgroup>
+					<h5>LEVANTO MIS OJOS A LOS MONTES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-106"
+			class="psalm pointer
+				pre
+				 com int
+				 g-com g-int">
+			<a href="/es-es/llegue-hasta-tu-presencia-mi-clamor/">
+				<hgroup>
+					<h5>LLEGUE HASTA TU PRESENCIA MI CLAMOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-107"
+			class="psalm pointer
+				pre
+				 fin pas pen
+				 g-fin g-pas g-pen g-var">
+			<a href="/es-es/llevame-al-cielo/">
+				<hgroup>
+					<h5>LLÉVAME AL CIELO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-108"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir g-hym">
+			<a href="/es-es/magnificat/">
+				<hgroup>
+					<h5>MAGNÍFICAT</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-110"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir">
+			<a href="/es-es/maria-de-jasna-gora/">
+				<hgroup>
+					<h5>MARÍA DE JASNA GÓRA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-109"
+			class="psalm pointer
+				pre
+				 vin pas pen vir
+				 g-vin g-pas g-pen g-vir">
+			<a href="/es-es/maria-casa-de-bendicion/">
+				<hgroup>
+					<h5>MARÍA, CASA DE BENDICIÓN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-111"
+			class="psalm pointer
+				pre
+				 com pan vir
+				 g-com g-pan g-vir">
+			<a href="/es-es/maria-madre-de-la-iglesia/">
+				<hgroup>
+					<h5>MARÍA, MADRE DE LA IGLESIA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-112"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir">
+			<a href="/es-es/maria-madre-del-camino-ardiente/">
+				<hgroup>
+					<h5>MARÍA, MADRE DEL CAMINO ARDIENTE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-113"
+			class="psalm pointer
+				pre
+				 com vir
+				 g-com g-vir">
+			<a href="/es-es/maria-pequena-maria/">
+				<hgroup>
+					<h5>MARÍA, PEQUEÑA MARÍA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-114"
+			class="psalm pointer
+				pre
+				 int pas pen
+				 g-int g-pas g-pen">
+			<a href="/es-es/me-ensenaras-el-camino-de-la-vida/">
+				<hgroup>
+					<h5>ME ENSEÑARÁS EL CAMINO DE LA VIDA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-115"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/me-has-seducido-senor/">
+				<hgroup>
+					<h5>ME HAS SEDUCIDO, SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-243"
+			class="psalm pointer
+				ele
+				
+				">
+			<a href="/es-es/me-robaste-el-corazon/">
+				<hgroup>
+					<h5>ME ROBASTE EL CORAZÓN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-116"
+			class="psalm pointer
+				pre
+				 pax
+				 g-pax g-heb">
+			<a href="/es-es/mirad-que-estupendo/">
+				<hgroup>
+					<h5>MIRAD QUÉ ESTUPENDO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-118"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/misericordia-mia-misericordia/">
+				<hgroup>
+					<h5>MISERICORDIA MÍA, MISERICORDIA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-117"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/misericordia-dios-mio/">
+				<hgroup>
+					<h5>MISERICORDIA, DIOS MÍO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-119"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/mucho-me-han-perseguido/">
+				<hgroup>
+					<h5>MUCHO ME HAN PERSEGUIDO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-229"
+			class="psalm pointer
+				cat
+				
+				">
+			<a href="/es-es/ninguno-puede-servir-a-dos-senores/">
+				<hgroup>
+					<h5>NINGUNO PUEDE SERVIR A DOS SEÑORES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-120"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/no-esta-aqui-resucito/">
+				<hgroup>
+					<h5>NO ESTÁ AQUÍ, RESUCITÓ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-121"
+			class="psalm pointer
+				pre
+				 pan
+				 g-pan">
+			<a href="/es-es/no-hay-en-el-parecer/">
+				<hgroup>
+					<h5>NO HAY EN ÉL PARECER</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-230"
+			class="psalm pointer
+				cat
+				
+				">
+			<a href="/es-es/no-resistais-al-mal/">
+				<hgroup>
+					<h5>NO RESISTÁIS AL MAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-231"
+			class="psalm pointer
+				cat
+				 com
+				 g-com">
+			<a href="/es-es/no-sufras-por-los-malvados/">
+				<hgroup>
+					<h5>NO SUFRAS POR LOS MALVADOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-122"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/noli-me-tangere/">
+				<hgroup>
+					<h5>NOLI ME TANGERE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-123"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/oh-cielos-lloved-de-lo-alto/">
+				<hgroup>
+					<h5>OH CIELOS, LLOVED DE LO ALTO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-124"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/oh-dios-por-tu-nombre-salvame/">
+				<hgroup>
+					<h5>OH DIOS, POR TU NOMBRE SÁLVAME</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-125"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/oh-dios-tu-eres-mi-dios/">
+				<hgroup>
+					<h5>OH DIOS, TÚ ERES MI DIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-126"
+			class="psalm pointer
+				pre
+				 com pan
+				 g-com g-pan g-var">
+			<a href="/es-es/oh-jesus-amor-mio/">
+				<hgroup>
+					<h5>OH JESÚS, AMOR MÍO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-127"
+			class="psalm pointer
+				pre
+				 vin pas pen
+				 g-vin g-pas g-pen">
+			<a href="/es-es/oh-muerte-donde-esta-tu-victoria/">
+				<hgroup>
+					<h5>OH MUERTE, ¿DÓNDE ESTÁ TU VICTORIA?</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-232"
+			class="psalm pointer
+				cat
+				
+				">
+			<a href="/es-es/oh-senor-mi-corazon-ya-no-es-ambicioso/">
+				<hgroup>
+					<h5>OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-128"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/oh-senor-nuestro-dios/">
+				<hgroup>
+					<h5>OH SEÑOR, NUESTRO DIOS</h5>
+					<p>Sal 8</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-129"
+			class="psalm pointer
+				pre
+				 int pas pen
+				 g-int g-pas g-pen">
+			<a href="/es-es/os-tomare-de-entre-las-naciones/">
+				<hgroup>
+					<h5>OS TOMARÉ DE ENTRE LAS NACIONES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-193"
+			class="psalm pointer
+				lit
+				
+				 g-hym">
+			<a href="/es-es/padre-nuestro/">
+				<hgroup>
+					<h5>PADRE NUESTRO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-130"
+			class="psalm pointer
+				pre
+				 pas pen vir
+				 g-pas g-pen g-vir">
+			<a href="/es-es/paloma-incorrupta/">
+				<hgroup>
+					<h5>PALOMA INCORRUPTA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-131"
+			class="psalm pointer
+				pre
+				 vin pas pen
+				 g-vin g-pas g-pen g-var">
+			<a href="/es-es/pentecostes/">
+				<hgroup>
+					<h5>PENTECOSTÉS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-194"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/plegaria-eucaristica-ii-modelo-i/">
+				<hgroup>
+					<h5>PLEGARIA EUCARÍSTICA II - MODELO I</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-197"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/plegaria-eucaristica-ii-modelo-ii/">
+				<hgroup>
+					<h5>PLEGARIA EUCARÍSTICA II - MODELO II</h5>
+					<p>(1987)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-197"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/plegaria-eucaristica-ii-modelo-ii-1987/">
+				<hgroup>
+					<h5>PLEGARIA EUCARÍSTICA II - MODELO II</h5>
+					<p>(1987)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-200"
+			class="psalm pointer
+				lit
+				
+				">
+			<a href="/es-es/plegaria-eucaristica-iv/">
+				<hgroup>
+					<h5>PLEGARIA EUCARÍSTICA IV</h5>
+					<p>(1988)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-132"
+			class="psalm pointer
+				pre
+				 pax
+				 g-pax">
+			<a href="/es-es/por-el-amor-de-mis-amigos/">
+				<hgroup>
+					<h5>POR EL AMOR DE MIS AMIGOS -</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-133"
+			class="psalm pointer
+				pre
+				 lib pas pen
+				 g-lib g-pas g-pen g-heb">
+			<a href="/es-es/por-que-esta-noche-es-diferente/">
+				<hgroup>
+					<h5>POR QUÉ ESTA NOCHE ES DIFERENTE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-134"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/por-que-las-gentes-conjuran/">
+				<hgroup>
+					<h5>POR QUÉ LAS GENTES CONJURAN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-135"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/porque-mi-yugo-es-suave/">
+				<hgroup>
+					<h5>PORQUE MI YUGO ES SUAVE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-204"
+			class="psalm pointer
+				lit
+				
+				">
+			<a href="/es-es/prefacio-para-adviento-y-navidad/">
+				<hgroup>
+					<h5>PREFACIO PARA ADVIENTO Y NAVIDAD</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-205"
+			class="psalm pointer
+				lit
+				
+				 g-pas">
+			<a href="/es-es/prefacio-para-el-tiempo-pascual/">
+				<hgroup>
+					<h5>PREFACIO PARA EL TIEMPO PASCUAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-206"
+			class="psalm pointer
+				lit
+				
+				 g-pas">
+			<a href="/es-es/pregon-pascual/">
+				<hgroup>
+					<h5>PREGÓN PASCUAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-140"
+			class="psalm pointer
+				pre
+				 fin pas pen
+				 g-fin g-pas g-pen g-heb">
+			<a href="/es-es/quiero-andar-madre-a-jerusalen/">
+				<hgroup>
+					<h5>QUIERO ANDAR, MADRE, A JERUSALÉN</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-141"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/quiero-cantar/">
+				<hgroup>
+					<h5>QUIERO CANTAR</h5>
+					<p>Sal 57 (56)</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-138"
+			class="psalm pointer
+				pre
+				 vin fin pas pen
+				 g-vin g-fin g-pas g-pen">
+			<a href="/es-es/quien-es-esta-que-sube-del-desierto/">
+				<hgroup>
+					<h5>QUIÉN ES ESTA QUE SUBE DEL DESIERTO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-139"
+			class="psalm pointer
+				pre
+				 vin com
+				 g-vin g-com">
+			<a href="/es-es/quien-nos-separara/">
+				<hgroup>
+					<h5>QUIÉN NOS SEPARARÁ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-136"
+			class="psalm pointer
+				pre
+				 com int
+				 g-com g-int">
+			<a href="/es-es/que-amables-son-tus-moradas/">
+				<hgroup>
+					<h5>QUÉ AMABLES SON TUS MORADAS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-137"
+			class="psalm pointer
+				pre
+				 pax
+				 g-pax">
+			<a href="/es-es/que-estupendo-que-alegria/">
+				<hgroup>
+					<h5>QUÉ ESTUPENDO, QUÉ ALEGRÍA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-142"
+			class="psalm pointer
+				pre
+				 vin pas pen
+				 g-vin g-pas g-pen">
+			<a href="/es-es/resucito/">
+				<hgroup>
+					<h5>RESUCITÓ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-143"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen">
+			<a href="/es-es/resurrexit/">
+				<hgroup>
+					<h5>RESURREXIT</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-208"
+			class="psalm pointer
+				lit
+				
+				">
+			<a href="/es-es/salmodia-para-el-evangelio/">
+				<hgroup>
+					<h5>SALMODIA PARA EL EVANGELIO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-209"
+			class="psalm pointer
+				lit
+				
+				">
+			<a href="/es-es/salmodia-para-el-rosario/">
+				<hgroup>
+					<h5>SALMODIA PARA EL ROSARIO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-210"
+			class="psalm pointer
+				lit
+				
+				">
+			<a href="/es-es/salmodia-para-el-salmo-responsorial/">
+				<hgroup>
+					<h5>SALMODIA PARA EL SALMO RESPONSORIAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-211"
+			class="psalm pointer
+				lit
+				
+				 g-var">
+			<a href="/es-es/salmodias-para-la-oracion-de-los-fieles/">
+				<hgroup>
+					<h5>SALMODIAS PARA LA ORACIÓN DE LOS FIELES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-212"
+			class="psalm pointer
+				lit
+				
+				">
+			<a href="/es-es/salmodias-para-laudes/">
+				<hgroup>
+					<h5>SALMODIAS PARA LAUDES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-144"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir g-hym">
+			<a href="/es-es/salve-reina-de-los-cielos/">
+				<hgroup>
+					<h5>SALVE, REINA DE LOS CIELOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-218"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/santo-1982/">
+				<hgroup>
+					<h5>SANTO 1982</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-219"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/santo-1988/">
+				<hgroup>
+					<h5>SANTO 1988</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-215"
+			class="psalm pointer
+				lit
+				
+				 g-heb g-ord">
+			<a href="/es-es/santo-hebreo/">
+				<hgroup>
+					<h5>SANTO HEBREO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-216"
+			class="psalm pointer
+				lit
+				
+				 g-pas g-ord">
+			<a href="/es-es/santo-palestina-74/">
+				<hgroup>
+					<h5>SANTO PALESTINA 74</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-214"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/santo-palomeras-65/">
+				<hgroup>
+					<h5>SANTO PALOMERAS 65</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-217"
+			class="psalm pointer
+				lit
+				
+				 g-ord">
+			<a href="/es-es/santo-roma-77/">
+				<hgroup>
+					<h5>SANTO ROMA 77</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-145"
+			class="psalm pointer
+				pre
+				 lib pax
+				 g-lib g-pax g-heb">
+			<a href="/es-es/se-encontraron-dos-angeles/">
+				<hgroup>
+					<h5>SE ENCONTRARON DOS ÁNGELES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-148"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/sermon-de-la-montana/">
+				<hgroup>
+					<h5>SERMÓN DE LA MONTAÑA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-146"
+			class="psalm pointer
+				pre
+				 com
+				 g-com g-var">
+			<a href="/es-es/senor-ayudame-a-no-dudar-de-ti/">
+				<hgroup>
+					<h5>SEÑOR, AYÚDAME A NO DUDAR DE TI</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-147"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/senor-no-me-corrijas-en-tu-colera/">
+				<hgroup>
+					<h5>SEÑOR, NO ME CORRIJAS EN TU CÓLERA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-233"
+			class="psalm pointer
+				cat
+				
+				">
+			<a href="/es-es/senor-tu-me-escrutas-y-conoces/">
+				<hgroup>
+					<h5>SEÑOR, TÚ ME ESCRUTAS Y CONOCES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-234"
+			class="psalm pointer
+				cat
+				
+				">
+			<a href="/es-es/shema-lsrael/">
+				<hgroup>
+					<h5>SHEMÁ LSRAEL</h5>
+					<p>Dt 6,4-9</p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-149"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir">
+			<a href="/es-es/shlom-lej-mariam/">
+				<hgroup>
+					<h5>SHLOM LEJ MARIAM</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-150"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/si-el-senor-no-construye-la-casa/">
+				<hgroup>
+					<h5>SI EL SEÑOR NO CONSTRUYE LA CASA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-151"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/si-habeis-resucitado-con-cristo/">
+				<hgroup>
+					<h5>SI HABÉIS RESUCITADO CON CRISTO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-152"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/si-hoy-escuchais-su-voz/">
+				<hgroup>
+					<h5>SI HOY ESCUCHÁIS SU VOZ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-153"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/si-me-he-refugiado-en-el-senor/">
+				<hgroup>
+					<h5>SI ME HE REFUGIADO EN EL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-235"
+			class="psalm pointer
+				cat
+				 com
+				 g-com">
+			<a href="/es-es/sientate-solitario-y-silencioso/">
+				<hgroup>
+					<h5>SIÉNTATE SOLITARIO Y SILENCIOSO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-154"
+			class="psalm pointer
+				pre
+				 fin vir
+				 g-fin g-vir">
+			<a href="/es-es/sion-madre-de-todos-los-pueblos/">
+				<hgroup>
+					<h5>SIÓN, MADRE DE TODOS LOS PUEBLOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-155"
+			class="psalm pointer
+				pre
+				 com pan vir
+				 g-com g-pan g-vir">
+			<a href="/es-es/sola-a-solo/">
+				<hgroup>
+					<h5>SOLA A SOLO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-156"
+			class="psalm pointer
+				pre
+				 com pan vir
+				 g-com g-pan g-vir g-hym">
+			<a href="/es-es/stabat-mater-dolorosa/">
+				<hgroup>
+					<h5>STABAT MATER DOLOROSA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-244"
+			class="psalm pointer
+				ele
+				
+				">
+			<a href="/es-es/suba-el-esposo-al-leno-de-su-talamo/">
+				<hgroup>
+					<h5>SUBA EL ESPOSO AL LEÑO DE SU TÁLAMO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-157"
+			class="psalm pointer
+				pre
+				 pas pen pax
+				 g-pas g-pen g-pax">
+			<a href="/es-es/sube-dios-entre-aclamaciones/">
+				<hgroup>
+					<h5>SUBE DIOS ENTRE ACLAMACIONES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-220"
+			class="psalm pointer
+				lit
+				
+				 g-hym">
+			<a href="/es-es/te-deum/">
+				<hgroup>
+					<h5>TE DEUM</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-158"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/te-estoy-llamando-senor/">
+				<hgroup>
+					<h5>TE ESTOY LLAMANDO, SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-159"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/te-he-manifestado-mi-pecado/">
+				<hgroup>
+					<h5>TE HE MANIFESTADO MI PECADO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-236"
+			class="psalm pointer
+				cat
+				
+				 g-sal">
+			<a href="/es-es/tu-eres-mi-esperanza-senor/">
+				<hgroup>
+					<h5>TÚ ERES MI ESPERANZA, SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-160"
+			class="psalm pointer
+				pre
+				 pan pas pen vir
+				 g-pan g-pas g-pen g-vir">
+			<a href="/es-es/tu-has-cubierto-de-verguenza-la-muerte/">
+				<hgroup>
+					<h5>TÚ HAS CUBIERTO DE VERGÜENZA LA MUERTE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-161"
+			class="psalm pointer
+				pre
+				 com int
+				 g-com g-int">
+			<a href="/es-es/tu-que-eres-fiel/">
+				<hgroup>
+					<h5>TÚ QUE ERES FIEL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-162"
+			class="psalm pointer
+				pre
+				 vin pas pen
+				 g-vin g-pas g-pen">
+			<a href="/es-es/un-retono-brota-del-tronco-de-jese/">
+				<hgroup>
+					<h5>UN RETOÑO BROTA DEL TRONCO DE JESÉ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-163"
+			class="psalm pointer
+				pre
+				 fin pas pen vir
+				 g-fin g-pas g-pen g-vir">
+			<a href="/es-es/una-gran-senal/">
+				<hgroup>
+					<h5>UNA GRAN SEÑAL</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-164"
+			class="psalm pointer
+				pre
+				 lib
+				 g-lib">
+			<a href="/es-es/uri-uri-ura/">
+				<hgroup>
+					<h5>URÍ, URÍ, URÁ</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-165"
+			class="psalm pointer
+				pre
+				 lib
+				 g-lib">
+			<a href="/es-es/vamos-ya-pastores/">
+				<hgroup>
+					<h5>VAMOS YA, PASTORES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-166"
+			class="psalm pointer
+				pre
+				 vin int pas pen
+				 g-vin g-int g-pas g-pen">
+			<a href="/es-es/ven-del-libano/">
+				<hgroup>
+					<h5>VEN DEL LÍBANO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-167"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen g-hym">
+			<a href="/es-es/ven-espiritu-santo/">
+				<hgroup>
+					<h5>VEN, ESPÍRITU SANTO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-168"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/ven-hijo-del-hombre/">
+				<hgroup>
+					<h5>VEN, HIJO DEL HOMBRE</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-169"
+			class="psalm pointer
+				pre
+				 pas pen
+				 g-pas g-pen g-hym">
+			<a href="/es-es/veni-creator/">
+				<hgroup>
+					<h5>VENI CREATOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-170"
+			class="psalm pointer
+				pre
+				
+				 g-var">
+			<a href="/es-es/viene-el-senor/">
+				<hgroup>
+					<h5>VIENE EL SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-171"
+			class="psalm pointer
+				pre
+				 vir
+				 g-vir">
+			<a href="/es-es/virgen-de-la-maravilla/">
+				<hgroup>
+					<h5>VIRGEN DE LA MARAVILLA</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-172"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/vivid-alegres/">
+				<hgroup>
+					<h5>VIVID ALEGRES</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-173"
+			class="psalm pointer
+				pre
+				
+				">
+			<a href="/es-es/vosotros-sois-la-luz-del-mundo/">
+				<hgroup>
+					<h5>VOSOTROS SOIS LA LUZ DEL MUNDO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-174"
+			class="psalm pointer
+				pre
+				 lib
+				 g-lib">
+			<a href="/es-es/ya-viene-mi-dios/">
+				<hgroup>
+					<h5>YA VIENE MI DIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-175"
+			class="psalm pointer
+				pre
+				 com
+				 g-com">
+			<a href="/es-es/yahveh-tu-eres-mi-dios/">
+				<hgroup>
+					<h5>YAHVEH, TÚ ERES MI DIOS</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-176"
+			class="psalm pointer
+				pre
+				 int
+				 g-int">
+			<a href="/es-es/yo-te-amo-senor/">
+				<hgroup>
+					<h5>YO TE AMO, SEÑOR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-177"
+			class="psalm pointer
+				pre
+				 int fin
+				 g-int g-fin">
+			<a href="/es-es/yo-vengo-a-reunir/">
+				<hgroup>
+					<h5>YO VENGO A REUNIR</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+		<li id="p-178"
+			class="psalm pointer
+				pre
+				 com int
+				 g-com g-int">
+			<a href="/es-es/zaqueo/">
+				<hgroup>
+					<h5>ZAQUEO</h5>
+					<p></p>
+				</hgroup>
+			</a>
+		</li>
+	
+	</ul>
+</section>
+</main>
+		
+		<footer id="footer" class="mt-auto">
+			<nav class="container justify-center">
+				<ul>
+					<li>
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="toggleModal(event)"
+		data-target="contact-modal">
+		Contact
+	</a>
+</li>
+<li class="logged-out">
+	<a role="button"
+		class="secondary pointer transparent-btn"
+		onclick="changeAuthModal('login'); toggleModal(event);"
+		data-target="auth-modal">
+		Login
+	</a>
+</li>
+<li class="logged-in hide">
+	<details class="dropdown mb-0">
+		<summary class="transparent-btn">Account</summary>
+		<ul dir="rtl">
+			<li><a class="pointer" href="/account/">
+				Settings
+			</a></li>
+			<li><a class="pointer"
+				data-target="logout-modal"
+				onclick="toggleModal(event); logout();">
+				Logout
+			</a></li>
+		</ul>
+	</details>
+</li>
+<li>
+	<a role="button"
+		class="flex align-center secondary theme-btn pointer transparent-btn gap-xxs"
+		onclick="switchTheme(event)">
+		<svg class="icon theme-toggle theme-dark"
+			width="1em" height="1em">
+			<use xlink:href="#icon-moon"/>
+		</svg>
+		<svg class="icon theme-toggle theme-light"
+			width="1em" height="1em">
+			<use xlink:href="#icon-sun"/>
+		</svg>
+	</a>
+</li>
+				</ul>
+			</nav>
+		</footer>
+		
+		
+		<dialog id="steps-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="steps-modal"
+				data-attribute="steps"
+				onclick="filterPsalms()">
+			</button>
+			<h3>Steps</h3>
+		</header>
+		<fieldset>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="steps"
+					name="pre" />
+				Precatecumenado
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="steps"
+					name="cat" />
+				Catecumenado
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="steps"
+					name="lit" />
+				Liturgia
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="steps"
+					name="ele" />
+				Elección
+			</label>
+			
+		</fieldset>
+		<footer>
+			<button class="secondary"
+				data-target="steps-modal"
+				data-attribute="steps"
+				onclick="clearTags(event)">
+				Clear
+			</button>
+			<button data-target="steps-modal"
+				onclick="filterPsalms()">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
+<dialog id="tags-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="tags-modal"
+				data-attribute="tags"
+				onclick="filterPsalms()">
+			</button>
+			<h3>Book Tags</h3>
+		</header>
+		<fieldset>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="pas" />
+				Pascua
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="pen" />
+				Pentecostes
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="com" />
+				Cuaresma
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="int" />
+				Entrada
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="lib" />
+				Niños
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="pax" />
+				Paz
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="vir" />
+				María
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="fin" />
+				Final
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="vin" />
+				Comunión
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="tags"
+					name="pan" />
+				Pan
+			</label>
+			
+		</fieldset>
+		<footer>
+			<button class="secondary"
+				data-target="tags-modal"
+				data-attribute="tags"
+				onclick="clearTags(event)">
+				Clear
+			</button>
+			<button data-target="tags-modal"
+				onclick="filterPsalms()">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
+<dialog id="gtags-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="gtags-modal"
+				data-attribute="gtags"
+				onclick="filterPsalms()">
+			</button>
+			<h3>Global Tags</h3>
+		</header>
+		<fieldset>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-nat" />
+				Adviento/Navidad
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-vin" />
+				Comunión
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-com" />
+				Cuaresma
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-int" />
+				Entrada
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-fin" />
+				Final
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-heb" />
+				Hebreo
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-hym" />
+				Himnos
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-lau" />
+				Laudes
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-vir" />
+				María
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-lib" />
+				Niños
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-ord" />
+				Ordinario
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-pan" />
+				Pan
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-pas" />
+				Pascua
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-pax" />
+				Paz
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-poe" />
+				Penitencial
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-pen" />
+				Pentecostes
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-sal" />
+				Salomón
+			</label>
+			
+			<label>
+				<input type="checkbox"
+					role="switch"
+					class="filter"
+					data-attribute="gtags"
+					name="g-var" />
+				Varios
+			</label>
+			
+		</fieldset>
+		<footer>
+			<button class="secondary"
+				data-target="gtags-modal"
+				data-attribute="gtags"
+				onclick="clearTags(event)">
+				Clear
+			</button>
+			<button data-target="gtags-modal"
+				onclick="filterPsalms()">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
+		<dialog id="contact-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="contact-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3>Contact</h3>
+		</header>
+		<p id="contact-error" class="error message hide">There was an error sending your message. Please try again later.</p>
+		<p id="contact-success" class="success message hide">Thank you for your message! We will get back to you soon.</p>
+		<form id="contact-form" role="form" data-reset="reset">
+			<fieldset>
+				<label for="contact-name">Name <span class="primary">*</span>
+					<input type="text" id="contact-name" name="contact-name"
+						required aria-required="true" placeholder="Your name">
+				</label>
+				<label for="contact-email">Email <span class="primary">*</span>
+					<input type="email" id="contact-email" name="contact-email"
+						required aria-required="true" placeholder="Your email">
+				</label>
+				<label hidden for="contact-subject">Subject
+					<input type="text" id="contact-subject" name="contact-subject"
+						placeholder="Subject">
+				</label>
+				<label for="contact-message">Message <span class="primary">*</span>
+					<textarea id="contact-message" name="contact-message"
+						required aria-required="true" placeholder="Your message"
+					></textarea>
+				</label>
+			</fieldset>
+		</form>
+		<footer>
+			<button id="contact-close" class="secondary"
+				data-target="contact-modal"
+				onclick="toggleModal(event)">
+				Cancel
+			</button>
+			<button id="contact-submit" form="contact-form">Submit</button>
+		</footer>
+	</article>
+</dialog>
+		<dialog id="auth-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="auth-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3 id="auth-title">Login</h3>
+		</header>
+		<p id="auth-error" class="error message hide">There was an error.</p>
+		<p id="auth-success" class="success message hide">Success!</p>
+		<form id="auth-form" role="form" data-reset="reset">
+			<fieldset>
+				<input id="auth-option" type="hidden" name="auth-option" value="" />
+				<label id="auth-label-email" for="auth-email">Email <span class="primary">*</span>
+					<input type="email" id="auth-email" name="auth-email"
+						required aria-required="true" placeholder="Email">
+				</label>
+				<label id="auth-label-old" for="auth-old">Old Password <span class="primary">*</span>
+					<input type="password" id="auth-old" name="auth-old"
+						required aria-required="true" placeholder="Password">
+				</label>
+				<label id="auth-label-password" for="auth-password">Password <span class="primary">*</span>
+					<input type="password" id="auth-password" name="auth-password"
+						required aria-required="true" placeholder="Password">
+				</label>
+				<label id="auth-label-new" for="auth-new">New Password <span class="primary">*</span>
+					<input type="password" id="auth-new" name="auth-new"
+						required aria-required="true" placeholder="New Password">
+					<small>Minimum 8 characters: 1 lowercase, 1 uppercase and 1 number.</small>
+				</label>
+				<label id="auth-label-confirm" for="auth-confirm">Re-Type Password <span class="primary">*</span>
+					<input type="password" id="auth-confirm" name="auth-confirm"
+						required aria-required="true" placeholder="Re-Type Password">
+				</label>
+			</fieldset>
+			<p id="auth-links" class="text-center">
+				<a id="auth-link-login" class="pointer underline px-xxs" onclick="changeAuthModal('login')">Login</a>
+				<a id="auth-link-register" class="pointer underline px-xxs" onclick="changeAuthModal('register')">Register</a>
+				<a id="auth-link-resend" class="pointer underline px-xxs" onclick="changeAuthModal('resend')">Resend Verification Email</a>
+				<a id="auth-link-reset" class="pointer underline px-xxs" onclick="changeAuthModal('reset')">Reset Password</a>
+			</p>
+		</form>
+		<footer>
+			<button id="auth-close" class="secondary"
+				data-target="auth-modal"
+				onclick="toggleModal(event)">
+				Cancel
+			</button>
+			<button id="auth-submit" form="auth-form">Submit</button>
+		</footer>
+	</article>
+</dialog>
+<dialog id="logout-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="logout-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3>Logout</h3>
+		</header>
+		<p class="success message">Logged out successfully.</p>
+		<p class="text-center">
+			<a class="pointer underline px-xxs" data-target="auth-modal" onclick="changeAuthModal('login'); toggleModal(event);">Login</a>
+			<a class="pointer underline px-xxs" data-target="auth-modal" onclick="changeAuthModal('register'); toggleModal(event);">Register</a>
+		</p>
+		<footer>
+			<button class="secondary"
+				data-target="logout-modal"
+				onclick="toggleModal(event)">
+				Close
+			</button>
+		</footer>
+	</article>
+</dialog>
+	</body>
+</html>
