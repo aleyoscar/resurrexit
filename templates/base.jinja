@@ -19,6 +19,7 @@
 		<script src="{{ url_for('static', filename='scripts/eplayer.js') }}" defer></script>
 		<script src="{{ url_for('static', filename='scripts/modal.js') }}" defer></script>
 		<script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+		{% block scripts %}{% endblock %}
 		<title>Resurrexit | {% block title %}{% endblock %}</title>
 	</head>
 	<body class="flex flex-column">

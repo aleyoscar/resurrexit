@@ -18,15 +18,13 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="{{ url_for('account') }}">
+				Settings
+			</a></li>
 			<li><a class="pointer"
 				data-target="logout-modal"
 				onclick="toggleModal(event); logout();">
 				Logout
-			</a></li>
-			<li><a class="pointer"
-				data-target="auth-modal"
-				onclick="changeAuthModal('resetLogged'); toggleModal(event);">
-				Reset Password
 			</a></li>
 		</ul>
 	</details>
