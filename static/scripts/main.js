@@ -106,7 +106,7 @@ function changeAuth(value) {
 // VALIDATION -----------------------------------------------------------------
 
 const isRequired = value => value ? true : false;
-const isBetween = (length, min=0, max) => length > min && length <= max ? true : false;
+const isBetween = (value, max, min=0) => value.length > min && value.length <= max ? true : false;
 const isValidEmail = value => /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$/.test(value);
 const isValidPassword = value => /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{7,})\S$/.test(value);
 
@@ -415,7 +415,7 @@ authForm.addEventListener('submit', async (e) => {
 				await pb.collection('res_users').requestPasswordReset(formData.get('auth-email'));
 				break;
 			case 'resetLogged':
-				if (!isValidPassword(formData.get('auth-old'))) throw new Error("Password is too weak.");
+				if (!isValidPassword(formData.get('auth-new'))) throw new Error("Password is too weak.");
 				if (formData.get('auth-new') !== formData.get('auth-confirm')) throw new Error("Passwords do not match.");
 				await pb.collection('res_users').update(pb.authStore.record.id, {
 					oldPassword: formData.get('auth-old'),
