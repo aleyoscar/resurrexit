@@ -5,6 +5,7 @@
         "title": "A GRANDIOSE SIGN",
         "subtitle": "",
         "step": "ele",
+        "slug": "a-grandiose-sign",
         "tags": [],
         "gtags": [
             "g-fin",
@@ -20,6 +21,7 @@
         "title": "A HOMILY OF MELITO OF SARDIS",
         "subtitle": "",
         "step": "con",
+        "slug": "a-homily-of-melito-of-sardis",
         "tags": [
             "pan"
         ],
@@ -37,6 +39,7 @@
         "title": "A LA CENA DEL CORDERO",
         "subtitle": "",
         "step": "ele",
+        "slug": "a-la-cena-del-cordero",
         "tags": [
             "pas",
             "pen"
@@ -54,6 +57,7 @@
         "title": "A LA VÍCTIMA PASCUAL",
         "subtitle": "Secuencia de Pascua - Himno lat. «Victimae paschali laudes»",
         "step": "pre",
+        "slug": "a-la-victima-pascual",
         "tags": [
             "pas",
             "pen"
@@ -71,6 +75,7 @@
         "title": "A NADIE DEMOS OCASIÓN DE TROPIEZO",
         "subtitle": "2o Co 6,3ss",
         "step": "pre",
+        "slug": "a-nadie-demos-ocasion-de-tropiezo",
         "tags": [],
         "gtags": [],
         "text": "a aceptando al angustias armas aunque bondad buena calumnias co como con confianza de demos derecha desigual dios e el en enriqueciendo entre espiritu estoy fama fatigas fiel franqueza gloria hablado hablaros hay hemos hermanos idolos ignominia infiel izquierda justicia la las lo los muchos nada nadie necesidades no o ocasion orgulloso os paciencia paganos participacion plena pobres poder porque poseemos pureza que quienes santo santuario somos ss tengo tienen todo tribulaciones tropiezo unciros union verdad vivamos viviendo vosotros y yugo"
@@ -81,6 +86,7 @@
         "title": "A SHOOT SPRINGS UP FROM THE STOCK OF JESSE",
         "subtitle": "",
         "step": "pre",
+        "slug": "a-shoot-springs-up-from-the-stock-of-jesse",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -95,6 +101,7 @@
         "title": "A TI LEVANTO MIS OJOS",
         "subtitle": "Sal 123 (122)",
         "step": "pre",
+        "slug": "a-ti-levanto-mis-ojos",
         "tags": [
             "com"
         ],
@@ -109,6 +116,7 @@
         "title": "A TI, SEÑOR, EN MI CLAMOR IMPLORO",
         "subtitle": "Sal 142 (141)",
         "step": "pre",
+        "slug": "a-ti-senor-en-mi-clamor-imploro",
         "tags": [
             "com"
         ],
@@ -123,6 +131,7 @@
         "title": "A TI, SEÑOR, LEVANTO MI ALMA",
         "subtitle": "Sal 25 (24)",
         "step": "pre",
+        "slug": "a-ti-senor-levanto-mi-alma",
         "tags": [
             "com"
         ],
@@ -137,6 +146,7 @@
         "title": "A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN",
         "subtitle": "Salmo 65 (64)",
         "step": "pre",
+        "slug": "a-ti-senor-se-debe-la-alabanza-en-sion",
         "tags": [
             "com"
         ],
@@ -151,6 +161,7 @@
         "title": "A TU LUZ, SEÑOR, VEMOS LA LUZ",
         "subtitle": "Salmo 36",
         "step": "pre",
+        "slug": "a-tu-luz-senor-vemos-la-luz",
         "tags": [],
         "gtags": [],
         "text": "a la luz salmo senor tu vemos"
@@ -161,6 +172,7 @@
         "title": "ABBA FATHER",
         "subtitle": "",
         "step": "pre",
+        "slug": "abba-father",
         "tags": [],
         "gtags": [
             "g-int",
@@ -175,6 +187,7 @@
         "title": "ABBA, ABBA, FATHER",
         "subtitle": "",
         "step": "lit",
+        "slug": "abba-abba-father",
         "tags": [
             "hym"
         ],
@@ -189,6 +202,7 @@
         "title": "ABBÁ, PADRE",
         "subtitle": "Rm 8,15-17",
         "step": "pre",
+        "slug": "abba-padre",
         "tags": [
             "int",
             "pas",
@@ -207,6 +221,7 @@
         "title": "ABRAHAM",
         "subtitle": "",
         "step": "pre",
+        "slug": "abraham",
         "tags": [],
         "gtags": [
             "g-int"
@@ -219,6 +234,7 @@
         "title": "ABRAHAM",
         "subtitle": "Gn 18,1-5",
         "step": "pre",
+        "slug": "abraham",
         "tags": [
             "int"
         ],
@@ -233,6 +249,7 @@
         "title": "ACCLAIM THE LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "acclaim-the-lord",
         "tags": [],
         "gtags": [
             "g-int"
@@ -245,6 +262,7 @@
         "title": "ACCLAMATION TO THE GOSPEL DURING LENT",
         "subtitle": "",
         "step": "lit",
+        "slug": "acclamation-to-the-gospel-during-lent",
         "tags": [
             "ord"
         ],
@@ -259,6 +277,7 @@
         "title": "ACLAMACIONES A LA ORACIÓN DE LOS FIELES",
         "subtitle": "",
         "step": "lit",
+        "slug": "aclamaciones-a-la-oracion-de-los-fieles",
         "tags": [],
         "gtags": [
             "g-var"
@@ -271,6 +290,7 @@
         "title": "ACLAMAD AL SEÑOR",
         "subtitle": "Sal 100 (99)",
         "step": "pre",
+        "slug": "aclamad-al-senor",
         "tags": [
             "int"
         ],
@@ -285,6 +305,7 @@
         "title": "ADÓNDE TE ESCONDISTE, AMADO",
         "subtitle": "",
         "step": "ele",
+        "slug": "adonde-te-escondiste-amado",
         "tags": [],
         "gtags": [],
         "text": "adonde amado escondiste te"
@@ -295,6 +316,7 @@
         "title": "AKEDA",
         "subtitle": "",
         "step": "cat",
+        "slug": "akeda",
         "tags": [
             "var"
         ],
@@ -311,6 +333,7 @@
         "title": "AL DESPERTAR",
         "subtitle": "Sal 17 (16)",
         "step": "pre",
+        "slug": "al-despertar",
         "tags": [
             "com"
         ],
@@ -325,6 +348,7 @@
         "title": "ALABAD AL SEÑOR EN EL CIELO",
         "subtitle": "Sal 148",
         "step": "pre",
+        "slug": "alabad-al-senor-en-el-cielo",
         "tags": [],
         "gtags": [],
         "text": "a abismos aguas al alabad alabadio alabadlo alabanza alaben alto angeles animales arboles bruma cedros celestes cetaceos cielo con consistencia cuelgan cumple da de del dio domesticos doncellas ejercitos el elegido en espacios estrellas existieron fieles fieras frutales fuerza granizo huracanado israel jefes jovenes la las les ley lo los lucientes luna majestad mando mar montes mundo nieve ninos no nombre orbe ordenes pajaros pasara perpetua porque principes pueblo pueblos que rayos reptiles reyes sal senor sierras sobre sol su sublime sus tambien tierra todas todos una unico viejos viento vigor vuelan y"
@@ -335,6 +359,7 @@
         "title": "ALEGRÍA, HA NACIDO EL SALVADOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "alegria-ha-nacido-el-salvador",
         "tags": [
             "lib"
         ],
@@ -349,6 +374,7 @@
         "title": "ALELUYA INTERLECCIONAL",
         "subtitle": "",
         "step": "lit",
+        "slug": "aleluya-interleccional",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -361,6 +387,7 @@
         "title": "ALELUYA PASCUAL",
         "subtitle": "",
         "step": "lit",
+        "slug": "aleluya-pascual",
         "tags": [],
         "gtags": [
             "g-pas"
@@ -373,6 +400,7 @@
         "title": "ALELUYA, ALABAD AL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "aleluya-alabad-al-senor",
         "tags": [],
         "gtags": [],
         "text": "al alabad aleluya senor"
@@ -383,6 +411,7 @@
         "title": "ALELUYA, BENDECID AL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "aleluya-bendecid-al-senor",
         "tags": [
             "lib",
             "pas",
@@ -403,6 +432,7 @@
         "title": "ALELUYA, YA LLEGÓ EL REINO",
         "subtitle": "",
         "step": "pre",
+        "slug": "aleluya-ya-llego-el-reino",
         "tags": [
             "pas",
             "pen"
@@ -419,6 +449,7 @@
         "title": "ALLELUIA IN LECTIONARY",
         "subtitle": "",
         "step": "lit",
+        "slug": "alleluia-in-lectionary",
         "tags": [
             "ord"
         ],
@@ -433,6 +464,7 @@
         "title": "ALLELUIA, HERE COMES THE KINGDOM",
         "subtitle": "",
         "step": "pre",
+        "slug": "alleluia-here-comes-the-kingdom",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -446,6 +478,7 @@
         "title": "ALLELUIA, PRAISE GOD",
         "subtitle": "",
         "step": "pre",
+        "slug": "alleluia-praise-god",
         "tags": [],
         "gtags": [],
         "text": "alleluia god praise"
@@ -456,6 +489,7 @@
         "title": "ALZAOS, PUERTAS",
         "subtitle": "",
         "step": "pre",
+        "slug": "alzaos-puertas",
         "tags": [
             "int"
         ],
@@ -470,6 +504,7 @@
         "title": "AMEN, AMEN, AMEN",
         "subtitle": "",
         "step": "pre",
+        "slug": "amen-amen-amen",
         "tags": [],
         "gtags": [
             "g-int"
@@ -482,6 +517,7 @@
         "title": "AMO AL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "amo-al-senor",
         "tags": [
             "com"
         ],
@@ -496,6 +532,7 @@
         "title": "AMÉN, AMÉN, AMÉN",
         "subtitle": "",
         "step": "pre",
+        "slug": "amen-amen-amen",
         "tags": [
             "int"
         ],
@@ -510,6 +547,7 @@
         "title": "ANSWERS TO THE UNIVERSAL PRAYER",
         "subtitle": "",
         "step": "lit",
+        "slug": "answers-to-the-universal-prayer",
         "tags": [
             "var"
         ],
@@ -524,6 +562,7 @@
         "title": "ANTÍFONA PARA EL EVANGELIO",
         "subtitle": "",
         "step": "lit",
+        "slug": "antifona-para-el-evangelio",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -536,6 +575,7 @@
         "title": "AQUEDAH",
         "subtitle": "Gn 22,9-10 - Targum Neofiti",
         "step": "pre",
+        "slug": "aquedah",
         "tags": [
             "pas",
             "pen"
@@ -553,6 +593,7 @@
         "title": "AS HONEY DRIPS",
         "subtitle": "",
         "step": "ele",
+        "slug": "as-honey-drips",
         "tags": [
             "sal"
         ],
@@ -567,6 +608,7 @@
         "title": "AS MEN CONDEMNED TO DEATH",
         "subtitle": "",
         "step": "ele",
+        "slug": "as-men-condemned-to-death",
         "tags": [],
         "gtags": [],
         "text": "as condemned death men to"
@@ -577,6 +619,7 @@
         "title": "ASÍ HABLA EL AMÉN",
         "subtitle": "",
         "step": "pre",
+        "slug": "asi-habla-el-amen",
         "tags": [
             "com"
         ],
@@ -591,6 +634,7 @@
         "title": "AVE MARÍA I",
         "subtitle": "",
         "step": "pre",
+        "slug": "ave-maria-i",
         "tags": [
             "vir"
         ],
@@ -606,6 +650,7 @@
         "title": "AVE MARÍA II",
         "subtitle": "",
         "step": "pre",
+        "slug": "ave-maria-ii",
         "tags": [
             "vir"
         ],
@@ -621,6 +666,7 @@
         "title": "BABILONIA CRIMINAL",
         "subtitle": "",
         "step": "pre",
+        "slug": "babilonia-criminal",
         "tags": [
             "com"
         ],
@@ -635,6 +681,7 @@
         "title": "BALAAM",
         "subtitle": "",
         "step": "pre",
+        "slug": "balaam",
         "tags": [
             "fin",
             "pax"
@@ -651,6 +698,7 @@
         "title": "BECAUSE OF MY BROTHERS AND FRIENDS",
         "subtitle": "",
         "step": "pre",
+        "slug": "because-of-my-brothers-and-friends",
         "tags": [],
         "gtags": [
             "g-pax"
@@ -663,6 +711,7 @@
         "title": "BEFORE THE ANGELS",
         "subtitle": "",
         "step": "pre",
+        "slug": "before-the-angels",
         "tags": [],
         "gtags": [],
         "text": "angels before the"
@@ -673,6 +722,7 @@
         "title": "BEHOLD I'M COMING SOON",
         "subtitle": "",
         "step": "pre",
+        "slug": "behold-im-coming-soon",
         "tags": [],
         "gtags": [
             "g-int"
@@ -685,6 +735,7 @@
         "title": "BEHOLD OUR MIRROR",
         "subtitle": "",
         "step": "cat",
+        "slug": "behold-our-mirror",
         "tags": [
             "sal"
         ],
@@ -700,6 +751,7 @@
         "title": "BENDECIRÉ AL SEÑOR EN TODO TIEMPO",
         "subtitle": "",
         "step": "pre",
+        "slug": "bendecire-al-senor-en-todo-tiempo",
         "tags": [
             "vin",
             "com"
@@ -716,6 +768,7 @@
         "title": "BENDICE, ALMA MÍA, A YAHVEH",
         "subtitle": "",
         "step": "pre",
+        "slug": "bendice-alma-mia-a-yahveh",
         "tags": [
             "com"
         ],
@@ -730,6 +783,7 @@
         "title": "BENDICIÓN DEL AGUA",
         "subtitle": "",
         "step": "lit",
+        "slug": "bendicion-del-agua",
         "tags": [],
         "gtags": [
             "g-pas"
@@ -742,6 +796,7 @@
         "title": "BENDITA ERES TÚ, MARÍA",
         "subtitle": "",
         "step": "pre",
+        "slug": "bendita-eres-tu-maria",
         "tags": [
             "int",
             "vir"
@@ -758,6 +813,7 @@
         "title": "BENDITO ERES, SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "bendito-eres-senor",
         "tags": [],
         "gtags": [],
         "text": "bendito eres senor"
@@ -768,6 +824,7 @@
         "title": "BENDITO SEA DIOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "bendito-sea-dios",
         "tags": [],
         "gtags": [],
         "text": "bendito dios sea"
@@ -778,6 +835,7 @@
         "title": "BENEDICTUS",
         "subtitle": "",
         "step": "pre",
+        "slug": "benedictus",
         "tags": [],
         "gtags": [
             "g-hym"
@@ -790,6 +848,7 @@
         "title": "BESIDE THE RIVERS OF BABYLON",
         "subtitle": "",
         "step": "pre",
+        "slug": "beside-the-rivers-of-babylon",
         "tags": [],
         "gtags": [
             "g-com"
@@ -802,6 +861,7 @@
         "title": "BLESS THE LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "bless-the-lord",
         "tags": [
             "lib"
         ],
@@ -819,6 +879,7 @@
         "title": "BLESS THE LORD MY SOUL",
         "subtitle": "",
         "step": "pre",
+        "slug": "bless-the-lord-my-soul",
         "tags": [],
         "gtags": [
             "g-com"
@@ -831,6 +892,7 @@
         "title": "BLESSED BE GOD",
         "subtitle": "",
         "step": "cat",
+        "slug": "blessed-be-god",
         "tags": [],
         "gtags": [],
         "text": "be blessed god"
@@ -841,6 +903,7 @@
         "title": "BLESSED MARY",
         "subtitle": "",
         "step": "pre",
+        "slug": "blessed-mary",
         "tags": [
             "vir"
         ],
@@ -856,6 +919,7 @@
         "title": "BLESSING FOR THE PENITENTIAL CELEBRATION",
         "subtitle": "",
         "step": "lit",
+        "slug": "blessing-for-the-penitential-celebration",
         "tags": [
             "poe"
         ],
@@ -870,6 +934,7 @@
         "title": "BLESSING OF THE WATER OF THE BAPTISMAL FONT",
         "subtitle": "",
         "step": "lit",
+        "slug": "blessing-of-the-water-of-the-baptismal-font",
         "tags": [
             "pas"
         ],
@@ -884,6 +949,7 @@
         "title": "BROTHERS",
         "subtitle": "",
         "step": "ele",
+        "slug": "brothers",
         "tags": [],
         "gtags": [],
         "text": "brothers"
@@ -894,6 +960,7 @@
         "title": "CANTAD A DIOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "cantad-a-dios",
         "tags": [],
         "gtags": [],
         "text": "a cantad dios"
@@ -904,6 +971,7 @@
         "title": "CANTAD AL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "cantad-al-senor",
         "tags": [
             "int"
         ],
@@ -918,6 +986,7 @@
         "title": "CANTICLE OF THE THREE YOUNG MEN IN THE FURNACE - 1ST PART",
         "subtitle": "",
         "step": "pre",
+        "slug": "canticle-of-the-three-young-men-in-the-furnace-1st-part",
         "tags": [],
         "gtags": [],
         "text": "canticle furnace in men of part st the three young"
@@ -928,6 +997,7 @@
         "title": "CANTICLE OF THE THREE YOUNG MEN IN THE FURNACE - 2ND PART",
         "subtitle": "",
         "step": "pre",
+        "slug": "canticle-of-the-three-young-men-in-the-furnace-2nd-part",
         "tags": [],
         "gtags": [],
         "text": "canticle furnace in men nd of part the three young"
@@ -938,6 +1008,7 @@
         "title": "CANTICLE OF TOBIT: BLESS MY SOUL THE LORD",
         "subtitle": "Tob. 13",
         "step": "pre",
+        "slug": "canticle-of-tobit-bless-my-soul-the-lord",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -952,6 +1023,7 @@
         "title": "CANTICLE OF ZECHARIAH",
         "subtitle": "",
         "step": "pre",
+        "slug": "canticle-of-zechariah",
         "tags": [
             "hym"
         ],
@@ -966,6 +1038,7 @@
         "title": "CANTO DE MOISÉS",
         "subtitle": "",
         "step": "pre",
+        "slug": "canto-de-moises",
         "tags": [
             "pas",
             "pen"
@@ -982,6 +1055,7 @@
         "title": "CARITAS CHRISTI",
         "subtitle": "",
         "step": "ele",
+        "slug": "caritas-christi",
         "tags": [],
         "gtags": [
             "g-com"
@@ -994,6 +1068,7 @@
         "title": "CARITAS CHRISTI URGET NOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "caritas-christi-urget-nos",
         "tags": [
             "com"
         ],
@@ -1008,6 +1083,7 @@
         "title": "CARMEN '63",
         "subtitle": "",
         "step": "ele",
+        "slug": "carmen-63",
         "tags": [
             "var"
         ],
@@ -1024,6 +1100,7 @@
         "title": "CARMEN 63",
         "subtitle": "",
         "step": "pre",
+        "slug": "carmen-63",
         "tags": [
             "vin",
             "fin"
@@ -1041,6 +1118,7 @@
         "title": "CELEBRACIÓN PENITENCIAL",
         "subtitle": "",
         "step": "lit",
+        "slug": "celebracion-penitencial",
         "tags": [],
         "gtags": [
             "g-poe"
@@ -1053,6 +1131,7 @@
         "title": "CHRIST JESUS IS THE LORD - HYMN TO THE KENOSIS",
         "subtitle": "",
         "step": "pre",
+        "slug": "christ-jesus-is-the-lord-hymn-to-the-kenosis",
         "tags": [],
         "gtags": [
             "g-pan",
@@ -1067,6 +1146,7 @@
         "title": "COME FROM LEBANON",
         "subtitle": "",
         "step": "ele",
+        "slug": "come-from-lebanon",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -1082,6 +1162,7 @@
         "title": "COME TO ME ALL OF YOU",
         "subtitle": "",
         "step": "pre",
+        "slug": "come-to-me-all-of-you",
         "tags": [],
         "gtags": [
             "g-com"
@@ -1094,6 +1175,7 @@
         "title": "COME, SON OF MAN",
         "subtitle": "",
         "step": "pre",
+        "slug": "come-son-of-man",
         "tags": [],
         "gtags": [],
         "text": "come man of son"
@@ -1104,6 +1186,7 @@
         "title": "COMO CONDENADOS A MUERTE",
         "subtitle": "",
         "step": "pre",
+        "slug": "como-condenados-a-muerte",
         "tags": [],
         "gtags": [],
         "text": "a como condenados muerte"
@@ -1114,6 +1197,7 @@
         "title": "COMO DESTILA LA MIEL",
         "subtitle": "",
         "step": "ele",
+        "slug": "como-destila-la-miel",
         "tags": [],
         "gtags": [
             "g-sal"
@@ -1126,6 +1210,7 @@
         "title": "COMO EL IMPULSO QUE SIENTE LA IRA",
         "subtitle": "",
         "step": "cat",
+        "slug": "como-el-impulso-que-siente-la-ira",
         "tags": [],
         "gtags": [
             "g-sal"
@@ -1138,6 +1223,7 @@
         "title": "COMO LA CIERVA",
         "subtitle": "",
         "step": "pre",
+        "slug": "como-la-cierva",
         "tags": [
             "com"
         ],
@@ -1152,6 +1238,7 @@
         "title": "COMO LIRIO ENTRE LOS CARDOS",
         "subtitle": "",
         "step": "ele",
+        "slug": "como-lirio-entre-los-cardos",
         "tags": [],
         "gtags": [],
         "text": "cardos como entre lirio los"
@@ -1162,6 +1249,7 @@
         "title": "COMO OVEJA QUE VE",
         "subtitle": "",
         "step": "pre",
+        "slug": "como-oveja-que-ve",
         "tags": [
             "com",
             "pan",
@@ -1184,6 +1272,7 @@
         "title": "CONSOLAD A MI PUEBLO",
         "subtitle": "",
         "step": "pre",
+        "slug": "consolad-a-mi-pueblo",
         "tags": [
             "int",
             "fin",
@@ -1202,6 +1291,7 @@
         "title": "CONSOLE MY PEOPLE",
         "subtitle": "",
         "step": "pre",
+        "slug": "console-my-people",
         "tags": [],
         "gtags": [
             "g-int",
@@ -1216,6 +1306,7 @@
         "title": "CORDERO DE DIOS",
         "subtitle": "",
         "step": "lit",
+        "slug": "cordero-de-dios",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -1228,6 +1319,7 @@
         "title": "CREDO",
         "subtitle": "",
         "step": "lit",
+        "slug": "credo",
         "tags": [],
         "gtags": [
             "g-hym"
@@ -1240,6 +1332,7 @@
         "title": "CREED",
         "subtitle": "",
         "step": "lit",
+        "slug": "creed",
         "tags": [
             "hym"
         ],
@@ -1254,6 +1347,7 @@
         "title": "CRISTO ES LA LUZ",
         "subtitle": "",
         "step": "pre",
+        "slug": "cristo-es-la-luz",
         "tags": [
             "pas",
             "pen"
@@ -1270,6 +1364,7 @@
         "title": "CUANDO DORMÍA",
         "subtitle": "",
         "step": "cat",
+        "slug": "cuando-dormia",
         "tags": [
             "vin"
         ],
@@ -1284,6 +1379,7 @@
         "title": "CUANDO EL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "cuando-el-senor",
         "tags": [
             "com",
             "int"
@@ -1300,6 +1396,7 @@
         "title": "CUANDO ISRAEL SALIÓ DE EGIPTO",
         "subtitle": "",
         "step": "pre",
+        "slug": "cuando-israel-salio-de-egipto",
         "tags": [
             "pas",
             "pen"
@@ -1316,6 +1413,7 @@
         "title": "CÁNTICO DE LOS TRES JÓVENES",
         "subtitle": "",
         "step": "pre",
+        "slug": "cantico-de-los-tres-jovenes",
         "tags": [],
         "gtags": [],
         "text": "cantico de jovenes los tres"
@@ -1326,6 +1424,7 @@
         "title": "CÓMO ES MARAVILLOSO",
         "subtitle": "",
         "step": "pre",
+        "slug": "como-es-maravilloso",
         "tags": [
             "pax"
         ],
@@ -1340,6 +1439,7 @@
         "title": "DAUGHTERS OF JERUSALEM",
         "subtitle": "",
         "step": "pre",
+        "slug": "daughters-of-jerusalem",
         "tags": [],
         "gtags": [
             "g-com",
@@ -1353,6 +1453,7 @@
         "title": "DAY OF REST",
         "subtitle": "",
         "step": "pre",
+        "slug": "day-of-rest",
         "tags": [
             "heb"
         ],
@@ -1368,6 +1469,7 @@
         "title": "DAYENU",
         "subtitle": "",
         "step": "pre",
+        "slug": "dayenu",
         "tags": [
             "heb"
         ],
@@ -1385,6 +1487,7 @@
         "title": "DAYENÚ",
         "subtitle": "",
         "step": "pre",
+        "slug": "dayenu",
         "tags": [
             "pas",
             "pen",
@@ -1404,6 +1507,7 @@
         "title": "DE PROFUNDIS",
         "subtitle": "",
         "step": "pre",
+        "slug": "de-profundis",
         "tags": [],
         "gtags": [],
         "text": "de profundis"
@@ -1414,6 +1518,7 @@
         "title": "DE PROFUNDIS",
         "subtitle": "",
         "step": "pre",
+        "slug": "de-profundis",
         "tags": [],
         "gtags": [],
         "text": "de profundis"
@@ -1424,6 +1529,7 @@
         "title": "DEATH IS SWALLOWED UP IN VICTORY",
         "subtitle": "",
         "step": "pre",
+        "slug": "death-is-swallowed-up-in-victory",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -1438,6 +1544,7 @@
         "title": "DECIDLE A LOS DE CORAZÓN CANSADO",
         "subtitle": "",
         "step": "pre",
+        "slug": "decidle-a-los-de-corazon-cansado",
         "tags": [
             "int"
         ],
@@ -1452,6 +1559,7 @@
         "title": "DELANTE DE LOS ÁNGELES",
         "subtitle": "",
         "step": "pre",
+        "slug": "delante-de-los-angeles",
         "tags": [],
         "gtags": [],
         "text": "angeles de delante los"
@@ -1462,6 +1570,7 @@
         "title": "DICE EL SEÑOR A MI SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "dice-el-senor-a-mi-senor",
         "tags": [
             "pas",
             "pen"
@@ -1478,6 +1587,7 @@
         "title": "DICHOSO EL HOMBRE",
         "subtitle": "",
         "step": "pre",
+        "slug": "dichoso-el-hombre",
         "tags": [],
         "gtags": [],
         "text": "dichoso el hombre"
@@ -1488,6 +1598,7 @@
         "title": "DO NOT GET ANGRY BECAUSE OF THE WICKED",
         "subtitle": "",
         "step": "ele",
+        "slug": "do-not-get-angry-because-of-the-wicked",
         "tags": [],
         "gtags": [
             "g-com"
@@ -1500,6 +1611,7 @@
         "title": "DO NOT RESIST EVIL",
         "subtitle": "",
         "step": "ele",
+        "slug": "do-not-resist-evil",
         "tags": [],
         "gtags": [],
         "text": "do evil not resist"
@@ -1510,6 +1622,7 @@
         "title": "DOXOLOGY",
         "subtitle": "",
         "step": "lit",
+        "slug": "doxology",
         "tags": [
             "ord"
         ],
@@ -1524,6 +1637,7 @@
         "title": "DÉBORA",
         "subtitle": "",
         "step": "cat",
+        "slug": "debora",
         "tags": [
             "vir"
         ],
@@ -1538,6 +1652,7 @@
         "title": "DÍA DE REPOSO",
         "subtitle": "",
         "step": "pre",
+        "slug": "dia-de-reposo",
         "tags": [
             "fin"
         ],
@@ -1553,6 +1668,7 @@
         "title": "EASTER ALLELUIA",
         "subtitle": "",
         "step": "lit",
+        "slug": "easter-alleluia",
         "tags": [
             "pas"
         ],
@@ -1567,6 +1683,7 @@
         "title": "EL COMBATE ESCATOLÓGICO",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-combate-escatologico",
         "tags": [
             "int",
             "pas",
@@ -1585,6 +1702,7 @@
         "title": "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-espiritu-del-senor-esta-sobre-mi",
         "tags": [
             "vin",
             "int",
@@ -1605,6 +1723,7 @@
         "title": "EL JACAL DE LOS PASTORES",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-jacal-de-los-pastores",
         "tags": [
             "vin",
             "pas",
@@ -1623,6 +1742,7 @@
         "title": "EL LAGARERO",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-lagarero",
         "tags": [
             "pan"
         ],
@@ -1637,6 +1757,7 @@
         "title": "EL MESÍAS LEÓN",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-mesias-leon",
         "tags": [
             "pan",
             "pas",
@@ -1655,6 +1776,7 @@
         "title": "EL MISMO DIOS",
         "subtitle": "",
         "step": "cat",
+        "slug": "el-mismo-dios",
         "tags": [
             "vin"
         ],
@@ -1669,6 +1791,7 @@
         "title": "EL NECIO PIENSA QUE DIOS NO EXISTE",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-necio-piensa-que-dios-no-existe",
         "tags": [],
         "gtags": [],
         "text": "dios el existe necio no piensa que"
@@ -1679,6 +1802,7 @@
         "title": "EL PUEBLO QUE CAMINABA EN LAS TINIEBLAS",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-pueblo-que-caminaba-en-las-tinieblas",
         "tags": [],
         "gtags": [],
         "text": "caminaba el en las pueblo que tinieblas"
@@ -1689,6 +1813,7 @@
         "title": "EL SEMBRADOR",
         "subtitle": "",
         "step": "cat",
+        "slug": "el-sembrador",
         "tags": [],
         "gtags": [],
         "text": "el sembrador"
@@ -1699,6 +1824,7 @@
         "title": "EL SEÑOR ANUNCIA UNA NOTICIA",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-senor-anuncia-una-noticia",
         "tags": [
             "int"
         ],
@@ -1713,6 +1839,7 @@
         "title": "EL SEÑOR ES MI PASTOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-senor-es-mi-pastor",
         "tags": [
             "vin",
             "pas",
@@ -1731,6 +1858,7 @@
         "title": "EL SEÑOR ME HA DADO",
         "subtitle": "",
         "step": "pre",
+        "slug": "el-senor-me-ha-dado",
         "tags": [
             "pan"
         ],
@@ -1745,6 +1873,7 @@
         "title": "ELI, ELI, LAMA SABACTANI?",
         "subtitle": "",
         "step": "cat",
+        "slug": "eli-eli-lama-sabactani",
         "tags": [],
         "gtags": [],
         "text": "eli lama sabactani"
@@ -1755,6 +1884,7 @@
         "title": "ELÍ, ELÍ, LAMÁ SABACTANÍ",
         "subtitle": "",
         "step": "pre",
+        "slug": "eli-eli-lama-sabactani",
         "tags": [],
         "gtags": [],
         "text": "eli lama sabactani"
@@ -1765,6 +1895,7 @@
         "title": "EN MEDIO DE AQUEL GENTÍO",
         "subtitle": "",
         "step": "pre",
+        "slug": "en-medio-de-aquel-gentio",
         "tags": [
             "vin"
         ],
@@ -1779,6 +1910,7 @@
         "title": "EN UNA NOCHE OSCURA",
         "subtitle": "",
         "step": "pre",
+        "slug": "en-una-noche-oscura",
         "tags": [],
         "gtags": [
             "g-var"
@@ -1791,6 +1923,7 @@
         "title": "ERES DIGNO DE TOMAR EL LIBRO",
         "subtitle": "",
         "step": "pre",
+        "slug": "eres-digno-de-tomar-el-libro",
         "tags": [
             "pan",
             "pas",
@@ -1809,6 +1942,7 @@
         "title": "ERES HERMOSO",
         "subtitle": "",
         "step": "pre",
+        "slug": "eres-hermoso",
         "tags": [
             "vin",
             "fin"
@@ -1825,6 +1959,7 @@
         "title": "ES PACIENTE",
         "subtitle": "",
         "step": "pre",
+        "slug": "es-paciente",
         "tags": [
             "vin",
             "int",
@@ -1846,6 +1981,7 @@
         "title": "ESCUCHAD, ISLAS LEJANAS",
         "subtitle": "",
         "step": "pre",
+        "slug": "escuchad-islas-lejanas",
         "tags": [
             "vin",
             "int"
@@ -1862,6 +1998,7 @@
         "title": "ESCÓNDEME EN LO OCULTO DE TU TIENDA",
         "subtitle": "",
         "step": "pre",
+        "slug": "escondeme-en-lo-oculto-de-tu-tienda",
         "tags": [],
         "gtags": [],
         "text": "de en escondeme lo oculto tienda tu"
@@ -1872,6 +2009,7 @@
         "title": "ESTE ES EL DÍA EN QUE ACTUÓ EL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "este-es-el-dia-en-que-actuo-el-senor",
         "tags": [],
         "gtags": [],
         "text": "actuo dia el en es este que senor"
@@ -1882,6 +2020,7 @@
         "title": "ESTE ES EL MANDAMIENTO MÍO",
         "subtitle": "",
         "step": "pre",
+        "slug": "este-es-el-mandamiento-mio",
         "tags": [
             "pas",
             "pen"
@@ -1898,6 +2037,7 @@
         "title": "EUCHARISTIC PRAYER II - 1 PREFACE",
         "subtitle": "",
         "step": "lit",
+        "slug": "eucharistic-prayer-ii-1-preface",
         "tags": [
             "ord"
         ],
@@ -1912,6 +2052,7 @@
         "title": "EUCHARISTIC PRAYER II - 2 CONSECRATION AND ACCLAMATION",
         "subtitle": "",
         "step": "lit",
+        "slug": "eucharistic-prayer-ii-2-consecration-and-acclamation",
         "tags": [
             "ord"
         ],
@@ -1926,6 +2067,7 @@
         "title": "EUCHARISTIC PRAYER II - 2 PREFACE",
         "subtitle": "",
         "step": "lit",
+        "slug": "eucharistic-prayer-ii-2-preface",
         "tags": [
             "ord"
         ],
@@ -1940,6 +2082,7 @@
         "title": "EVENU SHALOM ALEHEM",
         "subtitle": "",
         "step": "pre",
+        "slug": "evenu-shalom-alehem",
         "tags": [
             "heb"
         ],
@@ -1955,6 +2098,7 @@
         "title": "EVENU SHALOM ALEJEM",
         "subtitle": "",
         "step": "pre",
+        "slug": "evenu-shalom-alejem",
         "tags": [
             "pax"
         ],
@@ -1970,6 +2114,7 @@
         "title": "EXTIENDO MIS MANOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "extiendo-mis-manos",
         "tags": [
             "pan"
         ],
@@ -1984,6 +2129,7 @@
         "title": "EXULT, YOU JUST IN THE LORD",
         "subtitle": "Psalm 32 (33)",
         "step": "pre",
+        "slug": "exult-you-just-in-the-lord",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -1999,6 +2145,7 @@
         "title": "EXULTAD, JUSTOS, EN EL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "exultad-justos-en-el-senor",
         "tags": [
             "vin",
             "int",
@@ -2019,6 +2166,7 @@
         "title": "EXULTET",
         "subtitle": "",
         "step": "lit",
+        "slug": "exultet",
         "tags": [
             "pas"
         ],
@@ -2033,6 +2181,7 @@
         "title": "FELICIDAD PARA EL HOMBRE",
         "subtitle": "",
         "step": "pre",
+        "slug": "felicidad-para-el-hombre",
         "tags": [],
         "gtags": [],
         "text": "el felicidad hombre para"
@@ -2043,6 +2192,7 @@
         "title": "FIRST SONG OF THE SERVANT OF YAHWEH",
         "subtitle": "",
         "step": "pre",
+        "slug": "first-song-of-the-servant-of-yahweh",
         "tags": [],
         "gtags": [
             "g-com",
@@ -2056,6 +2206,7 @@
         "title": "GATES LIFT UP YOUR HEADS",
         "subtitle": "",
         "step": "pre",
+        "slug": "gates-lift-up-your-heads",
         "tags": [],
         "gtags": [
             "g-int"
@@ -2068,6 +2219,7 @@
         "title": "GIVE THANKS TO THE LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "give-thanks-to-the-lord",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -2084,6 +2236,7 @@
         "title": "GLORIA A DIOS EN LO ALTO DEL CIELO",
         "subtitle": "",
         "step": "lit",
+        "slug": "gloria-a-dios-en-lo-alto-del-cielo",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -2096,6 +2249,7 @@
         "title": "GLORY TO GOD",
         "subtitle": "",
         "step": "lit",
+        "slug": "glory-to-god",
         "tags": [
             "ord"
         ],
@@ -2110,6 +2264,7 @@
         "title": "GLORY, GLORY, GLORY",
         "subtitle": "",
         "step": "pre",
+        "slug": "glory-glory-glory",
         "tags": [],
         "gtags": [
             "g-int",
@@ -2123,6 +2278,7 @@
         "title": "GO AND ANNOUNCE TO MY BROTHERS",
         "subtitle": "",
         "step": "pre",
+        "slug": "go-and-announce-to-my-brothers",
         "tags": [],
         "gtags": [
             "g-fin",
@@ -2137,6 +2293,7 @@
         "title": "GOD GOES UP WITH ACCLAMATIONS",
         "subtitle": "",
         "step": "pre",
+        "slug": "god-goes-up-with-acclamations",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -2151,6 +2308,7 @@
         "title": "GRACE BEFORE MEALS",
         "subtitle": "",
         "step": "lit",
+        "slug": "grace-before-meals",
         "tags": [
             "var"
         ],
@@ -2165,6 +2323,7 @@
         "title": "GRACIAS A YAHVEH",
         "subtitle": "",
         "step": "pre",
+        "slug": "gracias-a-yahveh",
         "tags": [
             "vin",
             "fin",
@@ -2187,6 +2346,7 @@
         "title": "GRITAD JUBILOSOS",
         "subtitle": "Is 12,1ss",
         "step": "pre",
+        "slug": "gritad-jubilosos",
         "tags": [
             "vin",
             "fin",
@@ -2207,6 +2367,7 @@
         "title": "HACIA TI, MORADA SANTA",
         "subtitle": "",
         "step": "pre",
+        "slug": "hacia-ti-morada-santa",
         "tags": [
             "int"
         ],
@@ -2222,6 +2383,7 @@
         "title": "HAIL HER",
         "subtitle": "",
         "step": "pre",
+        "slug": "hail-her",
         "tags": [
             "com",
             "vir"
@@ -2238,6 +2400,7 @@
         "title": "HAIL MARY",
         "subtitle": "",
         "step": "pre",
+        "slug": "hail-mary",
         "tags": [
             "hym",
             "vir"
@@ -2254,6 +2417,7 @@
         "title": "HAIL MARY - 1984",
         "subtitle": "",
         "step": "pre",
+        "slug": "hail-mary-1984",
         "tags": [
             "hym",
             "vir"
@@ -2270,6 +2434,7 @@
         "title": "HAIL QUEEN OF HEAVENS",
         "subtitle": "",
         "step": "pre",
+        "slug": "hail-queen-of-heavens",
         "tags": [
             "hym",
             "vir"
@@ -2286,6 +2451,7 @@
         "title": "HAIL, O MARY, UNCORRUPT DOVE",
         "subtitle": "",
         "step": "pre",
+        "slug": "hail-o-mary-uncorrupt-dove",
         "tags": [
             "vir"
         ],
@@ -2302,6 +2468,7 @@
         "title": "HAPPINESS FOR THE MAN",
         "subtitle": "",
         "step": "pre",
+        "slug": "happiness-for-the-man",
         "tags": [],
         "gtags": [],
         "text": "for happiness man the"
@@ -2312,6 +2479,7 @@
         "title": "HAPPY THE MAN",
         "subtitle": "",
         "step": "pre",
+        "slug": "happy-the-man",
         "tags": [],
         "gtags": [],
         "text": "happy man the"
@@ -2322,6 +2490,7 @@
         "title": "HASTA CUÁNDO",
         "subtitle": "",
         "step": "pre",
+        "slug": "hasta-cuando",
         "tags": [
             "com"
         ],
@@ -2336,6 +2505,7 @@
         "title": "HAVE MERCY ON ME, GOD, IN YOUR KINDNESS",
         "subtitle": "",
         "step": "pre",
+        "slug": "have-mercy-on-me-god-in-your-kindness",
         "tags": [],
         "gtags": [
             "g-com"
@@ -2348,6 +2518,7 @@
         "title": "HE AQUÍ MI SIERVO",
         "subtitle": "",
         "step": "pre",
+        "slug": "he-aqui-mi-siervo",
         "tags": [
             "com",
             "pan"
@@ -2364,6 +2535,7 @@
         "title": "HE AQUÍ QUE NUESTRO ESPEJO ES EL SEÑOR",
         "subtitle": "",
         "step": "cat",
+        "slug": "he-aqui-que-nuestro-espejo-es-el-senor",
         "tags": [
             "com"
         ],
@@ -2379,6 +2551,7 @@
         "title": "HE AQUÍ QUE VENGO PRESTO",
         "subtitle": "",
         "step": "pre",
+        "slug": "he-aqui-que-vengo-presto",
         "tags": [
             "int"
         ],
@@ -2393,6 +2566,7 @@
         "title": "HE ESPERADO EN EL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "he-esperado-en-el-senor",
         "tags": [
             "com"
         ],
@@ -2407,6 +2581,7 @@
         "title": "HE IS NOT HERE, HE IS RISEN",
         "subtitle": "",
         "step": "pre",
+        "slug": "he-is-not-here-he-is-risen",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -2420,6 +2595,7 @@
         "title": "HE ROSE FROM DEATH",
         "subtitle": "",
         "step": "pre",
+        "slug": "he-rose-from-death",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -2434,6 +2610,7 @@
         "title": "HE'S COMING MY GOD",
         "subtitle": "",
         "step": "pre",
+        "slug": "hes-coming-my-god",
         "tags": [
             "lib"
         ],
@@ -2448,6 +2625,7 @@
         "title": "HERE COMES THE LORD WITH MAJESTY ENROBED",
         "subtitle": "",
         "step": "pre",
+        "slug": "here-comes-the-lord-with-majesty-enrobed",
         "tags": [
             "var"
         ],
@@ -2462,6 +2640,7 @@
         "title": "HERMOSA ERES, AMIGA MÍA",
         "subtitle": "",
         "step": "ele",
+        "slug": "hermosa-eres-amiga-mia",
         "tags": [
             "pas",
             "pen"
@@ -2478,6 +2657,7 @@
         "title": "HIJAS DE JERUSALÉN",
         "subtitle": "",
         "step": "pre",
+        "slug": "hijas-de-jerusalen",
         "tags": [
             "com",
             "pan"
@@ -2494,6 +2674,7 @@
         "title": "HIMNO A CRISTO LUZ",
         "subtitle": "",
         "step": "pre",
+        "slug": "himno-a-cristo-luz",
         "tags": [
             "pas",
             "pen"
@@ -2511,6 +2692,7 @@
         "title": "HIMNO A LA CARIDAD",
         "subtitle": "",
         "step": "pre",
+        "slug": "himno-a-la-caridad",
         "tags": [
             "vin",
             "pas",
@@ -2529,6 +2711,7 @@
         "title": "HIMNO A LA CRUZ GLORIOSA",
         "subtitle": "",
         "step": "cat",
+        "slug": "himno-a-la-cruz-gloriosa",
         "tags": [],
         "gtags": [
             "g-var"
@@ -2541,6 +2724,7 @@
         "title": "HIMNO A LA KENOSIS",
         "subtitle": "",
         "step": "pre",
+        "slug": "himno-a-la-kenosis",
         "tags": [
             "pan",
             "pas",
@@ -2559,6 +2743,7 @@
         "title": "HIMNO DE ADVIENTO",
         "subtitle": "",
         "step": "pre",
+        "slug": "himno-de-adviento",
         "tags": [],
         "gtags": [
             "g-hym"
@@ -2571,6 +2756,7 @@
         "title": "HIMNO DE LA ASCENSIÓN",
         "subtitle": "",
         "step": "pre",
+        "slug": "himno-de-la-ascension",
         "tags": [
             "pas",
             "pen"
@@ -2588,6 +2774,7 @@
         "title": "HIMNO DE PASCUA",
         "subtitle": "",
         "step": "pre",
+        "slug": "himno-de-pascua",
         "tags": [
             "pas",
             "pen"
@@ -2605,6 +2792,7 @@
         "title": "HOLY, HE'S HOLY - LENTEN SEASON",
         "subtitle": "",
         "step": "lit",
+        "slug": "holy-hes-holy-lenten-season",
         "tags": [
             "heb",
             "ord"
@@ -2621,6 +2809,7 @@
         "title": "HOLY, HOLY, HOLY - 1983",
         "subtitle": "",
         "step": "lit",
+        "slug": "holy-holy-holy-1983",
         "tags": [
             "ord"
         ],
@@ -2635,6 +2824,7 @@
         "title": "HOLY, HOLY, HOLY - ADVENT: HOLY OF THE SHANTY TOWN",
         "subtitle": "",
         "step": "lit",
+        "slug": "holy-holy-holy-advent-holy-of-the-shanty-town",
         "tags": [
             "ord"
         ],
@@ -2649,6 +2839,7 @@
         "title": "HOLY, HOLY, HOLY - EASTER: HOSANNA OF THE PALMS",
         "subtitle": "",
         "step": "lit",
+        "slug": "holy-holy-holy-easter-hosanna-of-the-palms",
         "tags": [
             "pas",
             "ord"
@@ -2665,6 +2856,7 @@
         "title": "HOLY, HOLY, HOLY - ORDINARY TIME",
         "subtitle": "",
         "step": "lit",
+        "slug": "holy-holy-holy-ordinary-time",
         "tags": [
             "ord"
         ],
@@ -2679,6 +2871,7 @@
         "title": "HOLY, HOLY, HOLY - ORDINARY TIME - 1988",
         "subtitle": "",
         "step": "lit",
+        "slug": "holy-holy-holy-ordinary-time-1988",
         "tags": [
             "ord"
         ],
@@ -2693,6 +2886,7 @@
         "title": "HOW GOOD IT IS",
         "subtitle": "",
         "step": "pre",
+        "slug": "how-good-it-is",
         "tags": [],
         "gtags": [
             "g-pax"
@@ -2705,6 +2899,7 @@
         "title": "HOW LOVELY ARE YOUR DWELLING PLACES",
         "subtitle": "",
         "step": "pre",
+        "slug": "how-lovely-are-your-dwelling-places",
         "tags": [],
         "gtags": [
             "g-com",
@@ -2718,6 +2913,7 @@
         "title": "HOW MUCH LONGER",
         "subtitle": "",
         "step": "pre",
+        "slug": "how-much-longer",
         "tags": [],
         "gtags": [
             "g-com"
@@ -2730,6 +2926,7 @@
         "title": "HUYE, AMADO MÍO",
         "subtitle": "",
         "step": "pre",
+        "slug": "huye-amado-mio",
         "tags": [
             "vin",
             "fin",
@@ -2750,6 +2947,7 @@
         "title": "HYMN FOR LAUDS OF ADVENT AFTER DECEMBER 16",
         "subtitle": "",
         "step": "lit",
+        "slug": "hymn-for-lauds-of-advent-after-december-16",
         "tags": [
             "hym"
         ],
@@ -2764,6 +2962,7 @@
         "title": "HYMN FOR LAUDS OF ADVENT UNTIL DECEMBER 16",
         "subtitle": "",
         "step": "lit",
+        "slug": "hymn-for-lauds-of-advent-until-december-16",
         "tags": [
             "hym"
         ],
@@ -2778,6 +2977,7 @@
         "title": "HYMN FOR LAUDS OF PENTECOST",
         "subtitle": "",
         "step": "lit",
+        "slug": "hymn-for-lauds-of-pentecost",
         "tags": [
             "hym"
         ],
@@ -2792,6 +2992,7 @@
         "title": "HYMN FOR VESPERS FROM EASTER TO THE ASCENSION",
         "subtitle": "",
         "step": "lit",
+        "slug": "hymn-for-vespers-from-easter-to-the-ascension",
         "tags": [
             "hym"
         ],
@@ -2808,6 +3009,7 @@
         "title": "HYMN OF ADVENT",
         "subtitle": "",
         "step": "pre",
+        "slug": "hymn-of-advent",
         "tags": [
             "hym"
         ],
@@ -2822,6 +3024,7 @@
         "title": "HYMN OF LAUDS FROM EASTER TO THE ASCENSION",
         "subtitle": "",
         "step": "lit",
+        "slug": "hymn-of-lauds-from-easter-to-the-ascension",
         "tags": [
             "hym"
         ],
@@ -2836,6 +3039,7 @@
         "title": "HYMN OF PASSOVER",
         "subtitle": "",
         "step": "pre",
+        "slug": "hymn-of-passover",
         "tags": [
             "hym"
         ],
@@ -2852,6 +3056,7 @@
         "title": "HYMN OF VESPERS FROM ASCENSION TO PENTECOST",
         "subtitle": "",
         "step": "lit",
+        "slug": "hymn-of-vespers-from-ascension-to-pentecost",
         "tags": [
             "hym"
         ],
@@ -2868,6 +3073,7 @@
         "title": "HYMN OF VESPERS ON THE DAY OF ASCENSION",
         "subtitle": "Hymn of Lauds from Ascension till Pentecost",
         "step": "lit",
+        "slug": "hymn-of-vespers-on-the-day-of-ascension",
         "tags": [
             "hym"
         ],
@@ -2884,6 +3090,7 @@
         "title": "HYMN TO CHARITY",
         "subtitle": "",
         "step": "ele",
+        "slug": "hymn-to-charity",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -2898,6 +3105,7 @@
         "title": "HYMN TO CHRIST LIGHT",
         "subtitle": "(1967)",
         "step": "pre",
+        "slug": "hymn-to-christ-light",
         "tags": [
             "var"
         ],
@@ -2914,6 +3122,7 @@
         "title": "HYMN TO THE GLORIOUS CROSS",
         "subtitle": "",
         "step": "cat",
+        "slug": "hymn-to-the-glorious-cross",
         "tags": [
             "var"
         ],
@@ -2928,6 +3137,7 @@
         "title": "HYMN TO THE HOLY SPIRIT",
         "subtitle": "",
         "step": "pre",
+        "slug": "hymn-to-the-holy-spirit",
         "tags": [
             "var"
         ],
@@ -2946,6 +3156,7 @@
         "title": "I CALL UPON YOU",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-call-upon-you",
         "tags": [],
         "gtags": [
             "g-com"
@@ -2958,6 +3169,7 @@
         "title": "I HOPED, I HOPED IN THE LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-hoped-i-hoped-in-the-lord",
         "tags": [],
         "gtags": [
             "g-com"
@@ -2970,6 +3182,7 @@
         "title": "I LIFT UP MY EYES TO THE MOUNTAINS",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-lift-up-my-eyes-to-the-mountains",
         "tags": [],
         "gtags": [
             "g-com",
@@ -2983,6 +3196,7 @@
         "title": "I LOVE THE LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-love-the-lord",
         "tags": [],
         "gtags": [
             "g-com"
@@ -2995,6 +3209,7 @@
         "title": "I LOVE YOU, LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-love-you-lord",
         "tags": [],
         "gtags": [
             "g-int"
@@ -3007,6 +3222,7 @@
         "title": "I MANIFESTED TO YOU MY SIN",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-manifested-to-you-my-sin",
         "tags": [],
         "gtags": [
             "g-com"
@@ -3019,6 +3235,7 @@
         "title": "I SHALL NOT DIE",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-shall-not-die",
         "tags": [],
         "gtags": [],
         "text": "die i not shall"
@@ -3029,6 +3246,7 @@
         "title": "I STRETCHED OUT MY HANDS",
         "subtitle": "",
         "step": "con",
+        "slug": "i-stretched-out-my-hands",
         "tags": [
             "pan"
         ],
@@ -3043,6 +3261,7 @@
         "title": "I WANT TO GO TO JERUSALEM",
         "subtitle": "",
         "step": "cat",
+        "slug": "i-want-to-go-to-jerusalem",
         "tags": [
             "heb"
         ],
@@ -3060,6 +3279,7 @@
         "title": "I WANT TO SING",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-want-to-sing",
         "tags": [],
         "gtags": [
             "g-com"
@@ -3072,6 +3292,7 @@
         "title": "I WILL BLESS THE LORD AT ALL TIMES",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-will-bless-the-lord-at-all-times",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -3085,6 +3306,7 @@
         "title": "I WILL TAKE YOU FROM THE PEOPLES",
         "subtitle": "",
         "step": "pre",
+        "slug": "i-will-take-you-from-the-peoples",
         "tags": [],
         "gtags": [
             "g-int",
@@ -3099,6 +3321,7 @@
         "title": "ID Y ANUNCIAD A MIS HERMANOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "id-y-anunciad-a-mis-hermanos",
         "tags": [
             "fin",
             "pas",
@@ -3117,6 +3340,7 @@
         "title": "IF IN THE LORD I HAVE TAKEN REFUGE",
         "subtitle": "",
         "step": "pre",
+        "slug": "if-in-the-lord-i-have-taken-refuge",
         "tags": [],
         "gtags": [
             "g-com"
@@ -3129,6 +3353,7 @@
         "title": "IF THE LORD DOES NOT BUILD THE HOUSE",
         "subtitle": "",
         "step": "pre",
+        "slug": "if-the-lord-does-not-build-the-house",
         "tags": [],
         "gtags": [
             "g-int"
@@ -3141,6 +3366,7 @@
         "title": "IF TODAY YOU LISTEN TO HIS VOICE",
         "subtitle": "",
         "step": "pre",
+        "slug": "if-today-you-listen-to-his-voice",
         "tags": [],
         "gtags": [],
         "text": "his if listen to today voice you"
@@ -3151,6 +3377,7 @@
         "title": "IF YOU ARE RISEN WITH CHRIST",
         "subtitle": "",
         "step": "pre",
+        "slug": "if-you-are-risen-with-christ",
         "tags": [],
         "gtags": [],
         "text": "are christ if risen with you"
@@ -3161,6 +3388,7 @@
         "title": "IMPROPERIOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "improperios",
         "tags": [
             "com",
             "pan"
@@ -3178,6 +3406,7 @@
         "title": "IN HIM THERE IS NO BEAUTY",
         "subtitle": "",
         "step": "con",
+        "slug": "in-him-there-is-no-beauty",
         "tags": [
             "pan"
         ],
@@ -3192,6 +3421,7 @@
         "title": "IN THE MIDST OF A GREAT CROWD",
         "subtitle": "",
         "step": "pre",
+        "slug": "in-the-midst-of-a-great-crowd",
         "tags": [],
         "gtags": [
             "g-vin"
@@ -3204,6 +3434,7 @@
         "title": "INVOCATION OF THE HOLY SPIRIT",
         "subtitle": "",
         "step": "lit",
+        "slug": "invocation-of-the-holy-spirit",
         "tags": [
             "var"
         ],
@@ -3218,6 +3449,7 @@
         "title": "JACOB",
         "subtitle": "",
         "step": "cat",
+        "slug": "jacob",
         "tags": [],
         "gtags": [],
         "text": "jacob"
@@ -3228,6 +3460,7 @@
         "title": "JACOB",
         "subtitle": "",
         "step": "cat",
+        "slug": "jacob",
         "tags": [],
         "gtags": [],
         "text": "jacob"
@@ -3238,6 +3471,7 @@
         "title": "JERUSALÉN RECONSTRUIDA",
         "subtitle": "Tb 13,11-17",
         "step": "pre",
+        "slug": "jerusalen-reconstruida",
         "tags": [
             "pas",
             "pen",
@@ -3256,6 +3490,7 @@
         "title": "JESUS WENT THROUGH ALL THE TOWNS",
         "subtitle": "",
         "step": "ele",
+        "slug": "jesus-went-through-all-the-towns",
         "tags": [],
         "gtags": [],
         "text": "all jesus the through towns went"
@@ -3266,6 +3501,7 @@
         "title": "JESÚS RECORRÍA TODAS LAS CIUDADES",
         "subtitle": "",
         "step": "pre",
+        "slug": "jesus-recorria-todas-las-ciudades",
         "tags": [],
         "gtags": [],
         "text": "ciudades jesus las recorria todas"
@@ -3276,6 +3512,7 @@
         "title": "LA CORDERA DE DIOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "la-cordera-de-dios",
         "tags": [
             "vir"
         ],
@@ -3290,6 +3527,7 @@
         "title": "LA ESPADA",
         "subtitle": "",
         "step": "pre",
+        "slug": "la-espada",
         "tags": [
             "com",
             "vir"
@@ -3306,6 +3544,7 @@
         "title": "LA MARCHA ES DURA",
         "subtitle": "",
         "step": "pre",
+        "slug": "la-marcha-es-dura",
         "tags": [
             "com"
         ],
@@ -3321,6 +3560,7 @@
         "title": "LA PALOMA VOLÓ",
         "subtitle": "",
         "step": "ele",
+        "slug": "la-paloma-volo",
         "tags": [],
         "gtags": [
             "g-sal"
@@ -3333,6 +3573,7 @@
         "title": "LA SALVE",
         "subtitle": "",
         "step": "pre",
+        "slug": "la-salve",
         "tags": [
             "com",
             "vir"
@@ -3349,6 +3590,7 @@
         "title": "LA SIEGA DE LAS NACIONES",
         "subtitle": "",
         "step": "pre",
+        "slug": "la-siega-de-las-naciones",
         "tags": [
             "fin"
         ],
@@ -3363,6 +3605,7 @@
         "title": "LA VOZ DE MI AMADO",
         "subtitle": "",
         "step": "pre",
+        "slug": "la-voz-de-mi-amado",
         "tags": [
             "vin",
             "pas",
@@ -3381,6 +3624,7 @@
         "title": "LAMB OF GOD",
         "subtitle": "",
         "step": "lit",
+        "slug": "lamb-of-god",
         "tags": [
             "ord"
         ],
@@ -3395,6 +3639,7 @@
         "title": "LAMENTATION OF THE LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "lamentation-of-the-lord",
         "tags": [
             "var"
         ],
@@ -3411,6 +3656,7 @@
         "title": "LAS ARMAS DE LA LUZ",
         "subtitle": "",
         "step": "pre",
+        "slug": "las-armas-de-la-luz",
         "tags": [
             "com"
         ],
@@ -3425,6 +3671,7 @@
         "title": "LAUDA SION",
         "subtitle": "",
         "step": "pre",
+        "slug": "lauda-sion",
         "tags": [
             "pas",
             "pen"
@@ -3441,6 +3688,7 @@
         "title": "LET GOD ARISE",
         "subtitle": "",
         "step": "pre",
+        "slug": "let-god-arise",
         "tags": [],
         "gtags": [],
         "text": "arise god let"
@@ -3451,6 +3699,7 @@
         "title": "LET HIM KISS ME",
         "subtitle": "",
         "step": "ele",
+        "slug": "let-him-kiss-me",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -3465,6 +3714,7 @@
         "title": "LETANÍAS DE LOS SANTOS",
         "subtitle": "",
         "step": "lit",
+        "slug": "letanias-de-los-santos",
         "tags": [],
         "gtags": [],
         "text": "de letanias los santos"
@@ -3475,6 +3725,7 @@
         "title": "LETANÍAS PENITENCIALES I",
         "subtitle": "",
         "step": "lit",
+        "slug": "letanias-penitenciales-i",
         "tags": [],
         "gtags": [
             "g-heb",
@@ -3488,6 +3739,7 @@
         "title": "LETANÍAS PENITENCIALES II",
         "subtitle": "",
         "step": "lit",
+        "slug": "letanias-penitenciales-ii",
         "tags": [],
         "gtags": [],
         "text": "ii letanias penitenciales"
@@ -3498,6 +3750,7 @@
         "title": "LEVANTO MIS OJOS A LOS MONTES",
         "subtitle": "",
         "step": "pre",
+        "slug": "levanto-mis-ojos-a-los-montes",
         "tags": [
             "com",
             "int"
@@ -3514,6 +3767,7 @@
         "title": "LIKE A DOE YEARNS",
         "subtitle": "",
         "step": "pre",
+        "slug": "like-a-doe-yearns",
         "tags": [],
         "gtags": [
             "g-com"
@@ -3526,6 +3780,7 @@
         "title": "LIKE A MOTHER EWE",
         "subtitle": "From a Hymn by Roman The Melodist - Kontakion of Good Friday",
         "step": "pre",
+        "slug": "like-a-mother-ewe",
         "tags": [
             "pan"
         ],
@@ -3544,6 +3799,7 @@
         "title": "LITANIES OF THE SAINTS",
         "subtitle": "",
         "step": "lit",
+        "slug": "litanies-of-the-saints",
         "tags": [],
         "gtags": [],
         "text": "litanies of saints the"
@@ -3554,6 +3810,7 @@
         "title": "LIVE JOYFULLY",
         "subtitle": "",
         "step": "pre",
+        "slug": "live-joyfully",
         "tags": [],
         "gtags": [],
         "text": "joyfully live"
@@ -3564,6 +3821,7 @@
         "title": "LLEGUE HASTA TU PRESENCIA MI CLAMOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "llegue-hasta-tu-presencia-mi-clamor",
         "tags": [
             "com",
             "int"
@@ -3580,6 +3838,7 @@
         "title": "LLÉVAME AL CIELO",
         "subtitle": "",
         "step": "pre",
+        "slug": "llevame-al-cielo",
         "tags": [
             "fin",
             "pas",
@@ -3599,6 +3858,7 @@
         "title": "LONE TO ALONE",
         "subtitle": "",
         "step": "pre",
+        "slug": "lone-to-alone",
         "tags": [
             "vir"
         ],
@@ -3615,6 +3875,7 @@
         "title": "LOOK HOW IT IS GOOD",
         "subtitle": "",
         "step": "pre",
+        "slug": "look-how-it-is-good",
         "tags": [
             "heb"
         ],
@@ -3630,6 +3891,7 @@
         "title": "LORD YOU SEARCH ME",
         "subtitle": "",
         "step": "cat",
+        "slug": "lord-you-search-me",
         "tags": [],
         "gtags": [],
         "text": "lord me search you"
@@ -3640,6 +3902,7 @@
         "title": "LORD, LISTEN TO MY PRAYER",
         "subtitle": "",
         "step": "pre",
+        "slug": "lord-listen-to-my-prayer",
         "tags": [],
         "gtags": [
             "g-com",
@@ -3653,6 +3916,7 @@
         "title": "LORD, LORD JESUS",
         "subtitle": "",
         "step": "pre",
+        "slug": "lord-lord-jesus",
         "tags": [],
         "gtags": [
             "g-com",
@@ -3666,6 +3930,7 @@
         "title": "MAGNIFICAT",
         "subtitle": "",
         "step": "pre",
+        "slug": "magnificat",
         "tags": [
             "hym"
         ],
@@ -3681,6 +3946,7 @@
         "title": "MAGNÍFICAT",
         "subtitle": "",
         "step": "pre",
+        "slug": "magnificat",
         "tags": [
             "vir"
         ],
@@ -3696,6 +3962,7 @@
         "title": "MARIA DI JASNA GORA",
         "subtitle": "",
         "step": "pre",
+        "slug": "maria-di-jasna-gora",
         "tags": [
             "vir"
         ],
@@ -3710,6 +3977,7 @@
         "title": "MARY, HOUSE OF BENEDICTION",
         "subtitle": "",
         "step": "pre",
+        "slug": "mary-house-of-benediction",
         "tags": [
             "vir"
         ],
@@ -3727,6 +3995,7 @@
         "title": "MARY, LITTLE MARY",
         "subtitle": "",
         "step": "pre",
+        "slug": "mary-little-mary",
         "tags": [
             "vir"
         ],
@@ -3742,6 +4011,7 @@
         "title": "MARY, MOTHER OF THE BURNING WAY",
         "subtitle": "",
         "step": "pre",
+        "slug": "mary-mother-of-the-burning-way",
         "tags": [
             "vir"
         ],
@@ -3756,6 +4026,7 @@
         "title": "MARY, MOTHER OF THE CHURCH",
         "subtitle": "",
         "step": "pre",
+        "slug": "mary-mother-of-the-church",
         "tags": [
             "vir"
         ],
@@ -3772,6 +4043,7 @@
         "title": "MARÍA DE JASNA GÓRA",
         "subtitle": "",
         "step": "pre",
+        "slug": "maria-de-jasna-gora",
         "tags": [
             "vir"
         ],
@@ -3786,6 +4058,7 @@
         "title": "MARÍA, CASA DE BENDICIÓN",
         "subtitle": "",
         "step": "pre",
+        "slug": "maria-casa-de-bendicion",
         "tags": [
             "vin",
             "pas",
@@ -3806,6 +4079,7 @@
         "title": "MARÍA, MADRE DE LA IGLESIA",
         "subtitle": "",
         "step": "pre",
+        "slug": "maria-madre-de-la-iglesia",
         "tags": [
             "com",
             "pan",
@@ -3824,6 +4098,7 @@
         "title": "MARÍA, MADRE DEL CAMINO ARDIENTE",
         "subtitle": "",
         "step": "pre",
+        "slug": "maria-madre-del-camino-ardiente",
         "tags": [
             "vir"
         ],
@@ -3838,6 +4113,7 @@
         "title": "MARÍA, PEQUEÑA MARÍA",
         "subtitle": "",
         "step": "pre",
+        "slug": "maria-pequena-maria",
         "tags": [
             "com",
             "vir"
@@ -3854,6 +4130,7 @@
         "title": "ME ENSEÑARÁS EL CAMINO DE LA VIDA",
         "subtitle": "",
         "step": "pre",
+        "slug": "me-ensenaras-el-camino-de-la-vida",
         "tags": [
             "int",
             "pas",
@@ -3872,6 +4149,7 @@
         "title": "ME HAS SEDUCIDO, SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "me-has-seducido-senor",
         "tags": [],
         "gtags": [],
         "text": "has me seducido senor"
@@ -3882,6 +4160,7 @@
         "title": "ME ROBASTE EL CORAZÓN",
         "subtitle": "",
         "step": "ele",
+        "slug": "me-robaste-el-corazon",
         "tags": [],
         "gtags": [],
         "text": "corazon el me robaste"
@@ -3892,6 +4171,7 @@
         "title": "MIRAD QUÉ ESTUPENDO",
         "subtitle": "",
         "step": "pre",
+        "slug": "mirad-que-estupendo",
         "tags": [
             "pax"
         ],
@@ -3907,6 +4187,7 @@
         "title": "MISERERE",
         "subtitle": "",
         "step": "pre",
+        "slug": "miserere",
         "tags": [],
         "gtags": [
             "g-com"
@@ -3919,6 +4200,7 @@
         "title": "MISERICORDIA MÍA, MISERICORDIA",
         "subtitle": "",
         "step": "pre",
+        "slug": "misericordia-mia-misericordia",
         "tags": [
             "com"
         ],
@@ -3933,6 +4215,7 @@
         "title": "MISERICORDIA, DIOS MÍO",
         "subtitle": "",
         "step": "pre",
+        "slug": "misericordia-dios-mio",
         "tags": [
             "com"
         ],
@@ -3947,6 +4230,7 @@
         "title": "MOTHER, MOTHER CITY OF GOD",
         "subtitle": "",
         "step": "cat",
+        "slug": "mother-mother-city-of-god",
         "tags": [],
         "gtags": [
             "g-fin",
@@ -3960,6 +4244,7 @@
         "title": "MUCH HAVE THEY PERSECUTED ME",
         "subtitle": "",
         "step": "pre",
+        "slug": "much-have-they-persecuted-me",
         "tags": [],
         "gtags": [],
         "text": "have me much persecuted they"
@@ -3970,6 +4255,7 @@
         "title": "MUCHO ME HAN PERSEGUIDO",
         "subtitle": "",
         "step": "pre",
+        "slug": "mucho-me-han-perseguido",
         "tags": [],
         "gtags": [],
         "text": "han me mucho perseguido"
@@ -3980,6 +4266,7 @@
         "title": "MY BELOVED IS TO ME",
         "subtitle": "",
         "step": "ele",
+        "slug": "my-beloved-is-to-me",
         "tags": [],
         "gtags": [],
         "text": "beloved is me my to"
@@ -3990,6 +4277,7 @@
         "title": "NINGUNO PUEDE SERVIR A DOS SEÑORES",
         "subtitle": "",
         "step": "cat",
+        "slug": "ninguno-puede-servir-a-dos-senores",
         "tags": [],
         "gtags": [],
         "text": "a dos ninguno puede senores servir"
@@ -4000,6 +4288,7 @@
         "title": "NO ESTÁ AQUÍ, RESUCITÓ",
         "subtitle": "",
         "step": "pre",
+        "slug": "no-esta-aqui-resucito",
         "tags": [
             "pas",
             "pen"
@@ -4016,6 +4305,7 @@
         "title": "NO HAY EN ÉL PARECER",
         "subtitle": "",
         "step": "pre",
+        "slug": "no-hay-en-el-parecer",
         "tags": [
             "pan"
         ],
@@ -4030,6 +4320,7 @@
         "title": "NO ONE CAN SERVE TWO MASTERS",
         "subtitle": "",
         "step": "cat",
+        "slug": "no-one-can-serve-two-masters",
         "tags": [],
         "gtags": [],
         "text": "can masters no one serve two"
@@ -4040,6 +4331,7 @@
         "title": "NO RESISTÁIS AL MAL",
         "subtitle": "",
         "step": "cat",
+        "slug": "no-resistais-al-mal",
         "tags": [],
         "gtags": [],
         "text": "al mal no resistais"
@@ -4050,6 +4342,7 @@
         "title": "NO SUFRAS POR LOS MALVADOS",
         "subtitle": "",
         "step": "cat",
+        "slug": "no-sufras-por-los-malvados",
         "tags": [
             "com"
         ],
@@ -4064,6 +4357,7 @@
         "title": "NOLI ME TANGERE",
         "subtitle": "",
         "step": "ele",
+        "slug": "noli-me-tangere",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -4077,6 +4371,7 @@
         "title": "NOLI ME TANGERE",
         "subtitle": "",
         "step": "pre",
+        "slug": "noli-me-tangere",
         "tags": [
             "pas",
             "pen"
@@ -4093,6 +4388,7 @@
         "title": "O GOD, BY YOUR NAME SAVE ME",
         "subtitle": "",
         "step": "pre",
+        "slug": "o-god-by-your-name-save-me",
         "tags": [],
         "gtags": [],
         "text": "by god me name o save your"
@@ -4103,6 +4399,7 @@
         "title": "O GOD, YOU ARE MY GOD",
         "subtitle": "",
         "step": "pre",
+        "slug": "o-god-you-are-my-god",
         "tags": [],
         "gtags": [],
         "text": "are god my o you"
@@ -4113,6 +4410,7 @@
         "title": "O HEAVENS, RAIN FROM ABOVE",
         "subtitle": "",
         "step": "pre",
+        "slug": "o-heavens-rain-from-above",
         "tags": [],
         "gtags": [],
         "text": "above from heavens o rain"
@@ -4123,6 +4421,7 @@
         "title": "O JESUS, MY LOVE",
         "subtitle": "",
         "step": "ele",
+        "slug": "o-jesus-my-love",
         "tags": [
             "var"
         ],
@@ -4139,6 +4438,7 @@
         "title": "O LORD, DO NOT PUNISH ME IN YOUR ANGER",
         "subtitle": "",
         "step": "pre",
+        "slug": "o-lord-do-not-punish-me-in-your-anger",
         "tags": [],
         "gtags": [
             "g-com"
@@ -4151,6 +4451,7 @@
         "title": "O LORD, HELP ME, LORD",
         "subtitle": "",
         "step": "ele",
+        "slug": "o-lord-help-me-lord",
         "tags": [
             "var"
         ],
@@ -4166,6 +4467,7 @@
         "title": "O LORD, MY HEART HAS NO MORE PRETENSIONS",
         "subtitle": "",
         "step": "cat",
+        "slug": "o-lord-my-heart-has-no-more-pretensions",
         "tags": [],
         "gtags": [],
         "text": "has heart lord more my no o pretensions"
@@ -4176,6 +4478,7 @@
         "title": "O LORD, OUR GOD",
         "subtitle": "Psalm 8",
         "step": "pre",
+        "slug": "o-lord-our-god",
         "tags": [],
         "gtags": [
             "g-int"
@@ -4188,6 +4491,7 @@
         "title": "OH CIELOS, LLOVED DE LO ALTO",
         "subtitle": "",
         "step": "pre",
+        "slug": "oh-cielos-lloved-de-lo-alto",
         "tags": [],
         "gtags": [],
         "text": "alto cielos de lloved lo oh"
@@ -4198,6 +4502,7 @@
         "title": "OH DIOS, POR TU NOMBRE SÁLVAME",
         "subtitle": "",
         "step": "pre",
+        "slug": "oh-dios-por-tu-nombre-salvame",
         "tags": [],
         "gtags": [],
         "text": "dios nombre oh por salvame tu"
@@ -4208,6 +4513,7 @@
         "title": "OH DIOS, TÚ ERES MI DIOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "oh-dios-tu-eres-mi-dios",
         "tags": [],
         "gtags": [],
         "text": "dios eres mi oh tu"
@@ -4218,6 +4524,7 @@
         "title": "OH JESÚS, AMOR MÍO",
         "subtitle": "",
         "step": "pre",
+        "slug": "oh-jesus-amor-mio",
         "tags": [
             "com",
             "pan"
@@ -4235,6 +4542,7 @@
         "title": "OH LORD, YOU ARE MY GOD",
         "subtitle": "",
         "step": "pre",
+        "slug": "oh-lord-you-are-my-god",
         "tags": [],
         "gtags": [
             "g-com"
@@ -4247,6 +4555,7 @@
         "title": "OH MUERTE, ¿DÓNDE ESTÁ TU VICTORIA?",
         "subtitle": "",
         "step": "pre",
+        "slug": "oh-muerte-donde-esta-tu-victoria",
         "tags": [
             "vin",
             "pas",
@@ -4265,6 +4574,7 @@
         "title": "OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO",
         "subtitle": "",
         "step": "cat",
+        "slug": "oh-senor-mi-corazon-ya-no-es-ambicioso",
         "tags": [],
         "gtags": [],
         "text": "ambicioso corazon es mi no oh senor ya"
@@ -4275,6 +4585,7 @@
         "title": "OH SEÑOR, NUESTRO DIOS",
         "subtitle": "Sal 8",
         "step": "pre",
+        "slug": "oh-senor-nuestro-dios",
         "tags": [
             "int"
         ],
@@ -4289,6 +4600,7 @@
         "title": "OS TOMARÉ DE ENTRE LAS NACIONES",
         "subtitle": "",
         "step": "pre",
+        "slug": "os-tomare-de-entre-las-naciones",
         "tags": [
             "int",
             "pas",
@@ -4307,6 +4619,7 @@
         "title": "PADRE NUESTRO",
         "subtitle": "",
         "step": "lit",
+        "slug": "padre-nuestro",
         "tags": [],
         "gtags": [
             "g-hym"
@@ -4319,6 +4632,7 @@
         "title": "PALOMA INCORRUPTA",
         "subtitle": "",
         "step": "pre",
+        "slug": "paloma-incorrupta",
         "tags": [
             "pas",
             "pen",
@@ -4337,6 +4651,7 @@
         "title": "PENITENTIAL LITANIES",
         "subtitle": "",
         "step": "lit",
+        "slug": "penitential-litanies",
         "tags": [
             "heb",
             "poe"
@@ -4353,6 +4668,7 @@
         "title": "PENTECOST",
         "subtitle": "",
         "step": "pre",
+        "slug": "pentecost",
         "tags": [
             "var"
         ],
@@ -4370,6 +4686,7 @@
         "title": "PENTECOSTÉS",
         "subtitle": "",
         "step": "pre",
+        "slug": "pentecostes",
         "tags": [
             "vin",
             "pas",
@@ -4389,6 +4706,7 @@
         "title": "PLEGARIA EUCARÍSTICA II - MODELO I",
         "subtitle": "",
         "step": "lit",
+        "slug": "plegaria-eucaristica-ii-modelo-i",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -4401,6 +4719,7 @@
         "title": "PLEGARIA EUCARÍSTICA II - MODELO II",
         "subtitle": "(1987)",
         "step": "lit",
+        "slug": "plegaria-eucaristica-ii-modelo-ii",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -4413,6 +4732,7 @@
         "title": "PLEGARIA EUCARÍSTICA II - MODELO II",
         "subtitle": "(1987)",
         "step": "lit",
+        "slug": "plegaria-eucaristica-ii-modelo-ii-1987",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -4425,6 +4745,7 @@
         "title": "PLEGARIA EUCARÍSTICA IV",
         "subtitle": "(1988)",
         "step": "lit",
+        "slug": "plegaria-eucaristica-iv",
         "tags": [],
         "gtags": [],
         "text": "eucaristica iv plegaria"
@@ -4435,6 +4756,7 @@
         "title": "POR EL AMOR DE MIS AMIGOS -",
         "subtitle": "",
         "step": "pre",
+        "slug": "por-el-amor-de-mis-amigos",
         "tags": [
             "pax"
         ],
@@ -4449,6 +4771,7 @@
         "title": "POR QUÉ ESTA NOCHE ES DIFERENTE",
         "subtitle": "",
         "step": "pre",
+        "slug": "por-que-esta-noche-es-diferente",
         "tags": [
             "lib",
             "pas",
@@ -4468,6 +4791,7 @@
         "title": "POR QUÉ LAS GENTES CONJURAN",
         "subtitle": "",
         "step": "pre",
+        "slug": "por-que-las-gentes-conjuran",
         "tags": [
             "com"
         ],
@@ -4482,6 +4806,7 @@
         "title": "PORQUE MI YUGO ES SUAVE",
         "subtitle": "",
         "step": "pre",
+        "slug": "porque-mi-yugo-es-suave",
         "tags": [
             "com"
         ],
@@ -4496,6 +4821,7 @@
         "title": "PRAISE THE LORD ALL PEOPLES OF THE EARTH",
         "subtitle": "",
         "step": "pre",
+        "slug": "praise-the-lord-all-peoples-of-the-earth",
         "tags": [],
         "gtags": [
             "g-int"
@@ -4508,6 +4834,7 @@
         "title": "PRAISE THE LORD FROM THE HEAVENS",
         "subtitle": "",
         "step": "pre",
+        "slug": "praise-the-lord-from-the-heavens",
         "tags": [],
         "gtags": [],
         "text": "from heavens lord praise the"
@@ -4518,6 +4845,7 @@
         "title": "PRAYER OF THE FAITHFUL IN A SOLEMNITY",
         "subtitle": "",
         "step": "lit",
+        "slug": "prayer-of-the-faithful-in-a-solemnity",
         "tags": [
             "var"
         ],
@@ -4532,6 +4860,7 @@
         "title": "PREFACE",
         "subtitle": "",
         "step": "lit",
+        "slug": "preface",
         "tags": [
             "pas"
         ],
@@ -4546,6 +4875,7 @@
         "title": "PREFACIO PARA ADVIENTO Y NAVIDAD",
         "subtitle": "",
         "step": "lit",
+        "slug": "prefacio-para-adviento-y-navidad",
         "tags": [],
         "gtags": [],
         "text": "adviento navidad para prefacio y"
@@ -4556,6 +4886,7 @@
         "title": "PREFACIO PARA EL TIEMPO PASCUAL",
         "subtitle": "",
         "step": "lit",
+        "slug": "prefacio-para-el-tiempo-pascual",
         "tags": [],
         "gtags": [
             "g-pas"
@@ -4568,6 +4899,7 @@
         "title": "PREGÓN PASCUAL",
         "subtitle": "",
         "step": "lit",
+        "slug": "pregon-pascual",
         "tags": [],
         "gtags": [
             "g-pas"
@@ -4580,6 +4912,7 @@
         "title": "PSALMODY FOR THE RESPONSORIAL PSALM",
         "subtitle": "",
         "step": "lit",
+        "slug": "psalmody-for-the-responsorial-psalm",
         "tags": [],
         "gtags": [],
         "text": "for psalm psalmody responsorial the"
@@ -4590,6 +4923,7 @@
         "title": "QUIERO ANDAR, MADRE, A JERUSALÉN",
         "subtitle": "",
         "step": "pre",
+        "slug": "quiero-andar-madre-a-jerusalen",
         "tags": [
             "fin",
             "pas",
@@ -4609,6 +4943,7 @@
         "title": "QUIERO CANTAR",
         "subtitle": "Sal 57 (56)",
         "step": "pre",
+        "slug": "quiero-cantar",
         "tags": [
             "com"
         ],
@@ -4623,6 +4958,7 @@
         "title": "QUIÉN ES ESTA QUE SUBE DEL DESIERTO",
         "subtitle": "",
         "step": "pre",
+        "slug": "quien-es-esta-que-sube-del-desierto",
         "tags": [
             "vin",
             "fin",
@@ -4643,6 +4979,7 @@
         "title": "QUIÉN NOS SEPARARÁ",
         "subtitle": "",
         "step": "pre",
+        "slug": "quien-nos-separara",
         "tags": [
             "vin",
             "com"
@@ -4659,6 +4996,7 @@
         "title": "QUÉ AMABLES SON TUS MORADAS",
         "subtitle": "",
         "step": "pre",
+        "slug": "que-amables-son-tus-moradas",
         "tags": [
             "com",
             "int"
@@ -4675,6 +5013,7 @@
         "title": "QUÉ ESTUPENDO, QUÉ ALEGRÍA",
         "subtitle": "",
         "step": "pre",
+        "slug": "que-estupendo-que-alegria",
         "tags": [
             "pax"
         ],
@@ -4689,6 +5028,7 @@
         "title": "RESUCITÓ",
         "subtitle": "",
         "step": "pre",
+        "slug": "resucito",
         "tags": [
             "vin",
             "pas",
@@ -4707,6 +5047,7 @@
         "title": "RESURREXIT",
         "subtitle": "",
         "step": "pre",
+        "slug": "resurrexit",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -4720,6 +5061,7 @@
         "title": "RESURREXIT",
         "subtitle": "",
         "step": "pre",
+        "slug": "resurrexit",
         "tags": [
             "pas",
             "pen"
@@ -4736,6 +5078,7 @@
         "title": "SALMODIA PARA EL EVANGELIO",
         "subtitle": "",
         "step": "lit",
+        "slug": "salmodia-para-el-evangelio",
         "tags": [],
         "gtags": [],
         "text": "el evangelio para salmodia"
@@ -4746,6 +5089,7 @@
         "title": "SALMODIA PARA EL ROSARIO",
         "subtitle": "",
         "step": "lit",
+        "slug": "salmodia-para-el-rosario",
         "tags": [],
         "gtags": [],
         "text": "el para rosario salmodia"
@@ -4756,6 +5100,7 @@
         "title": "SALMODIA PARA EL SALMO RESPONSORIAL",
         "subtitle": "",
         "step": "lit",
+        "slug": "salmodia-para-el-salmo-responsorial",
         "tags": [],
         "gtags": [],
         "text": "el para responsorial salmo salmodia"
@@ -4766,6 +5111,7 @@
         "title": "SALMODIAS PARA LA ORACIÓN DE LOS FIELES",
         "subtitle": "",
         "step": "lit",
+        "slug": "salmodias-para-la-oracion-de-los-fieles",
         "tags": [],
         "gtags": [
             "g-var"
@@ -4778,6 +5124,7 @@
         "title": "SALMODIAS PARA LAUDES",
         "subtitle": "",
         "step": "lit",
+        "slug": "salmodias-para-laudes",
         "tags": [],
         "gtags": [],
         "text": "laudes para salmodias"
@@ -4788,6 +5135,7 @@
         "title": "SALVE, REINA DE LOS CIELOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "salve-reina-de-los-cielos",
         "tags": [
             "vir"
         ],
@@ -4803,6 +5151,7 @@
         "title": "SANTO 1982",
         "subtitle": "",
         "step": "lit",
+        "slug": "santo-1982",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -4815,6 +5164,7 @@
         "title": "SANTO 1988",
         "subtitle": "",
         "step": "lit",
+        "slug": "santo-1988",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -4827,6 +5177,7 @@
         "title": "SANTO HEBREO",
         "subtitle": "",
         "step": "lit",
+        "slug": "santo-hebreo",
         "tags": [],
         "gtags": [
             "g-heb",
@@ -4840,6 +5191,7 @@
         "title": "SANTO PALESTINA 74",
         "subtitle": "",
         "step": "lit",
+        "slug": "santo-palestina-74",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -4853,6 +5205,7 @@
         "title": "SANTO PALOMERAS 65",
         "subtitle": "",
         "step": "lit",
+        "slug": "santo-palomeras-65",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -4865,6 +5218,7 @@
         "title": "SANTO ROMA 77",
         "subtitle": "",
         "step": "lit",
+        "slug": "santo-roma-77",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -4877,6 +5231,7 @@
         "title": "SAYS THE LORD TO MY LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "says-the-lord-to-my-lord",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -4890,6 +5245,7 @@
         "title": "SE ENCONTRARON DOS ÁNGELES",
         "subtitle": "",
         "step": "pre",
+        "slug": "se-encontraron-dos-angeles",
         "tags": [
             "lib",
             "pax"
@@ -4907,6 +5263,7 @@
         "title": "SEQUENCE OF PENTECOST",
         "subtitle": "",
         "step": "lit",
+        "slug": "sequence-of-pentecost",
         "tags": [
             "hym"
         ],
@@ -4923,6 +5280,7 @@
         "title": "SERMÓN DE LA MONTAÑA",
         "subtitle": "",
         "step": "pre",
+        "slug": "sermon-de-la-montana",
         "tags": [],
         "gtags": [],
         "text": "de la montana sermon"
@@ -4933,6 +5291,7 @@
         "title": "SEÑOR, AYÚDAME A NO DUDAR DE TI",
         "subtitle": "",
         "step": "pre",
+        "slug": "senor-ayudame-a-no-dudar-de-ti",
         "tags": [
             "com"
         ],
@@ -4948,6 +5307,7 @@
         "title": "SEÑOR, NO ME CORRIJAS EN TU CÓLERA",
         "subtitle": "",
         "step": "pre",
+        "slug": "senor-no-me-corrijas-en-tu-colera",
         "tags": [
             "com"
         ],
@@ -4962,6 +5322,7 @@
         "title": "SEÑOR, TÚ ME ESCRUTAS Y CONOCES",
         "subtitle": "",
         "step": "cat",
+        "slug": "senor-tu-me-escrutas-y-conoces",
         "tags": [],
         "gtags": [],
         "text": "conoces escrutas me senor tu y"
@@ -4972,6 +5333,7 @@
         "title": "SHE-LAMB OF GOD",
         "subtitle": "",
         "step": "ele",
+        "slug": "shelamb-of-god",
         "tags": [
             "vir"
         ],
@@ -4986,6 +5348,7 @@
         "title": "SHEMA ISRAEL",
         "subtitle": "Deut. 6, 4-9",
         "step": "cat",
+        "slug": "shema-israel",
         "tags": [],
         "gtags": [],
         "text": "a abroad adonai all and as band bed children commandment deut do door ehad elohenu fasten first forehead forever gates go god heart house in instill into is israel life like listen live lord love mind my neighbor of on one our resting rise round second shall shema sign strength the them these this to walking when will with words wrist you your yourself"
@@ -4996,6 +5359,7 @@
         "title": "SHEMÁ LSRAEL",
         "subtitle": "Dt 6,4-9",
         "step": "cat",
+        "slug": "shema-lsrael",
         "tags": [],
         "gtags": [],
         "text": "a acuestes adonai al alma ama amaras calle camines casa como con corazon cuando de dios dt ejad el elohenu en ensenalo entre es escucha estas este eterna fuerzas graba hablales hijos igual israel jambas la las levantes lsrael mandamiento manos melisma memorial mismo nuestro ojos palabras palmas por primer projimo puertas segundo senal senor shema te tendras ti toda todas todo tu tus uno vida y"
@@ -5006,6 +5370,7 @@
         "title": "SHEPHERDS, LET US GO",
         "subtitle": "",
         "step": "pre",
+        "slug": "shepherds-let-us-go",
         "tags": [
             "lib"
         ],
@@ -5020,6 +5385,7 @@
         "title": "SHLOM LEJ MARIAM",
         "subtitle": "",
         "step": "pre",
+        "slug": "shlom-lej-mariam",
         "tags": [
             "vir"
         ],
@@ -5034,6 +5400,7 @@
         "title": "SHLOM LEKH MARIAM",
         "subtitle": "",
         "step": "pre",
+        "slug": "shlom-lekh-mariam",
         "tags": [
             "vir"
         ],
@@ -5048,6 +5415,7 @@
         "title": "SHOUT FOR JOY",
         "subtitle": "",
         "step": "pre",
+        "slug": "shout-for-joy",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -5063,6 +5431,7 @@
         "title": "SI EL SEÑOR NO CONSTRUYE LA CASA",
         "subtitle": "",
         "step": "pre",
+        "slug": "si-el-senor-no-construye-la-casa",
         "tags": [
             "int"
         ],
@@ -5077,6 +5446,7 @@
         "title": "SI HABÉIS RESUCITADO CON CRISTO",
         "subtitle": "",
         "step": "pre",
+        "slug": "si-habeis-resucitado-con-cristo",
         "tags": [],
         "gtags": [],
         "text": "con cristo habeis resucitado si"
@@ -5087,6 +5457,7 @@
         "title": "SI HOY ESCUCHÁIS SU VOZ",
         "subtitle": "",
         "step": "pre",
+        "slug": "si-hoy-escuchais-su-voz",
         "tags": [],
         "gtags": [],
         "text": "escuchais hoy si su voz"
@@ -5097,6 +5468,7 @@
         "title": "SI ME HE REFUGIADO EN EL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "si-me-he-refugiado-en-el-senor",
         "tags": [
             "com"
         ],
@@ -5111,6 +5483,7 @@
         "title": "SIT DOWN ALONE AND IN SILENCE",
         "subtitle": "",
         "step": "cat",
+        "slug": "sit-down-alone-and-in-silence",
         "tags": [],
         "gtags": [
             "g-com"
@@ -5123,6 +5496,7 @@
         "title": "SIÉNTATE SOLITARIO Y SILENCIOSO",
         "subtitle": "",
         "step": "cat",
+        "slug": "sientate-solitario-y-silencioso",
         "tags": [
             "com"
         ],
@@ -5137,6 +5511,7 @@
         "title": "SIÓN, MADRE DE TODOS LOS PUEBLOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "sion-madre-de-todos-los-pueblos",
         "tags": [
             "fin",
             "vir"
@@ -5153,6 +5528,7 @@
         "title": "SOLA A SOLO",
         "subtitle": "",
         "step": "pre",
+        "slug": "sola-a-solo",
         "tags": [
             "com",
             "pan",
@@ -5171,6 +5547,7 @@
         "title": "SONG OF BALAAM",
         "subtitle": "",
         "step": "pre",
+        "slug": "song-of-balaam",
         "tags": [],
         "gtags": [
             "g-fin",
@@ -5184,6 +5561,7 @@
         "title": "SONG OF DEBORAH",
         "subtitle": "",
         "step": "cat",
+        "slug": "song-of-deborah",
         "tags": [],
         "gtags": [
             "g-vir"
@@ -5196,6 +5574,7 @@
         "title": "SONG OF MOSES",
         "subtitle": "Ex. 15, 1-18",
         "step": "pre",
+        "slug": "song-of-moses",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -5209,6 +5588,7 @@
         "title": "SONG OF THE CHILDREN IN THE EASTER VIGIL",
         "subtitle": "",
         "step": "pre",
+        "slug": "song-of-the-children-in-the-easter-vigil",
         "tags": [
             "lib",
             "heb"
@@ -5227,6 +5607,7 @@
         "title": "SONG OF THE HARVESTERS",
         "subtitle": "",
         "step": "pre",
+        "slug": "song-of-the-harvesters",
         "tags": [],
         "gtags": [
             "g-fin"
@@ -5239,6 +5620,7 @@
         "title": "STABAT MATER",
         "subtitle": "",
         "step": "pre",
+        "slug": "stabat-mater",
         "tags": [
             "hym",
             "vir"
@@ -5257,6 +5639,7 @@
         "title": "STABAT MATER DOLOROSA",
         "subtitle": "",
         "step": "pre",
+        "slug": "stabat-mater-dolorosa",
         "tags": [
             "com",
             "pan",
@@ -5276,6 +5659,7 @@
         "title": "SUBA EL ESPOSO AL LEÑO DE SU TÁLAMO",
         "subtitle": "",
         "step": "ele",
+        "slug": "suba-el-esposo-al-leno-de-su-talamo",
         "tags": [],
         "gtags": [],
         "text": "al de el esposo leno su suba talamo"
@@ -5286,6 +5670,7 @@
         "title": "SUBE DIOS ENTRE ACLAMACIONES",
         "subtitle": "",
         "step": "pre",
+        "slug": "sube-dios-entre-aclamaciones",
         "tags": [
             "pas",
             "pen",
@@ -5304,6 +5689,7 @@
         "title": "SWORD, BURNISHED TO KILL",
         "subtitle": "",
         "step": "pre",
+        "slug": "sword-burnished-to-kill",
         "tags": [
             "com",
             "vir"
@@ -5320,6 +5706,7 @@
         "title": "TAKE ME TO HEAVEN",
         "subtitle": "",
         "step": "ele",
+        "slug": "take-me-to-heaven",
         "tags": [
             "var"
         ],
@@ -5337,6 +5724,7 @@
         "title": "TASTE AND SEE",
         "subtitle": "",
         "step": "pre",
+        "slug": "taste-and-see",
         "tags": [],
         "gtags": [],
         "text": "and see taste"
@@ -5347,6 +5735,7 @@
         "title": "TE DEUM",
         "subtitle": "",
         "step": "lit",
+        "slug": "te-deum",
         "tags": [
             "hym"
         ],
@@ -5361,6 +5750,7 @@
         "title": "TE DEUM",
         "subtitle": "",
         "step": "lit",
+        "slug": "te-deum",
         "tags": [],
         "gtags": [
             "g-hym"
@@ -5373,6 +5763,7 @@
         "title": "TE ESTOY LLAMANDO, SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "te-estoy-llamando-senor",
         "tags": [
             "com"
         ],
@@ -5387,6 +5778,7 @@
         "title": "TE HE MANIFESTADO MI PECADO",
         "subtitle": "",
         "step": "pre",
+        "slug": "te-he-manifestado-mi-pecado",
         "tags": [
             "com"
         ],
@@ -5401,6 +5793,7 @@
         "title": "TELL ALL THE FAINT-HEARTED",
         "subtitle": "",
         "step": "pre",
+        "slug": "tell-all-the-fainthearted",
         "tags": [],
         "gtags": [
             "g-int"
@@ -5413,6 +5806,7 @@
         "title": "THE ARMOR OF GOD",
         "subtitle": "",
         "step": "cat",
+        "slug": "the-armor-of-god",
         "tags": [],
         "gtags": [
             "g-com"
@@ -5425,6 +5819,7 @@
         "title": "THE CHILDREN OF BETHLEHEM",
         "subtitle": "",
         "step": "pre",
+        "slug": "the-children-of-bethlehem",
         "tags": [
             "lib"
         ],
@@ -5439,6 +5834,7 @@
         "title": "THE DARK NIGHT",
         "subtitle": "",
         "step": "ele",
+        "slug": "the-dark-night",
         "tags": [
             "var"
         ],
@@ -5453,6 +5849,7 @@
         "title": "THE DOVE HOVERED OVER",
         "subtitle": "",
         "step": "ele",
+        "slug": "the-dove-hovered-over",
         "tags": [
             "sal"
         ],
@@ -5467,6 +5864,7 @@
         "title": "THE FOOLISH ONE THINKS THERE IS NO GOD",
         "subtitle": "",
         "step": "pre",
+        "slug": "the-foolish-one-thinks-there-is-no-god",
         "tags": [],
         "gtags": [],
         "text": "foolish god is no one the there thinks"
@@ -5477,6 +5875,7 @@
         "title": "THE KINGS SHALL SEE YOU",
         "subtitle": "",
         "step": "cat",
+        "slug": "the-kings-shall-see-you",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -5490,6 +5889,7 @@
         "title": "THE LORD ANNOUNCES A GOOD NEWS",
         "subtitle": "",
         "step": "pre",
+        "slug": "the-lord-announces-a-good-news",
         "tags": [],
         "gtags": [
             "g-int"
@@ -5502,6 +5902,7 @@
         "title": "THE LORD HAS GIVEN ME",
         "subtitle": "",
         "step": "con",
+        "slug": "the-lord-has-given-me",
         "tags": [
             "pan"
         ],
@@ -5516,6 +5917,7 @@
         "title": "THE LORD IS MY LIGHT AND MY SALVATION",
         "subtitle": "",
         "step": "pre",
+        "slug": "the-lord-is-my-light-and-my-salvation",
         "tags": [],
         "gtags": [],
         "text": "and is light lord my salvation the"
@@ -5526,6 +5928,7 @@
         "title": "THE LORD IS MY SHEPHERD",
         "subtitle": "",
         "step": "pre",
+        "slug": "the-lord-is-my-shepherd",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -5540,6 +5943,7 @@
         "title": "THE MARCH IS HARD",
         "subtitle": "",
         "step": "pre",
+        "slug": "the-march-is-hard",
         "tags": [
             "var"
         ],
@@ -5555,6 +5959,7 @@
         "title": "THE MESSIAH, LION TO VANQUISH",
         "subtitle": "",
         "step": "pre",
+        "slug": "the-messiah-lion-to-vanquish",
         "tags": [
             "pan"
         ],
@@ -5571,6 +5976,7 @@
         "title": "THE PEOPLE WHO WALKED IN DARKNESS",
         "subtitle": "",
         "step": "pre",
+        "slug": "the-people-who-walked-in-darkness",
         "tags": [],
         "gtags": [],
         "text": "darkness in people the walked who"
@@ -5581,6 +5987,7 @@
         "title": "THE SAME GOD",
         "subtitle": "",
         "step": "ele",
+        "slug": "the-same-god",
         "tags": [],
         "gtags": [
             "g-vin"
@@ -5593,6 +6000,7 @@
         "title": "THE SERMON ON THE MOUNTAIN",
         "subtitle": "",
         "step": "ele",
+        "slug": "the-sermon-on-the-mountain",
         "tags": [],
         "gtags": [],
         "text": "mountain on sermon the"
@@ -5603,6 +6011,7 @@
         "title": "THE SONG OF THE LAMB",
         "subtitle": "",
         "step": "con",
+        "slug": "the-song-of-the-lamb",
         "tags": [
             "pan"
         ],
@@ -5619,6 +6028,7 @@
         "title": "THE SOWER",
         "subtitle": "",
         "step": "cat",
+        "slug": "the-sower",
         "tags": [],
         "gtags": [],
         "text": "sower the"
@@ -5629,6 +6039,7 @@
         "title": "THE SPIRIT OF THE LORD IS UPON ME",
         "subtitle": "",
         "step": "cat",
+        "slug": "the-spirit-of-the-lord-is-upon-me",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -5644,6 +6055,7 @@
         "title": "THE VOICE OF MY BELOVED",
         "subtitle": "",
         "step": "ele",
+        "slug": "the-voice-of-my-beloved",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -5658,6 +6070,7 @@
         "title": "THE WHITE HORSE",
         "subtitle": "",
         "step": "cat",
+        "slug": "the-white-horse",
         "tags": [],
         "gtags": [
             "g-int",
@@ -5672,6 +6085,7 @@
         "title": "THERE WERE TWO ANGELS",
         "subtitle": "",
         "step": "pre",
+        "slug": "there-were-two-angels",
         "tags": [
             "lib",
             "heb"
@@ -5689,6 +6103,7 @@
         "title": "THIS IS MY COMMANDMENT",
         "subtitle": "",
         "step": "ele",
+        "slug": "this-is-my-commandment",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -5702,6 +6117,7 @@
         "title": "THUS SPEAKS THE AMEN",
         "subtitle": "",
         "step": "cat",
+        "slug": "thus-speaks-the-amen",
         "tags": [],
         "gtags": [
             "g-com"
@@ -5714,6 +6130,7 @@
         "title": "TO THE PASCHAL VICTIM",
         "subtitle": "",
         "step": "pre",
+        "slug": "to-the-paschal-victim",
         "tags": [
             "hym"
         ],
@@ -5730,6 +6147,7 @@
         "title": "TO YOU I LIFT UP MY EYES",
         "subtitle": "",
         "step": "pre",
+        "slug": "to-you-i-lift-up-my-eyes",
         "tags": [],
         "gtags": [
             "g-com"
@@ -5742,6 +6160,7 @@
         "title": "TO YOU O LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "to-you-o-lord",
         "tags": [],
         "gtags": [
             "g-com"
@@ -5754,6 +6173,7 @@
         "title": "TO YOU, O LORD, I LIFT UP MY SOUL",
         "subtitle": "",
         "step": "pre",
+        "slug": "to-you-o-lord-i-lift-up-my-soul",
         "tags": [],
         "gtags": [
             "g-com"
@@ -5766,6 +6186,7 @@
         "title": "TO YOU, O LORD, WITH MY VOICE I CRY FOR HELP",
         "subtitle": "",
         "step": "pre",
+        "slug": "to-you-o-lord-with-my-voice-i-cry-for-help",
         "tags": [],
         "gtags": [
             "g-com"
@@ -5778,6 +6199,7 @@
         "title": "TOWARDS YOU HOLY CITY",
         "subtitle": "",
         "step": "pre",
+        "slug": "towards-you-holy-city",
         "tags": [
             "var"
         ],
@@ -5793,6 +6215,7 @@
         "title": "TÚ ERES MI ESPERANZA, SEÑOR",
         "subtitle": "",
         "step": "cat",
+        "slug": "tu-eres-mi-esperanza-senor",
         "tags": [],
         "gtags": [
             "g-sal"
@@ -5805,6 +6228,7 @@
         "title": "TÚ HAS CUBIERTO DE VERGÜENZA LA MUERTE",
         "subtitle": "",
         "step": "pre",
+        "slug": "tu-has-cubierto-de-verguenza-la-muerte",
         "tags": [
             "pan",
             "pas",
@@ -5825,6 +6249,7 @@
         "title": "TÚ QUE ERES FIEL",
         "subtitle": "",
         "step": "pre",
+        "slug": "tu-que-eres-fiel",
         "tags": [
             "com",
             "int"
@@ -5841,6 +6266,7 @@
         "title": "UN RETOÑO BROTA DEL TRONCO DE JESÉ",
         "subtitle": "",
         "step": "pre",
+        "slug": "un-retono-brota-del-tronco-de-jese",
         "tags": [
             "vin",
             "pas",
@@ -5859,6 +6285,7 @@
         "title": "UNA GRAN SEÑAL",
         "subtitle": "",
         "step": "pre",
+        "slug": "una-gran-senal",
         "tags": [
             "fin",
             "pas",
@@ -5879,6 +6306,7 @@
         "title": "URÍ URÍ URÁ",
         "subtitle": "",
         "step": "pre",
+        "slug": "uri-uri-ura",
         "tags": [
             "lib"
         ],
@@ -5893,6 +6321,7 @@
         "title": "URÍ, URÍ, URÁ",
         "subtitle": "",
         "step": "pre",
+        "slug": "uri-uri-ura",
         "tags": [
             "lib"
         ],
@@ -5907,6 +6336,7 @@
         "title": "VAMOS YA, PASTORES",
         "subtitle": "",
         "step": "pre",
+        "slug": "vamos-ya-pastores",
         "tags": [
             "lib"
         ],
@@ -5921,6 +6351,7 @@
         "title": "VEN DEL LÍBANO",
         "subtitle": "",
         "step": "pre",
+        "slug": "ven-del-libano",
         "tags": [
             "vin",
             "int",
@@ -5941,6 +6372,7 @@
         "title": "VEN, ESPÍRITU SANTO",
         "subtitle": "",
         "step": "pre",
+        "slug": "ven-espiritu-santo",
         "tags": [
             "pas",
             "pen"
@@ -5958,6 +6390,7 @@
         "title": "VEN, HIJO DEL HOMBRE",
         "subtitle": "",
         "step": "pre",
+        "slug": "ven-hijo-del-hombre",
         "tags": [],
         "gtags": [],
         "text": "del hijo hombre ven"
@@ -5968,6 +6401,7 @@
         "title": "VENI CREATOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "veni-creator",
         "tags": [
             "pas",
             "pen"
@@ -5985,6 +6419,7 @@
         "title": "VIENE EL SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "viene-el-senor",
         "tags": [],
         "gtags": [
             "g-var"
@@ -5997,6 +6432,7 @@
         "title": "VIRGEN DE LA MARAVILLA",
         "subtitle": "",
         "step": "pre",
+        "slug": "virgen-de-la-maravilla",
         "tags": [
             "vir"
         ],
@@ -6011,6 +6447,7 @@
         "title": "VIRGIN OF WONDER",
         "subtitle": "",
         "step": "pre",
+        "slug": "virgin-of-wonder",
         "tags": [
             "vir"
         ],
@@ -6025,6 +6462,7 @@
         "title": "VIVID ALEGRES",
         "subtitle": "",
         "step": "pre",
+        "slug": "vivid-alegres",
         "tags": [],
         "gtags": [],
         "text": "alegres vivid"
@@ -6035,6 +6473,7 @@
         "title": "VOSOTROS SOIS LA LUZ DEL MUNDO",
         "subtitle": "",
         "step": "pre",
+        "slug": "vosotros-sois-la-luz-del-mundo",
         "tags": [],
         "gtags": [],
         "text": "del la luz mundo sois vosotros"
@@ -6045,6 +6484,7 @@
         "title": "WHEN I AWAKE",
         "subtitle": "",
         "step": "pre",
+        "slug": "when-i-awake",
         "tags": [],
         "gtags": [
             "g-com"
@@ -6057,6 +6497,7 @@
         "title": "WHEN ISRAEL CAME OUT OF EGYPT",
         "subtitle": "",
         "step": "pre",
+        "slug": "when-israel-came-out-of-egypt",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -6070,6 +6511,7 @@
         "title": "WHEN ISRAEL WAS A CHILD",
         "subtitle": "",
         "step": "pre",
+        "slug": "when-israel-was-a-child",
         "tags": [],
         "gtags": [],
         "text": "a child israel was when"
@@ -6080,6 +6522,7 @@
         "title": "WHEN THE LORD",
         "subtitle": "",
         "step": "pre",
+        "slug": "when-the-lord",
         "tags": [],
         "gtags": [
             "g-com",
@@ -6093,6 +6536,7 @@
         "title": "WHILE I WAS SLEEPING",
         "subtitle": "",
         "step": "ele",
+        "slug": "while-i-was-sleeping",
         "tags": [],
         "gtags": [
             "g-vin"
@@ -6105,6 +6549,7 @@
         "title": "WHO IS SHE",
         "subtitle": "",
         "step": "ele",
+        "slug": "who-is-she",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -6120,6 +6565,7 @@
         "title": "WHO IS THIS WHO COMES FROM EDOM - THE WINEPRESSER",
         "subtitle": "",
         "step": "con",
+        "slug": "who-is-this-who-comes-from-edom-the-winepresser",
         "tags": [
             "pan"
         ],
@@ -6134,6 +6580,7 @@
         "title": "WHO WILL SEPARATE US",
         "subtitle": "",
         "step": "pre",
+        "slug": "who-will-separate-us",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -6147,6 +6594,7 @@
         "title": "WHY DO THE NATIONS CONSPIRE?",
         "subtitle": "",
         "step": "pre",
+        "slug": "why-do-the-nations-conspire",
         "tags": [],
         "gtags": [
             "g-com"
@@ -6159,6 +6607,7 @@
         "title": "YA VIENE MI DIOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "ya-viene-mi-dios",
         "tags": [
             "lib"
         ],
@@ -6173,6 +6622,7 @@
         "title": "YAHVEH, TÚ ERES MI DIOS",
         "subtitle": "",
         "step": "pre",
+        "slug": "yahveh-tu-eres-mi-dios",
         "tags": [
             "com"
         ],
@@ -6187,6 +6637,7 @@
         "title": "YO TE AMO, SEÑOR",
         "subtitle": "",
         "step": "pre",
+        "slug": "yo-te-amo-senor",
         "tags": [
             "int"
         ],
@@ -6201,6 +6652,7 @@
         "title": "YO VENGO A REUNIR",
         "subtitle": "",
         "step": "pre",
+        "slug": "yo-vengo-a-reunir",
         "tags": [
             "int",
             "fin"
@@ -6217,6 +6669,7 @@
         "title": "YOU ARE BEAUTIFUL",
         "subtitle": "",
         "step": "pre",
+        "slug": "you-are-beautiful",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -6230,6 +6683,7 @@
         "title": "YOU ARE BEAUTIFUL, MY BELOVED, AS TIRZAH",
         "subtitle": "",
         "step": "ele",
+        "slug": "you-are-beautiful-my-beloved-as-tirzah",
         "tags": [],
         "gtags": [
             "g-pas",
@@ -6243,6 +6697,7 @@
         "title": "YOU ARE MY HOPE, O LORD",
         "subtitle": "",
         "step": "ele",
+        "slug": "you-are-my-hope-o-lord",
         "tags": [
             "sal"
         ],
@@ -6257,6 +6712,7 @@
         "title": "YOU ARE THE WAY",
         "subtitle": "",
         "step": "cat",
+        "slug": "you-are-the-way",
         "tags": [
             "sal"
         ],
@@ -6271,6 +6727,7 @@
         "title": "YOU HAVE SEDUCED ME, O LORD",
         "subtitle": "",
         "step": "ele",
+        "slug": "you-have-seduced-me-o-lord",
         "tags": [],
         "gtags": [],
         "text": "have lord me o seduced you"
@@ -6281,6 +6738,7 @@
         "title": "YOU STOLE MY HEART",
         "subtitle": "",
         "step": "ele",
+        "slug": "you-stole-my-heart",
         "tags": [],
         "gtags": [],
         "text": "heart my stole you"
@@ -6291,6 +6749,7 @@
         "title": "YOU WHO DWELL IN THE GARDENS",
         "subtitle": "",
         "step": "ele",
+        "slug": "you-who-dwell-in-the-gardens",
         "tags": [],
         "gtags": [
             "g-vin",
@@ -6306,6 +6765,7 @@
         "title": "YOU WILL SHOW ME THE PATH OF LIFE",
         "subtitle": "",
         "step": "pre",
+        "slug": "you-will-show-me-the-path-of-life",
         "tags": [],
         "gtags": [
             "g-int",
@@ -6320,6 +6780,7 @@
         "title": "ZACCHEUS",
         "subtitle": "",
         "step": "pre",
+        "slug": "zaccheus",
         "tags": [],
         "gtags": [
             "g-com",
@@ -6333,6 +6794,7 @@
         "title": "ZAQUEO",
         "subtitle": "",
         "step": "pre",
+        "slug": "zaqueo",
         "tags": [
             "com",
             "int"
