@@ -83,27 +83,25 @@ let psalms = [];
 let filterSearch = '';
 let toolsOffset = null;
 let player = null;
-let state = { authenticated: false };
+let authenticated = false;
 
 const lang = document.documentElement.lang.toLowerCase();
 
 // STATE ----------------------------------------------------------------------
 
-const stateChangeEvent = new CustomEvent('stateChange', {
-	detail: { newState: null }
+const authEvent = new CustomEvent('authChange', {
+	detail: { newAuth: null }
 });
 
-function changeState(key, value) {
-	state[key] = value;
+function changeAuth(value) {
+	console.log("Changing auth", value);
+	authenticated = value;
     // Update the event detail with the new state
-    stateChangeEvent.detail.newState = state;
+	authEvent.detail.newAuth = authenticated;
     // Dispatch the event
-    document.dispatchEvent(stateChangeEvent);
+	// In main.js or another script
+	document.dispatchEvent(authEvent);
 }
-
-document.addEventListener('stateChange', (event) => {
-    // console.log('State changed to:', event.detail.newState);
-});
 
 // VALIDATION -----------------------------------------------------------------
 
