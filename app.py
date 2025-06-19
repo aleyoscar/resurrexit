@@ -39,6 +39,10 @@ def psalm(lang, slug):
 	alts = [p for p in psalms if p['id'] == psalm['id'] and p['lang'] != psalm['lang']]
 	return render_template('psalm.jinja', psalm=psalm, settings=settings, lang=lang, alts=alts)
 
+@app.route('/list/')
+def custom_list():
+	return render_template('list.jinja', settings=settings)
+
 @app.route('/account/')
 def account():
 	return render_template('account.jinja', settings=settings)

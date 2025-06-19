@@ -99,6 +99,7 @@ def load_index(psalms, filename):
 			'title': psalm['title'],
 			'subtitle': psalm['subtitle'],
 			'step': psalm['step'],
+			'slug': psalm['slug'],
 			'tags': psalm['tags'],
 			'gtags': psalm['gtags'],
 			'text': psalm['text']
