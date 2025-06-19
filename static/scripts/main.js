@@ -362,14 +362,18 @@ function showAuthSuccess(option) {
 	authModal.querySelector("#auth-close").textContent = "Close";
 }
 
-function showAuthError(option, error) {
-	authModal.querySelector("#auth-submit").setAttribute('aria-busy', 'false');
+function getFullErrorMessage(error) {
 	let details = '';
 	if (error.data && error.data.data)
 		for (const key in error.data.data)
 			if (error.data.data[key].message)
 				details += ' ' + error.data.data[key].message;
-	authModal.querySelector("#auth-error").textContent = error.message + details;
+	return error.message + details;
+}
+
+function showAuthError(option, error) {
+	authModal.querySelector("#auth-submit").setAttribute('aria-busy', 'false');
+	authModal.querySelector("#auth-error").textContent = getFullErrorMessage(error);
 	authModal.querySelector("#auth-error").classList.remove('hide');
 }
 
