@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from tools import load_psalms, load_settings, load_index
 
 app = Flask(__name__)
+app.config['FREEZER_DESTINATION'] = 'pb_public'
 
 settings = load_settings('static/settings.json')
 psalms = load_psalms(settings)
