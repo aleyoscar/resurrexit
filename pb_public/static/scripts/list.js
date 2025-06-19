@@ -15,6 +15,7 @@ const listFormElements = document.getElementById('list-form-elements');
 const listViewElements = document.getElementById('list-view-elements');
 const listViewName = document.getElementById('list-view-name');
 const listPsalms = document.getElementById('list-psalms');
+const listDownloadMd = document.getElementById('download-md');
 const saveModal = document.getElementById('save-modal');
 
 function createListElement(type, inputs) {
@@ -97,12 +98,14 @@ function renderList(list) {
 	listButtons.classList.add('hide');
 	let inputs = null;
 	if (list.content) {
+		let mdString = `# ${list.name}\n\n`;
 		list.content.list.forEach((e) => {
 			const section = document.createElement('section');
 			switch(e.type) {
 				case 'section':
 					inputs = [{ name: 'section', placeholder: 'Section Title...', required: 'required', value: e.main, list: '' }];
 					section.innerHTML = `<h5>${e.main}</h5><hr>`;
+					mdString += `### ${e.main}\n\n`;
 					break;
 				case 'psalm':
 					inputs = [
@@ -111,9 +114,17 @@ function renderList(list) {
 						{ name: 'notes', placeholder: 'Notes...', required: '', value: e.notes, list: '' }
 					];
 					const blockquote = document.createElement('blockquote');
-					if (e.title) blockquote.innerHTML += `<header><h6>${e.title}</h6></header>`;
+					if (e.title) {
+						blockquote.innerHTML += `<header><h6>${e.title}</h6></header>`;
+						mdString += `> **${e.title}**  \n`;
+					}
 					blockquote.innerHTML += `<a class="list-psalm-link secondary">${e.main}</a>`;
-					if (e.notes) blockquote.innerHTML += `<footer><cite>${e.notes}</cite></footer>`;
+					mdString += `> ${e.main.split('|')[0]}  \n`;
+					if (e.notes) {
+						blockquote.innerHTML += `<footer><cite>${e.notes}</cite></footer>`;
+						mdString += `> *${e.notes}*  \n`;
+					}
+					mdString += "\n";
 					section.append(blockquote);
 					break;
 				default:
@@ -123,6 +134,8 @@ function renderList(list) {
 			listFormElements.append(createListElement(e.type, inputs));
 			listViewElements.append(section);
 		});
+		listDownloadMd.download = `${list.id}.md`;
+		listDownloadMd.href = `${URL.createObjectURL(new Blob([mdString]))}`;
 	}
 	if (pb.authStore.record && pb.authStore.record.id === list.user_id) {
 		listButtons.classList.remove('hide');
