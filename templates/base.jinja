@@ -81,27 +81,6 @@
 					data-target="contact-modal">
 					Contact
 				</a></li>
-				<li class="login-button">
-					<a class="secondary pointer"
-						onclick="changeAuthModal('login'); toggleModal(event);"
-						data-target="auth-modal">
-						Login
-					</a>
-				</li>
-				<li class="logout-button hide">
-					<a class="secondary pointer"
-						onclick="toggleModal(event); logout();"
-						data-target="logout-modal">
-						Logout
-					</a>
-				</li>
-				<li class="logout-button hide">
-					<a class="secondary pointer"
-						onclick="changeAuthModal('resetLogged'); toggleModal(event);"
-						data-target="auth-modal">
-						Reset Password
-					</a>
-				</li>
 				<li><a class="flex align-center gap-xxs theme-btn pointer secondary"
 					onclick="switchTheme(event)">
 					Theme
@@ -114,6 +93,26 @@
 						<use xlink:href="#icon-sun"/>
 					</svg>
 				</a></li>
+				<li><hr></li>
+				<li class="logged-out">
+					<a class="secondary pointer"
+						onclick="changeAuthModal('login'); toggleModal(event);"
+						data-target="auth-modal">
+						Login
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer" href="{{ url_for('account') }}">
+						Settings
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer"
+						onclick="toggleModal(event); logout();"
+						data-target="logout-modal">
+						Logout
+					</a>
+				</li>
 			</ul></nav></article>
 		</aside>
 		{% endblock %}

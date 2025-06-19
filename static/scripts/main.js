@@ -24,8 +24,8 @@ const contactClose = document.getElementById('contact-close');
 const authModal = document.getElementById('auth-modal');
 const authForm = document.getElementById('auth-form');
 const resetModal = document.getElementById('reset-modal');
-const loginButtons = document.querySelectorAll('.login-button');
-const logoutButtons = document.querySelectorAll('.logout-button');
+const loggedIn = document.querySelectorAll('.logged-in');
+const loggedOut = document.querySelectorAll('.logged-out');
 const logoutModal = document.getElementById('logout-modal');
 const menu = document.getElementById('menu');
 const eplayer = document.getElementById('eplayer');
@@ -438,17 +438,19 @@ authForm.addEventListener('submit', async (e) => {
 
 // Logout
 function logout() {
-	changeState('authenticated', false);
+	changeAuth(false);
+	console.log('Logging out');
 	pb.authStore.clear();
-	logoutButtons.forEach((b) => b.classList.add('hide'));
-	loginButtons.forEach((b) => b.classList.remove('hide'));
+	loggedOut.forEach((b) => b.classList.remove('hide'));
+	loggedIn.forEach((b) => b.classList.add('hide'));
 }
 
 // Login
 function login() {
-	changeState('authenticated', true);
-	logoutButtons.forEach((b) => b.classList.remove('hide'));
-	loginButtons.forEach((b) => b.classList.add('hide'));
+	changeAuth(true);
+	console.log('Logging in');
+	loggedOut.forEach((b) => b.classList.add('hide'));
+	loggedIn.forEach((b) => b.classList.remove('hide'));
 }
 
 // MAIN -----------------------------------------------------------------------
