@@ -88,6 +88,36 @@ function addListElement(e) {
 	});
 }
 
+function toClipboard(text) {
+	var textArea = document.createElement("textarea");
+	textArea.style.position = 'fixed';
+	textArea.style.top = 0;
+	textArea.style.left = 0;
+	textArea.style.width = '2em';
+	textArea.style.height = '2em';
+	textArea.style.padding = 0;
+	textArea.style.border = 'none';
+	textArea.style.outline = 'none';
+	textArea.style.boxShadow = 'none';
+	textArea.style.background = 'transparent';
+
+	textArea.value = text;
+
+	document.body.appendChild(textArea);
+	textArea.focus();
+	textArea.select();
+
+	try {
+		var result = document.execCommand('copy');
+		if (result) alert('Text copied to clipboard');
+		else throw new Error('Unable to copy text');
+	} catch (err) {
+		alert(err);
+	}
+
+	document.body.removeChild(textArea);
+}
+
 function renderList(list) {
 	listFormName.value = list.name;
 	listViewName.textContent = list.name;
@@ -145,6 +175,14 @@ function renderList(list) {
 		listDownloadMd.href = `${URL.createObjectURL(new Blob([mdString]))}`;
 		listDownloadTxt.download = `${list.id}.txt`;
 		listDownloadTxt.href = `${URL.createObjectURL(new Blob([txtString]))}`;
+		const listCopyMd = document.getElementById('copy-md');
+		const listCopyTxt = document.getElementById('copy-txt');
+		const newListCopyMd = listCopyMd.cloneNode(true);
+		const newListCopyTxt = listCopyTxt.cloneNode(true);
+		newListCopyMd.addEventListener('click', (e) => { toClipboard(mdString); });
+		newListCopyTxt.addEventListener('click', (e) => { toClipboard(txtString); });
+		listCopyMd.parentNode.replaceChild(newListCopyMd, listCopyMd);
+		listCopyTxt.parentNode.replaceChild(newListCopyTxt, listCopyTxt);
 	}
 	if (pb.authStore.record && pb.authStore.record.id === list.user_id) {
 		listButtons.classList.remove('hide');
