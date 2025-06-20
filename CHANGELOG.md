@@ -1,4 +1,15 @@
 
+<a name="v3.1.0"></a>
+## [v3.1.0](https://github.com/aleyoscar/resurrexit/compare/v3.0.0...v3.1.0) (2025-06-20)
+
+### Feat
+
+* **web:** Print/Save list to PDF
+* **web:** Copy list markdown or text to clipboard
+* **web:** Download list as text file
+* **web:** Download list as markdown file
+
+
 <a name="v3.0.0"></a>
 ## [v3.0.0](https://github.com/aleyoscar/resurrexit/compare/v2.4.1...v3.0.0) (2025-06-19)
 
