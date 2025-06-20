@@ -1,3 +1,5 @@
+// CONSTANTS ------------------------------------------------------------------
+
 const listForm = document.getElementById('list-form');
 const listView = document.querySelectorAll('.list-view');
 const listFormName = document.getElementById('list-form-name');
@@ -18,6 +20,9 @@ const listDownloadMd = document.getElementById('download-md');
 const listDownloadTxt = document.getElementById('download-txt');
 const saveModal = document.getElementById('save-modal');
 
+// GLOBALS --------------------------------------------------------------------
+
+let listCount = { psalm: 0, section: 0 };
 let psalmOptions = fetch("/static/index.json")
 	.then(response => response.json())
 	.then(data => {
@@ -32,6 +37,17 @@ let psalmOptions = fetch("/static/index.json")
 		return null;
 	});
 
+// HELPERS --------------------------------------------------------------------
+
+// Get URL parameter
+function getUrlParam(param) {
+	const urlParams = new URLSearchParams(window.location.search);
+	return urlParams.get(param);
+}
+
+// LIST ELEMENTS --------------------------------------------------------------
+
+// Create list form input
 function createListElement(type, inputs) {
 	listCount[type] += 1;
 	const element = document.createElement('div');
@@ -75,19 +91,14 @@ function createListElement(type, inputs) {
 	return element;
 }
 
-let listCount = { psalm: 0, section: 0 };
-
-function getUrlParam(param) {
-	const urlParams = new URLSearchParams(window.location.search);
-	return urlParams.get(param);
-}
-
+// Remove list form input
 function removeListElement(e) {
 	e.preventDefault();
 	listCount[e.currentTarget.parentNode.dataset.type] -= 1;
 	e.currentTarget.parentNode.remove();
 }
 
+// Add list form inputs
 function addListElement(e) {
 	e.preventDefault();
 	let inputs = null;
@@ -113,6 +124,9 @@ function addListElement(e) {
 	});
 }
 
+// SHARE ----------------------------------------------------------------------
+
+// Copy text to clipboard
 function toClipboard(text) {
 	var textArea = document.createElement("textarea");
 	textArea.style.position = 'fixed';
@@ -143,6 +157,9 @@ function toClipboard(text) {
 	document.body.removeChild(textArea);
 }
 
+// RENDER ---------------------------------------------------------------------
+
+// Render list form and list view
 function renderList(list) {
 	listFormName.value = list.name;
 	listViewName.textContent = list.name;
@@ -215,6 +232,7 @@ function renderList(list) {
 	listDiv.classList.remove('hide');
 }
 
+// Render psalm links
 async function renderPsalmLinks() {
 	const psalmLinks = document.querySelectorAll('.list-psalm-link');
 	fetch("/static/index.json")
@@ -237,6 +255,9 @@ async function renderPsalmLinks() {
 		});
 }
 
+// FETCH ----------------------------------------------------------------------
+
+// Fetch list
 async function fetchList() {
 	listError.classList.add('hide');
 	listDiv.classList.add('hide');
@@ -253,6 +274,8 @@ async function fetchList() {
 		listError.classList.remove('hide');
 	}
 }
+
+// LIST FORM ------------------------------------------------------------------
 
 // Open the edit list form
 function openListEdit() {
@@ -329,6 +352,7 @@ listForm.addEventListener('submit', async (e) => {
 	}
 });
 
+// Delete list
 async function deleteList() {
 	listDelete.setAttribute('aria-busy', 'true');
 	try {
@@ -343,6 +367,9 @@ async function deleteList() {
 	}
 }
 
+// AUTCOMPLETE ----------------------------------------------------------------
+
+// Autocomplete psalm inputs
 async function autocomplete(e) {
 	const inputPsalmOptions = e.currentTarget.parentNode.querySelector('.list-psalm-options');
 	const query = e.currentTarget.value.toLowerCase().trim();
@@ -366,6 +393,7 @@ async function autocomplete(e) {
 	} else inputPsalmOptions.classList.add('hide');
 }
 
+// Select a psalm option
 function selectPsalmOption(e) {
 	const target = e.currentTarget ? e.currentTarget : e;
 	target.parentNode.parentNode.querySelector('input').value = target.textContent;
@@ -373,6 +401,7 @@ function selectPsalmOption(e) {
 	target.parentNode.innerHTML = '';
 }
 
+// Key events for psalm option selection
 function autocompleteKeydown(e) {
 	const items = e.currentTarget.parentNode.querySelector('ul').querySelectorAll('li');
 	if (items.length === 0) return;
@@ -400,11 +429,13 @@ function autocompleteKeydown(e) {
 	}
 }
 
+// Select psalm option on mouseover
 function selectPsalmMouseover(e) {
 	e.currentTarget.parentNode.querySelectorAll('li').forEach(item => item.classList.remove('selected'));
 	e.currentTarget.classList.add('selected');
 }
 
+// Close autocomplete psalm options when clicked outside
 document.addEventListener('click', (e) => {
 	listForm.querySelectorAll('.list-element-psalm').forEach((input) => {
 		if (input.contains(e.target)) return;
@@ -417,6 +448,9 @@ document.addEventListener('click', (e) => {
 	});
 });
 
+// MAIN -----------------------------------------------------------------------
+
+// Fetch list on authentication change
 document.addEventListener('authChange', (event) => {
 	fetchList();
 });

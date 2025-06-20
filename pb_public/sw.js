@@ -1,24 +1,37 @@
-const CACHE_NAME = 'resurrexit-v3.1.0';
-const urlsToCache = [
+const version = 'v3.1.2';
+const CACHE_NAME = `resurrexit-${version}`;
+const urls = [
 	'/index.html',
+	'/account/index.html',
+	'/en-us/index.html',
+	'/es-es/index.html',
+	'/list/index.html',
 	'/static/css/eplayer.css',
 	'/static/css/pico.red.min.css',
 	'/static/css/styles.css',
-	'/static/scripts/js.cookie.min.js',
-	'/static/scripts/pocketbase.umd.js',
-	'/static/scripts/eplayer.js',
-	'/static/scripts/main.js',
-	'/static/scripts/modal.js',
-	'/static/index.json',
-	'/static/settings.json',
-	'/static/site.webmanifest',
 	'/static/images/apple-touch-icon.png',
 	'/static/images/favicon-96x96.png',
 	'/static/images/favicon.ico',
 	'/static/images/favicon.svg',
 	'/static/images/web-app-manifest-192x192.png',
-	'/static/images/web-app-manifest-512x512.png'
+	'/static/images/web-app-manifest-512x512.png',
+	'/static/scripts/account.js',
+	'/static/scripts/eplayer.js',
+	'/static/scripts/js.cookie.min.js',
+	'/static/scripts/list.js',
+	'/static/scripts/main.js',
+	'/static/scripts/modal.js',
+	'/static/scripts/pocketbase.umd.js',
+	'/static/scripts/Sortable.min.js',
+	'/static/index.json',
+	'/static/settings.json',
+	'/static/site.webmanifest'
 ];
+let urlsToCache = [];
+urls.forEach((u) => {
+	if (u.startsWith('/static')) urlsToCache.push(`${u}?v=${version}`);
+	else urlsToCache.push(u);
+});
 
 // Install: Cache static assets
 self.addEventListener('install', event => {
@@ -41,7 +54,7 @@ self.addEventListener('activate', event => {
 	);
 });
 
-// Fetch: Cache-first for static assets, network-only for send-mail.php
+// Fetch: Cache-first for static assets
 self.addEventListener('fetch', event => {
 	const url = new URL(event.request.url);
 

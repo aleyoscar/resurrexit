@@ -32,7 +32,6 @@ const eplayer = document.getElementById('eplayer');
 const eplayerWrapper = document.querySelector('.eplayer-wrapper');
 const footer = document.getElementById('footer');
 const pb = new PocketBase();
-// const eplayerWrapper = document.getElementById('eplayer-wrapper')
 
 const authOptions = {
 	login: {
@@ -94,12 +93,8 @@ const authEvent = new CustomEvent('authChange', {
 });
 
 function changeAuth(value) {
-	console.log("Changing auth", value);
 	authenticated = value;
-    // Update the event detail with the new state
 	authEvent.detail.newAuth = authenticated;
-    // Dispatch the event
-	// In main.js or another script
 	document.dispatchEvent(authEvent);
 }
 
@@ -441,7 +436,6 @@ authForm.addEventListener('submit', async (e) => {
 // Logout
 function logout() {
 	changeAuth(false);
-	console.log('Logging out');
 	pb.authStore.clear();
 	loggedOut.forEach((b) => b.classList.remove('hide'));
 	loggedIn.forEach((b) => b.classList.add('hide'));
@@ -450,7 +444,6 @@ function logout() {
 // Login
 function login() {
 	changeAuth(true);
-	console.log('Logging in');
 	loggedOut.forEach((b) => b.classList.add('hide'));
 	loggedIn.forEach((b) => b.classList.remove('hide'));
 }
@@ -473,7 +466,7 @@ if (tools) toolsOffset = tools.offsetTop;
 // Register service worker
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', () => {
-		navigator.serviceWorker.register('/static/sw.js')
+		navigator.serviceWorker.register('/sw.js')
 			.then(reg => console.log('Service Worker registered'))
 			.catch(err => console.error('Service Worker registration failed:', err));
 	});
@@ -485,3 +478,40 @@ if (pb.authStore.isValid) {
 } else {
 	logout();
 }
+
+const version = 'v3.1.0';
+const CACHE_NAME = `resurrexit-${version}`;
+const urls = [
+	'/index.html',
+	'/account/index.html',
+	'/en-us/index.html',
+	'/es-es/index.html',
+	'/list/index.html',
+	'/static/css/eplayer.css',
+	'/static/css/pico.red.min.css',
+	'/static/css/styles.css',
+	'/static/images/apple-touch-icon.png',
+	'/static/images/favicon-96x96.png',
+	'/static/images/favicon.ico',
+	'/static/images/favicon.svg',
+	'/static/images/web-app-manifest-192x192.png',
+	'/static/images/web-app-manifest-512x512.png',
+	'/static/scripts/account.js',
+	'/static/scripts/eplayer.js',
+	'/static/scripts/js.cookie.min.js',
+	'/static/scripts/list.js',
+	'/static/scripts/main.js',
+	'/static/scripts/modal.js',
+	'/static/scripts/pocketbase.umd.js',
+	'/static/scripts/Sortable.min.js',
+	'/static/index.json',
+	'/static/settings.json',
+	'/static/site.webmanifest'
+];
+let urlsToCache = [];
+urls.forEach((u) => {
+	if (u.startsWith('/static')) urlsToCache.push(`${u}?v=${version}`);
+	else urlsToCache.push(u);
+});
+
+console.log(CACHE_NAME, urlsToCache);
