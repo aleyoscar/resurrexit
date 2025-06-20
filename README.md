@@ -27,7 +27,7 @@ I have created this repository and opened it to the public for two reasons: Firs
 - [x] Search
 - [ ] Transposition to your personal key
 - [ ] Chord diagrams
-- [ ] Personal psalm lists
+- [x] Personal psalm lists
 - [ ] Personal tags
 - [ ] Auto-Scroll lyrics
 
