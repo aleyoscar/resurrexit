@@ -32,7 +32,6 @@ const eplayer = document.getElementById('eplayer');
 const eplayerWrapper = document.querySelector('.eplayer-wrapper');
 const footer = document.getElementById('footer');
 const pb = new PocketBase();
-// const eplayerWrapper = document.getElementById('eplayer-wrapper')
 
 const authOptions = {
 	login: {
@@ -94,12 +93,8 @@ const authEvent = new CustomEvent('authChange', {
 });
 
 function changeAuth(value) {
-	console.log("Changing auth", value);
 	authenticated = value;
-    // Update the event detail with the new state
 	authEvent.detail.newAuth = authenticated;
-    // Dispatch the event
-	// In main.js or another script
 	document.dispatchEvent(authEvent);
 }
 
@@ -441,7 +436,6 @@ authForm.addEventListener('submit', async (e) => {
 // Logout
 function logout() {
 	changeAuth(false);
-	console.log('Logging out');
 	pb.authStore.clear();
 	loggedOut.forEach((b) => b.classList.remove('hide'));
 	loggedIn.forEach((b) => b.classList.add('hide'));
@@ -450,7 +444,6 @@ function logout() {
 // Login
 function login() {
 	changeAuth(true);
-	console.log('Logging in');
 	loggedOut.forEach((b) => b.classList.add('hide'));
 	loggedIn.forEach((b) => b.classList.remove('hide'));
 }
