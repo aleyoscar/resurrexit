@@ -125,7 +125,6 @@ ul li { list-style-type: none; }
 .horizontal-scroll { display: flex; flex-wrap: nowrap; gap: calc(var(--pico-spacing) / 3); }
 .horizontal-scroll button { white-space: nowrap; flex: 0 0 auto; }
 .justify-center { justify-content: center; }
-.last-child-mb-0:last-child { margin-bottom: 0; }
 .line { line-height: 2em; position: relative; }
 .max-width-lg { max-width: var(--gr-lg); }
 .max-width-md { max-width: var(--gr-md); }
@@ -152,6 +151,7 @@ ul li { list-style-type: none; }
 .pt-xxs { padding-top: 0.6rem; }
 .px-xxs { padding-left: 0.6rem; padding-right: 0.6rem; }
 .py-xs { padding-bottom: 1rem; padding-top: 1rem; }
+.relative { position: relative; }
 .section { padding-bottom: 1.6rem; }
 .space-between { justify-content: space-between; }
 .success { color: var(--pico-ins-color); border: 1px solid var(--pico-ins-color); }
@@ -211,6 +211,27 @@ p.secondary { color: var(--pico-secondary); }
 }
 
 #search-input { margin-bottom: 0; }
+
+.list-psalm-options {
+	background: var(--pico-form-element-background-color);
+	border: 1px solid var(--pico-form-element-border-color);
+	border-radius: var(--pico-border-radius);
+	left: 0;
+	list-style-type: none;
+	max-height: 200px;
+	overflow-y: auto;
+	position: absolute;
+	right: 0;
+	top: calc(100% - var(--pico-spacing));
+	z-index: 10;
+}
+
+.list-psalm-options li {
+	cursor: pointer;
+	padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+}
+
+.list-psalm-options li.selected { background: var(--pico-dropdown-hover-background-color); }
 
 @media only screen and (min-width: 1025px) {
 	.max-width-sm-lg { max-width: var(--gr-sm); }

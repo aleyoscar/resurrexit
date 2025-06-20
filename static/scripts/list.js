@@ -14,10 +14,23 @@ const listFormAddOptions = document.getElementById('list-form-add-options');
 const listFormElements = document.getElementById('list-form-elements');
 const listViewElements = document.getElementById('list-view-elements');
 const listViewName = document.getElementById('list-view-name');
-const listPsalms = document.getElementById('list-psalms');
 const listDownloadMd = document.getElementById('download-md');
 const listDownloadTxt = document.getElementById('download-txt');
 const saveModal = document.getElementById('save-modal');
+
+let psalmOptions = fetch("/static/index.json")
+	.then(response => response.json())
+	.then(data => {
+		let newData = []
+		data.forEach((p) => {
+			newData.push(`${p.title}|${p.lang}`);
+		});
+		return newData;
+	})
+	.catch(error => {
+		console.error('Error fetching index:', error);
+		return null;
+	});
 
 function createListElement(type, inputs) {
 	listCount[type] += 1;
@@ -34,15 +47,27 @@ function createListElement(type, inputs) {
 	dragBtn.classList.add('sort-move', 'outline', 'secondary', 'height-100');
 	dragBtn.innerHTML = `<svg width="1.0em" height="1.0em"><use xlink:href="#icon-move"/></svg>`;
 	inputs.forEach((i) => {
-		fieldset.innerHTML += `
-			<input id="list-element-${i.name}-${listCount[type]}"
-				name="list-element-${i.name}-${listCount[type]}"
-				class="list-element-${i.name} last-child-mb-0"
-				list="${i.list}"
-				type="text"
-				value="${i.value}"
-				autocomplete="off"
-				placeholder="${i.placeholder}" ${i.required}/>`;
+		const input = document.createElement('input');
+		input.id = `list-element-${i.name}-${listCount[type]}`;
+		input.name = `list-element-${i.name}-${listCount[type]}`;
+		input.classList.add(`list-element-${i.name}`);
+		input.type = "text";
+		input.value = i.value;
+		input.autocomplete = "off";
+		input.placeholder = i.placeholder;
+		input.required = i.required;
+		if (i.name == 'section' || i.name == 'notes') input.classList.add('mb-0');
+		if (i.name == 'psalm') {
+			input.addEventListener('input', autocomplete);
+			input.addEventListener('keydown', autocompleteKeydown);
+			const ul = document.createElement('ul');
+			ul.classList.add('list-psalm-options', 'hide');
+			const label = document.createElement('label');
+			label.classList.add('relative');
+			label.append(input);
+			label.append(ul);
+			fieldset.append(label);
+		} else fieldset.append(input);
 	});
 	element.append(dragBtn);
 	element.append(fieldset);
@@ -68,13 +93,13 @@ function addListElement(e) {
 	let inputs = null;
 	switch(listFormAddOptions.value) {
 		case 'section':
-			inputs = [{ name: 'section', placeholder: 'Section Title...', required: 'required', value: '', list: '' }];
+			inputs = [{ name: 'section', placeholder: 'Section Title...', required: 'required', value: '' }];
 			break;
 		case 'psalm':
 			inputs = [
-				{ name: 'title', placeholder: 'Psalm Title...', required: '', value: '', list: '' },
-				{ name: 'psalm', placeholder: 'Psalm...', required: 'required', value: '', list: 'list-psalms' },
-				{ name: 'notes', placeholder: 'Notes...', required: '', value: '', list: '' }
+				{ name: 'title', placeholder: 'Psalm Title...', required: '', value: '' },
+				{ name: 'psalm', placeholder: 'Psalm...', required: 'required', value: '' },
+				{ name: 'notes', placeholder: 'Notes...', required: '', value: '' }
 			];
 			break;
 		default:
@@ -135,16 +160,16 @@ function renderList(list) {
 			const section = document.createElement('section');
 			switch(e.type) {
 				case 'section':
-					inputs = [{ name: 'section', placeholder: 'Section Title...', required: 'required', value: e.main, list: '' }];
+					inputs = [{ name: 'section', placeholder: 'Section Title...', required: 'required', value: e.main }];
 					section.innerHTML = `<h5>${e.main}</h5><hr>`;
 					mdString += `### ${e.main}\n\n`;
 					txtString += `*${e.main}*\n\n`;
 					break;
 				case 'psalm':
 					inputs = [
-						{ name: 'title', placeholder: 'Psalm Title...', required: '', value: e.title, list: '' },
-						{ name: 'psalm', placeholder: 'Psalm...', required: 'required', value: e.main, list: 'list-psalms' },
-						{ name: 'notes', placeholder: 'Notes...', required: '', value: e.notes, list: '' }
+						{ name: 'title', placeholder: 'Psalm Title...', required: '', value: e.title },
+						{ name: 'psalm', placeholder: 'Psalm...', required: 'required', value: e.main },
+						{ name: 'notes', placeholder: 'Notes...', required: '', value: e.notes }
 					];
 					const blockquote = document.createElement('blockquote');
 					if (e.title) {
@@ -190,22 +215,6 @@ function renderList(list) {
 	listDiv.classList.remove('hide');
 }
 
-async function renderPsalmOptions() {
-	listPsalms.innerHTML = '';
-	fetch("/static/index.json")
-		.then(response => response.json())
-		.then(data => {
-			data.forEach((p) => {
-				const option = document.createElement('option');
-				option.value = `${p.title}|${p.lang}`;
-				listPsalms.append(option);
-			})
-		})
-		.catch(error => {
-			console.error('Error loading search index:', error)
-		});
-}
-
 async function renderPsalmLinks() {
 	const psalmLinks = document.querySelectorAll('.list-psalm-link');
 	fetch("/static/index.json")
@@ -235,7 +244,7 @@ async function fetchList() {
 
 	try {
 		const list = await pb.collection('res_lists').getOne(getUrlParam('id'));
-		renderPsalmOptions();
+		// renderPsalmOptions();
 		renderList(list);
 		renderPsalmLinks();
 	} catch (error) {
@@ -271,6 +280,7 @@ listForm.addEventListener('submit', async (e) => {
 
 	listError.classList.add('hide');
 	listSubmit.setAttribute('aria-busy', 'true');
+	let psalmData = await psalmOptions;
 
 	try {
 		if (!isBetween(listFormName.value, 100))
@@ -288,13 +298,7 @@ listForm.addEventListener('submit', async (e) => {
 				throw new Error(`${ele.dataset.type} must be between 1 and 100 characters`);
 			}
 			if (ele.dataset.type == 'psalm') {
-				let psalmFound = false;
-				listPsalms.querySelectorAll('option').forEach((o) => {
-					if (o.value == elementMain) {
-						psalmFound = true;
-					}
-				});
-				if (!psalmFound) throw new Error(`Invalid psalm ${elementMain}. Please use the dropdown to select the psalm.`);
+				if (!psalmData.includes(elementMain)) throw new Error(`Invalid psalm '${elementMain}'. Please use the dropdown to select the psalm.`);
 				elementTitle = ele.querySelector('.list-element-title').value;
 				elementNotes = ele.querySelector('.list-element-notes').value;
 			}
@@ -338,6 +342,80 @@ async function deleteList() {
 		listDeleteError.classList.remove('hide');
 	}
 }
+
+async function autocomplete(e) {
+	const inputPsalmOptions = e.currentTarget.parentNode.querySelector('.list-psalm-options');
+	const query = e.currentTarget.value.toLowerCase().trim();
+	if (query) {
+		const data = await psalmOptions;
+		const filteredPsalms = data.filter(psalm =>
+			psalm.toLowerCase().includes(query)
+		);
+		if (filteredPsalms.length) {
+			inputPsalmOptions.innerHTML = '';
+			filteredPsalms.sort()
+			filteredPsalms.forEach(psalm => {
+				const li = document.createElement('li');
+				li.textContent = psalm;
+				li.addEventListener('click', selectPsalmOption);
+				li.addEventListener('mouseover', selectPsalmMouseover);
+				inputPsalmOptions.appendChild(li);
+			});
+			inputPsalmOptions.classList.remove('hide');
+		} else inputPsalmOptions.classList.add('hide');
+	} else inputPsalmOptions.classList.add('hide');
+}
+
+function selectPsalmOption(e) {
+	const target = e.currentTarget ? e.currentTarget : e;
+	target.parentNode.parentNode.querySelector('input').value = target.textContent;
+	target.parentNode.classList.add('hide');
+	target.parentNode.innerHTML = '';
+}
+
+function autocompleteKeydown(e) {
+	const items = e.currentTarget.parentNode.querySelector('ul').querySelectorAll('li');
+	if (items.length === 0) return;
+	let index = Array.from(items).findIndex(item => item.classList.contains('selected'));
+	if (e.key === 'ArrowDown') {
+		e.preventDefault();
+		if (index < items.length - 1) {
+			items[index]?.classList.remove('selected');
+			items[index + 1].classList.add('selected');
+			items[index + 1].scrollIntoView({ block: 'nearest' });
+		}
+	} else if (e.key === 'ArrowUp') {
+		e.preventDefault();
+		if (index > 0) {
+			items[index].classList.remove('selected');
+			items[index - 1].classList.add('selected');
+			items[index - 1].scrollIntoView({ block: 'nearest' });
+		}
+	} else if (e.key === 'Escape') {
+		e.preventDefault();
+		e.currentTarget.parentNode.querySelector('ul').classList.add('hide');
+	} else if ((e.key === 'Enter' || e.key === 'Tab') && index >= 0) {
+		e.preventDefault();
+		selectPsalmOption(items[index]);
+	}
+}
+
+function selectPsalmMouseover(e) {
+	e.currentTarget.parentNode.querySelectorAll('li').forEach(item => item.classList.remove('selected'));
+	e.currentTarget.classList.add('selected');
+}
+
+document.addEventListener('click', (e) => {
+	listForm.querySelectorAll('.list-element-psalm').forEach((input) => {
+		if (input.contains(e.target)) return;
+	});
+	listForm.querySelectorAll('.list-psalm-options').forEach((ul) => {
+		if (ul.contains(e.target)) return;
+	});
+	listForm.querySelectorAll('.list-psalm-options').forEach((ul) => {
+		ul.classList.add('hide');
+	});
+});
 
 document.addEventListener('authChange', (event) => {
 	fetchList();
