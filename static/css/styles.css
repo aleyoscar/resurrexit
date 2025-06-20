@@ -234,3 +234,12 @@ p.secondary { color: var(--pico-secondary); }
 	.eplayer-wrapper { flex-direction: column; }
 	.hide-sm { display: none; }
 }
+
+@media print {
+	html { font-size: 80%; }
+	body > header { display: none; }
+	body > aside { display: none; }
+	body > footer { display: none; }
+	article { box-shadow: none; }
+	.no-print { display: none; }
+}

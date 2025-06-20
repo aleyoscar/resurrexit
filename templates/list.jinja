@@ -11,14 +11,14 @@
 		<article>
 			<header id="list-view" class="list-view flex space-between align-center">
 				<h3 id="list-view-name"></h3>
-				<details class="dropdown">
+				<details class="dropdown no-print">
 					<summary role="button" class="secondary">Share</summary>
 					<ul dir="rtl">
 						<li><a id="download-md" download="" href="">Download as Markdown</a></li>
 						<li><a id="download-txt" download="" href="">Download as Text</a></li>
-						<!-- <li>Download as PDF</li> -->
 						<li><a id="copy-md" class="pointer">Copy as Markdown</a></li>
 						<li><a id="copy-txt" class="pointer">Copy as Text</a></li>
+						<li><a id="print-pdf" class="pointer" onclick="window.print()">Print/Save to PDF</a></li>
 					</ul>
 				</details>
 			</header>
@@ -41,7 +41,7 @@
 					<button id="list-form-add-button" onclick="addListElement(event)">Add</button>
 				</fieldset>
 			</form>
-			<footer id="list-buttons" class="text-center">
+			<footer id="list-buttons" class="text-center no-print">
 				<button id="list-cancel" class="secondary hide" onclick="closeListEdit()">Cancel</button>
 				<button id="list-edit" onclick="openListEdit()">Edit</button>
 				<button id="list-submit" form="list-form" class="hide">Save</button>
