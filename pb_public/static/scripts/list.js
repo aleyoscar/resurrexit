@@ -16,6 +16,7 @@ const listViewElements = document.getElementById('list-view-elements');
 const listViewName = document.getElementById('list-view-name');
 const listPsalms = document.getElementById('list-psalms');
 const listDownloadMd = document.getElementById('download-md');
+const listDownloadTxt = document.getElementById('download-txt');
 const saveModal = document.getElementById('save-modal');
 
 function createListElement(type, inputs) {
@@ -99,6 +100,7 @@ function renderList(list) {
 	let inputs = null;
 	if (list.content) {
 		let mdString = `# ${list.name}\n\n`;
+		let txtString = `${list.name}\n${'='.repeat(list.name.length)}\n\n`;
 		list.content.list.forEach((e) => {
 			const section = document.createElement('section');
 			switch(e.type) {
@@ -106,6 +108,7 @@ function renderList(list) {
 					inputs = [{ name: 'section', placeholder: 'Section Title...', required: 'required', value: e.main, list: '' }];
 					section.innerHTML = `<h5>${e.main}</h5><hr>`;
 					mdString += `### ${e.main}\n\n`;
+					txtString += `*${e.main}*\n\n`;
 					break;
 				case 'psalm':
 					inputs = [
@@ -117,14 +120,18 @@ function renderList(list) {
 					if (e.title) {
 						blockquote.innerHTML += `<header><h6>${e.title}</h6></header>`;
 						mdString += `> **${e.title}**  \n`;
+						txtString += `${e.title}\n`;
 					}
 					blockquote.innerHTML += `<a class="list-psalm-link secondary">${e.main}</a>`;
 					mdString += `> ${e.main.split('|')[0]}  \n`;
+					txtString += `- ${e.main.split('|')[0]}\n`;
 					if (e.notes) {
 						blockquote.innerHTML += `<footer><cite>${e.notes}</cite></footer>`;
 						mdString += `> *${e.notes}*  \n`;
+						txtString += `- ${e.notes}\n`;
 					}
 					mdString += "\n";
+					txtString += "\n";
 					section.append(blockquote);
 					break;
 				default:
@@ -136,6 +143,8 @@ function renderList(list) {
 		});
 		listDownloadMd.download = `${list.id}.md`;
 		listDownloadMd.href = `${URL.createObjectURL(new Blob([mdString]))}`;
+		listDownloadTxt.download = `${list.id}.txt`;
+		listDownloadTxt.href = `${URL.createObjectURL(new Blob([txtString]))}`;
 	}
 	if (pb.authStore.record && pb.authStore.record.id === list.user_id) {
 		listButtons.classList.remove('hide');
