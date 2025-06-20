@@ -466,7 +466,7 @@ if (tools) toolsOffset = tools.offsetTop;
 // Register service worker
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', () => {
-		navigator.serviceWorker.register('/static/sw.js')
+		navigator.serviceWorker.register('/sw.js')
 			.then(reg => console.log('Service Worker registered'))
 			.catch(err => console.error('Service Worker registration failed:', err));
 	});

@@ -7,8 +7,9 @@ else
 	TAG_CONFIG=.chglog/config-tag.yml
 	TAG_FILE=.chglog/current-tag.md
 
-	echo "Updating version info in README.md and sw.js to $1"
-	sed -i "1s/.*/const CACHE_NAME = 'resurrexit-$1';/" static/sw.js
+	echo "Updating version info in README.md, settings.json and sw.js to $1"
+	sed -i "1s/.*/const version = '$1';/" sw.js
+	sed -i "2s/.*/\t\"version\": \"$1\",/" static/settings.json
 	sed -i "5s/.*/> $1/" README.md
 
 	echo "Generating build files"

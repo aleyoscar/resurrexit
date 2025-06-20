@@ -1,8 +1,8 @@
 {% extends 'base.jinja' %}
 {% block title %}Custom List{% endblock %}
 {% block scripts %}
-	<script src="{{ url_for('static', filename='scripts/Sortable.min.js') }}" defer></script>
-	<script src="{{ url_for('static', filename='scripts/list.js') }}" defer></script>
+	<script src="{{ url_for('static', filename='scripts/Sortable.min.js', v=settings.version) }}" defer></script>
+	<script src="{{ url_for('static', filename='scripts/list.js', v=settings.version) }}" defer></script>
 {% endblock %}
 {% block content %}
 <div class="container">

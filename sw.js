@@ -1,5 +1,6 @@
-const CACHE_NAME = 'resurrexit-v3.1.0';
-const urlsToCache = [
+const version = 'v3.1.2';
+const CACHE_NAME = `resurrexit-${version}`;
+const urls = [
 	'/index.html',
 	'/account/index.html',
 	'/en-us/index.html',
@@ -26,6 +27,11 @@ const urlsToCache = [
 	'/static/settings.json',
 	'/static/site.webmanifest'
 ];
+let urlsToCache = [];
+urls.forEach((u) => {
+	if (u.startsWith('/static')) urlsToCache.push(`${u}?v=${version}`);
+	else urlsToCache.push(u);
+});
 
 // Install: Cache static assets
 self.addEventListener('install', event => {
