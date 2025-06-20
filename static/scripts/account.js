@@ -26,7 +26,7 @@ async function accountLogin() {
 async function fetchLists() {
 	accountLists.innerHTML = '';
 	try {
-		const lists = await pb.collection('res_lists').getFullList();
+		const lists = await pb.collection('res_lists').getFullList({ sort: 'name' });
 		lists.forEach((l) => {
 			const li = document.createElement('li');
 			li.classList.add('mb-pico');
