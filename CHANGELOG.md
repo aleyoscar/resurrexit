@@ -1,6 +1,14 @@
 
+<a name="v3.1.2"></a>
+## [v3.1.2](https://github.com/aleyoscar/resurrexit/compare/v3.1.1...v3.1.2) (2025-06-20)
+
+### Fix
+
+* **web:** Deleted part of settings file
+
+
 <a name="v3.1.1"></a>
-## [v3.1.1](https://github.com/aleyoscar/resurrexit/compare/3.1.0...v3.1.1) (2025-06-20)
+## [v3.1.1](https://github.com/aleyoscar/resurrexit/compare/v3.1.0...v3.1.1) (2025-06-20)
 
 ### Feat
 
@@ -16,10 +24,6 @@
 
 * **web:** Removed unnecessary console.logs
 * **web:** Organized and commented code
-
-
-<a name="3.1.0"></a>
-## [3.1.0](https://github.com/aleyoscar/resurrexit/compare/v3.1.0...3.1.0) (2025-06-20)
 
 
 <a name="v3.1.0"></a>
