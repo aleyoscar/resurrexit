@@ -219,12 +219,16 @@ function renderList(list) {
 		listDownloadTxt.href = `${URL.createObjectURL(new Blob([txtString]))}`;
 		const listCopyMd = document.getElementById('copy-md');
 		const listCopyTxt = document.getElementById('copy-txt');
+		const listCopyLink = document.getElementById('copy-link');
 		const newListCopyMd = listCopyMd.cloneNode(true);
 		const newListCopyTxt = listCopyTxt.cloneNode(true);
+		const newListCopyLink = listCopyLink.cloneNode(true);
 		newListCopyMd.addEventListener('click', (e) => { toClipboard(mdString); });
 		newListCopyTxt.addEventListener('click', (e) => { toClipboard(txtString); });
+		newListCopyLink.addEventListener('click', (e) => { toClipboard(window.location.href); });
 		listCopyMd.parentNode.replaceChild(newListCopyMd, listCopyMd);
 		listCopyTxt.parentNode.replaceChild(newListCopyTxt, listCopyTxt);
+		listCopyLink.parentNode.replaceChild(newListCopyLink, listCopyLink);
 	}
 	if (pb.authStore.record && pb.authStore.record.id === list.user_id) {
 		listButtons.classList.remove('hide');
