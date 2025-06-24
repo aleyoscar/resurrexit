@@ -1,6 +1,5 @@
 {
 	"english": {
-		"languages": ["en-us"],
 		"chords": [
 			["A"],
 			["A#", "Bb"],
@@ -18,7 +17,6 @@
 		"qualities": ["m", "7", "9", "m7", "m9", "7aum"]
 	},
 	"southern": {
-		"languages": ["es-es"],
 		"chords": [
 			["La"],
 			["La#", "Sib"],

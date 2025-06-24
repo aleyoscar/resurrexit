@@ -21,7 +21,7 @@ def load_settings(filename):
 
 # return an array with all different variations of chords
 def load_chords(lang):
-	with open('chords.json', 'r', encoding='utf-8') as f:
+	with open('static/chords.json', 'r', encoding='utf-8') as f:
 		chord_data = json.load(f)
 	for key, naming in chord_data.items():
 		if lang in naming["languages"]:
