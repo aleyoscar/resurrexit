@@ -21,6 +21,7 @@
 			"country": "US",
 			"title": "English",
 			"songbook": "He Rose From Death",
+			"chords": "english",
 			"steps": {
 				"pre": "Precatechumenate",
 				"cat": "Catechumenate",
@@ -71,6 +72,7 @@
 			"country": "ES",
 			"title": "Español",
 			"songbook": "Resucitó",
+			"chords": "southern",
 			"steps": {
 				"pre": "Precatecumenado",
 				"cat": "Catecumenado",

@@ -120,10 +120,11 @@ ul li { list-style-type: none; }
 .float-right { float: right; }
 .gap-xs { gap: 1rem; }
 .gap-xxs { gap: 0.6rem; }
-.ghost { padding: 0 var(--pico-form-element-spacing-horizontal); }
+.ghost { padding: 0 calc(1em / 2 + var(--pico-form-element-spacing-horizontal)); }
 .height-100 { height: 100%; }
 .horizontal-scroll { display: flex; flex-wrap: nowrap; gap: calc(var(--pico-spacing) / 3); }
 .horizontal-scroll button { white-space: nowrap; flex: 0 0 auto; }
+.inline-block { display: inline-block; }
 .justify-center { justify-content: center; }
 .line { line-height: 2em; position: relative; }
 .max-width-lg { max-width: var(--gr-lg); }
@@ -138,6 +139,7 @@ ul li { list-style-type: none; }
 .mr-xs { margin-right: 1rem; }
 .mr-xxs { margin-right: 0.6rem; }
 .mt-auto { margin-top: auto; }
+.mt-btn { margin-top: calc(1em + var(--pico-form-element-spacing-vertical) * 2 + var(--pico-spacing)); }
 .mt-pico { margin-top: var(--pico-spacing); }
 .overflow-auto {
 	-webkit-overflow-scrolling: touch;
@@ -147,17 +149,24 @@ ul li { list-style-type: none; }
 }
 .pointer { cursor: pointer; }
 .primary { color: var(--pico-primary); }
+.p-xxs { padding: 0.6rem; }
 .pt-xs { padding-top: 1rem; }
 .pt-xxs { padding-top: 0.6rem; }
 .px-xxs { padding-left: 0.6rem; padding-right: 0.6rem; }
+.py-btn {
+	padding-top: var(--pico-form-element-spacing-horizontal);
+	padding-bottom: var(--pico-form-element-spacing-horizontal);
+}
 .py-xs { padding-bottom: 1rem; padding-top: 1rem; }
 .relative { position: relative; }
 .section { padding-bottom: 1.6rem; }
 .space-between { justify-content: space-between; }
 .success { color: var(--pico-ins-color); border: 1px solid var(--pico-ins-color); }
 .text-center { text-align: center; }
+.text-left { text-align: left; }
 .text-right { text-align: right; }
 .underline { text-decoration: underline; }
+.width-md { width: 2.6rem; }
 .width-100 { width: 100%; }
 
 .psalm.lit { background-color: var(--res-yellow); }

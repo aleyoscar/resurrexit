@@ -1,29 +1,42 @@
 {% extends 'base.jinja' %}
 {% block title %}{{ psalm.title }}{% endblock %}
+{% block scripts %}
+	<script src="{{ url_for('static', filename='scripts/psalm.js', v=settings.version) }}" defer></script>
+{% endblock %}
 {% block header_title %}{{ settings.languages[lang].songbook }}{% endblock %}
 {% block header_url %}{{ url_for('psalm_list', lang=lang) }}{% endblock %}
 
 {% block content %}
 <div class="container">
-	<article class="psalm {{ psalm.step }}">
-		<hgroup class="flex space-between align-center gap-xxs mb-0">
-			<p class="ghost"></p>
-			<h5 class="text-center">{{ psalm.title }}</h5>
-			<details class="dropdown mb-0">
-				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
-					<use xlink:href="#icon-lang"/>
-				</svg></summary>
-				<ul dir="rtl">
-					{% for alt in alts %}
-					<li>
-						<a href="{{ url_for('psalm', lang=alt.lang, slug=alt.slug) }}">
-							{{ alt.title }}
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</details>
-		</hgroup>
+	<article data-lang="{{ lang }}" class="psalm {{ psalm.step }} relative">
+		<header id="psalm-tools" class="flex align-center space-between">
+			<div class="flex align-center">
+				<details id="transpose-menu" class="dropdown mb-0">
+					<summary class="transparent-btn no-caret">
+						<svg width="1em" height="1em">
+							<use xlink:href="#icon-music-note"/>
+						</svg>
+						<span id="transpose-btn" class="primary"></span>
+					</summary>
+					<ul id="transpose-list"><li>Transpose</li></ul>
+				</details>
+				<details class="dropdown mb-0">
+					<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+						<use xlink:href="#icon-lang"/>
+					</svg></summary>
+					<ul>
+						{% for alt in alts %}
+						<li>
+							<a href="{{ url_for('psalm', lang=alt.lang, slug=alt.slug) }}">
+								{{ alt.title }}
+							</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</details>
+			</div>
+		</header>
+		<h5 class="text-center">{{ psalm.title }}</h5>
 		<p class="text-center secondary mb-lg">{{ psalm.subtitle }}</p>
 		<div class="grid">{{ psalm.lyrics|safe }}</div>
 	</article>
