@@ -10,6 +10,11 @@
 <div class="container">
 	<article data-lang="{{ lang }}" class="psalm {{ psalm.step }} relative">
 		<header id="psalm-tools" class="flex align-center space-between">
+			<p id="capo-paragraph" class="py-btn mb-0">
+				<a class="p-xxs pointer" onclick="moveCapo(-1)"><svg width="1em" height="1em"><use xlink:href="#icon-minus"/></svg></a>
+				Capo <span id="current-capo" data-capo="{{ psalm.capo }}">{{ psalm.capo }}</span>
+				<a class="p-xxs pointer" onclick="moveCapo(1)"><svg width="1em" height="1em"><use xlink:href="#icon-plus"/></svg></a>
+			</p>
 			<div class="flex align-center">
 				<details id="transpose-menu" class="dropdown mb-0">
 					<summary class="transparent-btn no-caret">

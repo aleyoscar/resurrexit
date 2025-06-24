@@ -4,6 +4,8 @@ const transposeMenu = document.getElementById('transpose-menu');
 const transposeList = document.getElementById('transpose-list');
 const transposeBtn = document.getElementById('transpose-btn');
 const chordSpans = document.querySelectorAll('.chord');
+const currentCapo = document.getElementById('current-capo');
+const capoParagraph = document.getElementById('capo-paragraph');
 
 // PSALM CHORDS ---------------------------------------------------------------
 
@@ -39,13 +41,13 @@ async function gen_transpositions() {
 		else if (c >= baseChords.length) c -= baseChords.length;
 		const li = document.createElement('li');
 		li.classList.add('pointer');
-		li.innerHTML = `<a class="text-left" onclick="change_key('${change}')">
+		li.innerHTML = `<a class="text-left" onclick="changeKey('${change}')">
 			<span class="width-md inline-block">${baseChords[c][0]}</span>(${changeText})</a>`;
 		transposeList.appendChild(li);
 	}
 }
 
-async function change_key(key) {
+async function changeKey(key) {
 	const change = parseInt(key);
 	const changeText = change > 0 ? `+${change}` : `${change}`;
 	const settings = await settingsData;
@@ -62,5 +64,26 @@ async function change_key(key) {
 	});
 }
 
-if (chordSpans.length > 0) gen_transpositions();
-else transposeMenu.classList.add('hide');
+function moveCapo(move) {
+	const current = parseInt(currentCapo.textContent ? currentCapo.textContent : 0);
+	let newCapo = current + move;
+	if (newCapo < 0) newCapo = 0;
+	if (newCapo > 11) newCapo = 11;
+	if (newCapo == currentCapo.dataset.capo) {
+		currentCapo.classList.remove('primary');
+		capoParagraph.classList.add('secondary');
+		currentCapo.textContent = newCapo;
+	} else {
+		currentCapo.classList.add('primary');
+		capoParagraph.classList.remove('secondary');
+		currentCapo.textContent = ` ${newCapo}`;
+	}
+}
+
+if (chordSpans.length > 0) {
+	gen_transpositions();
+	moveCapo(0);
+} else {
+	transposeMenu.classList.add('hide');
+	capoParagraph.classList.add('hide');
+}
