@@ -117,6 +117,7 @@ ul li { list-style-type: none; }
 .flex-column { flex-direction: column; }
 .flex-column-reverse { flex-direction: column-reverse; }
 .flex-inline { display: inline-flex; }
+.float-left { float: left; }
 .float-right { float: right; }
 .gap-xs { gap: 1rem; }
 .gap-xxs { gap: 0.6rem; }
@@ -141,6 +142,7 @@ ul li { list-style-type: none; }
 .mt-auto { margin-top: auto; }
 .mt-btn { margin-top: calc(1em + var(--pico-form-element-spacing-vertical) * 2 + var(--pico-spacing)); }
 .mt-pico { margin-top: var(--pico-spacing); }
+.mt-xxs { margin-top: 0.6rem; }
 .overflow-auto {
 	-webkit-overflow-scrolling: touch;
 	&::-webkit-scrollbar { display: none; }

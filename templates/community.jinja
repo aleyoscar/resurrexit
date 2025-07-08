@@ -1,0 +1,236 @@
+{% extends 'base.jinja' %}
+{% block title %}My Community{% endblock %}
+{% block scripts %}
+	<script src="{{ url_for('static', filename='scripts/community.js', v=settings.version) }}" defer></script>
+{% endblock %}
+{% block content %}
+<div class="container logged-in">
+	<p id="community-error" class="error message hide">There was an error loading your community</p>
+	<section id="brother-tools" class="sticky">
+		<div class="container flex align-center gap-xs">
+			<form id="brother-search-form" role="search" class="flex-1 mb-0">
+				<input id="brother-search"
+					class="flex-1"
+					type="search"
+					name="brother-search"
+					placeholder="Search"
+					aria-label="Search"
+				/>
+			</form>
+			<button class="brother-sort outline flex-inline align-center gap-xxs hide-md"
+				data-sort="first_name"
+				onclick="sortBrothers(event)">
+				First Name
+				<svg class="sort-asc" width="1em" height="1em">
+					<use xlink:href="#icon-sort-asc"/>
+				</svg>
+				<svg class="sort-desc hide" width="1em" height="1em">
+					<use xlink:href="#icon-sort-desc"/>
+				</svg>
+			</button>
+			<button class="brother-sort flex-inline align-center gap-xxs hide-md"
+				data-sort="last_name"
+				onclick="sortBrothers(event)">
+				Last Name
+				<svg class="sort-asc" width="1em" height="1em">
+					<use xlink:href="#icon-sort-asc"/>
+				</svg>
+				<svg class="sort-desc hide" width="1em" height="1em">
+					<use xlink:href="#icon-sort-desc"/>
+				</svg>
+			</button>
+			<button class="brother-sort outline flex-inline align-center gap-xxs hide-md"
+				data-sort="role"
+				onclick="sortBrothers(event)">
+				Role
+				<svg class="sort-asc" width="1em" height="1em">
+					<use xlink:href="#icon-sort-asc"/>
+				</svg>
+				<svg class="sort-desc hide" width="1em" height="1em">
+					<use xlink:href="#icon-sort-desc"/>
+				</svg>
+			</button>
+			<details class="brother-sort-md dropdown hide-lg mb-0">
+				<summary class="transparent-btn no-caret">
+					<svg class="sort-asc" width="1.6em" height="1.6em">
+						<use xlink:href="#icon-sort-asc"/>
+					</svg>
+					<svg class="sort-desc hide" width="1.6em" height="1.6em">
+						<use xlink:href="#icon-sort-desc"/>
+					</svg>
+				</summary>
+				<ul dir="rtl">
+					<li dir="ltr"><a class="pointer"
+						data-sort="first_name"
+						data-direction="asc"
+						onclick="sortBrothers(event)">
+						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
+						First Name Ascending
+					</a></li>
+					<li dir="ltr"><a class="pointer"
+						data-sort="first_name"
+						data-direction="desc"
+						onclick="sortBrothers(event)">
+						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
+						First Name Descending
+					</a></li>
+					<li dir="ltr"><a class="pointer"
+						data-sort="last_name"
+						data-direction="asc"
+						onclick="sortBrothers(event)">
+						<svg width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
+						Last Name Ascending
+					</a></li>
+					<li dir="ltr"><a class="pointer"
+						data-sort="last_name"
+						data-direction="desc"
+						onclick="sortBrothers(event)">
+						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
+						Last Name Descending
+					</a></li>
+					<li dir="ltr"><a class="pointer"
+						data-sort="role"
+						data-direction="asc"
+						onclick="sortBrothers(event)">
+						<svg width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
+						Role Ascending
+					</a></li>
+					<li dir="ltr"><a class="pointer"
+						data-sort="role"
+						data-direction="desc"
+						onclick="sortBrothers(event)">
+						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
+						Role Descending
+					</a></li>
+				</ul>
+			</details>
+		</div>
+	</section>
+	<section>
+		<div id="community-teams"></div>
+		<a id="clear-btn" class="secondary flex justify-center align-center gap-xxs pointer pt-xs"
+			onclick="clearBrotherFilters()"><small>
+			Clear Filters
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-stars"/>
+			</svg></small>
+		</a>
+	</section>
+	<hr>
+	<div id="community-list" class="flex flex-column"></div>
+	<section>
+		<button data-target="brother-modal" onclick="addBrother(); toggleModal(event);">Add Brother/Sister</button>
+	</section>
+</div>
+{% endblock %}
+{% block modals %}
+<dialog id="brother-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="brother-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3 id="brother-title">Edit <span></span></h3>
+		</header>
+		<p id="brother-error" class="error hide">There was an error updating this brother/sister</p>
+		<form id="brother-form">
+			<fieldset>
+				<input type="hidden" id="brother-id" name="brother-id" value="" />
+				<label>First Name
+					<input class="modal-focus"
+						type="text"
+						id="brother-first-name"
+						name="brother-first-name"
+						placeholder="First Name"
+						autocomplete="off"
+						required />
+				</label>
+				<label>Last Name
+					<input type="text"
+						id="brother-last-name"
+						name="brother-last-name"
+						placeholder="Last Name"
+						autocomplete="off"/>
+					</label>
+				<label>Role
+					<select id="brother-role" name="brother-role">
+						<option value="00-responsible">Responsible</option>
+						<option value="01-coresponsible">Co-Responsible</option>
+						<option value="02-catechist">Catechist</option>
+						<option value="03-didaskalos">Didaskalos</option>
+						<option value="04-ostiarius">Ostiarius</option>
+						<option value="05-psalmist">Psalmist</option>
+						<option selected value="06-brother">Brother/Sister</option>
+					</select>
+				</label>
+				<label>Phone
+					<input type="text"
+						id="brother-phone"
+						name="brother-phone"
+						placeholder="Phone Number"
+						autocomplete="off"/>
+				</label>
+				<label>Alternate Contact
+					<input type="text"
+						id="brother-alternate"
+						name="brother-alternate"
+						placeholder="Alternate Contact"
+						autocomplete="off"/>
+				</label>
+				<label>Alternate Contact Phone
+					<input type="text"
+						id="brother-alternate-phone"
+						name="brother-alternate-phone"
+						placeholder="Alternate Contact Phone Number"
+						autocomplete="off"/>
+				</label>
+				<label>Address
+					<input type="text"
+						id="brother-address"
+						name="brother-address"
+						placeholder="Address"
+						autocomplete="off"/>
+				</label>
+				<label>Date Joined
+					<input type="date"
+						id="brother-joined"
+						name="brother-joined"/>
+				</label>
+				<label>Walking
+					<select id="walking" name="walking">
+						<option selected value="yes">Yes</option>
+						<option value="no">No</option>
+						<option value="somewhat">Somewhat</option>
+					</select>
+				</label>
+				<label>Team
+					<select id="team" name="team">
+						<option selected disabled value="0">Select Team #</option>
+						{% for i in range(1, 11) %}
+						<option value="{{ i }}">{{ i }}</option>
+						{% endfor %}
+					</select>
+				</label>
+			</fieldset>
+		</form>
+		<footer>
+			<button id="brother-delete"
+				class="float-left contrast"
+				data-id=""
+				onclick="deleteBrother(event)">
+				<svg width="1em" height="1em">
+					<use xlink:href="#icon-trash"/>
+				</svg>
+			</button>
+			<button class="secondary"
+				data-target="brother-modal"
+				onclick="toggleModal(event)">
+				Cancel
+			</button>
+			<button id="brother-submit" form="brother-form">Save</button>
+		</footer>
+	</article>
+</dialog>
+{% endblock %}

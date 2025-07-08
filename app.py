@@ -47,5 +47,9 @@ def custom_list():
 def account():
 	return render_template('account.jinja', settings=settings)
 
+@app.route('/community/')
+def community():
+	return render_template('community.jinja', settings=settings)
+
 if __name__ == '__main__':
     app.run(debug=True)
