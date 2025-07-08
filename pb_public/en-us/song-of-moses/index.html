@@ -6,20 +6,22 @@
 		<meta name="color-scheme" content="light dark">
 		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
 		<meta name="theme-color" content="#c52f21" />
-		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.1.2" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.1.2" />
-		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.1.2" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.1.2" />
-		<link rel="manifest" href="/static/site.webmanifest?v=v3.1.2" />
-		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/styles.css?v=v3.1.2">
-		<script src="/static/scripts/js.cookie.min.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/pocketbase.umd.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/eplayer.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/modal.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/main.js?v=v3.1.2" defer></script>
+		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.2.0" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.2.0" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.2.0" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.2.0" />
+		<link rel="manifest" href="/static/site.webmanifest?v=v3.2.0" />
+		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/styles.css?v=v3.2.0">
+		<script src="/static/scripts/js.cookie.min.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/pocketbase.umd.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/eplayer.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/modal.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/main.js?v=v3.2.0" defer></script>
 		
+	<script src="/static/scripts/psalm.js?v=v3.2.0" defer></script>
+
 		<title>Resurrexit | SONG OF MOSES</title>
 	</head>
 	<body class="flex flex-column">
@@ -75,6 +77,20 @@
 	</symbol>
 	<symbol id="icon-trash" viewBox="0 0 16 16">
 		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+	</symbol>
+	<symbol id="icon-music-note" viewBox="0 0 16 16">
+		<path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+		<path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+		<path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+	</symbol>
+	<symbol id="icon-plus" viewBox="0 0 16 16">
+		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+	</symbol>
+	<symbol id="icon-minus" viewBox="0 0 16 16">
+		<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+	</symbol>
+	<symbol id="icon-check" viewBox="0 0 16 16">
+		<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
 	</symbol>
 </svg>
 		
@@ -139,6 +155,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>
@@ -209,6 +228,11 @@
 					</a>
 				</li>
 				<li class="logged-in hide">
+					<a class="secondary pointer" href="/community/">
+						Community List
+					</a>
+				</li>
+				<li class="logged-in hide">
 					<a class="secondary pointer" href="/account/">
 						Settings
 					</a>
@@ -225,27 +249,42 @@
 		
 		<main>
 <div class="container">
-	<article class="psalm pre">
-		<hgroup class="flex space-between align-center gap-xxs mb-0">
-			<p class="ghost"></p>
-			<h5 class="text-center">SONG OF MOSES</h5>
-			<details class="dropdown mb-0">
-				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
-					<use xlink:href="#icon-lang"/>
-				</svg></summary>
-				<ul dir="rtl">
-					
-					<li>
-						<a href="/es-es/canto-de-moises/">
-							CANTO DE MOISÉS
-						</a>
-					</li>
-					
-				</ul>
-			</details>
-		</hgroup>
+	<article data-lang="en-us" class="psalm pre relative">
+		<header id="psalm-tools" class="flex align-center space-between">
+			<p id="capo-paragraph" class="py-btn mb-0">
+				<a class="p-xxs pointer" onclick="moveCapo(-1)"><svg width="1em" height="1em"><use xlink:href="#icon-minus"/></svg></a>
+				Capo <span id="current-capo" data-capo="0">0</span>
+				<a class="p-xxs pointer" onclick="moveCapo(1)"><svg width="1em" height="1em"><use xlink:href="#icon-plus"/></svg></a>
+			</p>
+			<div class="flex align-center">
+				<details id="transpose-menu" class="dropdown mb-0">
+					<summary class="transparent-btn no-caret">
+						<svg width="1em" height="1em">
+							<use xlink:href="#icon-music-note"/>
+						</svg>
+						<span id="transpose-btn" class="primary"></span>
+					</summary>
+					<ul id="transpose-list"><li>Transpose</li></ul>
+				</details>
+				<details class="dropdown mb-0">
+					<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+						<use xlink:href="#icon-lang"/>
+					</svg></summary>
+					<ul>
+						
+						<li>
+							<a href="/es-es/canto-de-moises/">
+								CANTO DE MOISÉS
+							</a>
+						</li>
+						
+					</ul>
+				</details>
+			</div>
+		</header>
+		<h5 class="text-center">SONG OF MOSES</h5>
 		<p class="text-center secondary mb-lg">Ex. 15, 1-18</p>
-		<div class="grid"><div class='column'><div class='section psalmista en-us'><p class='line'><span class='chord'>C7</span>Let us sing to the L<span class='chord'>F</span>ord,</p><p class='line'>let us sing to the L<span class='chord'>A7</span>ord.</p><p class='line'>He covered himself in gl<span class='chord'>D7</span>ory,</p><p class='line'>in glory, in glory.</p><p class='line'>He has thrown into the s<span class='chord'>G7</span>ea</p><p class='line'>horse and r<span class='chord'>C7</span>ider.</p></div><div class='section comitium en-us'><p class='line'>MY STRENGTH AND MY S<span class='chord'>F</span>ONG</p><p class='line'>IS THE L<span class='chord'>A7</span>ORD.</p><p class='line'>HE IS MY SALV<span class='chord'>D7</span>ATION</p><p class='line'>IS MY GOD,</p><p class='line'>I WILL EX<span class='chord'>G7</span>ALT HIM</p><p class='line'>HE HAS THROWN INTO THE S<span class='chord'>C7</span>EA</p><p class='line'>HORSE AND RIDER,</p><p class='line'>HORSE AND RIDER.</p></div><div class='section psalmista en-us'><p class='line'>The Lord is a w<span class='chord'>F</span>arrior.</p><p class='line'>Yahweh is his N<span class='chord'>A7</span>ame.</p><p class='line'>Pharaoh's ch<span class='chord'>D7</span>ariots</p><p class='line'>and the enemy's army</p><p class='line'>He cast into the s<span class='chord'>G7</span>ea.</p></div></div><div class='column'><div class='section comitium en-us'><p class='line'>HE HAS THROWN...</p><p class='line'>HORSE AND RIDER. (2)</p><p class='line'>MY STRENGTH AND MY SONG ...</p></div><div class='section psalmista concretus en-us'><p class='line'>Your right hand, O Lord,</p><p class='line'>glorious in power,</p><p class='line'>your right hand, O Lord,</p><p class='line'>shattered the enemy,</p><p class='line'>shattered the enemy.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>The enemy said:</p><p class='line'>I shall pursue and overtake.</p><p class='line'>I shall draw my sword.</p><p class='line'>I will share the spoils,</p><p class='line'>my hand will destroy them.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>You blew with your breath</p><p class='line'>the sea covered them.</p><p class='line'>They sank like lead</p><p class='line'>in deep waters,</p><p class='line'>in the waters of death.</p></div></div><div class='column'><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>Who is like you among the god</p><p class='line'>who is like you, O Lord,</p><p class='line'>magnificent in holiness</p><p class='line'>terrible in deeds,</p><p class='line'>worker of wonders.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>You led this people</p><p class='line'>that you have rescued,</p><p class='line'>with strength you guided them</p><p class='line'>with strength and with love</p><p class='line'>up to your holy dwelling.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>You brought them in</p><p class='line'>and planted them</p><p class='line'>on the mountain of the promi:</p><p class='line'>where, O Lord, you reign,</p><p class='line'>you reign for all eternity,</p><p class='line'>you reign forever.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div></div></div>
+		<div class="grid"><div class='column'><div class='section psalmista en-us'><p class='line'><span data-key='3' data-root='C' data-quality='7' class='chord'>C7</span>Let us sing to the L<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>ord,</p><p class='line'>let us sing to the L<span data-key='0' data-root='A' data-quality='7' class='chord'>A7</span>ord.</p><p class='line'>He covered himself in gl<span data-key='5' data-root='D' data-quality='7' class='chord'>D7</span>ory,</p><p class='line'>in glory, in glory.</p><p class='line'>He has thrown into the s<span data-key='10' data-root='G' data-quality='7' class='chord'>G7</span>ea</p><p class='line'>horse and r<span data-key='3' data-root='C' data-quality='7' class='chord'>C7</span>ider.</p></div><div class='section comitium en-us'><p class='line'>MY STRENGTH AND MY S<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>ONG</p><p class='line'>IS THE L<span data-key='0' data-root='A' data-quality='7' class='chord'>A7</span>ORD.</p><p class='line'>HE IS MY SALV<span data-key='5' data-root='D' data-quality='7' class='chord'>D7</span>ATION</p><p class='line'>IS MY GOD,</p><p class='line'>I WILL EX<span data-key='10' data-root='G' data-quality='7' class='chord'>G7</span>ALT HIM</p><p class='line'>HE HAS THROWN INTO THE S<span data-key='3' data-root='C' data-quality='7' class='chord'>C7</span>EA</p><p class='line'>HORSE AND RIDER,</p><p class='line'>HORSE AND RIDER.</p></div><div class='section psalmista en-us'><p class='line'>The Lord is a w<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>arrior.</p><p class='line'>Yahweh is his N<span data-key='0' data-root='A' data-quality='7' class='chord'>A7</span>ame.</p><p class='line'>Pharaoh's ch<span data-key='5' data-root='D' data-quality='7' class='chord'>D7</span>ariots</p><p class='line'>and the enemy's army</p><p class='line'>He cast into the s<span data-key='10' data-root='G' data-quality='7' class='chord'>G7</span>ea.</p></div></div><div class='column'><div class='section comitium en-us'><p class='line'>HE HAS THROWN...</p><p class='line'>HORSE AND RIDER. (2)</p><p class='line'>MY STRENGTH AND MY SONG ...</p></div><div class='section psalmista concretus en-us'><p class='line'>Your right hand, O Lord,</p><p class='line'>glorious in power,</p><p class='line'>your right hand, O Lord,</p><p class='line'>shattered the enemy,</p><p class='line'>shattered the enemy.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>The enemy said:</p><p class='line'>I shall pursue and overtake.</p><p class='line'>I shall draw my sword.</p><p class='line'>I will share the spoils,</p><p class='line'>my hand will destroy them.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>You blew with your breath</p><p class='line'>the sea covered them.</p><p class='line'>They sank like lead</p><p class='line'>in deep waters,</p><p class='line'>in the waters of death.</p></div></div><div class='column'><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>Who is like you among the god</p><p class='line'>who is like you, O Lord,</p><p class='line'>magnificent in holiness</p><p class='line'>terrible in deeds,</p><p class='line'>worker of wonders.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>You led this people</p><p class='line'>that you have rescued,</p><p class='line'>with strength you guided them</p><p class='line'>with strength and with love</p><p class='line'>up to your holy dwelling.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div><div class='section psalmista concretus en-us'><p class='line'>You brought them in</p><p class='line'>and planted them</p><p class='line'>on the mountain of the promi:</p><p class='line'>where, O Lord, you reign,</p><p class='line'>you reign for all eternity,</p><p class='line'>you reign forever.</p></div><div class='section comitium en-us'><p class='line'>HE HAS THROWN ...</p></div></div></div>
 	</article>
 </div>
 </main>
@@ -273,6 +312,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>

@@ -6,20 +6,22 @@
 		<meta name="color-scheme" content="light dark">
 		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
 		<meta name="theme-color" content="#c52f21" />
-		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.1.2" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.1.2" />
-		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.1.2" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.1.2" />
-		<link rel="manifest" href="/static/site.webmanifest?v=v3.1.2" />
-		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/styles.css?v=v3.1.2">
-		<script src="/static/scripts/js.cookie.min.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/pocketbase.umd.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/eplayer.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/modal.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/main.js?v=v3.1.2" defer></script>
+		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.2.0" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.2.0" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.2.0" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.2.0" />
+		<link rel="manifest" href="/static/site.webmanifest?v=v3.2.0" />
+		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/styles.css?v=v3.2.0">
+		<script src="/static/scripts/js.cookie.min.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/pocketbase.umd.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/eplayer.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/modal.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/main.js?v=v3.2.0" defer></script>
 		
+	<script src="/static/scripts/psalm.js?v=v3.2.0" defer></script>
+
 		<title>Resurrexit | SHEMÁ LSRAEL</title>
 	</head>
 	<body class="flex flex-column">
@@ -75,6 +77,20 @@
 	</symbol>
 	<symbol id="icon-trash" viewBox="0 0 16 16">
 		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+	</symbol>
+	<symbol id="icon-music-note" viewBox="0 0 16 16">
+		<path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+		<path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+		<path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+	</symbol>
+	<symbol id="icon-plus" viewBox="0 0 16 16">
+		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+	</symbol>
+	<symbol id="icon-minus" viewBox="0 0 16 16">
+		<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+	</symbol>
+	<symbol id="icon-check" viewBox="0 0 16 16">
+		<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
 	</symbol>
 </svg>
 		
@@ -139,6 +155,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>
@@ -209,6 +228,11 @@
 					</a>
 				</li>
 				<li class="logged-in hide">
+					<a class="secondary pointer" href="/community/">
+						Community List
+					</a>
+				</li>
+				<li class="logged-in hide">
 					<a class="secondary pointer" href="/account/">
 						Settings
 					</a>
@@ -225,27 +249,42 @@
 		
 		<main>
 <div class="container">
-	<article class="psalm cat">
-		<hgroup class="flex space-between align-center gap-xxs mb-0">
-			<p class="ghost"></p>
-			<h5 class="text-center">SHEMÁ LSRAEL</h5>
-			<details class="dropdown mb-0">
-				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
-					<use xlink:href="#icon-lang"/>
-				</svg></summary>
-				<ul dir="rtl">
-					
-					<li>
-						<a href="/en-us/shema-israel/">
-							SHEMA ISRAEL
-						</a>
-					</li>
-					
-				</ul>
-			</details>
-		</hgroup>
+	<article data-lang="es-es" class="psalm cat relative">
+		<header id="psalm-tools" class="flex align-center space-between">
+			<p id="capo-paragraph" class="py-btn mb-0">
+				<a class="p-xxs pointer" onclick="moveCapo(-1)"><svg width="1em" height="1em"><use xlink:href="#icon-minus"/></svg></a>
+				Capo <span id="current-capo" data-capo="4">4</span>
+				<a class="p-xxs pointer" onclick="moveCapo(1)"><svg width="1em" height="1em"><use xlink:href="#icon-plus"/></svg></a>
+			</p>
+			<div class="flex align-center">
+				<details id="transpose-menu" class="dropdown mb-0">
+					<summary class="transparent-btn no-caret">
+						<svg width="1em" height="1em">
+							<use xlink:href="#icon-music-note"/>
+						</svg>
+						<span id="transpose-btn" class="primary"></span>
+					</summary>
+					<ul id="transpose-list"><li>Transpose</li></ul>
+				</details>
+				<details class="dropdown mb-0">
+					<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+						<use xlink:href="#icon-lang"/>
+					</svg></summary>
+					<ul>
+						
+						<li>
+							<a href="/en-us/shema-israel/">
+								SHEMA ISRAEL
+							</a>
+						</li>
+						
+					</ul>
+				</details>
+			</div>
+		</header>
+		<h5 class="text-center">SHEMÁ LSRAEL</h5>
 		<p class="text-center secondary mb-lg">Dt 6,4-9</p>
-		<div class="grid"><div class='column'><div class='section psalmista es-es'><p class='line'><span class='chord'>Lam</span>Shemá Israel, Shem<span class='chord'>Sol</span>á Israel,</p><p class='line'>Adon<span class='chord'>Fa</span>ai Elohenu, Adonai Ej<span class='chord'>Lam</span>ad.</p></div><div class='section comitium es-es'><p class='line'><span class='chord'>Lam</span>SHEMÁ ISRAEL, SHEM<span class='chord'>Sol</span>Á ISRAEL,</p><p class='line'>ADON<span class='chord'>Fa</span>AI ELOHENU, ADONAI EJ<span class='chord'>Lam</span>AD.</p></div><div class='section comitium es-es'><p class='line'><span class='chord'>Lam</span>ESCUCHA ISRAEL, ESCU<span class='chord'>Sol</span>CHA ISRAEL,</p><p class='line'>EL SEÑ<span class='chord'>Fa</span>OR ES NUESTRO DIOS,</p><p class='line'>EL SEÑOR ES <span class='chord'>Lam</span>UNO.</p></div><div class='section psalmista es-es'><p class='line'><span class='chord'>Lam</span>Amarás al Señor tu Dios</p><p class='line'>con t<span class='chord'>Fa</span>odo tu coraz<span class='chord'>Lam</span>ón,</p><p class='line'>con t<span class='chord'>Fa</span>oda tu <span class='chord'>Lam</span>alma,</p><p class='line'>con t<span class='chord'>Fa</span>odas tus f<span class='chord'>Mi</span>uerzas.</p></div><div class='section psalmista es-es'><p class='line'><span class='chord'>Lam</span>Graba estas p<span class='chord'>Rem</span>alabras</p><p class='line'>como señ<span class='chord'>Sol</span>al en las palmas de tus m<span class='chord'>Lam</span>anos,</p><p class='line'>como memorial entre tus <span class='chord'>Rem</span>ojos,</p><p class='line'>en las j<span class='chord'>Sol</span>ambas de tu casa y en las p<span class='chord'>Mi</span>uertas.</p></div><div class='section comitium es-es'><p class='line'><span class='chord'>Lam</span>SHEMÁ ISRAEL...</p><p class='line'>ESCUCHA ISRAEL...</p></div></div><div class='column'><div class='section psalmista es-es'><p class='line'><span class='chord'>Lam</span>Enséñalo a tus hijos, Israel,</p><p class='line'><span class='chord'>Fa</span>háblales en c<span class='chord'>Lam</span>asa,</p><p class='line'>cuando cam<span class='chord'>Fa</span>ines por la c<span class='chord'>Lam</span>alle,</p><p class='line'>cuando te ac<span class='chord'>Fa</span>uestes y te lev<span class='chord'>Mi</span>antes.</p><p class='line'><span class='chord'>Lam</span>Este es el primer mandamiento de la v<span class='chord'>Rem</span>ida,</p><p class='line'>el seg<span class='chord'>Sol</span>undo es igual a <span class='chord'>Lam</span>este:</p><p class='line'>Ama a tu prójimo c<span class='chord'>Rem</span>omo a ti mismo</p><p class='line'>y tendr<span class='chord'>Sol</span>ás, tendrás la Vida Et<span class='chord'>Mi</span>erna.</p></div><div class='section comitium es-es'><p class='line'><span class='chord'>Lam</span>SHEMÁ ISRAEL...</p><p class='line'>ESCUCHA ISRAEL...</p></div><div class='section psalmista es-es'><p class='line'><span class='chord'>Lam</span>Shemá Israel, (melisma)</p></div><div class='section comitium es-es'><p class='line'>SHEM<span class='chord'>Sol</span>Á ISRAEL,</p><p class='line'>ADON<span class='chord'>Fa</span>AI ELOHENU,</p><p class='line'>ADONAI EJ<span class='chord'>Lam</span>AD.</p></div></div></div>
+		<div class="grid"><div class='column'><div class='section psalmista es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>Shemá Israel, Shem<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>á Israel,</p><p class='line'>Adon<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>ai Elohenu, Adonai Ej<span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>ad.</p></div><div class='section comitium es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>SHEMÁ ISRAEL, SHEM<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>Á ISRAEL,</p><p class='line'>ADON<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>AI ELOHENU, ADONAI EJ<span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>AD.</p></div><div class='section comitium es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>ESCUCHA ISRAEL, ESCU<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>CHA ISRAEL,</p><p class='line'>EL SEÑ<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>OR ES NUESTRO DIOS,</p><p class='line'>EL SEÑOR ES <span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>UNO.</p></div><div class='section psalmista es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>Amarás al Señor tu Dios</p><p class='line'>con t<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>odo tu coraz<span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>ón,</p><p class='line'>con t<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>oda tu <span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>alma,</p><p class='line'>con t<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>odas tus f<span data-key='7' data-root='Mi' data-quality='' class='chord'>Mi</span>uerzas.</p></div><div class='section psalmista es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>Graba estas p<span data-key='5' data-root='Re' data-quality='m' class='chord'>Rem</span>alabras</p><p class='line'>como señ<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>al en las palmas de tus m<span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>anos,</p><p class='line'>como memorial entre tus <span data-key='5' data-root='Re' data-quality='m' class='chord'>Rem</span>ojos,</p><p class='line'>en las j<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>ambas de tu casa y en las p<span data-key='7' data-root='Mi' data-quality='' class='chord'>Mi</span>uertas.</p></div><div class='section comitium es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>SHEMÁ ISRAEL...</p><p class='line'>ESCUCHA ISRAEL...</p></div></div><div class='column'><div class='section psalmista es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>Enséñalo a tus hijos, Israel,</p><p class='line'><span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>háblales en c<span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>asa,</p><p class='line'>cuando cam<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>ines por la c<span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>alle,</p><p class='line'>cuando te ac<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>uestes y te lev<span data-key='7' data-root='Mi' data-quality='' class='chord'>Mi</span>antes.</p><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>Este es el primer mandamiento de la v<span data-key='5' data-root='Re' data-quality='m' class='chord'>Rem</span>ida,</p><p class='line'>el seg<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>undo es igual a <span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>este:</p><p class='line'>Ama a tu prójimo c<span data-key='5' data-root='Re' data-quality='m' class='chord'>Rem</span>omo a ti mismo</p><p class='line'>y tendr<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>ás, tendrás la Vida Et<span data-key='7' data-root='Mi' data-quality='' class='chord'>Mi</span>erna.</p></div><div class='section comitium es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>SHEMÁ ISRAEL...</p><p class='line'>ESCUCHA ISRAEL...</p></div><div class='section psalmista es-es'><p class='line'><span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>Shemá Israel, (melisma)</p></div><div class='section comitium es-es'><p class='line'>SHEM<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>Á ISRAEL,</p><p class='line'>ADON<span data-key='8' data-root='Fa' data-quality='' class='chord'>Fa</span>AI ELOHENU,</p><p class='line'>ADONAI EJ<span data-key='0' data-root='La' data-quality='m' class='chord'>Lam</span>AD.</p></div></div></div>
 	</article>
 </div>
 </main>
@@ -273,6 +312,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>

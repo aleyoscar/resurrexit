@@ -6,20 +6,22 @@
 		<meta name="color-scheme" content="light dark">
 		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
 		<meta name="theme-color" content="#c52f21" />
-		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.1.2" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.1.2" />
-		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.1.2" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.1.2" />
-		<link rel="manifest" href="/static/site.webmanifest?v=v3.1.2" />
-		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/styles.css?v=v3.1.2">
-		<script src="/static/scripts/js.cookie.min.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/pocketbase.umd.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/eplayer.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/modal.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/main.js?v=v3.1.2" defer></script>
+		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.2.0" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.2.0" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.2.0" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.2.0" />
+		<link rel="manifest" href="/static/site.webmanifest?v=v3.2.0" />
+		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/styles.css?v=v3.2.0">
+		<script src="/static/scripts/js.cookie.min.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/pocketbase.umd.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/eplayer.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/modal.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/main.js?v=v3.2.0" defer></script>
 		
+	<script src="/static/scripts/psalm.js?v=v3.2.0" defer></script>
+
 		<title>Resurrexit | AL DESPERTAR</title>
 	</head>
 	<body class="flex flex-column">
@@ -75,6 +77,20 @@
 	</symbol>
 	<symbol id="icon-trash" viewBox="0 0 16 16">
 		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+	</symbol>
+	<symbol id="icon-music-note" viewBox="0 0 16 16">
+		<path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+		<path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+		<path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+	</symbol>
+	<symbol id="icon-plus" viewBox="0 0 16 16">
+		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+	</symbol>
+	<symbol id="icon-minus" viewBox="0 0 16 16">
+		<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+	</symbol>
+	<symbol id="icon-check" viewBox="0 0 16 16">
+		<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
 	</symbol>
 </svg>
 		
@@ -139,6 +155,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>
@@ -209,6 +228,11 @@
 					</a>
 				</li>
 				<li class="logged-in hide">
+					<a class="secondary pointer" href="/community/">
+						Community List
+					</a>
+				</li>
+				<li class="logged-in hide">
 					<a class="secondary pointer" href="/account/">
 						Settings
 					</a>
@@ -225,27 +249,42 @@
 		
 		<main>
 <div class="container">
-	<article class="psalm pre">
-		<hgroup class="flex space-between align-center gap-xxs mb-0">
-			<p class="ghost"></p>
-			<h5 class="text-center">AL DESPERTAR</h5>
-			<details class="dropdown mb-0">
-				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
-					<use xlink:href="#icon-lang"/>
-				</svg></summary>
-				<ul dir="rtl">
-					
-					<li>
-						<a href="/en-us/when-i-awake/">
-							WHEN I AWAKE
-						</a>
-					</li>
-					
-				</ul>
-			</details>
-		</hgroup>
+	<article data-lang="es-es" class="psalm pre relative">
+		<header id="psalm-tools" class="flex align-center space-between">
+			<p id="capo-paragraph" class="py-btn mb-0">
+				<a class="p-xxs pointer" onclick="moveCapo(-1)"><svg width="1em" height="1em"><use xlink:href="#icon-minus"/></svg></a>
+				Capo <span id="current-capo" data-capo="0">0</span>
+				<a class="p-xxs pointer" onclick="moveCapo(1)"><svg width="1em" height="1em"><use xlink:href="#icon-plus"/></svg></a>
+			</p>
+			<div class="flex align-center">
+				<details id="transpose-menu" class="dropdown mb-0">
+					<summary class="transparent-btn no-caret">
+						<svg width="1em" height="1em">
+							<use xlink:href="#icon-music-note"/>
+						</svg>
+						<span id="transpose-btn" class="primary"></span>
+					</summary>
+					<ul id="transpose-list"><li>Transpose</li></ul>
+				</details>
+				<details class="dropdown mb-0">
+					<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+						<use xlink:href="#icon-lang"/>
+					</svg></summary>
+					<ul>
+						
+						<li>
+							<a href="/en-us/when-i-awake/">
+								WHEN I AWAKE
+							</a>
+						</li>
+						
+					</ul>
+				</details>
+			</div>
+		</header>
+		<h5 class="text-center">AL DESPERTAR</h5>
 		<p class="text-center secondary mb-lg">Sal 17 (16)</p>
-		<div class="grid"><div class='column'><div class='section comitium es-es'><p class='line'><span class='chord'>Sim</span>AL DESPERTAR</p><p class='line'><span class='chord'>Sol</span>ME SACIARÉ DE TU SEMBL<span class='chord'>Sim</span>ANTE, SEÑOR.</p><p class='line'>AL DESPER<span class='chord'>Mim</span>TAR</p><p class='line'>ME SACIARÉ DE TU SEMBL<span class='chord'>Sim</span>ANTE, SEÑOR.</p></div><div class='section psalmista es-es'><p class='line'>Es<span class='chord'>Mim</span>cucha, Señor, mi orac<span class='chord'>Sim</span>ión,</p><p class='line'>at<span class='chord'>Mim</span>iende, Señor, a mi clam<span class='chord'>Sim</span>or,</p><p class='line'><span class='chord'>Sol</span>presta oídos a mi s<span class='chord'>Fa#</span>úplica,</p><p class='line'>que mis <span class='chord'>Sol</span>labios no traicionan, Se<span class='chord'>Fa#</span>ñor.</p><p class='line'><span class='chord'>Sol</span>Salga de ti la sent<span class='chord'>Fa#</span>encia,</p><p class='line'>porque tus <span class='chord'>Mim</span>ojos ven, tus ojos ven mi recti<span class='chord'>Fa#</span>tud.</p></div><div class='section comitium es-es'><p class='line'>AL DESPER<span class='chord'>Sim</span>TAR ...</p></div><div class='section psalmista es-es'><p class='line'><span class='chord'>Mim</span>Sondea, Señor, mi cora<span class='chord'>Sim</span>zón,</p><p class='line'>esc<span class='chord'>Mim</span>rútalo de noche, Señ<span class='chord'>Sim</span>or;</p><p class='line'><span class='chord'>Sol</span>pruébame al crisol, pr<span class='chord'>Fa#</span>uébame al crisol</p><p class='line'><span class='chord'>Sol</span>porque tú sabes que no hay malicia en <span class='chord'>Fa#</span>mí;</p><p class='line'>que mi <span class='chord'>Sol</span>boca no miente como hacen los h<span class='chord'>Fa#</span>ombres.</p><p class='line'>Que he guar<span class='chord'>Mim</span>dado tu Palabra,</p><p class='line'>que no he seguido los caminos del viol<span class='chord'>Fa#</span>ento,</p><p class='line'>que a tus h<span class='chord'>Sol</span>uellas he ajustado mis p<span class='chord'>Fa#</span>asos,</p><p class='line'>que <span class='chord'>Mim</span>no vacilaré, que <span class='chord'>Fa#</span>no vacilaré.</p></div><div class='section comitium es-es'><p class='line'>AL DESPERT<span class='chord'>Sim</span>AR ...</p></div></div><div class='column'><div class='section psalmista es-es'><p class='line'><span class='chord'>Mim</span>A ti yo te invoco, Se<span class='chord'>Sim</span>ñor;</p><p class='line'>con<span class='chord'>Mim</span>cédeme, Señor, una resp<span class='chord'>Sim</span>uesta;</p><p class='line'><span class='chord'>Sol</span>muéstrame los prodigios de tu a<span class='chord'>Fa#</span>mor,</p><p class='line'>porque tú s<span class='chord'>Sol</span>alvas al que se apoya en <span class='chord'>Fa#</span>ti,</p><p class='line'>porque tú a<span class='chord'>Sol</span>yudas</p><p class='line'>al que se refugia a tu der<span class='chord'>Fa#</span>echa.</p><p class='line'><span class='chord'>Mim</span>Como a la niña de tus ojos g<span class='chord'>Fa#</span>uárdame,</p><p class='line'><span class='chord'>Mim</span>a la sombra de tus alas esc<span class='chord'>Fa#</span>óndeme,</p><p class='line'><span class='chord'>Sol</span>mira que quieren ma<span class='chord'>Fa#</span>tarme.</p></div><div class='section comitium es-es'><p class='line'>AL DESPERT<span class='chord'>Sim</span>AR ...</p></div><div class='section psalmista es-es'><p class='line'><span class='chord'>Mim</span>Míralos, están cerrados en su or<span class='chord'>Sim</span>gullo,</p><p class='line'><span class='chord'>Mim</span>hablan, la arrogancia está en su <span class='chord'>Sim</span>boca.</p><p class='line'><span class='chord'>Sol</span>Avanzan contra mí, av<span class='chord'>Fa#</span>anzan contra mí.</p><p class='line'><span class='chord'>Sol</span>¡Ayúdame tú, Señ<span class='chord'>Fa#</span>or,</p><p class='line'><span class='chord'>Sol</span>líbrame de los hombres de este m<span class='chord'>Fa#</span>undo,</p><p class='line'><span class='chord'>Mim</span>de los hombres cuyo premio es esta v<span class='chord'>Fa#</span>ida!</p><p class='line'><span class='chord'>Sol</span>¡Cólmalos de tus bienes, Se<span class='chord'>Fa#</span>ñor,</p><p class='line'><span class='chord'>Sol</span>llénales el vientre y que sus hijos se <span class='chord'>Fa#</span>sacien!</p><p class='line'><span class='chord'>Mim</span>Que yo al despertar, que yo por tu amor</p><p class='line'>me saci<span class='chord'>Sol</span>aré de tu rostro Se<span class='chord'>Fa#</span>ñor.</p></div><div class='section comitium es-es'><p class='line'>AL DESPER<span class='chord'>Sim</span>TAR ...</p></div></div></div>
+		<div class="grid"><div class='column'><div class='section comitium es-es'><p class='line'><span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>AL DESPERTAR</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>ME SACIARÉ DE TU SEMBL<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>ANTE, SEÑOR.</p><p class='line'>AL DESPER<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>TAR</p><p class='line'>ME SACIARÉ DE TU SEMBL<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>ANTE, SEÑOR.</p></div><div class='section psalmista es-es'><p class='line'>Es<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>cucha, Señor, mi orac<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>ión,</p><p class='line'>at<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>iende, Señor, a mi clam<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>or,</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>presta oídos a mi s<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>úplica,</p><p class='line'>que mis <span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>labios no traicionan, Se<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>ñor.</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>Salga de ti la sent<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>encia,</p><p class='line'>porque tus <span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>ojos ven, tus ojos ven mi recti<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>tud.</p></div><div class='section comitium es-es'><p class='line'>AL DESPER<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>TAR ...</p></div><div class='section psalmista es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>Sondea, Señor, mi cora<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>zón,</p><p class='line'>esc<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>rútalo de noche, Señ<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>or;</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>pruébame al crisol, pr<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>uébame al crisol</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>porque tú sabes que no hay malicia en <span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>mí;</p><p class='line'>que mi <span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>boca no miente como hacen los h<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>ombres.</p><p class='line'>Que he guar<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>dado tu Palabra,</p><p class='line'>que no he seguido los caminos del viol<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>ento,</p><p class='line'>que a tus h<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>uellas he ajustado mis p<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>asos,</p><p class='line'>que <span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>no vacilaré, que <span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>no vacilaré.</p></div><div class='section comitium es-es'><p class='line'>AL DESPERT<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>AR ...</p></div></div><div class='column'><div class='section psalmista es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>A ti yo te invoco, Se<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>ñor;</p><p class='line'>con<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>cédeme, Señor, una resp<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>uesta;</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>muéstrame los prodigios de tu a<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>mor,</p><p class='line'>porque tú s<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>alvas al que se apoya en <span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>ti,</p><p class='line'>porque tú a<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>yudas</p><p class='line'>al que se refugia a tu der<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>echa.</p><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>Como a la niña de tus ojos g<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>uárdame,</p><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>a la sombra de tus alas esc<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>óndeme,</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>mira que quieren ma<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>tarme.</p></div><div class='section comitium es-es'><p class='line'>AL DESPERT<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>AR ...</p></div><div class='section psalmista es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>Míralos, están cerrados en su or<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>gullo,</p><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>hablan, la arrogancia está en su <span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>boca.</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>Avanzan contra mí, av<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>anzan contra mí.</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>¡Ayúdame tú, Señ<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>or,</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>líbrame de los hombres de este m<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>undo,</p><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>de los hombres cuyo premio es esta v<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>ida!</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>¡Cólmalos de tus bienes, Se<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>ñor,</p><p class='line'><span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>llénales el vientre y que sus hijos se <span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>sacien!</p><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>Que yo al despertar, que yo por tu amor</p><p class='line'>me saci<span data-key='10' data-root='Sol' data-quality='' class='chord'>Sol</span>aré de tu rostro Se<span data-key='9' data-root='Fa#' data-quality='' class='chord'>Fa#</span>ñor.</p></div><div class='section comitium es-es'><p class='line'>AL DESPER<span data-key='2' data-root='Si' data-quality='m' class='chord'>Sim</span>TAR ...</p></div></div></div>
 	</article>
 </div>
 </main>
@@ -273,6 +312,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>

@@ -6,20 +6,22 @@
 		<meta name="color-scheme" content="light dark">
 		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
 		<meta name="theme-color" content="#c52f21" />
-		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.1.2" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.1.2" />
-		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.1.2" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.1.2" />
-		<link rel="manifest" href="/static/site.webmanifest?v=v3.1.2" />
-		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/styles.css?v=v3.1.2">
-		<script src="/static/scripts/js.cookie.min.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/pocketbase.umd.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/eplayer.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/modal.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/main.js?v=v3.1.2" defer></script>
+		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.2.0" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.2.0" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.2.0" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.2.0" />
+		<link rel="manifest" href="/static/site.webmanifest?v=v3.2.0" />
+		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/styles.css?v=v3.2.0">
+		<script src="/static/scripts/js.cookie.min.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/pocketbase.umd.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/eplayer.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/modal.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/main.js?v=v3.2.0" defer></script>
 		
+	<script src="/static/scripts/psalm.js?v=v3.2.0" defer></script>
+
 		<title>Resurrexit | JERUSALÉN RECONSTRUIDA</title>
 	</head>
 	<body class="flex flex-column">
@@ -75,6 +77,20 @@
 	</symbol>
 	<symbol id="icon-trash" viewBox="0 0 16 16">
 		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+	</symbol>
+	<symbol id="icon-music-note" viewBox="0 0 16 16">
+		<path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+		<path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+		<path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+	</symbol>
+	<symbol id="icon-plus" viewBox="0 0 16 16">
+		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+	</symbol>
+	<symbol id="icon-minus" viewBox="0 0 16 16">
+		<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+	</symbol>
+	<symbol id="icon-check" viewBox="0 0 16 16">
+		<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
 	</symbol>
 </svg>
 		
@@ -139,6 +155,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>
@@ -209,6 +228,11 @@
 					</a>
 				</li>
 				<li class="logged-in hide">
+					<a class="secondary pointer" href="/community/">
+						Community List
+					</a>
+				</li>
+				<li class="logged-in hide">
 					<a class="secondary pointer" href="/account/">
 						Settings
 					</a>
@@ -225,27 +249,42 @@
 		
 		<main>
 <div class="container">
-	<article class="psalm pre">
-		<hgroup class="flex space-between align-center gap-xxs mb-0">
-			<p class="ghost"></p>
-			<h5 class="text-center">JERUSALÉN RECONSTRUIDA</h5>
-			<details class="dropdown mb-0">
-				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
-					<use xlink:href="#icon-lang"/>
-				</svg></summary>
-				<ul dir="rtl">
-					
-					<li>
-						<a href="/en-us/canticle-of-tobit-bless-my-soul-the-lord/">
-							CANTICLE OF TOBIT: BLESS MY SOUL THE LORD
-						</a>
-					</li>
-					
-				</ul>
-			</details>
-		</hgroup>
+	<article data-lang="es-es" class="psalm pre relative">
+		<header id="psalm-tools" class="flex align-center space-between">
+			<p id="capo-paragraph" class="py-btn mb-0">
+				<a class="p-xxs pointer" onclick="moveCapo(-1)"><svg width="1em" height="1em"><use xlink:href="#icon-minus"/></svg></a>
+				Capo <span id="current-capo" data-capo="5">5</span>
+				<a class="p-xxs pointer" onclick="moveCapo(1)"><svg width="1em" height="1em"><use xlink:href="#icon-plus"/></svg></a>
+			</p>
+			<div class="flex align-center">
+				<details id="transpose-menu" class="dropdown mb-0">
+					<summary class="transparent-btn no-caret">
+						<svg width="1em" height="1em">
+							<use xlink:href="#icon-music-note"/>
+						</svg>
+						<span id="transpose-btn" class="primary"></span>
+					</summary>
+					<ul id="transpose-list"><li>Transpose</li></ul>
+				</details>
+				<details class="dropdown mb-0">
+					<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+						<use xlink:href="#icon-lang"/>
+					</svg></summary>
+					<ul>
+						
+						<li>
+							<a href="/en-us/canticle-of-tobit-bless-my-soul-the-lord/">
+								CANTICLE OF TOBIT: BLESS MY SOUL THE LORD
+							</a>
+						</li>
+						
+					</ul>
+				</details>
+			</div>
+		</header>
+		<h5 class="text-center">JERUSALÉN RECONSTRUIDA</h5>
 		<p class="text-center secondary mb-lg">Tb 13,11-17</p>
-		<div class="grid"><div class='column'><div class='section psalmista es-es'><p class='line'><span class='chord'>Mim</span>Bendice, alma mía al Señ<span class='chord'>Re</span>or,</p><p class='line'>bendice, alma mía, al gran R<span class='chord'>Mim</span>ey,</p><p class='line'>porque será reconstr<span class='chord'>Re</span>uida</p><p class='line'>Jerusalén, Jerusal<span class='chord'>Mim</span>én.</p></div><div class='section comitium es-es'><p class='line'><span class='chord'>Mim</span>JERUSALÉN,JERUSAL<span class='chord'>Re</span>ÉN,</p><p class='line'>JERUSALÉN,JERUSAL<span class='chord'>Mim</span>ÉN.</p><p class='line'>JERUSALÉN RECONSTR<span class='chord'>Re</span>UIDA,</p><p class='line'>JERUSALÉN PARA S<span class='chord'>Mim</span>IEMPRE.</p></div><div class='section psalmista es-es'><p class='line'><span class='chord'>Mim</span>Jerusalén será reconstr<span class='chord'>Re</span>uida,</p><p class='line'>con zafiros y esmer<span class='chord'>Mim</span>aldas,</p><p class='line'>de piedras preciosas sus mur<span class='chord'>Re</span>allas,</p><p class='line'>sus torres con oro p<span class='chord'>Mim</span>uro.</p></div><div class='section psalmista es-es'><p class='line'>Sus plazas serán de rub<span class='chord'>Re</span>í,</p><p class='line'>sus calles de oro de Of<span class='chord'>Mim</span>ir,</p><p class='line'>sobre sus puertas se exultar<span class='chord'>Re</span>á</p><p class='line'>y en sus casas se cant<span class='chord'>Mim</span>ará.</p></div><div class='section comitium es-es'><p class='line'>JERUSALÉN,JERUSALÉN...</p></div><div class='section psalmista es-es'><p class='line'><span class='chord'>Mim</span>Brillará tu luz hasta los confines de la t<span class='chord'>Re</span>ierra,</p><p class='line'>vendrán a ti pueblos numer<span class='chord'>Mim</span>osos,</p></div></div><div class='column'><div class='section psalmista es-es'><p class='line'>vendrán a ti todas las nac<span class='chord'>Re</span>iones,</p><p class='line'>hasta la casa de tu N<span class='chord'>Mim</span>ombre.</p></div><div class='section psalmista es-es'><p class='line'>Las generaciones te cantar<span class='chord'>Re</span>án,</p><p class='line'>todos los pueblos exultar<span class='chord'>Mim</span>án</p><p class='line'>y en ella el nombre de tu Eleg<span class='chord'>Re</span>ido</p><p class='line'>será para siempre, será para s<span class='chord'>Mim</span>iempre.</p></div><div class='section comitium es-es'><p class='line'>JERUSALÉN,JERUSALÉN...</p></div><div class='section psalmista es-es'><p class='line'><span class='chord'>Mim</span>Malditos sean los que te dicen palabras cru<span class='chord'>Re</span>eles,</p><p class='line'>malditos sean los que te destr<span class='chord'>Mim</span>uyen,</p><p class='line'>todos los que derriban tus mur<span class='chord'>Re</span>allas,</p><p class='line'>y tiran por tierra tus t<span class='chord'>Mim</span>orres.</p><p class='line'>Mas sean bend<span class='chord'>Re</span>itos, benditos para s<span class='chord'>Mim</span>iempre,</p><p class='line'>los que te constr<span class='chord'>Re</span>uyen, los que te edif<span class='chord'>Mim</span>ican.</p><p class='line'>Benditos los que te <span class='chord'>Re</span>aman,</p><p class='line'>los que lloran por tus cast<span class='chord'>Mim</span>igos,</p><p class='line'>porque en tus puertas exultar<span class='chord'>Re</span>án,</p><p class='line'>porque en sus casas te cantar<span class='chord'>Mim</span>án.</p></div><div class='section comitium es-es'><p class='line'>JERUSALÉN,JERUSALÉN...</p></div><div class='section comitium es-es'><p class='line'><span class='chord'>Mim</span>ALELUYA,ALEL<span class='chord'>Re</span>UYA,ALELUYA,ALEL<span class='chord'>Mim</span>UYA.</p><p class='line'>ALELUYA,ALEL<span class='chord'>Re</span>UYA,ALELUYA,ALEL<span class='chord'>Mim</span>UYA.</p></div></div></div>
+		<div class="grid"><div class='column'><div class='section psalmista es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>Bendice, alma mía al Señ<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>or,</p><p class='line'>bendice, alma mía, al gran R<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>ey,</p><p class='line'>porque será reconstr<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>uida</p><p class='line'>Jerusalén, Jerusal<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>én.</p></div><div class='section comitium es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>JERUSALÉN,JERUSAL<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>ÉN,</p><p class='line'>JERUSALÉN,JERUSAL<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>ÉN.</p><p class='line'>JERUSALÉN RECONSTR<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>UIDA,</p><p class='line'>JERUSALÉN PARA S<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>IEMPRE.</p></div><div class='section psalmista es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>Jerusalén será reconstr<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>uida,</p><p class='line'>con zafiros y esmer<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>aldas,</p><p class='line'>de piedras preciosas sus mur<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>allas,</p><p class='line'>sus torres con oro p<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>uro.</p></div><div class='section psalmista es-es'><p class='line'>Sus plazas serán de rub<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>í,</p><p class='line'>sus calles de oro de Of<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>ir,</p><p class='line'>sobre sus puertas se exultar<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>á</p><p class='line'>y en sus casas se cant<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>ará.</p></div><div class='section comitium es-es'><p class='line'>JERUSALÉN,JERUSALÉN...</p></div><div class='section psalmista es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>Brillará tu luz hasta los confines de la t<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>ierra,</p><p class='line'>vendrán a ti pueblos numer<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>osos,</p></div></div><div class='column'><div class='section psalmista es-es'><p class='line'>vendrán a ti todas las nac<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>iones,</p><p class='line'>hasta la casa de tu N<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>ombre.</p></div><div class='section psalmista es-es'><p class='line'>Las generaciones te cantar<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>án,</p><p class='line'>todos los pueblos exultar<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>án</p><p class='line'>y en ella el nombre de tu Eleg<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>ido</p><p class='line'>será para siempre, será para s<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>iempre.</p></div><div class='section comitium es-es'><p class='line'>JERUSALÉN,JERUSALÉN...</p></div><div class='section psalmista es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>Malditos sean los que te dicen palabras cru<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>eles,</p><p class='line'>malditos sean los que te destr<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>uyen,</p><p class='line'>todos los que derriban tus mur<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>allas,</p><p class='line'>y tiran por tierra tus t<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>orres.</p><p class='line'>Mas sean bend<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>itos, benditos para s<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>iempre,</p><p class='line'>los que te constr<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>uyen, los que te edif<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>ican.</p><p class='line'>Benditos los que te <span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>aman,</p><p class='line'>los que lloran por tus cast<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>igos,</p><p class='line'>porque en tus puertas exultar<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>án,</p><p class='line'>porque en sus casas te cantar<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>án.</p></div><div class='section comitium es-es'><p class='line'>JERUSALÉN,JERUSALÉN...</p></div><div class='section comitium es-es'><p class='line'><span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>ALELUYA,ALEL<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>UYA,ALELUYA,ALEL<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>UYA.</p><p class='line'>ALELUYA,ALEL<span data-key='5' data-root='Re' data-quality='' class='chord'>Re</span>UYA,ALELUYA,ALEL<span data-key='7' data-root='Mi' data-quality='m' class='chord'>Mim</span>UYA.</p></div></div></div>
 	</article>
 </div>
 </main>
@@ -273,6 +312,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>

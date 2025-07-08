@@ -86,6 +86,10 @@ let authenticated = false;
 
 const lang = document.documentElement.lang.toLowerCase();
 
+// HELPERS --------------------------------------------------------------------
+
+const normalize = (text) => text.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, '');
+
 // STATE ----------------------------------------------------------------------
 
 const authEvent = new CustomEvent('authChange', {
@@ -276,8 +280,7 @@ if (searchInput) {
 
 function search(event) {
 	event.preventDefault();
-	const query = searchInput.value.trim().toLowerCase().normalize("NFD")
-		.replace(/\p{Diacritic}/gu, '');
+	const query = normalize(searchInput.value);
 	if (query.length < 2) filterSearch = '';
 	else filterSearch = query;
 	filterPsalms();

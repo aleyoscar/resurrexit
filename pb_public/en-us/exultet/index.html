@@ -6,20 +6,22 @@
 		<meta name="color-scheme" content="light dark">
 		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
 		<meta name="theme-color" content="#c52f21" />
-		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.1.2" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.1.2" />
-		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.1.2" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.1.2" />
-		<link rel="manifest" href="/static/site.webmanifest?v=v3.1.2" />
-		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.1.2">
-		<link rel="stylesheet" href="/static/css/styles.css?v=v3.1.2">
-		<script src="/static/scripts/js.cookie.min.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/pocketbase.umd.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/eplayer.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/modal.js?v=v3.1.2" defer></script>
-		<script src="/static/scripts/main.js?v=v3.1.2" defer></script>
+		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.2.0" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.2.0" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.2.0" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.2.0" />
+		<link rel="manifest" href="/static/site.webmanifest?v=v3.2.0" />
+		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/eplayer.css?v=v3.2.0">
+		<link rel="stylesheet" href="/static/css/styles.css?v=v3.2.0">
+		<script src="/static/scripts/js.cookie.min.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/pocketbase.umd.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/eplayer.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/modal.js?v=v3.2.0" defer></script>
+		<script src="/static/scripts/main.js?v=v3.2.0" defer></script>
 		
+	<script src="/static/scripts/psalm.js?v=v3.2.0" defer></script>
+
 		<title>Resurrexit | EXULTET</title>
 	</head>
 	<body class="flex flex-column">
@@ -75,6 +77,20 @@
 	</symbol>
 	<symbol id="icon-trash" viewBox="0 0 16 16">
 		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+	</symbol>
+	<symbol id="icon-music-note" viewBox="0 0 16 16">
+		<path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+		<path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+		<path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+	</symbol>
+	<symbol id="icon-plus" viewBox="0 0 16 16">
+		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+	</symbol>
+	<symbol id="icon-minus" viewBox="0 0 16 16">
+		<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+	</symbol>
+	<symbol id="icon-check" viewBox="0 0 16 16">
+		<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
 	</symbol>
 </svg>
 		
@@ -139,6 +155,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>
@@ -209,6 +228,11 @@
 					</a>
 				</li>
 				<li class="logged-in hide">
+					<a class="secondary pointer" href="/community/">
+						Community List
+					</a>
+				</li>
+				<li class="logged-in hide">
 					<a class="secondary pointer" href="/account/">
 						Settings
 					</a>
@@ -225,27 +249,42 @@
 		
 		<main>
 <div class="container">
-	<article class="psalm lit">
-		<hgroup class="flex space-between align-center gap-xxs mb-0">
-			<p class="ghost"></p>
-			<h5 class="text-center">EXULTET</h5>
-			<details class="dropdown mb-0">
-				<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
-					<use xlink:href="#icon-lang"/>
-				</svg></summary>
-				<ul dir="rtl">
-					
-					<li>
-						<a href="/es-es/pregon-pascual/">
-							PREGÓN PASCUAL
-						</a>
-					</li>
-					
-				</ul>
-			</details>
-		</hgroup>
+	<article data-lang="en-us" class="psalm lit relative">
+		<header id="psalm-tools" class="flex align-center space-between">
+			<p id="capo-paragraph" class="py-btn mb-0">
+				<a class="p-xxs pointer" onclick="moveCapo(-1)"><svg width="1em" height="1em"><use xlink:href="#icon-minus"/></svg></a>
+				Capo <span id="current-capo" data-capo="0">0</span>
+				<a class="p-xxs pointer" onclick="moveCapo(1)"><svg width="1em" height="1em"><use xlink:href="#icon-plus"/></svg></a>
+			</p>
+			<div class="flex align-center">
+				<details id="transpose-menu" class="dropdown mb-0">
+					<summary class="transparent-btn no-caret">
+						<svg width="1em" height="1em">
+							<use xlink:href="#icon-music-note"/>
+						</svg>
+						<span id="transpose-btn" class="primary"></span>
+					</summary>
+					<ul id="transpose-list"><li>Transpose</li></ul>
+				</details>
+				<details class="dropdown mb-0">
+					<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+						<use xlink:href="#icon-lang"/>
+					</svg></summary>
+					<ul>
+						
+						<li>
+							<a href="/es-es/pregon-pascual/">
+								PREGÓN PASCUAL
+							</a>
+						</li>
+						
+					</ul>
+				</details>
+			</div>
+		</header>
+		<h5 class="text-center">EXULTET</h5>
 		<p class="text-center secondary mb-lg"></p>
-		<div class="grid"><div class='column'><div class='section psalmista en-us'><p class='line'><span class='chord'>Am</span>Exult ch<span class='chord'>G</span>oirs of <span class='chord'>Am</span>angels,</p><p class='line'>ex<span class='chord'>C</span>ult heavenly ass<span class='chord'>Am</span>embly,</p><p class='line'>with a hymn of gl<span class='chord'>G</span>ory</p><p class='line'>greet the triumph of our risen L<span class='chord'>Am</span>ord.</p><p class='line'><span class='chord'>F</span>Rejoice all the <span class='chord'>E</span>earth,</p><p class='line'><span class='chord'>F</span>flooded with the new l<span class='chord'>E</span>ight!</p><p class='line'>The splendor of the K<span class='chord'>Am</span>ing</p><p class='line'>has conquered d<span class='chord'>G</span>arkness,</p><p class='line'>the d<span class='chord'>F</span>arkness of the w<span class='chord'>E</span>orld!</p></div><div class='section comitium en-us'><p class='line'>THE SPLENDOR OF THE K<span class='chord'>Am</span>ING</p><p class='line'>HAS CONQUERED D<span class='chord'>G</span>ARKNESS,</p><p class='line'>THE D<span class='chord'>F</span>ARKNESS OF THE W<span class='chord'>E</span>ORLD!</p></div><div class='section psalmista en-us'><p class='line'><span class='chord'>Am</span>Rejoice, O mother Ch<span class='chord'>G</span>urch,</p><p class='line'>made respl<span class='chord'>Am</span>endent with the gl<span class='chord'>C</span>ory of your L<span class='chord'>Am</span>ord.</p><p class='line'>Let this place res<span class='chord'>G</span>ound,</p><p class='line'>echoing the song of a people in f<span class='chord'>Am</span>east.</p><p class='line'><span class='chord'>G</span>The Lord be with y<span class='chord'>Am</span>ou.</p></div><div class='section comitium en-us'><p class='line'><span class='chord'>G</span>AND WITH YOUR SP<span class='chord'>Am</span>IRIT.</p><p class='line'><span class='chord'>F</span>Lift up your h<span class='chord'>E</span>earts.</p></div></div><div class='column'><div class='section comitium en-us'><p class='line'><span class='chord'>F</span>WE LIFT THEM UP TO THE L<span class='chord'>E</span>ORD.</p></div><div class='section psalmista en-us'><p class='line'>Let us give thanks to the Lord our G<span class='chord'>Am</span>od.</p></div><div class='section comitium en-us'><p class='line'>IT <span class='chord'>G</span>IS RIGHT AND J<span class='chord'>Am</span>UST. (2)</p></div><div class='section psalmista en-us'><p class='line'>It is truly right and j<span class='chord'>G</span>ust</p><p class='line'>to expr<span class='chord'>Am</span>ess s<span class='chord'>C</span>inging, the great joy of the sp<span class='chord'>Am</span>irit</p><p class='line'>and to pr<span class='chord'>G</span>aise the all powerful Father,</p><p class='line'>and His Son, the Lord Jesus Chr<span class='chord'>Am</span>ist.</p><p class='line'>He paid for us to our eternal F<span class='chord'>G</span>ather</p><p class='line'>the debt of <span class='chord'>Am</span>Adam</p><p class='line'>and with his bl<span class='chord'>C</span>ood that he shed out of l<span class='chord'>Am</span>ove</p><p class='line'>he w<span class='chord'>G</span>iped away the condemnation of the ancient f<span class='chord'>Am</span>ault.</p><p class='line'><span class='chord'>F</span>This is the Pass<span class='chord'>E</span>over in wh<span class='chord'>F</span>ich the true Lamb is sacrif<span class='chord'>E</span>iced.</p><p class='line'><span class='chord'>F</span>This is the n<span class='chord'>E</span>ight in wh<span class='chord'>F</span>ich you freed our fathers</p><p class='line'>from the slavery of <span class='chord'>E</span>Egypt.</p><p class='line'><span class='chord'>F</span>This is the n<span class='chord'>E</span>ight that s<span class='chord'>F</span>aves us from the darkness of <span class='chord'>E</span>evil.</p><p class='line'>------</p></div><div class='section psalmista en-us'><p class='line'><span class='chord'>F</span>This is the n<span class='chord'>E</span>ight in wh<span class='chord'>F</span>ich you have</p><p class='line'>conquered the darkness of s<span class='chord'>E</span>in.</p></div><div class='section repetere-comitium en-us'><p class='line'><span class='chord'>Am</span>THIS IS THE NIGHT</p><p class='line'>IN WHICH CHRIST HAS DESTROYED D<span class='chord'>G</span>EATH</p><p class='line'>AND FROM THE D<span class='chord'>F</span>EAD HE RISES VICT<span class='chord'>E</span>ORIOUS.</p></div><div class='section psalmista en-us'><p class='line'><span class='chord'>Am</span>How wonderful is the m<span class='chord'>G</span>ercy of your gr<span class='chord'>Am</span>ace,</p><p class='line'>how b<span class='chord'>C</span>oundless the tenderness of your l<span class='chord'>Am</span>ove,</p><p class='line'>to r<span class='chord'>G</span>ansom a slave you sacrificed your S<span class='chord'>Am</span>on.</p><p class='line'><span class='chord'>F</span>Without the sin of <span class='chord'>E</span>Adam,</p><p class='line'><span class='chord'>F</span>Christ would not have red<span class='chord'>E</span>eemed us.</p></div><div class='section repetere-comitium en-us'><p class='line'><span class='chord'>Am</span>O HAPPY FAULT WHICH DESERVED</p><p class='line'>SO GREAT A S<span class='chord'>G</span>AVIOUR, O HAPPY F<span class='chord'>Am</span>AULT!</p></div><div class='section psalmista en-us'><p class='line'><span class='chord'>Am</span>O Night truly bl<span class='chord'>G</span>essed</p><p class='line'>which knew the hour in which Christ ar<span class='chord'>Am</span>ose!</p><p class='line'>O Night truly bl<span class='chord'>G</span>essed</p><p class='line'>which despoiled the Egyptians to enrich <span class='chord'>Am</span>Israel!</p><p class='line'>O Night truly bl<span class='chord'>G</span>essed which conquers evil,</p><p class='line'>washes guilt aw<span class='chord'>Am</span>ay!</p><p class='line'>O Night truly gl<span class='chord'>G</span>orious</p><p class='line'>which reconciles man to his G<span class='chord'>E</span>od</p></div></div><div class='column'><div class='section comitium en-us'><p class='line'><span class='chord'>Am</span>THIS IS THE NIGHT... (2)</p></div><div class='section psalmista en-us'><p class='line'><span class='chord'>Am</span>In this night receive, heavenly F<span class='chord'>G</span>ather,</p><p class='line'>the sacrifice of pr<span class='chord'>Am</span>aise</p><p class='line'>that the Ch<span class='chord'>C</span>urch is offering you by the</p><p class='line'>hand of her m<span class='chord'>Am</span>inisters</p><p class='line'>in the solemn l<span class='chord'>G</span>iturgy of the candle,</p><p class='line'>sign of the new L<span class='chord'>Am</span>ight</p><p class='line'><span class='chord'>F</span>We pray you, O L<span class='chord'>E</span>ord,</p><p class='line'><span class='chord'>Am</span>let this candle, offered in honor of your n<span class='chord'>G</span>ame,</p><p class='line'>shine with l<span class='chord'>Am</span>ight;</p><p class='line'>Let it ascend to you like fragrant p<span class='chord'>G</span>erfume,</p><p class='line'>let it mingle with the stars of h<span class='chord'>Am</span>eaven</p><p class='line'>may the morning star find this flame still b<span class='chord'>G</span>urning</p><p class='line'>the morning st<span class='chord'>F</span>ar which never s<span class='chord'>E</span>ets.</p><p class='line'><span class='chord'>Am</span>Christ your Son risen from the d<span class='chord'>G</span>ead,</p><p class='line'>makes his l<span class='chord'>F</span>ight brightly sh<span class='chord'>E</span>ine!</p></div><div class='section comitium en-us'><p class='line'>AM<span class='chord'>Am</span>EN, AM<span class='chord'>G</span>EN, AM<span class='chord'>Am</span>EN.</p><p class='line'>AM<span class='chord'>Am</span>EN, AM<span class='chord'>G</span>EN, AM<span class='chord'>Am</span>EN.</p></div></div></div>
+		<div class="grid"><div class='column'><div class='section psalmista en-us'><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>Exult ch<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>oirs of <span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>angels,</p><p class='line'>ex<span data-key='3' data-root='C' data-quality='' class='chord'>C</span>ult heavenly ass<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>embly,</p><p class='line'>with a hymn of gl<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ory</p><p class='line'>greet the triumph of our risen L<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ord.</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>Rejoice all the <span data-key='7' data-root='E' data-quality='' class='chord'>E</span>earth,</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>flooded with the new l<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ight!</p><p class='line'>The splendor of the K<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ing</p><p class='line'>has conquered d<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>arkness,</p><p class='line'>the d<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>arkness of the w<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>orld!</p></div><div class='section comitium en-us'><p class='line'>THE SPLENDOR OF THE K<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ING</p><p class='line'>HAS CONQUERED D<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ARKNESS,</p><p class='line'>THE D<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>ARKNESS OF THE W<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ORLD!</p></div><div class='section psalmista en-us'><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>Rejoice, O mother Ch<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>urch,</p><p class='line'>made respl<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>endent with the gl<span data-key='3' data-root='C' data-quality='' class='chord'>C</span>ory of your L<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ord.</p><p class='line'>Let this place res<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ound,</p><p class='line'>echoing the song of a people in f<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>east.</p><p class='line'><span data-key='10' data-root='G' data-quality='' class='chord'>G</span>The Lord be with y<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ou.</p></div><div class='section comitium en-us'><p class='line'><span data-key='10' data-root='G' data-quality='' class='chord'>G</span>AND WITH YOUR SP<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>IRIT.</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>Lift up your h<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>earts.</p></div></div><div class='column'><div class='section comitium en-us'><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>WE LIFT THEM UP TO THE L<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ORD.</p></div><div class='section psalmista en-us'><p class='line'>Let us give thanks to the Lord our G<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>od.</p></div><div class='section comitium en-us'><p class='line'>IT <span data-key='10' data-root='G' data-quality='' class='chord'>G</span>IS RIGHT AND J<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>UST. (2)</p></div><div class='section psalmista en-us'><p class='line'>It is truly right and j<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ust</p><p class='line'>to expr<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ess s<span data-key='3' data-root='C' data-quality='' class='chord'>C</span>inging, the great joy of the sp<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>irit</p><p class='line'>and to pr<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>aise the all powerful Father,</p><p class='line'>and His Son, the Lord Jesus Chr<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ist.</p><p class='line'>He paid for us to our eternal F<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ather</p><p class='line'>the debt of <span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>Adam</p><p class='line'>and with his bl<span data-key='3' data-root='C' data-quality='' class='chord'>C</span>ood that he shed out of l<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ove</p><p class='line'>he w<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>iped away the condemnation of the ancient f<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ault.</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>This is the Pass<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>over in wh<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>ich the true Lamb is sacrif<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>iced.</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>This is the n<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ight in wh<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>ich you freed our fathers</p><p class='line'>from the slavery of <span data-key='7' data-root='E' data-quality='' class='chord'>E</span>Egypt.</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>This is the n<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ight that s<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>aves us from the darkness of <span data-key='7' data-root='E' data-quality='' class='chord'>E</span>evil.</p><p class='line'>------</p></div><div class='section psalmista en-us'><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>This is the n<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ight in wh<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>ich you have</p><p class='line'>conquered the darkness of s<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>in.</p></div><div class='section repetere-comitium en-us'><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>THIS IS THE NIGHT</p><p class='line'>IN WHICH CHRIST HAS DESTROYED D<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>EATH</p><p class='line'>AND FROM THE D<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>EAD HE RISES VICT<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ORIOUS.</p></div><div class='section psalmista en-us'><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>How wonderful is the m<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ercy of your gr<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ace,</p><p class='line'>how b<span data-key='3' data-root='C' data-quality='' class='chord'>C</span>oundless the tenderness of your l<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ove,</p><p class='line'>to r<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ansom a slave you sacrificed your S<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>on.</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>Without the sin of <span data-key='7' data-root='E' data-quality='' class='chord'>E</span>Adam,</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>Christ would not have red<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>eemed us.</p></div><div class='section repetere-comitium en-us'><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>O HAPPY FAULT WHICH DESERVED</p><p class='line'>SO GREAT A S<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>AVIOUR, O HAPPY F<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>AULT!</p></div><div class='section psalmista en-us'><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>O Night truly bl<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>essed</p><p class='line'>which knew the hour in which Christ ar<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ose!</p><p class='line'>O Night truly bl<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>essed</p><p class='line'>which despoiled the Egyptians to enrich <span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>Israel!</p><p class='line'>O Night truly bl<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>essed which conquers evil,</p><p class='line'>washes guilt aw<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ay!</p><p class='line'>O Night truly gl<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>orious</p><p class='line'>which reconciles man to his G<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>od</p></div></div><div class='column'><div class='section comitium en-us'><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>THIS IS THE NIGHT... (2)</p></div><div class='section psalmista en-us'><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>In this night receive, heavenly F<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ather,</p><p class='line'>the sacrifice of pr<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>aise</p><p class='line'>that the Ch<span data-key='3' data-root='C' data-quality='' class='chord'>C</span>urch is offering you by the</p><p class='line'>hand of her m<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>inisters</p><p class='line'>in the solemn l<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>iturgy of the candle,</p><p class='line'>sign of the new L<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ight</p><p class='line'><span data-key='8' data-root='F' data-quality='' class='chord'>F</span>We pray you, O L<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ord,</p><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>let this candle, offered in honor of your n<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ame,</p><p class='line'>shine with l<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>ight;</p><p class='line'>Let it ascend to you like fragrant p<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>erfume,</p><p class='line'>let it mingle with the stars of h<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>eaven</p><p class='line'>may the morning star find this flame still b<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>urning</p><p class='line'>the morning st<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>ar which never s<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ets.</p><p class='line'><span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>Christ your Son risen from the d<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>ead,</p><p class='line'>makes his l<span data-key='8' data-root='F' data-quality='' class='chord'>F</span>ight brightly sh<span data-key='7' data-root='E' data-quality='' class='chord'>E</span>ine!</p></div><div class='section comitium en-us'><p class='line'>AM<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>EN, AM<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>EN, AM<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>EN.</p><p class='line'>AM<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>EN, AM<span data-key='10' data-root='G' data-quality='' class='chord'>G</span>EN, AM<span data-key='0' data-root='A' data-quality='m' class='chord'>Am</span>EN.</p></div></div></div>
 	</article>
 </div>
 </main>
@@ -273,6 +312,9 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
+			<li><a class="pointer" href="/community/">
+				Community List
+			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
 			</a></li>
