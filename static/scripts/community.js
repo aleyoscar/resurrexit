@@ -101,10 +101,12 @@ function renderTeams() {
 	DOM.communityTeams.innerHTML = '';
 	let teams = [];
 	brothers.forEach(b => {
-		if (b.team && b.team > 0 && !teams.includes(b.team)) teams.push(b.team);
+		if (b.team && b.team > 0 && !teams.includes(b.team)) teams.push(parseInt(b.team));
 	});
+	console.log(teams);
 	if (teams.length) {
-		teams.sort();
+		teams.sort((a, b) => a - b);
+		console.log(teams);
 		teams.forEach(t => {
 			DOM.communityTeams.innerHTML += `<button class="team-btn outline mr-xxs" data-team="${t}" onclick="showTeam('${t}')">Team ${t}</button>`;
 		});
