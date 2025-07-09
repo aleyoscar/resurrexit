@@ -11,17 +11,23 @@
 
 	--eplayer-padding: 12px;
 
+	--eplayer-primary-color: #56B6C2;
+	--eplayer-primary-color-hover: #44aebb;
+
+	--eplayer-primary-fill-color: var(--eplayer-primary-color);
+	--eplayer-primary-fill-color-hover: var(--eplayer-primary-color-hover);
+
 	--eplayer-button-background-color: transparent;
 	--eplayer-button-background-color-hover: transparent;
 	--eplayer-button-border-radius: 12px;
 	--eplayer-button-height: 24px;
 	--eplayer-button-padding: 0px;
 
-	--eplayer-primary-color: #56B6C2;
-	--eplayer-primary-color-hover: #44aebb;
-
-	--eplayer-primary-fill-color: var(--eplayer-primary-color);
-	--eplayer-primary-fill-color-hover: var(--eplayer-primary-color-hover);
+	--eplayer-seek-background-color: var(--eplayer-button-background-color);
+	--eplayer-seek-background-color-hover: var(--eplayer-button-background-color-hover);
+	--eplayer-seek-border-radius: var(--eplayer-button-border-radius);
+	--eplayer-seek-height: var(--eplayer-button-height);
+	--eplayer-seek-padding: var(--eplayer-button-padding);
 
 	--eplayer-progress-background-color: #D6DBDB;
 	--eplayer-progress-button-color: var(--eplayer-primary-color);
