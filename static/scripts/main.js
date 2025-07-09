@@ -451,6 +451,16 @@ function login() {
 	changeAuth(true);
 }
 
+async function fetchUserSettings() {
+	try {
+		const record = await pb.collection('res_users').getOne(pb.authStore.record.id);
+		return record.settings ? record.settings : {};
+	} catch(error) {
+		console.error('Error fetching user settings', error);
+		return {};
+	}
+}
+
 // MAIN -----------------------------------------------------------------------
 
 window.addEventListener('scroll', (e) => {
