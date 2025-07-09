@@ -262,6 +262,15 @@ p.secondary { color: var(--pico-secondary); }
 	.hide-md { display: none; }
 }
 
+@media only screen and (min-width: 769px) {
+	#save-psalm-settings {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.align-self-end-sm { align-self: end; }
 	.eplayer { flex-direction: column-reverse; width: 100%; margin-bottom: calc(var(--pico-spacing) * -1); }

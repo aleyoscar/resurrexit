@@ -25,7 +25,7 @@ I have created this repository and opened it to the public for two reasons: Firs
 - [x] Audio for most psalms
 - [ ] Chords and Lyrics for all psalms
 - [x] Search
-- [ ] Transposition to your personal key
+- [x] Transposition to your personal capo & key
 - [ ] Chord diagrams
 - [x] Personal psalm lists
 - [ ] Personal tags

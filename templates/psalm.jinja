@@ -9,37 +9,46 @@
 {% block content %}
 <div class="container">
 	<article data-lang="{{ lang }}" class="psalm {{ psalm.step }} relative">
-		<header id="psalm-tools" class="flex align-center space-between">
-			<p id="capo-paragraph" class="py-btn mb-0">
-				<a class="p-xxs pointer" onclick="moveCapo(-1)"><svg width="1em" height="1em"><use xlink:href="#icon-minus"/></svg></a>
-				Capo <span id="current-capo" data-capo="{{ psalm.capo }}">{{ psalm.capo }}</span>
-				<a class="p-xxs pointer" onclick="moveCapo(1)"><svg width="1em" height="1em"><use xlink:href="#icon-plus"/></svg></a>
-			</p>
-			<div class="flex align-center">
-				<details id="transpose-menu" class="dropdown mb-0">
-					<summary class="transparent-btn no-caret">
-						<svg width="1em" height="1em">
-							<use xlink:href="#icon-music-note"/>
-						</svg>
-						<span id="transpose-btn" class="primary"></span>
-					</summary>
-					<ul id="transpose-list"><li>Transpose</li></ul>
-				</details>
-				<details class="dropdown mb-0">
-					<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
-						<use xlink:href="#icon-lang"/>
-					</svg></summary>
-					<ul>
-						{% for alt in alts %}
-						<li>
-							<a href="{{ url_for('psalm', lang=alt.lang, slug=alt.slug) }}">
-								{{ alt.title }}
-							</a>
-						</li>
-						{% endfor %}
-					</ul>
-				</details>
+		<header id="psalm-tools" class="relative">
+			<div class="flex align-center space-between">
+				<p id="capo-paragraph" class="py-btn mb-0">
+					<a class="p-xxs pointer" onclick="moveCapo(-1)"><svg width="1em" height="1em"><use xlink:href="#icon-minus"/></svg></a>
+					Capo <span id="current-capo" data-capo="{{ psalm.capo }}">{{ psalm.capo }}</span>
+					<a class="p-xxs pointer" onclick="moveCapo(1)"><svg width="1em" height="1em"><use xlink:href="#icon-plus"/></svg></a>
+				</p>
+				<div class="flex align-center">
+					<details id="transpose-menu" class="dropdown mb-0">
+						<summary class="transparent-btn no-caret">
+							<svg width="1em" height="1em">
+								<use xlink:href="#icon-music-note"/>
+							</svg>
+							<span id="transpose-btn" class="primary"></span>
+						</summary>
+						<ul id="transpose-list"><li>Transpose</li></ul>
+					</details>
+					<details class="dropdown mb-0">
+						<summary class="transparent-btn no-caret"><svg width="1em" height="1em">
+							<use xlink:href="#icon-lang"/>
+						</svg></summary>
+						<ul>
+							{% for alt in alts %}
+							<li>
+								<a href="{{ url_for('psalm', lang=alt.lang, slug=alt.slug) }}">
+									{{ alt.title }}
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</details>
+				</div>
 			</div>
+			<a id="save-psalm-settings" class="secondary flex justify-center align-center gap-xxs pointer hide"
+				onclick="savePsalmSettings()"><small>
+				Save Changes
+				<svg width="1em" height="1em">
+					<use xlink:href="#icon-stars"/>
+				</svg></small>
+			</a>
 		</header>
 		<h5 class="text-center">{{ psalm.title }}</h5>
 		<p class="text-center secondary mb-lg">{{ psalm.subtitle }}</p>
