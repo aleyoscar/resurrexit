@@ -23,6 +23,7 @@ const DOM = {
 	communityError: document.getElementById('community-error'),
 	communityList: document.getElementById('community-list'),
 	communityTeams: document.getElementById('community-teams'),
+	communityTotals: document.getElementById('community-totals')
 }
 
 // GLOBALS --------------------------------------------------------------------
@@ -94,6 +95,9 @@ function renderCommunity() {
 		DOM.communityList.appendChild(createBrotherElement(b));
 	});
 	clearBtn.classList.toggle('hide', !filterSearch && !filterTeam);
+	DOM.communityTotals.querySelectorAll('b').forEach(t => {
+		t.textContent = brothers.filter(b => t.dataset.value ? b[t.dataset.key] == t.dataset.value : b[t.dataset.key]).length;
+	});
 }
 
 // Render teams

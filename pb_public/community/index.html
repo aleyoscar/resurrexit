@@ -362,6 +362,12 @@
 	</section>
 	<hr>
 	<div id="community-list" class="flex flex-column"></div>
+	<div id="community-totals" class="grid mb-pico">
+		<p class="text-center mb-0">Walking: <b data-key="walking" data-value="yes"></b></p>
+		<p class="text-center mb-0">Somewhat: <b data-key="walking" data-value="somewhat"></b></p>
+		<p class="text-center mb-0">Not Walking: <b data-key="walking" data-value="no"></b></p>
+		<p class="text-center mb-0">Total: <b data-key="walking" data-value=""></b></p>
+	</div>
 	<section>
 		<button data-target="brother-modal" onclick="addBrother(); toggleModal(event);">Add Brother/Sister</button>
 	</section>
@@ -502,8 +508,8 @@
 				<label>Walking
 					<select id="walking" name="walking">
 						<option selected value="yes">Yes</option>
-						<option value="no">No</option>
 						<option value="somewhat">Somewhat</option>
+						<option value="no">No</option>
 					</select>
 				</label>
 				<label>Team
