@@ -79,6 +79,11 @@ ul { list-style-type: none; padding: 0; }
 ul li { list-style-type: none; }
 
 .align-center { align-items: center; }
+.block {
+	padding: calc(var(--pico-spacing) / 2) var(--pico-spacing);
+	border-radius: var(--pico-border-radius);
+	background-color: var(--pico-code-background-color);
+}
 .chord {
 	color: var(--pico-primary);
 	font-weight: normal;
