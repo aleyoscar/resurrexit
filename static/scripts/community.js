@@ -1,7 +1,6 @@
 // CONSTANTS ------------------------------------------------------------------
 
 const DOM = {
-	// brotherSubmit: document.getElementById('brother-submit'),
 	brotherAddress: document.getElementById('brother-address'),
 	brotherAlternate: document.getElementById('brother-alternate'),
 	brotherAlternatePhone: document.getElementById('brother-alternate-phone'),
@@ -17,7 +16,6 @@ const DOM = {
 	brotherSearchForm: document.getElementById('brother-search-form'),
 	brotherSearch: document.getElementById('brother-search'),
 	brotherSortFname: document.getElementById('brother-sort-fname'),
-	// brotherSortFnameMd: document.getElementById('brother-sort-fname-md'),
 	brotherSubmit: document.getElementById('brother-submit'),
 	brotherTeam: document.getElementById('team'),
 	brotherTitle: document.getElementById('brother-title'),
@@ -194,7 +192,6 @@ DOM.brotherForm.addEventListener('submit', async (e) => {
 		DOM.brotherError.textContent = getFullErrorMessage(error);
 		DOM.brotherSubmit.setAttribute('aria-busy', 'false');
 		DOM.brotherError.classList.remove('hide');
-// 		window.scrollTo(0, 0);
 	}
 });
 
