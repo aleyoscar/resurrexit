@@ -438,17 +438,17 @@ authForm.addEventListener('submit', async (e) => {
 
 // Logout
 function logout() {
-	changeAuth(false);
 	pb.authStore.clear();
 	loggedOut.forEach((b) => b.classList.remove('hide'));
 	loggedIn.forEach((b) => b.classList.add('hide'));
+	changeAuth(false);
 }
 
 // Login
 function login() {
-	changeAuth(true);
 	loggedOut.forEach((b) => b.classList.add('hide'));
 	loggedIn.forEach((b) => b.classList.remove('hide'));
+	changeAuth(true);
 }
 
 // MAIN -----------------------------------------------------------------------
