@@ -11,12 +11,12 @@
 		<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico', v=settings.version) }}" />
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png', v=settings.version) }}" />
 		<link rel="manifest" href="{{ url_for('static', filename='site.webmanifest', v=settings.version) }}" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/pico.red.min.css', v=settings.version) }}">
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/eplayer.css', v=settings.version) }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/pico.red.min.css', v='v2.1.1') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/eplayer.css', v='v1.0.0') }}">
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css', v=settings.version) }}">
-		<script src="{{ url_for('static', filename='scripts/js.cookie.min.js', v=settings.version) }}" defer></script>
-		<script src="{{ url_for('static', filename='scripts/pocketbase.umd.js', v=settings.version) }}" defer></script>
-		<script src="{{ url_for('static', filename='scripts/eplayer.js', v=settings.version) }}" defer></script>
+		<script src="{{ url_for('static', filename='scripts/js.cookie.min.js', v='v3.0.5') }}" defer></script>
+		<script src="{{ url_for('static', filename='scripts/pocketbase.umd.js', v='v0.26.1') }}" defer></script>
+		<script src="{{ url_for('static', filename='scripts/eplayer.js', v='v1.0.0') }}" defer></script>
 		<script src="{{ url_for('static', filename='scripts/modal.js', v=settings.version) }}" defer></script>
 		<script src="{{ url_for('static', filename='scripts/main.js', v=settings.version) }}" defer></script>
 		{% block scripts %}{% endblock %}
