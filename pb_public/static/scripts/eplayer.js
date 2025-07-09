@@ -147,7 +147,7 @@ class EPlayer {
 		eplayerDiv.appendChild(this.#eplayerTimeline);
 		eplayerDiv.appendChild(this.#eplayerAudio);
 
-		if (eplayerDiv.dataset.src && eplayerDiv.dataset.type) {
+		if(eplayerDiv.dataset.src && eplayerDiv.dataset.type) {
 			this.load(eplayerDiv.dataset.src, eplayerDiv.dataset.type);
 		}
 
@@ -169,7 +169,7 @@ class EPlayer {
 		this.#eplayerBack.addEventListener("click", this.seek.bind(this));
 
 		this.#eplayerAudio.addEventListener("timeupdate", (e) => {
-			if (!this.#eplayerMousedown) {
+			if(!this.#eplayerMousedown) {
 				this.#progressUpdate();
 				this.#setTimes();
 			}
@@ -182,12 +182,12 @@ class EPlayer {
 	}
 
 	playPause() {
-		if (this.#eplayerPlay.dataset.playing === "false") {
+		if(this.#eplayerPlay.dataset.playing === "false") {
 			this.#eplayerAudio.play();
 			this.#eplayerPlay.dataset.playing = "true";
 			this.#eplayerIconPlay.classList.add("eplayer-hidden");
 			this.#eplayerIconPause.classList.remove("eplayer-hidden");
-		} else if (this.#eplayerPlay.dataset.playing === "true") {
+		} else if(this.#eplayerPlay.dataset.playing === "true") {
 			this.#eplayerAudio.pause();
 			this.#eplayerPlay.dataset.playing = "false";
 			this.#eplayerIconPause.classList.add("eplayer-hidden");
@@ -233,7 +233,7 @@ class EPlayer {
 
 	seek(e) {
 		let seekSeconds = 0;
-		if (e.target) {
+		if(e.target) {
 			seekSeconds = parseInt(e.target.dataset.seek);
 		}
 		else {
@@ -264,7 +264,7 @@ class EPlayer {
 	}
 
 	#setTimes() {
-		if (this.#eplayerAudio.duration) {
+		if(this.#eplayerAudio.duration) {
 			this.#eplayerTimeCurrent.textContent = new Date(this.#eplayerAudio.currentTime * 1000).toISOString().substr(14, 5);
 			this.#eplayerTimeDuration.textContent = new Date(this.#eplayerAudio.duration * 1000).toISOString().substr(14, 5);
 		} else {

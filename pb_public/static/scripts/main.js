@@ -438,17 +438,27 @@ authForm.addEventListener('submit', async (e) => {
 
 // Logout
 function logout() {
-	changeAuth(false);
 	pb.authStore.clear();
 	loggedOut.forEach((b) => b.classList.remove('hide'));
 	loggedIn.forEach((b) => b.classList.add('hide'));
+	changeAuth(false);
 }
 
 // Login
 function login() {
-	changeAuth(true);
 	loggedOut.forEach((b) => b.classList.add('hide'));
 	loggedIn.forEach((b) => b.classList.remove('hide'));
+	changeAuth(true);
+}
+
+async function fetchUserSettings() {
+	try {
+		const record = await pb.collection('res_users').getOne(pb.authStore.record.id);
+		return record.settings ? record.settings : {};
+	} catch(error) {
+		console.error('Error fetching user settings', error);
+		return {};
+	}
 }
 
 // MAIN -----------------------------------------------------------------------

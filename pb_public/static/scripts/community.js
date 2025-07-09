@@ -1,7 +1,6 @@
 // CONSTANTS ------------------------------------------------------------------
 
 const DOM = {
-	// brotherSubmit: document.getElementById('brother-submit'),
 	brotherAddress: document.getElementById('brother-address'),
 	brotherAlternate: document.getElementById('brother-alternate'),
 	brotherAlternatePhone: document.getElementById('brother-alternate-phone'),
@@ -17,7 +16,6 @@ const DOM = {
 	brotherSearchForm: document.getElementById('brother-search-form'),
 	brotherSearch: document.getElementById('brother-search'),
 	brotherSortFname: document.getElementById('brother-sort-fname'),
-	// brotherSortFnameMd: document.getElementById('brother-sort-fname-md'),
 	brotherSubmit: document.getElementById('brother-submit'),
 	brotherTeam: document.getElementById('team'),
 	brotherTitle: document.getElementById('brother-title'),
@@ -57,22 +55,29 @@ const getOptionValue = (select, option) => {
 // Create brother element
 function createBrotherElement(brother) {
 	const element = document.createElement('div');
-	element.id = `brother-${brother.first_name}`;
 	element.classList.add('brother');
 	if (brother.team) element.classList.add(`team-${brother.team}`);
 	element.dataset.id = brother.id;
 	let name = brother.last_name ? `<h5>${brother.first_name} ${brother.last_name}</h5>` : `<h5>${brother.first_name}</h5>`;
 	let role = brother.role ? `<p>${getOptionValue(DOM.brotherRole, brother.role)}</p>` : '';
 	let html = `<details><summary class="flex align-center space-between"><hgroup class="mb-0">${name}${role}</hgroup></summary>`;
-	html += brother.phone ? `<small>Phone Number</small><p><b>${brother.phone}</b></p>` : '';
-	html += brother.alternate ? `<blockquote><small>Alternate Contact</small><br><b>${brother.alternate}</b>` : '';
+	if (brother.phone || brother.address) {
+		let contact = `<div class="grid">`;
+		contact += brother.phone ? `<div class="block"><small>Phone Number</small><p><b>${brother.phone}</b></p></div>` : '';
+		contact += brother.address ? `<div class="block"><small>Address</small><p><b>${brother.address}</b></p></div>` : '';
+		html += `${contact}</div>`;
+	}
+	html += brother.alternate ? `<blockquote class="mb-0"><small>Alternate Contact</small><br><b>${brother.alternate}</b>` : '';
 	html += brother.alternate && brother.alternate_phone ? `<footer><cite>${brother.alternate_phone}</cite></footer>` : '';
 	html += brother.alternate ? '</blockquote>' : '';
-	html += brother.address ? `<small>Address</small><p><b>${brother.address}</b></p>` : '';
-	html += brother.joined ? `<small>Joined</small><p><b>${getLocaleDateString(brother.joined)}</b></p>` : '';
-	html += brother.walking ? `<small>Walking</small><p><b>${getOptionValue(DOM.brotherWalking, brother.walking)}</b></p>` : '';
-	html += brother.team ? `<small>Team</small><p><b>${brother.team}</b></p>` : '';
-	html += `<button class="outline" data-target="brother-modal" onclick="editBrother('${brother.id}'); toggleModal(event);">Edit</button></details><hr></div>`;
+	if (brother.joined || brother.walking || brother.team) {
+		let walk = `<div class="grid mt-pico">`;
+		walk += brother.joined ? `<div class="block"><small>Joined</small><p><b>${getLocaleDateString(brother.joined)}</b></p></div>` : '';
+		walk += brother.walking ? `<div class="block"><small>Walking</small><p><b>${getOptionValue(DOM.brotherWalking, brother.walking)}</b></p></div>` : '';
+		walk += brother.team ? `<div class="block"><small>Team</small><p><b>${brother.team}</b></p></div>` : '';
+		html += `${walk}</div>`;
+	}
+	html += `<button class="mt-pico outline" data-target="brother-modal" onclick="editBrother('${brother.id}'); toggleModal(event);">Edit</button></details><hr></div>`;
 	element.innerHTML = html;
 	return element;
 }
@@ -187,7 +192,6 @@ DOM.brotherForm.addEventListener('submit', async (e) => {
 		DOM.brotherError.textContent = getFullErrorMessage(error);
 		DOM.brotherSubmit.setAttribute('aria-busy', 'false');
 		DOM.brotherError.classList.remove('hide');
-// 		window.scrollTo(0, 0);
 	}
 });
 
