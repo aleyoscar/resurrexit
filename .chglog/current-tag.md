@@ -1,14 +1,18 @@
 
-v3.2.2
-## [v3.2.2](https://github.com/aleyoscar/resurrexit/compare/v3.2.1...v3.2.2) (2025-07-09)
+v3.2.3
+## [v3.2.3](https://github.com/aleyoscar/resurrexit/compare/v3.2.2...v3.2.3) (2025-07-10)
 
 ### Feat
 
-* **web:** Count total brothers. Closes [#19](https://github.com/aleyoscar/resurrexit/issues/19)
+* **web:** Added clear input field button. Closes [#20](https://github.com/aleyoscar/resurrexit/issues/20)
+* **web:** Stretch buttons across entire custom list field. Closes [#21](https://github.com/aleyoscar/resurrexit/issues/21)
 
 ### Fix
 
-* **web:** Allow selecting no team. Fixes [#18](https://github.com/aleyoscar/resurrexit/issues/18)
-* **web:** Sort teams numerically. Closes [#17](https://github.com/aleyoscar/resurrexit/issues/17)
-* **web:** Added pb_migrations to compose file
+* **web:** Custom list form not draggable on creation
+* **web:** Prevent submit form when dragging custom list field
+
+### Refactor
+
+* **web:** Changed custom list styling on account page
 
