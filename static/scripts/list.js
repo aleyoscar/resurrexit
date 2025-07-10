@@ -51,7 +51,7 @@ function getUrlParam(param) {
 function createListElement(type, inputs) {
 	listCount[type] += 1;
 	const element = document.createElement('div');
-	element.classList.add('list-element', 'flex', 'align-center', 'gap-xxs', 'py-xs', `list-${type}`);
+	element.classList.add('list-element', 'flex', 'stretch', 'gap-xxs', 'py-xs', `list-${type}`);
 	element.dataset.type = type;
 	const fieldset = document.createElement('fieldset');
 	fieldset.classList.add('mb-0');
@@ -60,7 +60,7 @@ function createListElement(type, inputs) {
 	deleteBtn.addEventListener('click', removeListElement);
 	deleteBtn.innerHTML = `<svg width="1.0em" height="1.0em"><use xlink:href="#icon-trash"/></svg>`;
 	const dragBtn = document.createElement('button');
-	dragBtn.classList.add('sort-move', 'outline', 'secondary', 'height-100');
+	dragBtn.classList.add('sort-move', 'outline', 'secondary');
 	dragBtn.innerHTML = `<svg width="1.0em" height="1.0em"><use xlink:href="#icon-move"/></svg>`;
 	inputs.forEach((i) => {
 		const input = document.createElement('input');
