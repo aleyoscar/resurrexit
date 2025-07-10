@@ -230,6 +230,10 @@ function renderList(list) {
 		listCopyMd.parentNode.replaceChild(newListCopyMd, listCopyMd);
 		listCopyTxt.parentNode.replaceChild(newListCopyTxt, listCopyTxt);
 		listCopyLink.parentNode.replaceChild(newListCopyLink, listCopyLink);
+		Sortable.create(listFormElements, {
+			handle: '.sort-move',
+			animation: 150
+		});
 	}
 	if (pb.authStore.record && pb.authStore.record.id === list.user_id) {
 		listButtons.classList.remove('hide');
