@@ -62,6 +62,7 @@ function createListElement(type, inputs) {
 	const dragBtn = document.createElement('button');
 	dragBtn.classList.add('sort-move', 'outline', 'secondary');
 	dragBtn.innerHTML = `<svg width="1.0em" height="1.0em"><use xlink:href="#icon-move"/></svg>`;
+	dragBtn.addEventListener('click', (event) => { event.preventDefault(); });
 	inputs.forEach((i) => {
 		const input = document.createElement('input');
 		input.id = `list-element-${i.name}-${listCount[type]}`;
