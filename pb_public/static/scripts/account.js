@@ -29,8 +29,8 @@ async function fetchLists() {
 		const lists = await pb.collection('res_lists').getFullList({ sort: 'name' });
 		lists.forEach((l) => {
 			const li = document.createElement('li');
-			li.classList.add('mb-pico');
-			li.innerHTML = `<a href="/list/?id=${l.id}">${l.name}</a>`;
+			li.classList.add('mb-pico', 'block');
+			li.innerHTML = `<a class="secondary inline-block width-100 height-100" href="/list/?id=${l.id}">${l.name}</a>`;
 			accountLists.append(li);
 		});
 	} catch (error) {
