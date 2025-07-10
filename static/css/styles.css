@@ -91,6 +91,11 @@ ul li { list-style-type: none; }
 	position: absolute;
 }
 .clear-button { background: transparent; border-color: transparent; }
+.clear-input {
+	position: absolute;
+	right: calc(var(--pico-spacing) * .3);
+	top: calc(var(--pico-spacing) * .3);
+}
 .column: { flex: 1; }
 .container-center { margin-left: auto; margin-right: auto; }
 .comitium .line { font-weight: bold; }

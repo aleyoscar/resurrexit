@@ -45,13 +45,18 @@ function getUrlParam(param) {
 	return urlParams.get(param);
 }
 
+// Clear adjacent input
+function clearInput(event) {
+	event.currentTarget.parentNode.querySelector('input').value = '';
+}
+
 // LIST ELEMENTS --------------------------------------------------------------
 
 // Create list form input
 function createListElement(type, inputs) {
 	listCount[type] += 1;
 	const element = document.createElement('div');
-	element.classList.add('list-element', 'flex', 'align-center', 'gap-xxs', 'py-xs', `list-${type}`);
+	element.classList.add('list-element', 'flex', 'stretch', 'gap-xxs', 'py-xs', `list-${type}`);
 	element.dataset.type = type;
 	const fieldset = document.createElement('fieldset');
 	fieldset.classList.add('mb-0');
@@ -60,8 +65,9 @@ function createListElement(type, inputs) {
 	deleteBtn.addEventListener('click', removeListElement);
 	deleteBtn.innerHTML = `<svg width="1.0em" height="1.0em"><use xlink:href="#icon-trash"/></svg>`;
 	const dragBtn = document.createElement('button');
-	dragBtn.classList.add('sort-move', 'outline', 'secondary', 'height-100');
+	dragBtn.classList.add('sort-move', 'outline', 'secondary');
 	dragBtn.innerHTML = `<svg width="1.0em" height="1.0em"><use xlink:href="#icon-move"/></svg>`;
+	dragBtn.addEventListener('click', (event) => { event.preventDefault(); });
 	inputs.forEach((i) => {
 		const input = document.createElement('input');
 		input.id = `list-element-${i.name}-${listCount[type]}`;
@@ -80,7 +86,12 @@ function createListElement(type, inputs) {
 			ul.classList.add('list-psalm-options', 'hide');
 			const label = document.createElement('label');
 			label.classList.add('relative');
+			const a = document.createElement('a');
+			a.innerHTML = `<svg width="1.0em" height="1.0em"><use xlink:href="#icon-x"/></svg>`;
+			a.classList.add('clear-input', 'secondary', 'pointer', 'p-xxs');
+			a.addEventListener('click', clearInput);
 			label.append(input);
+			label.append(a);
 			label.append(ul);
 			fieldset.append(label);
 		} else fieldset.append(input);
@@ -229,6 +240,10 @@ function renderList(list) {
 		listCopyMd.parentNode.replaceChild(newListCopyMd, listCopyMd);
 		listCopyTxt.parentNode.replaceChild(newListCopyTxt, listCopyTxt);
 		listCopyLink.parentNode.replaceChild(newListCopyLink, listCopyLink);
+		Sortable.create(listFormElements, {
+			handle: '.sort-move',
+			animation: 150
+		});
 	}
 	if (pb.authStore.record && pb.authStore.record.id === list.user_id) {
 		listButtons.classList.remove('hide');

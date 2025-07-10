@@ -45,6 +45,11 @@ function getUrlParam(param) {
 	return urlParams.get(param);
 }
 
+// Clear adjacent input
+function clearInput(event) {
+	event.currentTarget.parentNode.querySelector('input').value = '';
+}
+
 // LIST ELEMENTS --------------------------------------------------------------
 
 // Create list form input
@@ -81,7 +86,12 @@ function createListElement(type, inputs) {
 			ul.classList.add('list-psalm-options', 'hide');
 			const label = document.createElement('label');
 			label.classList.add('relative');
+			const a = document.createElement('a');
+			a.innerHTML = `<svg width="1.0em" height="1.0em"><use xlink:href="#icon-x"/></svg>`;
+			a.classList.add('clear-input', 'secondary', 'pointer', 'p-xxs');
+			a.addEventListener('click', clearInput);
 			label.append(input);
+			label.append(a);
 			label.append(ul);
 			fieldset.append(label);
 		} else fieldset.append(input);
