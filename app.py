@@ -49,6 +49,9 @@ def account():
 
 @app.route('/community/')
 def community():
+@app.route('/account/lists/')
+def account_lists():
+	return render_template('lists.jinja', settings=settings)
 	return render_template('community.jinja', settings=settings)
 
 if __name__ == '__main__':

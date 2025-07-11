@@ -377,7 +377,7 @@ async function deleteList() {
 	try {
 		await pb.collection('res_lists').delete(getUrlParam('id'));
 		setTimeout(() => {
-			window.location.replace("/account/");
+			window.location.replace("/account/lists/");
 		}, 1000);
 	} catch(error) {
 		listDelete.setAttribute('aria-busy', 'false');

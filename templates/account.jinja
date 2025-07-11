@@ -5,17 +5,17 @@
 {% endblock %}
 {% block content %}
 <div class="container">
-	<div class="logged-in">
+	<article class="logged-in">
+		<header>
+			<h3>Hello <span class="account-email clear-logout"></span></h3>
+		</header>
 		<p id="account-error" class="error message hide">There was an error.</p>
 		<div id="account-settings" class="hide">
-			<h3>Hello <span class="account-email clear-logout"></span></h3>
-			<hr>
 			<section>
-				<details>
-					<summary>Custom Psalm Lists</summary>
-					<ul id="account-lists" class="clear-logout mt-pico"></ul>
-					<button data-target="list-modal" onclick="resetListForm(); toggleModal(event);">Create List</button>
-				</details>
+				<ul>
+					<li><a href="{{ url_for('account_lists') }}">Custom Lists</a></li>
+					<li><a href="{{ url_for('account_community') }}">My Community</a></li>
+				</ul>
 			</section>
 			<hr>
 			<section>
@@ -24,7 +24,7 @@
 				>Reset Password</button>
 			</section>
 		</div>
-	</div>
+	</article>
 	<div class="logged-out">
 		<p class="text-center">
 			<a class="pointer underline"
@@ -40,36 +40,4 @@
 		</p>
 	</div>
 </div>
-{% endblock %}
-{% block modals %}
-<dialog id="list-modal">
-	<article>
-		<header>
-			<button aria-label="Close"
-				rel="prev"
-				data-target="list-modal"
-				onclick="toggleModal(event)">
-			</button>
-			<h3>Create Custom Psalm List</h3>
-		</header>
-		<p id="list-error" class="error message hide">There was an error creating the psalm list.</p>
-		<p id="list-success" class="success message hide">List created successfully!</p>
-		<form id="list-form" role="form" data-reset="reset">
-			<fieldset>
-				<label for="list-name">Name <span class="primary">*</span>
-					<input type="text" id="list-name" name="list-name"
-						required aria-required="true" placeholder="List Name" min="3" max="32">
-				</label>
-			</fieldset>
-		</form>
-		<footer>
-			<button id="list-close" class="secondary"
-				data-target="list-modal"
-				onclick="toggleModal(event)">
-				Cancel
-			</button>
-			<button id="list-submit" form="list-form">Submit</button>
-		</footer>
-	</article>
-</dialog>
 {% endblock %}

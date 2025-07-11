@@ -1,0 +1,58 @@
+{% extends 'base.jinja' %}
+{% block title %}Account Lists{% endblock %}
+{% block scripts %}
+	<script src="{{ url_for('static', filename='scripts/account.js', v=settings.version) }}" defer></script>
+{% endblock %}
+{% block content %}
+<div class="container">
+	<p id="account-error" class="error message hide">There was an error.</p>
+	<section>
+		<a href="{{ url_for('account') }}">
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-arrow-left"/>
+			</svg> Back to settings
+		</a>
+	</section>
+	<article class="logged-in">
+		<header><h3>Custom Psalm Lists</h3></header>
+		<div id="account-settings" class="hide">
+			<section>
+				<ul id="account-lists" class="clear-logout mt-pico"></ul>
+				<button data-target="list-modal" onclick="resetListForm(); toggleModal(event);">Create List</button>
+			</section>
+		</div>
+	</article>
+</div>
+{% endblock %}
+{% block modals %}
+<dialog id="list-modal">
+	<article>
+		<header>
+			<button aria-label="Close"
+				rel="prev"
+				data-target="list-modal"
+				onclick="toggleModal(event)">
+			</button>
+			<h3>Create Custom Psalm List</h3>
+		</header>
+		<p id="list-error" class="error message hide">There was an error creating the psalm list.</p>
+		<p id="list-success" class="success message hide">List created successfully!</p>
+		<form id="list-form" role="form" data-reset="reset">
+			<fieldset>
+				<label for="list-name">Name <span class="primary">*</span>
+					<input type="text" id="list-name" name="list-name"
+						required aria-required="true" placeholder="List Name" min="3" max="32">
+				</label>
+			</fieldset>
+		</form>
+		<footer>
+			<button id="list-close" class="secondary"
+				data-target="list-modal"
+				onclick="toggleModal(event)">
+				Cancel
+			</button>
+			<button id="list-submit" form="list-form">Submit</button>
+		</footer>
+	</article>
+</dialog>
+{% endblock %}
