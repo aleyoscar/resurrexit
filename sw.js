@@ -1,4 +1,4 @@
-const version = 'v3.2.3';
+const version = 'v3.2.4';
 const CACHE_NAME = `resurrexit-${version}`;
 const urls = [
 	'/index.html',

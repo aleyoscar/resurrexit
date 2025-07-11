@@ -16,7 +16,7 @@ async function accountLogin() {
 		const record = await pb.collection('res_users').getOne(pb.authStore.record.id);
 		accountEmails.forEach((e) => e.textContent = record.email);
 		accountSettings.classList.remove('hide');
-		fetchLists();
+		if (accountLists) fetchLists();
 	} catch (error) {
 		accountError.textContent = getFullErrorMessage(error);
 		accountError.classList.remove('hide');
@@ -55,35 +55,37 @@ function resetListForm() {
 }
 
 // List Form
-listForm.addEventListener('submit', async (e) => {
-	e.preventDefault();
+if (listForm) {
+	listForm.addEventListener('submit', async (e) => {
+		e.preventDefault();
 
-	if (!listModal.open) return;
+		if (!listModal.open) return;
 
-	listError.classList.add('hide');
-	listSuccess.classList.add('hide');
+		listError.classList.add('hide');
+		listSuccess.classList.add('hide');
 
-	const formData = new FormData(listForm);
-	listSubmit.setAttribute('aria-busy', 'true');
-	try {
-		if (!isBetween(formData.get('list-name'), 100, 2)) throw new Error("Name must be between 3 and 100 characters long");
-		const result = await pb.collection('res_lists').create({
-			user_id: pb.authStore.record.id,
-			name: formData.get('list-name')
-		});
-		listSuccess.classList.remove('hide');
-		listForm.classList.add('hide');
-		listForm.reset();
-		listSubmit.classList.add('hide');
-		listSubmit.setAttribute('aria-busy', 'false');
-		listClose.textContent = "Close";
-		fetchLists();
-	} catch (error) {
-		listError.textContent = getFullErrorMessage(error);
-		listSubmit.setAttribute('aria-busy', 'false');
-		listError.classList.remove('hide');
-	}
-});
+		const formData = new FormData(listForm);
+		listSubmit.setAttribute('aria-busy', 'true');
+		try {
+			if (!isBetween(formData.get('list-name'), 100, 2)) throw new Error("Name must be between 3 and 100 characters long");
+			const result = await pb.collection('res_lists').create({
+				user_id: pb.authStore.record.id,
+				name: formData.get('list-name')
+			});
+			listSuccess.classList.remove('hide');
+			listForm.classList.add('hide');
+			listForm.reset();
+			listSubmit.classList.add('hide');
+			listSubmit.setAttribute('aria-busy', 'false');
+			listClose.textContent = "Close";
+			fetchLists();
+		} catch (error) {
+			listError.textContent = getFullErrorMessage(error);
+			listSubmit.setAttribute('aria-busy', 'false');
+			listError.classList.remove('hide');
+		}
+	});
+}
 
 document.addEventListener('authChange', (event) => {
 	if (event.detail.newAuth) {

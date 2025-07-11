@@ -6,23 +6,23 @@
 		<meta name="color-scheme" content="light dark">
 		<meta name="apple-mobile-web-app-title" content="Resurrexit" />
 		<meta name="theme-color" content="#c52f21" />
-		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.2.3" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.2.3" />
-		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.2.3" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.2.3" />
-		<link rel="manifest" href="/static/site.webmanifest?v=v3.2.3" />
+		<link rel="icon" type="image/png" href="/static/images/favicon-96x96.png?v=v3.2.4" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg?v=v3.2.4" />
+		<link rel="shortcut icon" href="/static/images/favicon.ico?v=v3.2.4" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png?v=v3.2.4" />
+		<link rel="manifest" href="/static/site.webmanifest?v=v3.2.4" />
 		<link rel="stylesheet" href="/static/css/pico.red.min.css?v=v2.1.1">
 		<link rel="stylesheet" href="/static/css/eplayer.css?v=v1.0.0">
-		<link rel="stylesheet" href="/static/css/styles.css?v=v3.2.3">
+		<link rel="stylesheet" href="/static/css/styles.css?v=v3.2.4">
 		<script src="/static/scripts/js.cookie.min.js?v=v3.0.5" defer></script>
 		<script src="/static/scripts/pocketbase.umd.js?v=v0.26.1" defer></script>
 		<script src="/static/scripts/eplayer.js?v=v1.0.0" defer></script>
-		<script src="/static/scripts/modal.js?v=v3.2.3" defer></script>
-		<script src="/static/scripts/main.js?v=v3.2.3" defer></script>
+		<script src="/static/scripts/modal.js?v=v3.2.4" defer></script>
+		<script src="/static/scripts/main.js?v=v3.2.4" defer></script>
 		
-	<script src="/static/scripts/community.js?v=v3.2.3" defer></script>
+	<script src="/static/scripts/account.js?v=v3.2.4" defer></script>
 
-		<title>Resurrexit | My Community</title>
+		<title>Resurrexit | Account Lists</title>
 	</head>
 	<body class="flex flex-column">
 		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -92,6 +92,9 @@
 	<symbol id="icon-check" viewBox="0 0 16 16">
 		<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
 	</symbol>
+	<symbol id="icon-arrow-left" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+	</symbol>
 </svg>
 		
 		<header id="header">
@@ -155,8 +158,11 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
-			<li><a class="pointer" href="/community/">
-				Community List
+			<li><a class="pointer" href="/account/lists/">
+				Custom Lists
+			</a></li>
+			<li><a class="pointer" href="/account/community/">
+				My Community
 			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
@@ -228,8 +234,13 @@
 					</a>
 				</li>
 				<li class="logged-in hide">
-					<a class="secondary pointer" href="/community/">
-						Community List
+					<a class="secondary pointer" href="/account/lists/">
+						Custom Lists
+					</a>
+				</li>
+				<li class="logged-in hide">
+					<a class="secondary pointer" href="/account/community/">
+						My Community
 					</a>
 				</li>
 				<li class="logged-in hide">
@@ -248,129 +259,24 @@
 		</aside>
 		
 		<main>
-<div class="container logged-in">
-	<p id="community-error" class="error message hide">There was an error loading your community</p>
-	<section id="brother-tools" class="sticky">
-		<div class="container flex align-center gap-xs">
-			<form id="brother-search-form" role="search" class="flex-1 mb-0">
-				<input id="brother-search"
-					class="flex-1"
-					type="search"
-					name="brother-search"
-					placeholder="Search"
-					aria-label="Search"
-				/>
-			</form>
-			<button class="brother-sort outline flex-inline align-center gap-xxs hide-md"
-				data-sort="first_name"
-				onclick="sortBrothers(event)">
-				First Name
-				<svg class="sort-asc" width="1em" height="1em">
-					<use xlink:href="#icon-sort-asc"/>
-				</svg>
-				<svg class="sort-desc hide" width="1em" height="1em">
-					<use xlink:href="#icon-sort-desc"/>
-				</svg>
-			</button>
-			<button class="brother-sort flex-inline align-center gap-xxs hide-md"
-				data-sort="last_name"
-				onclick="sortBrothers(event)">
-				Last Name
-				<svg class="sort-asc" width="1em" height="1em">
-					<use xlink:href="#icon-sort-asc"/>
-				</svg>
-				<svg class="sort-desc hide" width="1em" height="1em">
-					<use xlink:href="#icon-sort-desc"/>
-				</svg>
-			</button>
-			<button class="brother-sort outline flex-inline align-center gap-xxs hide-md"
-				data-sort="role"
-				onclick="sortBrothers(event)">
-				Role
-				<svg class="sort-asc" width="1em" height="1em">
-					<use xlink:href="#icon-sort-asc"/>
-				</svg>
-				<svg class="sort-desc hide" width="1em" height="1em">
-					<use xlink:href="#icon-sort-desc"/>
-				</svg>
-			</button>
-			<details class="brother-sort-md dropdown hide-lg mb-0">
-				<summary class="transparent-btn no-caret">
-					<svg class="sort-asc" width="1.6em" height="1.6em">
-						<use xlink:href="#icon-sort-asc"/>
-					</svg>
-					<svg class="sort-desc hide" width="1.6em" height="1.6em">
-						<use xlink:href="#icon-sort-desc"/>
-					</svg>
-				</summary>
-				<ul dir="rtl">
-					<li dir="ltr"><a class="pointer"
-						data-sort="first_name"
-						data-direction="asc"
-						onclick="sortBrothers(event)">
-						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
-						First Name Ascending
-					</a></li>
-					<li dir="ltr"><a class="pointer"
-						data-sort="first_name"
-						data-direction="desc"
-						onclick="sortBrothers(event)">
-						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
-						First Name Descending
-					</a></li>
-					<li dir="ltr"><a class="pointer"
-						data-sort="last_name"
-						data-direction="asc"
-						onclick="sortBrothers(event)">
-						<svg width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
-						Last Name Ascending
-					</a></li>
-					<li dir="ltr"><a class="pointer"
-						data-sort="last_name"
-						data-direction="desc"
-						onclick="sortBrothers(event)">
-						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
-						Last Name Descending
-					</a></li>
-					<li dir="ltr"><a class="pointer"
-						data-sort="role"
-						data-direction="asc"
-						onclick="sortBrothers(event)">
-						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
-						Role Ascending
-					</a></li>
-					<li dir="ltr"><a class="pointer"
-						data-sort="role"
-						data-direction="desc"
-						onclick="sortBrothers(event)">
-						<svg class="hide" width="1em" height="1em"><use xlink:href="#icon-check"/></svg>
-						Role Descending
-					</a></li>
-				</ul>
-			</details>
-		</div>
-	</section>
+<div class="container">
+	<p id="account-error" class="error message hide">There was an error.</p>
 	<section>
-		<div id="community-teams"></div>
-		<a id="clear-btn" class="secondary flex justify-center align-center gap-xxs pointer pt-xs"
-			onclick="clearBrotherFilters()"><small>
-			Clear Filters
+		<a href="/account/">
 			<svg width="1em" height="1em">
-				<use xlink:href="#icon-stars"/>
-			</svg></small>
+				<use xlink:href="#icon-arrow-left"/>
+			</svg> Back to settings
 		</a>
 	</section>
-	<hr>
-	<div id="community-list" class="flex flex-column"></div>
-	<div id="community-totals" class="grid mb-pico">
-		<p class="text-center mb-0">Walking: <b data-key="walking" data-value="yes"></b></p>
-		<p class="text-center mb-0">Somewhat: <b data-key="walking" data-value="somewhat"></b></p>
-		<p class="text-center mb-0">Not Walking: <b data-key="walking" data-value="no"></b></p>
-		<p class="text-center mb-0">Total: <b data-key="walking" data-value=""></b></p>
-	</div>
-	<section>
-		<button data-target="brother-modal" onclick="addBrother(); toggleModal(event);">Add Brother/Sister</button>
-	</section>
+	<article class="logged-in">
+		<header><h3>Custom Psalm Lists</h3></header>
+		<div id="account-settings" class="hide">
+			<section>
+				<ul id="account-lists" class="clear-logout mt-pico"></ul>
+				<button data-target="list-modal" onclick="resetListForm(); toggleModal(event);">Create List</button>
+			</section>
+		</div>
+	</article>
 </div>
 </main>
 		
@@ -397,8 +303,11 @@
 	<details class="dropdown mb-0">
 		<summary class="transparent-btn">Account</summary>
 		<ul dir="rtl">
-			<li><a class="pointer" href="/community/">
-				Community List
+			<li><a class="pointer" href="/account/lists/">
+				Custom Lists
+			</a></li>
+			<li><a class="pointer" href="/account/community/">
+				My Community
 			</a></li>
 			<li><a class="pointer" href="/account/">
 				Settings
@@ -431,130 +340,33 @@
 		
 		
 		
-<dialog id="brother-modal">
+<dialog id="list-modal">
 	<article>
 		<header>
 			<button aria-label="Close"
 				rel="prev"
-				data-target="brother-modal"
+				data-target="list-modal"
 				onclick="toggleModal(event)">
 			</button>
-			<h3 id="brother-title">Edit <span></span></h3>
+			<h3>Create Custom Psalm List</h3>
 		</header>
-		<p id="brother-error" class="error hide">There was an error updating this brother/sister</p>
-		<form id="brother-form">
+		<p id="list-error" class="error message hide">There was an error creating the psalm list.</p>
+		<p id="list-success" class="success message hide">List created successfully!</p>
+		<form id="list-form" role="form" data-reset="reset">
 			<fieldset>
-				<input type="hidden" id="brother-id" name="brother-id" value="" />
-				<label>First Name
-					<input class="modal-focus"
-						type="text"
-						id="brother-first-name"
-						name="brother-first-name"
-						placeholder="First Name"
-						autocomplete="off"
-						required />
-				</label>
-				<label>Last Name
-					<input type="text"
-						id="brother-last-name"
-						name="brother-last-name"
-						placeholder="Last Name"
-						autocomplete="off"/>
-					</label>
-				<label>Role
-					<select id="brother-role" name="brother-role">
-						<option value="00-responsible">Responsible</option>
-						<option value="01-coresponsible">Co-Responsible</option>
-						<option value="02-catechist">Catechist</option>
-						<option value="03-didaskalos">Didaskalos</option>
-						<option value="04-ostiarius">Ostiarius</option>
-						<option value="05-psalmist">Psalmist</option>
-						<option selected value="06-brother">Brother/Sister</option>
-					</select>
-				</label>
-				<label>Phone
-					<input type="text"
-						id="brother-phone"
-						name="brother-phone"
-						placeholder="Phone Number"
-						autocomplete="off"/>
-				</label>
-				<label>Alternate Contact
-					<input type="text"
-						id="brother-alternate"
-						name="brother-alternate"
-						placeholder="Alternate Contact"
-						autocomplete="off"/>
-				</label>
-				<label>Alternate Contact Phone
-					<input type="text"
-						id="brother-alternate-phone"
-						name="brother-alternate-phone"
-						placeholder="Alternate Contact Phone Number"
-						autocomplete="off"/>
-				</label>
-				<label>Address
-					<input type="text"
-						id="brother-address"
-						name="brother-address"
-						placeholder="Address"
-						autocomplete="off"/>
-				</label>
-				<label>Date Joined
-					<input type="date"
-						id="brother-joined"
-						name="brother-joined"/>
-				</label>
-				<label>Walking
-					<select id="walking" name="walking">
-						<option selected value="yes">Yes</option>
-						<option value="somewhat">Somewhat</option>
-						<option value="no">No</option>
-					</select>
-				</label>
-				<label>Team
-					<select id="team" name="team">
-						<option selected value="0">Select Team #</option>
-						
-						<option value="1">1</option>
-						
-						<option value="2">2</option>
-						
-						<option value="3">3</option>
-						
-						<option value="4">4</option>
-						
-						<option value="5">5</option>
-						
-						<option value="6">6</option>
-						
-						<option value="7">7</option>
-						
-						<option value="8">8</option>
-						
-						<option value="9">9</option>
-						
-						<option value="10">10</option>
-						
-					</select>
+				<label for="list-name">Name <span class="primary">*</span>
+					<input type="text" id="list-name" name="list-name"
+						required aria-required="true" placeholder="List Name" min="3" max="32">
 				</label>
 			</fieldset>
 		</form>
 		<footer>
-			<button id="brother-delete"
-				class="float-left contrast"
-				data-id=""
-				onclick="deleteBrother(event)">
-				<svg width="1em" height="1em">
-					<use xlink:href="#icon-trash"/>
-				</svg>
-			</button>
-			<button class="secondary"
-				data-target="brother-modal"
+			<button id="list-close" class="secondary"
+				data-target="list-modal"
 				onclick="toggleModal(event)">
 				Cancel
 			</button>
-			<button id="brother-submit" form="brother-form">Save</button>
+			<button id="list-submit" form="list-form">Submit</button>
 		</footer>
 	</article>
 </dialog>

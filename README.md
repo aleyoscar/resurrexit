@@ -2,7 +2,7 @@
 
 [https://resurrexit.app](https://resurrexit.app)
 
-> v3.2.3
+> v3.2.4
 
 A multi-lingual songbook and tool set web app for the Neocatechumenal Way.
 

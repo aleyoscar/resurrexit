@@ -1,5 +1,5 @@
 {
-	"version": "v3.2.3",
+	"version": "v3.2.4",
 	"audio_sources": {
 		"KI": {"order": 1, "name": "Kiko" },
 		"FR": {"order": 2, "name": "Francesco" },
