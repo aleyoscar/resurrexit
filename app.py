@@ -47,11 +47,12 @@ def custom_list():
 def account():
 	return render_template('account.jinja', settings=settings)
 
-@app.route('/community/')
-def community():
 @app.route('/account/lists/')
 def account_lists():
 	return render_template('lists.jinja', settings=settings)
+
+@app.route('/account/community/')
+def account_community():
 	return render_template('community.jinja', settings=settings)
 
 if __name__ == '__main__':
