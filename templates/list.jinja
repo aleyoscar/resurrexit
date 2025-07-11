@@ -7,6 +7,13 @@
 {% block content %}
 <div class="container">
 	<p id="list-error" class="error message hide">You are not authorized to view this list.</p>
+	<section class="logged-in">
+		<a href="{{ url_for('account_lists') }}">
+			<svg width="1em" height="1em">
+				<use xlink:href="#icon-arrow-left"/>
+			</svg> Back to lists
+		</a>
+	</section>
 	<div id="list">
 		<article>
 			<header id="list-view" class="list-view flex space-between align-center">
