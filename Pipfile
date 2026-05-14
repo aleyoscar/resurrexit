@@ -8,8 +8,10 @@ flask = "*"
 frozen-flask = "*"
 python-frontmatter = "*"
 unidecode = "*"
+requests = "*"
+beautifulsoup4 = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "3.13"

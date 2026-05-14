@@ -217,19 +217,6 @@
     },
     {
         "id": 8,
-        "lang": "en-us",
-        "title": "ABRAHAM",
-        "subtitle": "",
-        "step": "pre",
-        "slug": "abraham",
-        "tags": [],
-        "gtags": [
-            "g-int"
-        ],
-        "text": "abraham"
-    },
-    {
-        "id": 8,
         "lang": "es-es",
         "title": "ABRAHAM",
         "subtitle": "Gn 18,1-5",
@@ -242,6 +229,19 @@
             "g-int"
         ],
         "text": "a abraham adelante agua alzando aquel bocado calor casualidad cerca cuando cuanto de del delante detenerte dia dijo el en encinar estaba estaban gn habeis hacia hasta hombres hoy inclino la lavare los luego mambre mi mio miro no oh ojos os pasado pases pie pies poco por reconfortareis reposareis ruego s se seguireis senor sentado sin sombra su suelo te tienda traere tres un vio y"
+    },
+    {
+        "id": 8,
+        "lang": "en-us",
+        "title": "ABRAHAM",
+        "subtitle": "",
+        "step": "pre",
+        "slug": "abraham",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ],
+        "text": "abraham"
     },
     {
         "id": 9,
@@ -1503,7 +1503,7 @@
     },
     {
         "id": 47,
-        "lang": "en-us",
+        "lang": "es-es",
         "title": "DE PROFUNDIS",
         "subtitle": "",
         "step": "pre",
@@ -1514,7 +1514,7 @@
     },
     {
         "id": 47,
-        "lang": "es-es",
+        "lang": "en-us",
         "title": "DE PROFUNDIS",
         "subtitle": "",
         "step": "pre",
@@ -3445,7 +3445,7 @@
     },
     {
         "id": 228,
-        "lang": "en-us",
+        "lang": "es-es",
         "title": "JACOB",
         "subtitle": "",
         "step": "cat",
@@ -3456,7 +3456,7 @@
     },
     {
         "id": 228,
-        "lang": "es-es",
+        "lang": "en-us",
         "title": "JACOB",
         "subtitle": "",
         "step": "cat",
@@ -4353,20 +4353,6 @@
     },
     {
         "id": 122,
-        "lang": "en-us",
-        "title": "NOLI ME TANGERE",
-        "subtitle": "",
-        "step": "ele",
-        "slug": "noli-me-tangere",
-        "tags": [],
-        "gtags": [
-            "g-pas",
-            "g-pen"
-        ],
-        "text": "me noli tangere"
-    },
-    {
-        "id": 122,
         "lang": "es-es",
         "title": "NOLI ME TANGERE",
         "subtitle": "",
@@ -4376,6 +4362,20 @@
             "pas",
             "pen"
         ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ],
+        "text": "me noli tangere"
+    },
+    {
+        "id": 122,
+        "lang": "en-us",
+        "title": "NOLI ME TANGERE",
+        "subtitle": "",
+        "step": "ele",
+        "slug": "noli-me-tangere",
+        "tags": [],
         "gtags": [
             "g-pas",
             "g-pen"
@@ -5043,20 +5043,6 @@
     },
     {
         "id": 143,
-        "lang": "en-us",
-        "title": "RESURREXIT",
-        "subtitle": "",
-        "step": "pre",
-        "slug": "resurrexit",
-        "tags": [],
-        "gtags": [
-            "g-pas",
-            "g-pen"
-        ],
-        "text": "resurrexit"
-    },
-    {
-        "id": 143,
         "lang": "es-es",
         "title": "RESURREXIT",
         "subtitle": "",
@@ -5066,6 +5052,20 @@
             "pas",
             "pen"
         ],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ],
+        "text": "resurrexit"
+    },
+    {
+        "id": 143,
+        "lang": "en-us",
+        "title": "RESURREXIT",
+        "subtitle": "",
+        "step": "pre",
+        "slug": "resurrexit",
+        "tags": [],
         "gtags": [
             "g-pas",
             "g-pen"
@@ -5731,6 +5731,19 @@
     },
     {
         "id": 220,
+        "lang": "es-es",
+        "title": "TE DEUM",
+        "subtitle": "",
+        "step": "lit",
+        "slug": "te-deum",
+        "tags": [],
+        "gtags": [
+            "g-hym"
+        ],
+        "text": "deum te"
+    },
+    {
+        "id": 220,
         "lang": "en-us",
         "title": "TE DEUM",
         "subtitle": "",
@@ -5739,19 +5752,6 @@
         "tags": [
             "hym"
         ],
-        "gtags": [
-            "g-hym"
-        ],
-        "text": "deum te"
-    },
-    {
-        "id": 220,
-        "lang": "es-es",
-        "title": "TE DEUM",
-        "subtitle": "",
-        "step": "lit",
-        "slug": "te-deum",
-        "tags": [],
         "gtags": [
             "g-hym"
         ],
