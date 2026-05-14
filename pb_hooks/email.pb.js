@@ -9,7 +9,7 @@ onRecordAfterCreateSuccess((e) => {
 			address: e.app.settings().meta.senderAddress,
 			name: e.app.settings().meta.senderName
 		},
-		to: [{address: 'ocam@aleyoscar.com'}],
+		to: [{address: 'admin@resurrexit.app'}],
 		subject: `Resurrexit Contact Form Submission - ${e.record.get('name')}`,
 		html: `
 			<p><strong>Name:</strong> ${e.record.get('name')}</p>
