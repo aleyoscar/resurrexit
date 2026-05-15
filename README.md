@@ -90,3 +90,10 @@ GNU GPLv3
 | Pentecost			| pen	|				| *				|
 | Solomon			| sal	| *				| 				|
 | Various			| var	| *				|				|
+
+### Build
+
+- Create virtual environment `python -m venv .venv`
+- Activate `source .venv/bin/activate`
+- Install python dependencies: `pip install -r requirements.txt`
+- Run `python freeze.py`
