@@ -391,11 +391,11 @@ async function deleteList() {
 // Autocomplete psalm inputs
 async function autocomplete(e) {
 	const inputPsalmOptions = e.currentTarget.parentNode.querySelector('.list-psalm-options');
-	const query = e.currentTarget.value.toLowerCase().trim();
+	const query = normalize(e.currentTarget.value);
 	if (query) {
 		const data = await psalmOptions;
 		const filteredPsalms = data.filter(psalm =>
-			psalm.toLowerCase().includes(query)
+			normalize(psalm).includes(query)
 		);
 		if (filteredPsalms.length) {
 			inputPsalmOptions.innerHTML = '';
