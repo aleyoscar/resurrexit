@@ -217,6 +217,19 @@
     },
     {
         "id": 8,
+        "lang": "en-us",
+        "title": "ABRAHAM",
+        "subtitle": "",
+        "step": "pre",
+        "slug": "abraham",
+        "tags": [],
+        "gtags": [
+            "g-int"
+        ],
+        "text": "abraham"
+    },
+    {
+        "id": 8,
         "lang": "es-es",
         "title": "ABRAHAM",
         "subtitle": "Gn 18,1-5",
@@ -229,19 +242,6 @@
             "g-int"
         ],
         "text": "a abraham adelante agua alzando aquel bocado calor casualidad cerca cuando cuanto de del delante detenerte dia dijo el en encinar estaba estaban gn habeis hacia hasta hombres hoy inclino la lavare los luego mambre mi mio miro no oh ojos os pasado pases pie pies poco por reconfortareis reposareis ruego s se seguireis senor sentado sin sombra su suelo te tienda traere tres un vio y"
-    },
-    {
-        "id": 8,
-        "lang": "en-us",
-        "title": "ABRAHAM",
-        "subtitle": "",
-        "step": "pre",
-        "slug": "abraham",
-        "tags": [],
-        "gtags": [
-            "g-int"
-        ],
-        "text": "abraham"
     },
     {
         "id": 9,
@@ -877,14 +877,14 @@
         "id": 26,
         "lang": "en-us",
         "title": "BLESS THE LORD MY SOUL",
-        "subtitle": "",
+        "subtitle": "Psalm 102 (103)",
         "step": "pre",
         "slug": "bless-the-lord-my-soul",
         "tags": [],
         "gtags": [
             "g-com"
         ],
-        "text": "bless lord my soul the"
+        "text": "all and bless cures death defends diseases dont faults fills forget forgives from grace he his holy is israel just life lord love might moses my name poor psalm revealed saves showed soul the to towards way who with you your"
     },
     {
         "id": 29,
@@ -1503,18 +1503,18 @@
     },
     {
         "id": 47,
-        "lang": "es-es",
+        "lang": "en-us",
         "title": "DE PROFUNDIS",
-        "subtitle": "",
+        "subtitle": "Psalm 129 (130)",
         "step": "pre",
         "slug": "de-profundis",
         "tags": [],
         "gtags": [],
-        "text": "de profundis"
+        "text": "account all am attentive ay be because but can cry dawn de depths e ears f for forgiveness found from her him his hope hopes i if in is israel let listen lord love more my o of only prayer profundis psalm redeems saved sins soul take than the there to voice wait waiting watchmen who will word you your"
     },
     {
         "id": 47,
-        "lang": "en-us",
+        "lang": "es-es",
         "title": "DE PROFUNDIS",
         "subtitle": "",
         "step": "pre",
@@ -2593,7 +2593,7 @@
         "id": 142,
         "lang": "en-us",
         "title": "HE ROSE FROM DEATH",
-        "subtitle": "",
+        "subtitle": "1 Cor. 15",
         "step": "pre",
         "slug": "he-rose-from-death",
         "tags": [],
@@ -2602,7 +2602,7 @@
             "g-pas",
             "g-pen"
         ],
-        "text": "death from he rose"
+        "text": "alleluia be because brings brothers cor death die each father for from given he him his if is it its kingdom live love my o other rejoice rose sing thanks the through to today us victory we where who with"
     },
     {
         "id": 174,
@@ -2891,7 +2891,7 @@
         "gtags": [
             "g-pax"
         ],
-        "text": "good how is it"
+        "text": "as be beard blessing brothers dew down everlasting falling fine forever from gives good head hermon his how is it life like lord mount of oil on running sends the there to us with zion"
     },
     {
         "id": 136,
@@ -2911,14 +2911,14 @@
         "id": 80,
         "lang": "en-us",
         "title": "HOW MUCH LONGER",
-        "subtitle": "",
+        "subtitle": "Psalm 12 (13)",
         "step": "pre",
         "slug": "how-much-longer",
         "tags": [],
         "gtags": [
             "g-com"
         ],
-        "text": "how longer much"
+        "text": "and answer asleep at because but death eyes face fall foes forget from give have heart hide him how i in is lest light longer look lord love me mercy much my o oppressors over prevailed psalm rejoice rely salvation saviour say shall sing stumbled the to upon we who will you your"
     },
     {
         "id": 91,
@@ -3445,7 +3445,7 @@
     },
     {
         "id": 228,
-        "lang": "es-es",
+        "lang": "en-us",
         "title": "JACOB",
         "subtitle": "",
         "step": "cat",
@@ -3456,7 +3456,7 @@
     },
     {
         "id": 228,
-        "lang": "en-us",
+        "lang": "es-es",
         "title": "JACOB",
         "subtitle": "",
         "step": "cat",
@@ -3914,7 +3914,7 @@
         "id": 106,
         "lang": "en-us",
         "title": "LORD, LORD JESUS",
-        "subtitle": "",
+        "subtitle": "Psalm 118 (119)",
         "step": "pre",
         "slug": "lord-lord-jesus",
         "tags": [],
@@ -3922,7 +3922,7 @@
             "g-com",
             "g-int"
         ],
-        "text": "jesus lord"
+        "text": "a am at await be come for from hand help i im in jesus life lips look lord lost may me my new of plea praise presence psalm reach salvation search servant sing song spring to tongue with without word you your"
     },
     {
         "id": 108,
@@ -4353,6 +4353,20 @@
     },
     {
         "id": 122,
+        "lang": "en-us",
+        "title": "NOLI ME TANGERE",
+        "subtitle": "",
+        "step": "ele",
+        "slug": "noli-me-tangere",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ],
+        "text": "me noli tangere"
+    },
+    {
+        "id": 122,
         "lang": "es-es",
         "title": "NOLI ME TANGERE",
         "subtitle": "",
@@ -4362,20 +4376,6 @@
             "pas",
             "pen"
         ],
-        "gtags": [
-            "g-pas",
-            "g-pen"
-        ],
-        "text": "me noli tangere"
-    },
-    {
-        "id": 122,
-        "lang": "en-us",
-        "title": "NOLI ME TANGERE",
-        "subtitle": "",
-        "step": "ele",
-        "slug": "noli-me-tangere",
-        "tags": [],
         "gtags": [
             "g-pas",
             "g-pen"
@@ -4540,14 +4540,14 @@
         "id": 175,
         "lang": "en-us",
         "title": "OH LORD, YOU ARE MY GOD",
-        "subtitle": "",
+        "subtitle": "Is. 25, 1-8",
         "step": "pre",
         "slug": "oh-lord-you-are-my-god",
         "tags": [],
         "gtags": [
             "g-com"
         ],
-        "text": "are god lord my oh you"
+        "text": "all are away bless death destroy ever exalt faces footsteps for from god hear i is jacob lord lowly my name now o of oh our poor remnant tears the we will wipe you your"
     },
     {
         "id": 127,
@@ -4719,7 +4719,7 @@
         "title": "PLEGARIA EUCARÍSTICA II - MODELO II",
         "subtitle": "(1987)",
         "step": "lit",
-        "slug": "plegaria-eucaristica-ii-modelo-ii",
+        "slug": "plegaria-eucaristica-ii-modelo-ii-1987",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -4732,7 +4732,7 @@
         "title": "PLEGARIA EUCARÍSTICA II - MODELO II",
         "subtitle": "(1987)",
         "step": "lit",
-        "slug": "plegaria-eucaristica-ii-modelo-ii-1987",
+        "slug": "plegaria-eucaristica-ii-modelo-ii",
         "tags": [],
         "gtags": [
             "g-ord"
@@ -5043,6 +5043,20 @@
     },
     {
         "id": 143,
+        "lang": "en-us",
+        "title": "RESURREXIT",
+        "subtitle": "",
+        "step": "pre",
+        "slug": "resurrexit",
+        "tags": [],
+        "gtags": [
+            "g-pas",
+            "g-pen"
+        ],
+        "text": "resurrexit"
+    },
+    {
+        "id": 143,
         "lang": "es-es",
         "title": "RESURREXIT",
         "subtitle": "",
@@ -5052,20 +5066,6 @@
             "pas",
             "pen"
         ],
-        "gtags": [
-            "g-pas",
-            "g-pen"
-        ],
-        "text": "resurrexit"
-    },
-    {
-        "id": 143,
-        "lang": "en-us",
-        "title": "RESURREXIT",
-        "subtitle": "",
-        "step": "pre",
-        "slug": "resurrexit",
-        "tags": [],
         "gtags": [
             "g-pas",
             "g-pen"
@@ -5731,19 +5731,6 @@
     },
     {
         "id": 220,
-        "lang": "es-es",
-        "title": "TE DEUM",
-        "subtitle": "",
-        "step": "lit",
-        "slug": "te-deum",
-        "tags": [],
-        "gtags": [
-            "g-hym"
-        ],
-        "text": "deum te"
-    },
-    {
-        "id": 220,
         "lang": "en-us",
         "title": "TE DEUM",
         "subtitle": "",
@@ -5752,6 +5739,19 @@
         "tags": [
             "hym"
         ],
+        "gtags": [
+            "g-hym"
+        ],
+        "text": "deum te"
+    },
+    {
+        "id": 220,
+        "lang": "es-es",
+        "title": "TE DEUM",
+        "subtitle": "",
+        "step": "lit",
+        "slug": "te-deum",
+        "tags": [],
         "gtags": [
             "g-hym"
         ],
@@ -5951,7 +5951,7 @@
             "g-var",
             "g-com"
         ],
-        "text": "hard is march the"
+        "text": "again and chief cry father for free go goes hard is israel life listen march moses of our peace people rise saviour send slow strong sun the them they to us want yearn your"
     },
     {
         "id": 57,
@@ -6207,7 +6207,7 @@
             "g-var",
             "g-int"
         ],
-        "text": "city holy towards you"
+        "text": "alleluia amen among are blood body brother city cleanse come coming covenant drink eat faith guide holy hope in land like love of our people pilgrims poor reign save saviours seal shall table the to today together towards unto us walk walking way we will with you your"
     },
     {
         "id": 236,
@@ -6495,7 +6495,7 @@
         "id": 44,
         "lang": "en-us",
         "title": "WHEN ISRAEL CAME OUT OF EGYPT",
-        "subtitle": "",
+        "subtitle": "Psalm 113 (114)",
         "step": "pre",
         "slug": "when-israel-came-out-of-egypt",
         "tags": [],
@@ -6503,7 +6503,7 @@
             "g-pas",
             "g-pen"
         ],
-        "text": "came egypt israel of out when"
+        "text": "a and at back barbarian before came do domain earth egypt fled flee flow from god hills his house is israel jacob jordan judah lambs leap leaped like makes mountains of out passing people psalm rams rock sanctuary sea sight the tremble turn turned was water when who why you"
     },
     {
         "id": 0,

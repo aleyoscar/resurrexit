@@ -163,7 +163,7 @@ def arr_to_html(arr):
 def parse_lyrics(lyric, language, chords):
     started_chords = False
     chord_line = ""
-    html = {"columns": [{"sections": []}]}
+    html = {"columns": [{"sections": [{"class": "default", "lang": language["name"], "lines": []}]}]}  # Initialize with default section
     text = ""
     raw_chords = load_raw_chords(chords);
     for line in lyric.splitlines():
@@ -179,7 +179,7 @@ def parse_lyrics(lyric, language, chords):
                 started_chords = True
                 chord_line = line
             elif stripped == "---":
-                html["columns"].append({"sections": []})
+                html["columns"].append({"sections": [{"class": "default", "lang": language["name"], "lines": []}]})  # Initialize with default section
             else:
                 text += f"{stripped} "
                 if started_chords:
@@ -190,5 +190,8 @@ def parse_lyrics(lyric, language, chords):
                         chord_data = get_chord_data(raw_chords[chord_line[i:]], chords)
                         stripped = f"{stripped[:i]}{chord_data}{stripped[i:]}"
                         chord_line = chord_line[:i].rstrip()
+                # Ensure a section exists before appending
+                if not html["columns"][-1]["sections"]:
+                    html["columns"][-1]["sections"].append({"class": "default", "lang": language["name"], "lines": []})
                 html["columns"][-1]["sections"][-1]["lines"].append(stripped)
     return arr_to_html(html), re.sub(r'\[.*?\]', '', text)
