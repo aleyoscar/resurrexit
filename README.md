@@ -97,3 +97,7 @@ GNU GPLv3
 - Activate `source .venv/bin/activate`
 - Install python dependencies: `pip install -r requirements.txt`
 - Run `python freeze.py`
+- Update version info `./genchglog {version} -r README.md -r sw.js -r static/settings.json`
+- Remove commit `git reset --soft HEAD~1`
+- Freeze again `python freeze.py`
+- Commit `release {version}`
