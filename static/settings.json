@@ -1,5 +1,5 @@
 {
-  "version": "v3.2.4",
+  "version": "v3.3.0",
   "audio_url": "https://aleyoscar.com/audio/",
   "audio_sources": {
     "KI": {"order": 1, "name": "Kiko" },
